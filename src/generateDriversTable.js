@@ -1,0 +1,165 @@
+import fs from 'fs';
+import yaml from 'js-yaml';
+
+function statusFor(status) {
+  if (status == 'Finished') return ''
+  if (status == 'Lapped') return ''
+  if (status == 'Retired') return 'Ret'
+  if (status == 'Did not start') return 'DNS'
+  if (status == 'Disqualified') return 'DSQ'
+  throw new Error(`Unknown status ${status}`)
+}
+
+function driverCompare(ri,prop) {
+  return (a,b) => {
+    let c =  b.results[ri][prop] - a.results[ri][prop]
+    if (c != 0) return c
+    for (let i = 0 ; i<b.results[ri]._racePositions.length; i++) {
+      c = b.results[ri]._racePositions[i] - a.results[ri]._racePositions[i]
+      if (c != 0) return c
+    }
+    c = a.familyName.localeCompare(b.familyName)
+    if (c != 0) return c
+    return a.givenName.localeCompare(b.givenName)
+  }
+}
+
+export function generateDriversTable(values) {
+
+  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
+  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
+  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
+
+  let t = {
+    season: values.year,
+    races: [],
+    drivers: [],
+  };
+
+  let constructorsMap = {};
+  constructors.constructors.forEach(c => {
+    constructorsMap[c.constructorId] = c;
+  });
+
+  let races = [];
+
+  rounds.rounds.forEach((r, ri) => {
+
+    if (r.sprint) {
+      try {
+        const sprint = yaml.load(fs.readFileSync(`data/${values.year}-${r.round}-sprint.yaml`, 'utf8'));
+        races.push(sprint);
+        t.races.push({
+          round: ri + 1,
+          type: 'sprint',
+          raceName: rounds.rounds[ri].raceName,
+          raceCode3: rounds.rounds[ri].raceCode3,
+          flag: rounds.rounds[ri].circuit.location.flag
+        });
+      } catch (e) {
+        console.log(`No sprint data for ${values.year}-${r.round}`);
+        races.push({ results: [] });
+        t.races.push({
+          round: ri + 1,
+          type: 'sprint',
+          raceName: rounds.rounds[ri].raceName,
+          raceCode3: rounds.rounds[ri].raceCode3,
+          flag: rounds.rounds[ri].circuit.location.flag
+        });
+      }
+    }
+
+    try {
+      const race = yaml.load(fs.readFileSync(`data/${values.year}-${r.round}-race.yaml`, 'utf8'));
+      races.push(race);
+      t.races.push({
+        round: ri + 1,
+        type: 'race',
+        raceName: rounds.rounds[ri].raceName,
+        raceCode3: rounds.rounds[ri].raceCode3,
+        flag: rounds.rounds[ri].circuit.location.flag
+      });
+    } catch (e) {
+      console.log(`No race data for ${values.year}-${r.round}`);
+      races.push({ results: [] });
+      t.races.push({
+        round: ri + 1,
+        type: 'race',
+        raceName: rounds.rounds[ri].raceName,
+        raceCode3: rounds.rounds[ri].raceCode3,
+        flag: rounds.rounds[ri].circuit.location.flag
+      });
+    }
+  });
+
+  let driversMap = {};
+
+  for (let i = 0; i < drivers.drivers.length; i++) {
+    let driver = {
+      driverId: drivers.drivers[i].driverId,
+      familyName: drivers.drivers[i].familyName,
+      givenName: drivers.drivers[i].givenName,
+      flag: drivers.drivers[i].flag,
+      number: drivers.drivers[i].permanentNumber * 1,
+      country3: drivers.drivers[i].countryCode3,
+      code: drivers.drivers[i].code,
+      results: [],
+    };
+    driversMap[driver.driverId] = driver;
+    t.drivers.push(driver);
+  }
+
+  races.forEach((race, ri) => {
+    race.results.forEach((res) => {
+      let driver = driversMap[res.driver];
+
+      driver.results[ri] = {
+        position: res.position * 1,
+        points: res.points * 1,
+        status: statusFor(res.status),
+        constructor: res.constructor,
+        cumulative: 0,
+        standing: 0,
+      };
+    });
+  });
+
+  t.drivers.forEach((driver) => {
+    let points = 0;
+    let racePositions = Array(t.drivers.length).fill(0);
+
+    for (let r = 0; r < races.length; r++) {
+      if (!driver.results[r]) {
+        driver.results[r] = {
+          position: 0,
+          points: 0,
+          status: '',
+          constructor: '',
+          cumulative: points,
+          standing: 0,
+          _racePositions: Object.assign([], racePositions),
+        };
+      } else {
+        points += driver.results[r].points;
+        driver.results[r].cumulative = points;
+
+        if (t.races[r].type == 'race') racePositions[driver.results[r].position - 1]++;
+        driver.results[r]._racePositions = Object.assign([], racePositions);
+      }
+    }
+  });
+
+  races.forEach((race, ri) => {
+    t.drivers.toSorted(driverCompare(ri)).forEach((driver, i) => {
+      driver.results[ri].standing = i + 1;
+    });
+  });
+
+  t.drivers.forEach((driver) => {
+    driver.results.forEach((res) => {
+      delete res._racePositions;
+    });
+  });
+
+  fs.writeFileSync(`data/${values.year}-table-drivers.yaml`, yaml.dump(t));
+}
