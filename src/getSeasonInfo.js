@@ -9,7 +9,7 @@ export function getSeasonInfo(values) {
 
   console.log(`Getting ${type} of ${values.year}`);
 
-  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${type == 'rounds' ? 'races' : type}?format=json`)
+  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${type == 'rounds' ? 'races' : type}?limit=100&format=json`)
     .then(res => res.json())
     .then(json => {
       fs.writeFileSync(`ergast/${values.year}-${type}.yaml`, yaml.dump(json));

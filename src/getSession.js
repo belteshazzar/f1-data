@@ -9,7 +9,7 @@ export function getSession(values) {
 
   console.log(`Getting round ${values.round} of ${values.year}`);
 
-  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${values.round}/${session == 'race' ? 'results' : session}/?format=json`)
+  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${values.round}/${session == 'race' ? 'results' : session}/?limit=100&format=json`)
     .then(res => res.json())
     .then(json => {
       fs.writeFileSync(`ergast/${values.year}-${values.round}-${session}.yaml`, yaml.dump(json));
