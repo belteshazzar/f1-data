@@ -7,11 +7,16 @@ export function getSession(values) {
     throw new Error(`Invalid session: ${session}`);
   }
 
-  console.log(`Getting round ${values.round} of ${values.year}`);
+  const url = `https://api.jolpi.ca/ergast/f1/${values.year}/${values.round}/${session == 'race' ? 'results' : session}/?limit=100&format=json`
+  const filename = `ergast/${values.year}-${values.round}-${session}.yaml`
 
-  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${values.round}/${session == 'race' ? 'results' : session}/?limit=100&format=json`)
+  console.log(`Getting ${session} for round ${values.round} of ${values.year}`);
+  console.log(`- url: ${url}`);
+  console.log(`- file: ${filename}`);
+
+  fetch(url)
     .then(res => res.json())
     .then(json => {
-      fs.writeFileSync(`ergast/${values.year}-${values.round}-${session}.yaml`, yaml.dump(json));
+      fs.writeFileSync(filename, yaml.dump(json));
     });
 }
