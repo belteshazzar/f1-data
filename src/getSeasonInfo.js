@@ -7,11 +7,16 @@ export function getSeasonInfo(values) {
     throw new Error(`Invalid type: ${type}`);
   }
 
-  console.log(`Getting ${type} of ${values.year}`);
+  const url = `https://api.jolpi.ca/ergast/f1/${values.year}/${type == 'rounds' ? 'races' : type}?limit=100&format=json`
+  const filename = `ergast/${values.year}-${type}.yaml`
 
-  fetch(`https://api.jolpi.ca/ergast/f1/${values.year}/${type == 'rounds' ? 'races' : type}?limit=100&format=json`)
+  console.log(`\nGetting ${type} of ${values.year}`);
+  console.log(`- url: ${url}`);
+  console.log(`- file: ${filename}`);
+
+  fetch(url)
     .then(res => res.json())
     .then(json => {
-      fs.writeFileSync(`ergast/${values.year}-${type}.yaml`, yaml.dump(json));
+      fs.writeFileSync(filename, yaml.dump(json));
     });
 }
