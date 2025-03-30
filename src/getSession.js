@@ -48,7 +48,7 @@ function getSessionFromF1SQ(values) {
   const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
   const race = rounds.rounds[values.round-1]
 
-  const raceNum = race.raceNum
+  const raceNum = race.raceNum + 94 // F1 Race Number Offset
   const country = race.circuit.location.country.toLowerCase()
   const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/sprint-qualifying`
   const filename = `f1/${values.year}-${values.round}-sprint-qualifying.yaml`

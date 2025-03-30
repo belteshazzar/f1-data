@@ -36,6 +36,30 @@ const RACE_CODES = {
   'Mexico City Grand Prix': 'MXC',
   'São Paulo Grand Prix': 'SAP',
   'Las Vegas Grand Prix': 'LVG',
+  'Portuguese Grand Prix': 'POR',
+  "Indianapolis 500": "USA",
+  "Swiss Grand Prix": "CHE",
+  "German Grand Prix": "DEU",
+  "Argentine Grand Prix": "ARG",
+  "Pescara Grand Prix": "ITA",
+  "Moroccan Grand Prix": "MAR",
+  "South African Grand Prix": "ZAF",
+  "Swedish Grand Prix":"SWE",
+  "United States Grand Prix West": "USW",
+  "San Marino Grand Prix":"SMR",
+  "Caesars Palace Grand Prix":"CPL",
+  "Detroit Grand Prix": "DET",
+  "European Grand Prix":"EUR",
+  "Dallas Grand Prix":"DAL",
+  "Pacific Grand Prix":"PAC",
+  "Luxembourg Grand Prix":"LUX",
+  "Malaysian Grand Prix": "MYS",
+  "Korean Grand Prix":"KOR",
+  "Indian Grand Prix":"IND",
+  "70th Anniversary Grand Prix":"70A",
+  "Tuscan Grand Prix":"TUS",
+  "Eifel Grand Prix":"EIF",
+  "Sakhir Grand Prix":"SKH",
 }
 
 function raceCode3For(raceName) {
@@ -58,12 +82,20 @@ export function convertSeasonInfo(values) {
   let out = {};
 
   if (type == 'rounds') {
+
+    let raceNum = 1
+    if (values.year > 1950) {
+      let prev = yaml.load(fs.readFileSync(`data/${values.year-1}-rounds.yaml`, 'utf8'));
+      raceNum = prev.rounds[prev.rounds.length-1].raceNum + 1
+    }
+
     out.season = doc.MRData.RaceTable.season;
     out.rounds = [];
 
     doc.MRData.RaceTable.Races.forEach(r => {
       let o = {
-        round: r.round,
+        round: r.round*1,
+        raceNum: raceNum++,
         url: r.url,
         raceName: r.raceName,
         raceCode3: raceCode3For(r.raceName),

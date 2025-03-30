@@ -27,12 +27,14 @@ const countryCodes = {
   "Hungary": "HU",
   "Italy": "IT",
   "Italian": "IT",
+  "India":"IN",
   "Japan": "JP",
   "Japanese": "JP",
   "Mexican": "MX",
   "Mexico": "MX",
   "Monaco": "MC",
   "Monegasque": "MC",
+  "Portugal": "PT",
   "Netherlands": "NL",
   "New Zealander": "NZ",
   "Qatar": "QA",
@@ -48,6 +50,15 @@ const countryCodes = {
   "USA": "US",
   "Vietnam": "VN",
   "Vietnamese": "VN",
+  "Turkey":"TR",
+  "Switzerland":"CH",
+  "Argentina":"AR",
+  "Morocco":"MA",
+  "South Africa": "ZA",
+  "Sweden": "SE",
+  "San Marino": "SM",
+  "Malaysia": "MY",
+  "Korea":"KR",
 };
 
 const countryCodes3 = {
@@ -68,6 +79,7 @@ const countryCodes3 = {
   "DE": "DEU",
   "GB": "GBR",
   "HU": "HUN",
+  "IN":"IND",
   "IT": "ITA",
   "JP": "JPN",
   "MX": "MEX",
@@ -82,6 +94,14 @@ const countryCodes3 = {
   "TH": "THA",
   "AE": "ARE",
   "VN": "VNM",
+  "PT":"POR",
+  "TR":"TUR",
+  "MA": "MAR",
+  "ZA": "ZAF",
+  "SE": "SWE",
+  "SM": "SMR", 
+  "MY":"MYS",
+  "KR":"KOR",
 };
 
 export function countryInfoFor(country) {
