@@ -1,0 +1,3303 @@
+season: '2017'
+races:
+  - round: 1
+    type: race
+    raceName: Australian Grand Prix
+    raceCode3: AUS
+    flag: 🇦🇺
+  - round: 2
+    type: race
+    raceName: Chinese Grand Prix
+    raceCode3: CHN
+    flag: 🇨🇳
+  - round: 3
+    type: race
+    raceName: Bahrain Grand Prix
+    raceCode3: BAH
+    flag: 🇧🇭
+  - round: 4
+    type: race
+    raceName: Russian Grand Prix
+    raceCode3: RUS
+    flag: 🇷🇺
+  - round: 5
+    type: race
+    raceName: Spanish Grand Prix
+    raceCode3: ESP
+    flag: 🇪🇸
+  - round: 6
+    type: race
+    raceName: Monaco Grand Prix
+    raceCode3: MON
+    flag: 🇲🇨
+  - round: 7
+    type: race
+    raceName: Canadian Grand Prix
+    raceCode3: CAN
+    flag: 🇨🇦
+  - round: 8
+    type: race
+    raceName: Azerbaijan Grand Prix
+    raceCode3: AZE
+    flag: 🇦🇿
+  - round: 9
+    type: race
+    raceName: Austrian Grand Prix
+    raceCode3: AUT
+    flag: 🇦🇹
+  - round: 10
+    type: race
+    raceName: British Grand Prix
+    raceCode3: GBR
+    flag: 🇬🇧
+  - round: 11
+    type: race
+    raceName: Hungarian Grand Prix
+    raceCode3: HUN
+    flag: 🇭🇺
+  - round: 12
+    type: race
+    raceName: Belgian Grand Prix
+    raceCode3: BEL
+    flag: 🇧🇪
+  - round: 13
+    type: race
+    raceName: Italian Grand Prix
+    raceCode3: ITA
+    flag: 🇮🇹
+  - round: 14
+    type: race
+    raceName: Singapore Grand Prix
+    raceCode3: SIN
+    flag: 🇸🇬
+  - round: 15
+    type: race
+    raceName: Malaysian Grand Prix
+    raceCode3: MYS
+    flag: 🇲🇾
+  - round: 16
+    type: race
+    raceName: Japanese Grand Prix
+    raceCode3: JPN
+    flag: 🇯🇵
+  - round: 17
+    type: race
+    raceName: United States Grand Prix
+    raceCode3: USA
+    flag: 🇺🇸
+  - round: 18
+    type: race
+    raceName: Mexican Grand Prix
+    raceCode3: MEX
+    flag: 🇲🇽
+  - round: 19
+    type: race
+    raceName: Brazilian Grand Prix
+    raceCode3: BRA
+    flag: 🇧🇷
+  - round: 20
+    type: race
+    raceName: Abu Dhabi Grand Prix
+    raceCode3: UAE
+    flag: 🇦🇪
+drivers:
+  - driverId: alonso
+    familyName: Alonso
+    givenName: Fernando
+    flag: 🇪🇸
+    number: 14
+    country3: ESP
+    code: ALO
+    results:
+      - position: 14
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 14
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 1
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 1
+      - position: 9
+        points: 2
+        status: ''
+        constructor: mclaren
+        cumulative: 2
+        standing: 1
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 2
+        standing: 1
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 2
+        standing: 1
+      - position: 6
+        points: 8
+        status: ''
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 11
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 11
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 10
+        standing: 1
+      - position: 10
+        points: 1
+        status: ''
+        constructor: mclaren
+        cumulative: 11
+        standing: 1
+      - position: 8
+        points: 4
+        status: ''
+        constructor: mclaren
+        cumulative: 15
+        standing: 1
+      - position: 9
+        points: 2
+        status: ''
+        constructor: mclaren
+        cumulative: 17
+        standing: 1
+  - driverId: bottas
+    familyName: Bottas
+    givenName: Valtteri
+    flag: 🇫🇮
+    number: 77
+    country3: FIN
+    code: BOT
+    results:
+      - position: 3
+        points: 15
+        status: ''
+        constructor: mercedes
+        cumulative: 15
+        standing: 2
+      - position: 6
+        points: 8
+        status: ''
+        constructor: mercedes
+        cumulative: 23
+        standing: 2
+      - position: 3
+        points: 15
+        status: ''
+        constructor: mercedes
+        cumulative: 38
+        standing: 2
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 63
+        standing: 2
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: mercedes
+        cumulative: 63
+        standing: 2
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 75
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 93
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 111
+        standing: 2
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 136
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 154
+        standing: 2
+      - position: 3
+        points: 15
+        status: ''
+        constructor: mercedes
+        cumulative: 169
+        standing: 2
+      - position: 5
+        points: 10
+        status: ''
+        constructor: mercedes
+        cumulative: 179
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 197
+        standing: 2
+      - position: 3
+        points: 15
+        status: ''
+        constructor: mercedes
+        cumulative: 212
+        standing: 2
+      - position: 5
+        points: 10
+        status: ''
+        constructor: mercedes
+        cumulative: 222
+        standing: 2
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 234
+        standing: 2
+      - position: 5
+        points: 10
+        status: ''
+        constructor: mercedes
+        cumulative: 244
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 262
+        standing: 2
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 280
+        standing: 2
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 305
+        standing: 2
+  - driverId: button
+    familyName: Button
+    givenName: Jenson
+    flag: 🇬🇧
+    number: 22
+    country3: GBR
+    code: BUT
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 3
+  - driverId: resta
+    familyName: di Resta
+    givenName: Paul
+    flag: 🇬🇧
+    number: 40
+    country3: GBR
+    code: DIR
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 4
+  - driverId: ericsson
+    familyName: Ericsson
+    givenName: Marcus
+    flag: 🇸🇪
+    number: 9
+    country3: SWE
+    code: ERI
+    results:
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 11
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 13
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 11
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 14
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 16
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 16
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 18
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 13
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+      - position: 17
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 5
+  - driverId: gasly
+    familyName: Gasly
+    givenName: Pierre
+    flag: 🇫🇷
+    number: 10
+    country3: FRA
+    code: GAS
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 14
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 6
+      - position: 13
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 6
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 6
+      - position: 13
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 6
+      - position: 12
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 6
+      - position: 16
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 6
+  - driverId: giovinazzi
+    familyName: Giovinazzi
+    givenName: Antonio
+    flag: 🇮🇹
+    number: 99
+    country3: ITA
+    code: GIO
+    results:
+      - position: 12
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 7
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 7
+  - driverId: grosjean
+    familyName: Grosjean
+    givenName: Romain
+    flag: 🇫🇷
+    number: 8
+    country3: FRA
+    code: GRO
+    results:
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 0
+        standing: 8
+      - position: 11
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 0
+        standing: 8
+      - position: 8
+        points: 4
+        status: ''
+        constructor: haas
+        cumulative: 4
+        standing: 8
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 4
+        standing: 8
+      - position: 10
+        points: 1
+        status: ''
+        constructor: haas
+        cumulative: 5
+        standing: 8
+      - position: 8
+        points: 4
+        status: ''
+        constructor: haas
+        cumulative: 9
+        standing: 8
+      - position: 10
+        points: 1
+        status: ''
+        constructor: haas
+        cumulative: 10
+        standing: 8
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 10
+        standing: 8
+      - position: 6
+        points: 8
+        status: ''
+        constructor: haas
+        cumulative: 18
+        standing: 8
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 18
+        standing: 8
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 18
+        standing: 8
+      - position: 7
+        points: 6
+        status: ''
+        constructor: haas
+        cumulative: 24
+        standing: 8
+      - position: 15
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 24
+        standing: 8
+      - position: 9
+        points: 2
+        status: ''
+        constructor: haas
+        cumulative: 26
+        standing: 8
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 26
+        standing: 8
+      - position: 9
+        points: 2
+        status: ''
+        constructor: haas
+        cumulative: 28
+        standing: 8
+      - position: 14
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 28
+        standing: 8
+      - position: 15
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 28
+        standing: 8
+      - position: 15
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 28
+        standing: 8
+      - position: 11
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 28
+        standing: 8
+  - driverId: hamilton
+    familyName: Hamilton
+    givenName: Lewis
+    flag: 🇬🇧
+    number: 44
+    country3: GBR
+    code: HAM
+    results:
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 18
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 43
+        standing: 9
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 61
+        standing: 9
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 73
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 98
+        standing: 9
+      - position: 7
+        points: 6
+        status: ''
+        constructor: mercedes
+        cumulative: 104
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 129
+        standing: 9
+      - position: 5
+        points: 10
+        status: ''
+        constructor: mercedes
+        cumulative: 139
+        standing: 9
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 151
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 176
+        standing: 9
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 188
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 213
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 238
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 263
+        standing: 9
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 281
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 306
+        standing: 9
+      - position: 1
+        points: 25
+        status: ''
+        constructor: mercedes
+        cumulative: 331
+        standing: 9
+      - position: 9
+        points: 2
+        status: ''
+        constructor: mercedes
+        cumulative: 333
+        standing: 9
+      - position: 4
+        points: 12
+        status: ''
+        constructor: mercedes
+        cumulative: 345
+        standing: 9
+      - position: 2
+        points: 18
+        status: ''
+        constructor: mercedes
+        cumulative: 363
+        standing: 9
+  - driverId: brendon_hartley
+    familyName: Hartley
+    givenName: Brendon
+    flag: 🇳🇿
+    number: 28
+    country3: NZL
+    code: HAR
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 10
+      - position: 13
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 10
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 10
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 10
+      - position: 15
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 0
+        standing: 10
+  - driverId: hulkenberg
+    familyName: Hülkenberg
+    givenName: Nico
+    flag: 🇩🇪
+    number: 27
+    country3: DEU
+    code: HUL
+    results:
+      - position: 11
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 11
+      - position: 12
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 11
+      - position: 9
+        points: 2
+        status: ''
+        constructor: renault
+        cumulative: 2
+        standing: 11
+      - position: 8
+        points: 4
+        status: ''
+        constructor: renault
+        cumulative: 6
+        standing: 11
+      - position: 6
+        points: 8
+        status: ''
+        constructor: renault
+        cumulative: 14
+        standing: 11
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 14
+        standing: 11
+      - position: 8
+        points: 4
+        status: ''
+        constructor: renault
+        cumulative: 18
+        standing: 11
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 18
+        standing: 11
+      - position: 13
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 18
+        standing: 11
+      - position: 6
+        points: 8
+        status: ''
+        constructor: renault
+        cumulative: 26
+        standing: 11
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 26
+        standing: 11
+      - position: 6
+        points: 8
+        status: ''
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 13
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 14
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 16
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 34
+        standing: 11
+      - position: 10
+        points: 1
+        status: ''
+        constructor: renault
+        cumulative: 35
+        standing: 11
+      - position: 6
+        points: 8
+        status: ''
+        constructor: renault
+        cumulative: 43
+        standing: 11
+  - driverId: kvyat
+    familyName: Kvyat
+    givenName: Daniil
+    flag: 🇷🇺
+    number: 26
+    country3: RUS
+    code: KVY
+    results:
+      - position: 9
+        points: 2
+        status: ''
+        constructor: toro_rosso
+        cumulative: 2
+        standing: 12
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 2
+        standing: 12
+      - position: 12
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 2
+        standing: 12
+      - position: 12
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 2
+        standing: 12
+      - position: 9
+        points: 2
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 14
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 16
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 15
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 11
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 12
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 12
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 4
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 4
+        standing: 12
+      - position: 10
+        points: 1
+        status: ''
+        constructor: toro_rosso
+        cumulative: 5
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 5
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 5
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 5
+        standing: 12
+  - driverId: kevin_magnussen
+    familyName: Magnussen
+    givenName: Kevin
+    flag: 🇩🇰
+    number: 20
+    country3: DNK
+    code: MAG
+    results:
+      - position: 15
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 0
+        standing: 13
+      - position: 8
+        points: 4
+        status: ''
+        constructor: haas
+        cumulative: 4
+        standing: 13
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 4
+        standing: 13
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 4
+        standing: 13
+      - position: 14
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 4
+        standing: 13
+      - position: 10
+        points: 1
+        status: ''
+        constructor: haas
+        cumulative: 5
+        standing: 13
+      - position: 12
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 5
+        standing: 13
+      - position: 7
+        points: 6
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 12
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 15
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 11
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 13
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 12
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 11
+        standing: 13
+      - position: 8
+        points: 4
+        status: ''
+        constructor: haas
+        cumulative: 15
+        standing: 13
+      - position: 16
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 15
+        standing: 13
+      - position: 8
+        points: 4
+        status: ''
+        constructor: haas
+        cumulative: 19
+        standing: 13
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: haas
+        cumulative: 19
+        standing: 13
+      - position: 13
+        points: 0
+        status: ''
+        constructor: haas
+        cumulative: 19
+        standing: 13
+  - driverId: massa
+    familyName: Massa
+    givenName: Felipe
+    flag: 🇧🇷
+    number: 19
+    country3: BRA
+    code: MAS
+    results:
+      - position: 6
+        points: 8
+        status: ''
+        constructor: williams
+        cumulative: 8
+        standing: 14
+      - position: 14
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 8
+        standing: 14
+      - position: 6
+        points: 8
+        status: ''
+        constructor: williams
+        cumulative: 16
+        standing: 14
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 14
+      - position: 13
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 14
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 20
+        standing: 14
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 20
+        standing: 14
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 20
+        standing: 14
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 22
+        standing: 14
+      - position: 10
+        points: 1
+        status: ''
+        constructor: williams
+        cumulative: 23
+        standing: 14
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 23
+        standing: 14
+      - position: 8
+        points: 4
+        status: ''
+        constructor: williams
+        cumulative: 27
+        standing: 14
+      - position: 8
+        points: 4
+        status: ''
+        constructor: williams
+        cumulative: 31
+        standing: 14
+      - position: 11
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 31
+        standing: 14
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 33
+        standing: 14
+      - position: 10
+        points: 1
+        status: ''
+        constructor: williams
+        cumulative: 34
+        standing: 14
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 36
+        standing: 14
+      - position: 11
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 36
+        standing: 14
+      - position: 7
+        points: 6
+        status: ''
+        constructor: williams
+        cumulative: 42
+        standing: 14
+      - position: 10
+        points: 1
+        status: ''
+        constructor: williams
+        cumulative: 43
+        standing: 14
+  - driverId: ocon
+    familyName: Ocon
+    givenName: Esteban
+    flag: 🇫🇷
+    number: 31
+    country3: FRA
+    code: OCO
+    results:
+      - position: 10
+        points: 1
+        status: ''
+        constructor: force_india
+        cumulative: 1
+        standing: 15
+      - position: 10
+        points: 1
+        status: ''
+        constructor: force_india
+        cumulative: 2
+        standing: 15
+      - position: 10
+        points: 1
+        status: ''
+        constructor: force_india
+        cumulative: 3
+        standing: 15
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 9
+        standing: 15
+      - position: 5
+        points: 10
+        status: ''
+        constructor: force_india
+        cumulative: 19
+        standing: 15
+      - position: 12
+        points: 0
+        status: ''
+        constructor: force_india
+        cumulative: 19
+        standing: 15
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 27
+        standing: 15
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 35
+        standing: 15
+      - position: 8
+        points: 4
+        status: ''
+        constructor: force_india
+        cumulative: 39
+        standing: 15
+      - position: 8
+        points: 4
+        status: ''
+        constructor: force_india
+        cumulative: 43
+        standing: 15
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 45
+        standing: 15
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 47
+        standing: 15
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 55
+        standing: 15
+      - position: 10
+        points: 1
+        status: ''
+        constructor: force_india
+        cumulative: 56
+        standing: 15
+      - position: 10
+        points: 1
+        status: ''
+        constructor: force_india
+        cumulative: 57
+        standing: 15
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 65
+        standing: 15
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 73
+        standing: 15
+      - position: 5
+        points: 10
+        status: ''
+        constructor: force_india
+        cumulative: 83
+        standing: 15
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: force_india
+        cumulative: 83
+        standing: 15
+      - position: 8
+        points: 4
+        status: ''
+        constructor: force_india
+        cumulative: 87
+        standing: 15
+  - driverId: jolyon_palmer
+    familyName: Palmer
+    givenName: Jolyon
+    flag: 🇬🇧
+    number: 30
+    country3: GBR
+    code: PAL
+    results:
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 13
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 13
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 15
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 11
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 11
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 11
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 12
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 13
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 0
+        standing: 16
+      - position: 6
+        points: 8
+        status: ''
+        constructor: renault
+        cumulative: 8
+        standing: 16
+      - position: 15
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 8
+        standing: 16
+      - position: 12
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 8
+        standing: 16
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 8
+        standing: 16
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 8
+        standing: 16
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 8
+        standing: 16
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 8
+        standing: 16
+  - driverId: perez
+    familyName: Pérez
+    givenName: Sergio
+    flag: 🇲🇽
+    number: 11
+    country3: MEX
+    code: PER
+    results:
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 6
+        standing: 17
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 8
+        standing: 17
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 14
+        standing: 17
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 22
+        standing: 17
+      - position: 4
+        points: 12
+        status: ''
+        constructor: force_india
+        cumulative: 34
+        standing: 17
+      - position: 13
+        points: 0
+        status: ''
+        constructor: force_india
+        cumulative: 34
+        standing: 17
+      - position: 5
+        points: 10
+        status: ''
+        constructor: force_india
+        cumulative: 44
+        standing: 17
+      - position: 15
+        points: 0
+        status: DNF
+        constructor: force_india
+        cumulative: 44
+        standing: 17
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 50
+        standing: 17
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 52
+        standing: 17
+      - position: 8
+        points: 4
+        status: ''
+        constructor: force_india
+        cumulative: 56
+        standing: 17
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: force_india
+        cumulative: 56
+        standing: 17
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 58
+        standing: 17
+      - position: 5
+        points: 10
+        status: ''
+        constructor: force_india
+        cumulative: 68
+        standing: 17
+      - position: 6
+        points: 8
+        status: ''
+        constructor: force_india
+        cumulative: 76
+        standing: 17
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 82
+        standing: 17
+      - position: 8
+        points: 4
+        status: ''
+        constructor: force_india
+        cumulative: 86
+        standing: 17
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 92
+        standing: 17
+      - position: 9
+        points: 2
+        status: ''
+        constructor: force_india
+        cumulative: 94
+        standing: 17
+      - position: 7
+        points: 6
+        status: ''
+        constructor: force_india
+        cumulative: 100
+        standing: 17
+  - driverId: raikkonen
+    familyName: Räikkönen
+    givenName: Kimi
+    flag: 🇫🇮
+    number: 7
+    country3: FIN
+    code: RAI
+    results:
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 12
+        standing: 18
+      - position: 5
+        points: 10
+        status: ''
+        constructor: ferrari
+        cumulative: 22
+        standing: 18
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 34
+        standing: 18
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 49
+        standing: 18
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 49
+        standing: 18
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 67
+        standing: 18
+      - position: 7
+        points: 6
+        status: ''
+        constructor: ferrari
+        cumulative: 73
+        standing: 18
+      - position: 14
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 73
+        standing: 18
+      - position: 5
+        points: 10
+        status: ''
+        constructor: ferrari
+        cumulative: 83
+        standing: 18
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 98
+        standing: 18
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 116
+        standing: 18
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 128
+        standing: 18
+      - position: 5
+        points: 10
+        status: ''
+        constructor: ferrari
+        cumulative: 138
+        standing: 18
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 138
+        standing: 18
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 138
+        standing: 18
+      - position: 5
+        points: 10
+        status: ''
+        constructor: ferrari
+        cumulative: 148
+        standing: 18
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 163
+        standing: 18
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 178
+        standing: 18
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 193
+        standing: 18
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 205
+        standing: 18
+  - driverId: ricciardo
+    familyName: Ricciardo
+    givenName: Daniel
+    flag: 🇦🇺
+    number: 3
+    country3: AUS
+    code: RIC
+    results:
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 0
+        standing: 19
+      - position: 4
+        points: 12
+        status: ''
+        constructor: red_bull
+        cumulative: 12
+        standing: 19
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 22
+        standing: 19
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 22
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 37
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 52
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 67
+        standing: 19
+      - position: 1
+        points: 25
+        status: ''
+        constructor: red_bull
+        cumulative: 92
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 107
+        standing: 19
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 117
+        standing: 19
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 117
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 132
+        standing: 19
+      - position: 4
+        points: 12
+        status: ''
+        constructor: red_bull
+        cumulative: 144
+        standing: 19
+      - position: 2
+        points: 18
+        status: ''
+        constructor: red_bull
+        cumulative: 162
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 177
+        standing: 19
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 192
+        standing: 19
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 192
+        standing: 19
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 192
+        standing: 19
+      - position: 6
+        points: 8
+        status: ''
+        constructor: red_bull
+        cumulative: 200
+        standing: 19
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 200
+        standing: 19
+  - driverId: sainz
+    familyName: Sainz
+    givenName: Carlos
+    flag: 🇪🇸
+    number: 55
+    country3: ESP
+    code: SAI
+    results:
+      - position: 8
+        points: 4
+        status: ''
+        constructor: toro_rosso
+        cumulative: 4
+        standing: 20
+      - position: 7
+        points: 6
+        status: ''
+        constructor: toro_rosso
+        cumulative: 10
+        standing: 20
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 10
+        standing: 20
+      - position: 10
+        points: 1
+        status: ''
+        constructor: toro_rosso
+        cumulative: 11
+        standing: 20
+      - position: 7
+        points: 6
+        status: ''
+        constructor: toro_rosso
+        cumulative: 17
+        standing: 20
+      - position: 6
+        points: 8
+        status: ''
+        constructor: toro_rosso
+        cumulative: 25
+        standing: 20
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 25
+        standing: 20
+      - position: 8
+        points: 4
+        status: ''
+        constructor: toro_rosso
+        cumulative: 29
+        standing: 20
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 29
+        standing: 20
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 29
+        standing: 20
+      - position: 7
+        points: 6
+        status: ''
+        constructor: toro_rosso
+        cumulative: 35
+        standing: 20
+      - position: 10
+        points: 1
+        status: ''
+        constructor: toro_rosso
+        cumulative: 36
+        standing: 20
+      - position: 14
+        points: 0
+        status: ''
+        constructor: toro_rosso
+        cumulative: 36
+        standing: 20
+      - position: 4
+        points: 12
+        status: ''
+        constructor: toro_rosso
+        cumulative: 48
+        standing: 20
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 48
+        standing: 20
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: toro_rosso
+        cumulative: 48
+        standing: 20
+      - position: 7
+        points: 6
+        status: ''
+        constructor: renault
+        cumulative: 54
+        standing: 20
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 54
+        standing: 20
+      - position: 11
+        points: 0
+        status: ''
+        constructor: renault
+        cumulative: 54
+        standing: 20
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: renault
+        cumulative: 54
+        standing: 20
+  - driverId: stroll
+    familyName: Stroll
+    givenName: Lance
+    flag: 🇨🇦
+    number: 18
+    country3: CAN
+    code: STR
+    results:
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 17
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 11
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 16
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 15
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 0
+        standing: 21
+      - position: 9
+        points: 2
+        status: ''
+        constructor: williams
+        cumulative: 2
+        standing: 21
+      - position: 3
+        points: 15
+        status: ''
+        constructor: williams
+        cumulative: 17
+        standing: 21
+      - position: 10
+        points: 1
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 21
+      - position: 16
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 21
+      - position: 14
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 21
+      - position: 11
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 18
+        standing: 21
+      - position: 7
+        points: 6
+        status: ''
+        constructor: williams
+        cumulative: 24
+        standing: 21
+      - position: 8
+        points: 4
+        status: ''
+        constructor: williams
+        cumulative: 28
+        standing: 21
+      - position: 8
+        points: 4
+        status: ''
+        constructor: williams
+        cumulative: 32
+        standing: 21
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: williams
+        cumulative: 32
+        standing: 21
+      - position: 11
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 32
+        standing: 21
+      - position: 6
+        points: 8
+        status: ''
+        constructor: williams
+        cumulative: 40
+        standing: 21
+      - position: 16
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 40
+        standing: 21
+      - position: 18
+        points: 0
+        status: ''
+        constructor: williams
+        cumulative: 40
+        standing: 21
+  - driverId: vandoorne
+    familyName: Vandoorne
+    givenName: Stoffel
+    flag: 🇧🇪
+    number: 2
+    country3: BEL
+    code: VAN
+    results:
+      - position: 13
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 14
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 16
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 14
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 11
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 0
+        standing: 22
+      - position: 10
+        points: 1
+        status: ''
+        constructor: mclaren
+        cumulative: 1
+        standing: 22
+      - position: 14
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 1
+        standing: 22
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 1
+        standing: 22
+      - position: 7
+        points: 6
+        status: ''
+        constructor: mclaren
+        cumulative: 7
+        standing: 22
+      - position: 7
+        points: 6
+        status: ''
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+      - position: 14
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+      - position: 12
+        points: 0
+        status: ''
+        constructor: mclaren
+        cumulative: 13
+        standing: 22
+  - driverId: max_verstappen
+    familyName: Verstappen
+    givenName: Max
+    flag: 🇳🇱
+    number: 33
+    country3: NLD
+    code: VER
+    results:
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 10
+        standing: 23
+      - position: 3
+        points: 15
+        status: ''
+        constructor: red_bull
+        cumulative: 25
+        standing: 23
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 25
+        standing: 23
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 35
+        standing: 23
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 35
+        standing: 23
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 45
+        standing: 23
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 45
+        standing: 23
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 45
+        standing: 23
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 45
+        standing: 23
+      - position: 4
+        points: 12
+        status: ''
+        constructor: red_bull
+        cumulative: 57
+        standing: 23
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 67
+        standing: 23
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 67
+        standing: 23
+      - position: 10
+        points: 1
+        status: ''
+        constructor: red_bull
+        cumulative: 68
+        standing: 23
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: red_bull
+        cumulative: 68
+        standing: 23
+      - position: 1
+        points: 25
+        status: ''
+        constructor: red_bull
+        cumulative: 93
+        standing: 23
+      - position: 2
+        points: 18
+        status: ''
+        constructor: red_bull
+        cumulative: 111
+        standing: 23
+      - position: 4
+        points: 12
+        status: ''
+        constructor: red_bull
+        cumulative: 123
+        standing: 23
+      - position: 1
+        points: 25
+        status: ''
+        constructor: red_bull
+        cumulative: 148
+        standing: 23
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 158
+        standing: 23
+      - position: 5
+        points: 10
+        status: ''
+        constructor: red_bull
+        cumulative: 168
+        standing: 23
+  - driverId: vettel
+    familyName: Vettel
+    givenName: Sebastian
+    flag: 🇩🇪
+    number: 5
+    country3: DEU
+    code: VET
+    results:
+      - position: 1
+        points: 25
+        status: ''
+        constructor: ferrari
+        cumulative: 25
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 43
+        standing: 24
+      - position: 1
+        points: 25
+        status: ''
+        constructor: ferrari
+        cumulative: 68
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 86
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 104
+        standing: 24
+      - position: 1
+        points: 25
+        status: ''
+        constructor: ferrari
+        cumulative: 129
+        standing: 24
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 141
+        standing: 24
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 153
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 171
+        standing: 24
+      - position: 7
+        points: 6
+        status: ''
+        constructor: ferrari
+        cumulative: 177
+        standing: 24
+      - position: 1
+        points: 25
+        status: ''
+        constructor: ferrari
+        cumulative: 202
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 220
+        standing: 24
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 235
+        standing: 24
+      - position: 18
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 235
+        standing: 24
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 247
+        standing: 24
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: ferrari
+        cumulative: 247
+        standing: 24
+      - position: 2
+        points: 18
+        status: ''
+        constructor: ferrari
+        cumulative: 265
+        standing: 24
+      - position: 4
+        points: 12
+        status: ''
+        constructor: ferrari
+        cumulative: 277
+        standing: 24
+      - position: 1
+        points: 25
+        status: ''
+        constructor: ferrari
+        cumulative: 302
+        standing: 24
+      - position: 3
+        points: 15
+        status: ''
+        constructor: ferrari
+        cumulative: 317
+        standing: 24
+  - driverId: wehrlein
+    familyName: Wehrlein
+    givenName: Pascal
+    flag: 🇩🇪
+    number: 94
+    country3: DEU
+    code: WEH
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 25
+      - position: 0
+        points: 0
+        status: ''
+        constructor: ''
+        cumulative: 0
+        standing: 25
+      - position: 11
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 25
+      - position: 16
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 0
+        standing: 25
+      - position: 8
+        points: 4
+        status: ''
+        constructor: sauber
+        cumulative: 4
+        standing: 25
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 4
+        standing: 25
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 4
+        standing: 25
+      - position: 10
+        points: 1
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 14
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 17
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 20
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 16
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 12
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 17
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 15
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 19
+        points: 0
+        status: DNF
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 14
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 14
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25
+      - position: 14
+        points: 0
+        status: ''
+        constructor: sauber
+        cumulative: 5
+        standing: 25

@@ -4,10 +4,15 @@ import yaml from 'js-yaml';
 function statusFor(status) {
   if (status == 'Finished') return ''
   if (status == 'Lapped') return ''
+  if (/^\+[0-9]+ Laps?$/.test(status)) return ''
   if (status == 'Retired') return 'Ret'
+  if (status == 'Not classified') return 'NC'
   if (status == 'Did not start') return 'DNS'
   if (status == 'Disqualified') return 'DSQ'
-  throw new Error(`Unknown status ${status}`)
+  if (status == 'Withdrew') return 'WD'
+
+  console.log(`${status} => DNF`)
+  return 'DNF'
 }
 
 function driverCompare(ri,prop) {
@@ -112,6 +117,12 @@ export function generateDriversTable(values) {
   races.forEach((race, ri) => {
     race.results.forEach((res) => {
       let driver = driversMap[res.driver];
+
+      if (!driver) {
+        console.error(`round ${race.round}`)
+        console.error(res)
+        throw new Error(`Failed to find driver ${res.driver}`)
+      }
 
       driver.results[ri] = {
         position: res.position * 1,
