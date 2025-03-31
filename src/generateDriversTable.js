@@ -11,13 +11,13 @@ function statusFor(status) {
   if (status == 'Disqualified') return 'DSQ'
   if (status == 'Withdrew') return 'WD'
 
-  console.log(`${status} => DNF`)
+  // console.log(`${status} => DNF`)
   return 'DNF'
 }
 
-function driverCompare(ri,prop) {
+function driverCompare(ri) {
   return (a,b) => {
-    let c =  b.results[ri][prop] - a.results[ri][prop]
+    let c =  b.results[ri].cumulative - a.results[ri].cumulative
     if (c != 0) return c
     for (let i = 0 ; i<b.results[ri]._racePositions.length; i++) {
       c = b.results[ri]._racePositions[i] - a.results[ri]._racePositions[i]
@@ -105,9 +105,11 @@ export function generateDriversTable(values) {
       familyName: drivers.drivers[i].familyName,
       givenName: drivers.drivers[i].givenName,
       flag: drivers.drivers[i].flag,
-      number: drivers.drivers[i].permanentNumber * 1,
+      number: (drivers.drivers[i].permanentNumber ? drivers.drivers[i].permanentNumber * 1 : -1),
       country3: drivers.drivers[i].countryCode3,
-      code: drivers.drivers[i].code,
+      code: (drivers.drivers[i].code
+        ? drivers.drivers[i].code
+        : drivers.drivers[i].familyName.substring(0,3).toUpperCase()),
       results: [],
     };
     driversMap[driver.driverId] = driver;

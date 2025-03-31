@@ -21,7 +21,7 @@ export function getSession(values) {
   const url = ( session == 'sq'
     ? `https://ergast.com/api/f1/${values.year}/${values.round}/sprint.json`
     : `https://api.jolpi.ca/ergast/f1/${values.year}/${values.round}/${session}/?limit=100&format=json`)
-  const filename = `ergast/${values.year}-${values.round}-${session}.yaml`.replaceAll('/','-')
+  const filename = `ergast/${values.year}-${values.round}-${session}.yaml`
 
   console.log(`\nGetting ${session} for round ${values.round} of ${values.year}`);
   console.log(`- url: ${url}`);
