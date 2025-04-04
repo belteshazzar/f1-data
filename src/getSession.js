@@ -98,7 +98,7 @@ function getSessionFromF1SQ(values) {
     });
 }
 
-function getSessionFromF1Practice(values) {
+async function getSessionFromF1Practice(values) {
 
   const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
   const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
@@ -106,59 +106,76 @@ function getSessionFromF1Practice(values) {
   const race = rounds.rounds[values.round-1]
   const practice = values.session.substr(1)
 
-  const raceNum = race.raceNum + 94 // F1 Race Number Offset
-  const country = race.circuit.location.country.toLowerCase()
-  const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/practice/${practice}`
-  const filename = `data/${values.year}-${values.round}-practice-${practice}.yaml`
+  const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
 
-  console.log(`\nGetting practice ${practice} for round ${values.round} of ${values.year}`);
-  console.log(`- url: ${url}`)
-  console.log(`- file: ${filename}`)
-
-  fetch(url)
+  fetch(f1racesUrl)
     .then(res => res.text())
     .then(text => {
       const $ = cheerio.load(text);
-
       const title = $('title').text().toLowerCase()
       console.log(`\n- page title: ${title}`)
 
-      const data = {
-        season: values.year,
-        round: values.round,
-        session: 'practice ' + practice,
-        results: [],
+      const els = $(`li[data-name|=races]:nth(${values.round-1})`)
+      const f1raceCountry = els[0].attribs['data-value']
+      const raceNum = els[0].attribs['data-id']
+
+      const country = race.circuit.location.country.toLowerCase()
+      if (f1raceCountry != country) {
+        throw new Error(`country mismatch: ${country} != ${f1raceCountry}`)
       }
 
-      $('table.f1-table > tbody > tr').each(function() {
-        const result = {}
+      const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/practice/${practice}`
+      const filename = `data/${values.year}-${values.round}-practice-${practice}.yaml`
 
-        const tds = $(this).find('td')
-        result.position = $(tds[0]).text()*1
+      console.log(`\nGetting practice ${practice} for round ${values.round} of ${values.year}`);
+      console.log(`- url: ${url}`)
+      console.log(`- file: ${filename}`)
 
-        const driverCode = $(tds[2]).find('span:nth(2)').text()
-        const driver = drivers.drivers.find(d => d.code == driverCode)
-        if (!driver) {
-          throw new Error(`driver not found: ${driverCode}`)
-        }
-        result.driverId = driver.driverId
+      fetch(url)
+        .then(res => res.text())
+        .then(text => {
+          const $ = cheerio.load(text);
 
-        const constructorName = $(tds[3]).text()
-        const constructor = constructors.constructors.find(d => {
-          return d.knownAs.find(knownAs => knownAs == constructorName)
-        })
-        if (!constructor) {
-          throw new Error(`constructor not found: ${constructorName}`)
-        }
-        result.constructorId = constructor.constructorId
+          const title = $('title').text().toLowerCase()
+          console.log(`\n- page title: ${title}\n`)
 
-        result.time = $(tds[4]).text()
-        result.gap = $(tds[5]).text()
-        result.laps = $(tds[6]).text()
+          const data = {
+            season: values.year,
+            round: values.round,
+            session: 'practice ' + practice,
+            results: [],
+          }
 
-        data.results.push(result);
-      });
+          $('table.f1-table > tbody > tr').each(function() {
+            const result = {}
 
-      fs.writeFileSync(filename, yaml.dump(data));
-    });
+            const tds = $(this).find('td')
+            result.position = $(tds[0]).text()*1
+
+            const driverCode = $(tds[2]).find('span:nth(2)').text()
+            const driver = drivers.drivers.find(d => d.code == driverCode)
+            if (!driver) {
+              throw new Error(`driver not found: ${driverCode}`)
+            }
+            result.driverId = driver.driverId
+
+            const constructorName = $(tds[3]).text()
+            const constructor = constructors.constructors.find(d => {
+              return d.knownAs.find(knownAs => knownAs == constructorName)
+            })
+            if (!constructor) {
+              throw new Error(`constructor not found: ${constructorName}`)
+            }
+            result.constructorId = constructor.constructorId
+
+            result.time = $(tds[4]).text()
+            result.gap = $(tds[5]).text()
+            result.laps = $(tds[6]).text()
+
+            data.results.push(result);
+          });
+
+          fs.writeFileSync(filename, yaml.dump(data));
+        });
+    })
 }
