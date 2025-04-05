@@ -3,6 +3,9 @@ constructors:
   - constructorId: alpine
     url: http://en.wikipedia.org/wiki/Alpine_F1_Team
     name: Alpine F1 Team
+    knownAs:
+    - Alpine
+    - Alpine Renault
     nationality: French
     countryCode: FR
     flag: 🇫🇷
@@ -10,6 +13,9 @@ constructors:
   - constructorId: aston_martin
     url: http://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One
     name: Aston Martin
+    knownAs:
+    - Aston Martin
+    - Aston Martin Aramco Mercedes
     nationality: British
     countryCode: GB
     flag: 🇬🇧
@@ -17,6 +23,9 @@ constructors:
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
+    knownAs:
+    - Scuderia Ferrari
+    - Ferrari
     nationality: Italian
     countryCode: IT
     flag: 🇮🇹
@@ -24,6 +33,9 @@ constructors:
   - constructorId: haas
     url: http://en.wikipedia.org/wiki/Haas_F1_Team
     name: Haas F1 Team
+    knownAs:
+    - Haas
+    - Haas Ferrari
     nationality: American
     countryCode: US
     flag: 🇺🇸
@@ -31,6 +43,9 @@ constructors:
   - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/McLaren
     name: McLaren
+    knownAs:
+    - McLaren
+    - McLaren Mercedes
     nationality: British
     countryCode: GB
     flag: 🇬🇧
@@ -38,6 +53,10 @@ constructors:
   - constructorId: mercedes
     url: http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One
     name: Mercedes
+    knownAs:
+    - Mercedes
+    - Mercedes AMG
+    - Mercedes AMG Petronas Formula One Team
     nationality: German
     countryCode: DE
     flag: 🇩🇪
@@ -45,6 +64,9 @@ constructors:
   - constructorId: rb
     url: http://en.wikipedia.org/wiki/RB_Formula_One_Team
     name: RB F1 Team
+    knownAs:
+    - RB
+    - RB Honda RBPT
     nationality: Italian
     countryCode: IT
     flag: 🇮🇹
@@ -52,6 +74,10 @@ constructors:
   - constructorId: red_bull
     url: http://en.wikipedia.org/wiki/Red_Bull_Racing
     name: Red Bull
+    knownAs:
+    - Red Bull Racing
+    - Red Bull Racing Honda
+    - Red Bull Racing Honda RBPT
     nationality: Austrian
     countryCode: AT
     flag: 🇦🇹
@@ -59,6 +85,9 @@ constructors:
   - constructorId: sauber
     url: http://en.wikipedia.org/wiki/Sauber_Motorsport
     name: Sauber
+    knownAs:
+    - Sauber
+    - Kick Sauber Ferrari
     nationality: Swiss
     countryCode: CH
     flag: 🇨🇭
@@ -66,6 +95,10 @@ constructors:
   - constructorId: williams
     url: http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering
     name: Williams
+    knownAs:
+    - Williams
+    - Williams Racing
+    - Williams Mercedes
     nationality: British
     countryCode: GB
     flag: 🇬🇧

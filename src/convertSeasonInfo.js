@@ -89,7 +89,7 @@ export function convertSeasonInfo(values) {
       raceNum = prev.rounds[prev.rounds.length-1].raceNum + 1
     }
 
-    out.season = doc.MRData.RaceTable.season;
+    out.season = doc.MRData.RaceTable.season*1;
     out.rounds = [];
 
     doc.MRData.RaceTable.Races.forEach(r => {
