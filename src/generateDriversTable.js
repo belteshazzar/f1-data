@@ -2,9 +2,9 @@ import fs from 'fs';
 import yaml from 'js-yaml';
 
 function statusFor(status) {
-  if (status == 'Finished') return ''
-  if (status == 'Lapped') return ''
-  if (/^\+[0-9]+ Laps?$/.test(status)) return ''
+  if (status == 'Finished') return 'Finished'
+  if (status == 'Lapped') return 'Finished'
+  if (/^\+[0-9]+ Laps?$/.test(status)) return 'Finished'
   if (status == 'Retired') return 'Ret'
   if (status == 'Not classified') return 'NC'
   if (status == 'Did not start') return 'DNS'
@@ -36,7 +36,7 @@ export function generateDriversTable(values) {
   const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
 
   let t = {
-    season: values.year,
+    season: values.year*1,
     races: [],
     drivers: [],
   };
@@ -130,7 +130,7 @@ export function generateDriversTable(values) {
         position: res.position * 1,
         points: res.points * 1,
         status: statusFor(res.status),
-        constructor: res.constructor,
+        constructorId: res.constructorId,
         cumulative: 0,
         standing: 0,
       };
@@ -173,6 +173,8 @@ export function generateDriversTable(values) {
       delete res._racePositions;
     });
   });
+
+//  console.log(t.drivers.map(d => d.results.map(r => r.constructor)))
 
   fs.writeFileSync(`data/${values.year}-table-drivers.yaml`, yaml.dump(t));
 }
