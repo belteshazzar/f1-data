@@ -3,6 +3,7 @@ Formula 1 data as yaml
 
 Data sources:
 - https://api.jolpi.ca/ergast/f1/ ( https://github.com/jolpica/jolpica-f1 )
+- formula1.com ( https://www.formula1.com/en/results/2025/races )
 
 ## Get Season Information
 
@@ -15,6 +16,6 @@ node index.js get -y 2025 -t constructors # ergast/2025-constructors.yaml
 
 ## Get Session Results
 
-node index.js get -y 2025 -r 1            # ergast/2025-1-race.yaml
-node index.js get -y 2025 -r 1 -s race    # ergast/2025-1-race.yaml
+node index.js get -y 2025 -r 1            # data/2025-1-race.yaml
+node index.js get -y 2025 -r 1 -s r       # data/2025-1-race.yaml
 

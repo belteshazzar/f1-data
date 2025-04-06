@@ -118,12 +118,12 @@ export function generateDriversTable(values) {
 
   races.forEach((race, ri) => {
     race.results.forEach((res) => {
-      let driver = driversMap[res.driver];
+      let driver = driversMap[res.driverId];
 
       if (!driver) {
         console.error(`round ${race.round}`)
         console.error(res)
-        throw new Error(`Failed to find driver ${res.driver}`)
+        throw new Error(`Failed to find driver ${res.driverId}`)
       }
 
       driver.results[ri] = {
