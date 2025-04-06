@@ -140,15 +140,16 @@ export function convertSeasonInfo(values) {
       }
     });
   } else if (type == 'drivers') {
-    out.season = doc.MRData.DriverTable.season;
+    out.season = doc.MRData.DriverTable.season*1;
     out.drivers = [];
 
     doc.MRData.DriverTable.Drivers.forEach(r => {
 
       let { code, flag, code3  } = countryInfoFor(r.nationality);
-      r.countryCode = code;
+      //r.countryCode = code;
       r.flag = flag;
       r.countryCode3 = code3;
+      r.permanentNumber = r.permanentNumber*1;
 
       out.drivers.push(r);
 

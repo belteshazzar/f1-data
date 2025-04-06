@@ -1,0 +1,68 @@
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/belteshazzar/f1-data/blob/main/schema/drivers.schema.yaml
+title: Drivers
+description: The drivers in a formula 1 season
+type: object
+properties:
+  season:
+    type: integer
+    required: true
+    description: The season of the data
+    example: 2025
+  drivers:
+    type: array
+    required: true
+    description: The array of drivers in the season
+    items:
+      type: object
+      properties:
+        driverId:
+          type: string
+          required: true
+          description: The unique identifier for the driver
+          example: albon
+        permanentNumber:
+          type: integer
+          description: The permanent number of the driver
+          example: 23
+        code:
+          type: string
+          required: true
+          description: The 3-letter code of the driver
+          example: ALB
+        url:
+          type: string
+          required: true
+          description: The URL of the driver on Wikipedia
+          example: http://en.wikipedia.org/wiki/Alexander_Albon
+        givenName:
+          type: string
+          required: true
+          description: The given name of the driver
+          example: Alexander
+        familyName:
+          type: string
+          required: true
+          description: The family name of the driver
+          example: Albon
+        dateOfBirth:
+          type: string
+          format: date
+          required: true
+          description: The date of birth of the driver
+        nationality:
+          type: string
+          required: true
+          description: The nationality of the driver
+          example: Thai
+        flag:
+          type: string
+          required: true
+          description: The flag of the driver's country
+          example: 🇹🇭
+        countryCode3:
+          type: string
+          required: true
+          description: The 3-letter country code of the driver
+          example: THA
