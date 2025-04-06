@@ -1,14 +1,13 @@
-season: '2008'
+season: 2008
 drivers:
   - driverId: alonso
-    permanentNumber: '14'
+    permanentNumber: 14
     code: ALO
     url: http://en.wikipedia.org/wiki/Fernando_Alonso
     givenName: Fernando
     familyName: Alonso
     dateOfBirth: '1981-07-29'
     nationality: Spanish
-    countryCode: ES
     flag: 🇪🇸
     countryCode3: ESP
   - driverId: barrichello
@@ -18,7 +17,6 @@ drivers:
     familyName: Barrichello
     dateOfBirth: '1972-05-23'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
   - driverId: bourdais
@@ -28,18 +26,16 @@ drivers:
     familyName: Bourdais
     dateOfBirth: '1979-02-28'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
   - driverId: button
-    permanentNumber: '22'
+    permanentNumber: 22
     code: BUT
     url: http://en.wikipedia.org/wiki/Jenson_Button
     givenName: Jenson
     familyName: Button
     dateOfBirth: '1980-01-19'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
   - driverId: coulthard
@@ -49,7 +45,6 @@ drivers:
     familyName: Coulthard
     dateOfBirth: '1971-03-27'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
   - driverId: davidson
@@ -59,7 +54,6 @@ drivers:
     familyName: Davidson
     dateOfBirth: '1979-04-18'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
   - driverId: fisichella
@@ -69,7 +63,6 @@ drivers:
     familyName: Fisichella
     dateOfBirth: '1973-01-14'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
   - driverId: glock
@@ -79,18 +72,16 @@ drivers:
     familyName: Glock
     dateOfBirth: '1982-03-18'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: hamilton
-    permanentNumber: '44'
+    permanentNumber: 44
     code: HAM
     url: http://en.wikipedia.org/wiki/Lewis_Hamilton
     givenName: Lewis
     familyName: Hamilton
     dateOfBirth: '1985-01-07'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
   - driverId: heidfeld
@@ -100,7 +91,6 @@ drivers:
     familyName: Heidfeld
     dateOfBirth: '1977-05-10'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: kovalainen
@@ -110,29 +100,26 @@ drivers:
     familyName: Kovalainen
     dateOfBirth: '1981-10-19'
     nationality: Finnish
-    countryCode: FI
     flag: 🇫🇮
     countryCode3: FIN
   - driverId: kubica
-    permanentNumber: '88'
+    permanentNumber: 88
     code: KUB
     url: http://en.wikipedia.org/wiki/Robert_Kubica
     givenName: Robert
     familyName: Kubica
     dateOfBirth: '1984-12-07'
     nationality: Polish
-    countryCode: PL
     flag: 🇵🇱
     countryCode3: POL
   - driverId: massa
-    permanentNumber: '19'
+    permanentNumber: 19
     code: MAS
     url: http://en.wikipedia.org/wiki/Felipe_Massa
     givenName: Felipe
     familyName: Massa
     dateOfBirth: '1981-04-25'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
   - driverId: nakajima
@@ -142,7 +129,6 @@ drivers:
     familyName: Nakajima
     dateOfBirth: '1985-01-11'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
   - driverId: piquet_jr
@@ -152,29 +138,26 @@ drivers:
     familyName: Piquet Jr.
     dateOfBirth: '1985-07-25'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
   - driverId: raikkonen
-    permanentNumber: '7'
+    permanentNumber: 7
     code: RAI
     url: http://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen
     givenName: Kimi
     familyName: Räikkönen
     dateOfBirth: '1979-10-17'
     nationality: Finnish
-    countryCode: FI
     flag: 🇫🇮
     countryCode3: FIN
   - driverId: rosberg
-    permanentNumber: '6'
+    permanentNumber: 6
     code: ROS
     url: http://en.wikipedia.org/wiki/Nico_Rosberg
     givenName: Nico
     familyName: Rosberg
     dateOfBirth: '1985-06-27'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: sato
@@ -184,18 +167,16 @@ drivers:
     familyName: Sato
     dateOfBirth: '1977-01-28'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
   - driverId: sutil
-    permanentNumber: '99'
+    permanentNumber: 99
     code: SUT
     url: http://en.wikipedia.org/wiki/Adrian_Sutil
     givenName: Adrian
     familyName: Sutil
     dateOfBirth: '1983-01-11'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: trulli
@@ -205,18 +186,16 @@ drivers:
     familyName: Trulli
     dateOfBirth: '1974-07-13'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
   - driverId: vettel
-    permanentNumber: '5'
+    permanentNumber: 5
     code: VET
     url: http://en.wikipedia.org/wiki/Sebastian_Vettel
     givenName: Sebastian
     familyName: Vettel
     dateOfBirth: '1987-07-03'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: webber
@@ -226,6 +205,5 @@ drivers:
     familyName: Webber
     dateOfBirth: '1976-08-27'
     nationality: Australian
-    countryCode: AU
     flag: 🇦🇺
     countryCode3: AUS

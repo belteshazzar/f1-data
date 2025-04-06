@@ -1,4 +1,4 @@
-season: '1994'
+season: 1994
 drivers:
   - driverId: adams
     url: http://en.wikipedia.org/wiki/Philippe_Adams
@@ -6,36 +6,36 @@ drivers:
     familyName: Adams
     dateOfBirth: '1969-11-19'
     nationality: Belgian
-    countryCode: BE
     flag: 🇧🇪
     countryCode3: BEL
+    code: ADA
   - driverId: alboreto
     url: http://en.wikipedia.org/wiki/Michele_Alboreto
     givenName: Michele
     familyName: Alboreto
     dateOfBirth: '1956-12-23'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: ALB
   - driverId: alesi
     url: http://en.wikipedia.org/wiki/Jean_Alesi
     givenName: Jean
     familyName: Alesi
     dateOfBirth: '1964-06-11'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: ALE
   - driverId: alliot
     url: http://en.wikipedia.org/wiki/Philippe_Alliot
     givenName: Philippe
     familyName: Alliot
     dateOfBirth: '1954-07-27'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: ALL
   - driverId: barrichello
     code: BAR
     url: http://en.wikipedia.org/wiki/Rubens_Barrichello
@@ -43,7 +43,6 @@ drivers:
     familyName: Barrichello
     dateOfBirth: '1972-05-23'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
   - driverId: belmondo
@@ -52,72 +51,72 @@ drivers:
     familyName: Belmondo
     dateOfBirth: '1963-04-23'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: BEL
   - driverId: beretta
     url: http://en.wikipedia.org/wiki/Olivier_Beretta
     givenName: Olivier
     familyName: Beretta
     dateOfBirth: '1969-11-23'
     nationality: Monegasque
-    countryCode: MC
     flag: 🇲🇨
     countryCode3: MCO
+    code: BER
   - driverId: berger
     url: http://en.wikipedia.org/wiki/Gerhard_Berger
     givenName: Gerhard
     familyName: Berger
     dateOfBirth: '1959-08-27'
     nationality: Austrian
-    countryCode: AT
     flag: 🇦🇹
     countryCode3: AUT
+    code: BER
   - driverId: bernard
     url: http://en.wikipedia.org/wiki/%C3%89ric_Bernard
     givenName: Éric
     familyName: Bernard
     dateOfBirth: '1964-08-24'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: BER
   - driverId: blundell
     url: http://en.wikipedia.org/wiki/Mark_Blundell
     givenName: Mark
     familyName: Blundell
     dateOfBirth: '1966-04-08'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: BLU
   - driverId: brabham
     url: http://en.wikipedia.org/wiki/David_Brabham
     givenName: David
     familyName: Brabham
     dateOfBirth: '1965-09-05'
     nationality: Australian
-    countryCode: AU
     flag: 🇦🇺
     countryCode3: AUS
+    code: BRA
   - driverId: brundle
     url: http://en.wikipedia.org/wiki/Martin_Brundle
     givenName: Martin
     familyName: Brundle
     dateOfBirth: '1959-06-01'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: BRU
   - driverId: comas
     url: http://en.wikipedia.org/wiki/%C3%89rik_Comas
     givenName: Érik
     familyName: Comas
     dateOfBirth: '1963-09-28'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: COM
   - driverId: coulthard
     code: COU
     url: http://en.wikipedia.org/wiki/David_Coulthard
@@ -125,7 +124,6 @@ drivers:
     familyName: Coulthard
     dateOfBirth: '1971-03-27'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
   - driverId: dalmas
@@ -134,234 +132,234 @@ drivers:
     familyName: Dalmas
     dateOfBirth: '1961-07-28'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: DAL
   - driverId: cesaris
     url: http://en.wikipedia.org/wiki/Andrea_de_Cesaris
     givenName: Andrea
     familyName: de Cesaris
     dateOfBirth: '1959-05-31'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: 'DE '
   - driverId: deletraz
     url: http://en.wikipedia.org/wiki/Jean-Denis_Deletraz
     givenName: Jean-Denis
     familyName: Délétraz
     dateOfBirth: '1963-10-01'
     nationality: Swiss
-    countryCode: CH
     flag: 🇨🇭
     countryCode3: CHE
+    code: DÉL
   - driverId: fittipaldi
     url: http://en.wikipedia.org/wiki/Christian_Fittipaldi
     givenName: Christian
     familyName: Fittipaldi
     dateOfBirth: '1971-01-18'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
+    code: FIT
   - driverId: frentzen
     url: http://en.wikipedia.org/wiki/Heinz-Harald_Frentzen
     givenName: Heinz-Harald
     familyName: Frentzen
     dateOfBirth: '1967-05-18'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
+    code: FRE
   - driverId: gachot
     url: http://en.wikipedia.org/wiki/Bertrand_Gachot
     givenName: Bertrand
     familyName: Gachot
     dateOfBirth: '1962-12-23'
     nationality: Belgian
-    countryCode: BE
     flag: 🇧🇪
     countryCode3: BEL
+    code: GAC
   - driverId: gounon
     url: http://en.wikipedia.org/wiki/Jean-Marc_Gounon
     givenName: Jean-Marc
     familyName: Gounon
     dateOfBirth: '1963-01-01'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: GOU
   - driverId: hakkinen
     url: http://en.wikipedia.org/wiki/Mika_H%C3%A4kkinen
     givenName: Mika
     familyName: Häkkinen
     dateOfBirth: '1968-09-28'
     nationality: Finnish
-    countryCode: FI
     flag: 🇫🇮
     countryCode3: FIN
+    code: HÄK
   - driverId: herbert
     url: http://en.wikipedia.org/wiki/Johnny_Herbert
     givenName: Johnny
     familyName: Herbert
     dateOfBirth: '1964-06-25'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: HER
   - driverId: damon_hill
     url: http://en.wikipedia.org/wiki/Damon_Hill
     givenName: Damon
     familyName: Hill
     dateOfBirth: '1960-09-17'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: HIL
   - driverId: inoue
     url: http://en.wikipedia.org/wiki/Taki_Inoue
     givenName: Taki
     familyName: Inoue
     dateOfBirth: '1963-09-05'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    code: INO
   - driverId: irvine
     url: http://en.wikipedia.org/wiki/Eddie_Irvine
     givenName: Eddie
     familyName: Irvine
     dateOfBirth: '1965-11-10'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: IRV
   - driverId: lehto
     url: http://en.wikipedia.org/wiki/Jyrki_J%C3%A4rvilehto
     givenName: Jyrki
     familyName: Järvilehto
     dateOfBirth: '1966-01-31'
     nationality: Finnish
-    countryCode: FI
     flag: 🇫🇮
     countryCode3: FIN
+    code: JÄR
   - driverId: katayama
     url: http://en.wikipedia.org/wiki/Ukyo_Katayama
     givenName: Ukyo
     familyName: Katayama
     dateOfBirth: '1963-05-29'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    code: KAT
   - driverId: lagorce
     url: http://en.wikipedia.org/wiki/Franck_Lagorce
     givenName: Franck
     familyName: Lagorce
     dateOfBirth: '1968-09-01'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: LAG
   - driverId: lamy
     url: http://en.wikipedia.org/wiki/Pedro_Lamy
     givenName: Pedro
     familyName: Lamy
     dateOfBirth: '1972-03-20'
     nationality: Portuguese
-    countryCode: PT
     flag: 🇵🇹
     countryCode3: POR
+    code: LAM
   - driverId: larini
     url: http://en.wikipedia.org/wiki/Nicola_Larini
     givenName: Nicola
     familyName: Larini
     dateOfBirth: '1964-03-19'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: LAR
   - driverId: mansell
     url: http://en.wikipedia.org/wiki/Nigel_Mansell
     givenName: Nigel
     familyName: Mansell
     dateOfBirth: '1953-08-08'
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    code: MAN
   - driverId: martini
     url: http://en.wikipedia.org/wiki/Pierluigi_Martini
     givenName: Pierluigi
     familyName: Martini
     dateOfBirth: '1961-04-23'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: MAR
   - driverId: montermini
     url: http://en.wikipedia.org/wiki/Andrea_Montermini
     givenName: Andrea
     familyName: Montermini
     dateOfBirth: '1964-05-30'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: MON
   - driverId: morbidelli
     url: http://en.wikipedia.org/wiki/Gianni_Morbidelli
     givenName: Gianni
     familyName: Morbidelli
     dateOfBirth: '1968-01-13'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: MOR
   - driverId: noda
     url: http://en.wikipedia.org/wiki/Hideki_Noda
     givenName: Hideki
     familyName: Noda
     dateOfBirth: '1969-03-07'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    code: NOD
   - driverId: panis
     url: http://en.wikipedia.org/wiki/Olivier_Panis
     givenName: Olivier
     familyName: Panis
     dateOfBirth: '1966-09-02'
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    code: PAN
   - driverId: ratzenberger
     url: http://en.wikipedia.org/wiki/Roland_Ratzenberger
     givenName: Roland
     familyName: Ratzenberger
     dateOfBirth: '1960-07-04'
     nationality: Austrian
-    countryCode: AT
     flag: 🇦🇹
     countryCode3: AUT
+    code: RAT
   - driverId: salo
     url: http://en.wikipedia.org/wiki/Mika_Salo
     givenName: Mika
     familyName: Salo
     dateOfBirth: '1966-11-30'
     nationality: Finnish
-    countryCode: FI
     flag: 🇫🇮
     countryCode3: FIN
+    code: SAL
   - driverId: schiattarella
     url: http://en.wikipedia.org/wiki/Domenico_Schiattarella
     givenName: Domenico
     familyName: Schiattarella
     dateOfBirth: '1967-11-17'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: SCH
   - driverId: michael_schumacher
     code: MSC
     url: http://en.wikipedia.org/wiki/Michael_Schumacher
@@ -369,7 +367,6 @@ drivers:
     familyName: Schumacher
     dateOfBirth: '1969-01-03'
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
   - driverId: senna
@@ -378,42 +375,42 @@ drivers:
     familyName: Senna
     dateOfBirth: '1960-03-21'
     nationality: Brazilian
-    countryCode: BR
     flag: 🇧🇷
     countryCode3: BRA
+    code: SEN
   - driverId: suzuki
     url: http://en.wikipedia.org/wiki/Aguri_Suzuki
     givenName: Aguri
     familyName: Suzuki
     dateOfBirth: '1960-09-08'
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    code: SUZ
   - driverId: verstappen
     url: http://en.wikipedia.org/wiki/Jos_Verstappen
     givenName: Jos
     familyName: Verstappen
     dateOfBirth: '1972-03-04'
     nationality: Dutch
-    countryCode: NL
     flag: 🇳🇱
     countryCode3: NLD
+    code: VER
   - driverId: wendlinger
     url: http://en.wikipedia.org/wiki/Karl_Wendlinger
     givenName: Karl
     familyName: Wendlinger
     dateOfBirth: '1968-12-20'
     nationality: Austrian
-    countryCode: AT
     flag: 🇦🇹
     countryCode3: AUT
+    code: WEN
   - driverId: zanardi
     url: http://en.wikipedia.org/wiki/Alex_Zanardi
     givenName: Alessandro
     familyName: Zanardi
     dateOfBirth: '1966-10-23'
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    code: ZAN

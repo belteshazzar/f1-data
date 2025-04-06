@@ -149,11 +149,17 @@ export function convertSeasonInfo(values) {
       //r.countryCode = code;
       r.flag = flag;
       r.countryCode3 = code3;
-      r.permanentNumber = r.permanentNumber*1;
+      if (r.permanentNumber !== undefined) {
+        r.permanentNumber = r.permanentNumber*1
+      }
+      if (r.code === undefined) {
+        r.code = r.familyName.toUpperCase().substring(0, 3);
+      }
 
       out.drivers.push(r);
 
     });
+
   } else if (type == 'constructors') {
     out.season = doc.MRData.ConstructorTable.season;
     out.constructors = [];
