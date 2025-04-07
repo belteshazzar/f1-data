@@ -1,173 +1,164 @@
 season: 1953
 rounds:
   - round: 1
-    raceNum: 24
     url: https://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix
-    raceName: Argentine Grand Prix
+    name: Argentine Grand Prix
     raceCode3: ARG
-    race:
-      date: '1953-01-18'
+    sessions:
+      - name: Race
+        date: '1953-01-18'
     circuit:
       circuitId: galvez
       url: https://en.wikipedia.org/wiki/Autódromo_Oscar_y_Juan_Gálvez
-      circuitName: Autódromo Juan y Oscar Gálvez
+      name: Autódromo Juan y Oscar Gálvez
       location:
-        lat: '-34.6943'
-        long: '-58.4593'
         locality: Buenos Aires
         country: Argentina
-        countryCode: AR
+        latitude: -34.6943
+        longitude: -58.4593
         flag: 🇦🇷
         countryCode3: ARG
   - round: 2
-    raceNum: 25
     url: https://en.wikipedia.org/wiki/1953_Indianapolis_500
-    raceName: Indianapolis 500
+    name: Indianapolis 500
     raceCode3: USA
-    race:
-      date: '1953-05-30'
+    sessions:
+      - name: Race
+        date: '1953-05-30'
     circuit:
       circuitId: indianapolis
       url: https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway
-      circuitName: Indianapolis Motor Speedway
+      name: Indianapolis Motor Speedway
       location:
-        lat: '39.795'
-        long: '-86.2347'
         locality: Indianapolis
         country: USA
-        countryCode: US
+        latitude: 39.795
+        longitude: -86.2347
         flag: 🇺🇸
         countryCode3: USA
   - round: 3
-    raceNum: 26
     url: https://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '1953-06-07'
+    sessions:
+      - name: Race
+        date: '1953-06-07'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
   - round: 4
-    raceNum: 27
     url: https://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1953-06-21'
+    sessions:
+      - name: Race
+        date: '1953-06-21'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
   - round: 5
-    raceNum: 28
     url: https://en.wikipedia.org/wiki/1953_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1953-07-05'
+    sessions:
+      - name: Race
+        date: '1953-07-05'
     circuit:
       circuitId: reims
       url: https://en.wikipedia.org/wiki/Reims-Gueux
-      circuitName: Reims-Gueux
+      name: Reims-Gueux
       location:
-        lat: '49.2542'
-        long: '3.93083'
         locality: Reims
         country: France
-        countryCode: FR
+        latitude: 49.2542
+        longitude: 3.93083
         flag: 🇫🇷
         countryCode3: FRA
   - round: 6
-    raceNum: 29
     url: https://en.wikipedia.org/wiki/1953_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1953-07-18'
+    sessions:
+      - name: Race
+        date: '1953-07-18'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 7
-    raceNum: 30
     url: https://en.wikipedia.org/wiki/1953_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1953-08-02'
+    sessions:
+      - name: Race
+        date: '1953-08-02'
     circuit:
       circuitId: nurburgring
       url: https://en.wikipedia.org/wiki/N%C3%BCrburgring
-      circuitName: Nürburgring
+      name: Nürburgring
       location:
-        lat: '50.3356'
-        long: '6.9475'
         locality: Nürburg
         country: Germany
-        countryCode: DE
+        latitude: 50.3356
+        longitude: 6.9475
         flag: 🇩🇪
         countryCode3: DEU
   - round: 8
-    raceNum: 31
     url: https://en.wikipedia.org/wiki/1953_Swiss_Grand_Prix
-    raceName: Swiss Grand Prix
+    name: Swiss Grand Prix
     raceCode3: CHE
-    race:
-      date: '1953-08-23'
+    sessions:
+      - name: Race
+        date: '1953-08-23'
     circuit:
       circuitId: bremgarten
       url: https://en.wikipedia.org/wiki/Circuit_Bremgarten
-      circuitName: Circuit Bremgarten
+      name: Circuit Bremgarten
       location:
-        lat: '46.9589'
-        long: '7.40194'
         locality: Bern
         country: Switzerland
-        countryCode: CH
+        latitude: 46.9589
+        longitude: 7.40194
         flag: 🇨🇭
         countryCode3: CHE
   - round: 9
-    raceNum: 32
     url: https://en.wikipedia.org/wiki/1953_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1953-09-13'
+    sessions:
+      - name: Race
+        date: '1953-09-13'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA

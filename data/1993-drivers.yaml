@@ -8,7 +8,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: ALB
+    driverCode3: ALB
   - driverId: alesi
     url: http://en.wikipedia.org/wiki/Jean_Alesi
     givenName: Jean
@@ -17,7 +17,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: ALE
+    driverCode3: ALE
   - driverId: alliot
     url: http://en.wikipedia.org/wiki/Philippe_Alliot
     givenName: Philippe
@@ -26,7 +26,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: ALL
+    driverCode3: ALL
   - driverId: andretti
     url: http://en.wikipedia.org/wiki/Michael_Andretti
     givenName: Michael
@@ -35,7 +35,7 @@ drivers:
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
-    code: AND
+    driverCode3: AND
   - driverId: apicella
     url: http://en.wikipedia.org/wiki/Marco_Apicella
     givenName: Marco
@@ -44,9 +44,8 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: API
+    driverCode3: API
   - driverId: badoer
-    code: BAD
     url: http://en.wikipedia.org/wiki/Luca_Badoer
     givenName: Luca
     familyName: Badoer
@@ -54,6 +53,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
+    driverCode3: BAD
   - driverId: barbazza
     url: http://en.wikipedia.org/wiki/Fabrizio_Barbazza
     givenName: Fabrizio
@@ -62,9 +62,8 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: BAR
+    driverCode3: BAR
   - driverId: barrichello
-    code: BAR
     url: http://en.wikipedia.org/wiki/Rubens_Barrichello
     givenName: Rubens
     familyName: Barrichello
@@ -72,6 +71,7 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: BAR
   - driverId: berger
     url: http://en.wikipedia.org/wiki/Gerhard_Berger
     givenName: Gerhard
@@ -80,7 +80,7 @@ drivers:
     nationality: Austrian
     flag: 🇦🇹
     countryCode3: AUT
-    code: BER
+    driverCode3: BER
   - driverId: blundell
     url: http://en.wikipedia.org/wiki/Mark_Blundell
     givenName: Mark
@@ -89,7 +89,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: BLU
+    driverCode3: BLU
   - driverId: boutsen
     url: http://en.wikipedia.org/wiki/Thierry_Boutsen
     givenName: Thierry
@@ -98,7 +98,7 @@ drivers:
     nationality: Belgian
     flag: 🇧🇪
     countryCode3: BEL
-    code: BOU
+    driverCode3: BOU
   - driverId: brundle
     url: http://en.wikipedia.org/wiki/Martin_Brundle
     givenName: Martin
@@ -107,7 +107,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: BRU
+    driverCode3: BRU
   - driverId: capelli
     url: http://en.wikipedia.org/wiki/Ivan_Capelli
     givenName: Ivan
@@ -116,7 +116,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: CAP
+    driverCode3: CAP
   - driverId: comas
     url: http://en.wikipedia.org/wiki/%C3%89rik_Comas
     givenName: Érik
@@ -125,7 +125,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: COM
+    driverCode3: COM
   - driverId: cesaris
     url: http://en.wikipedia.org/wiki/Andrea_de_Cesaris
     givenName: Andrea
@@ -134,7 +134,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: 'DE '
+    driverCode3: 'DE '
   - driverId: fittipaldi
     url: http://en.wikipedia.org/wiki/Christian_Fittipaldi
     givenName: Christian
@@ -143,7 +143,7 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
-    code: FIT
+    driverCode3: FIT
   - driverId: gounon
     url: http://en.wikipedia.org/wiki/Jean-Marc_Gounon
     givenName: Jean-Marc
@@ -152,7 +152,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: GOU
+    driverCode3: GOU
   - driverId: hakkinen
     url: http://en.wikipedia.org/wiki/Mika_H%C3%A4kkinen
     givenName: Mika
@@ -161,7 +161,7 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
-    code: HÄK
+    driverCode3: HÄK
   - driverId: herbert
     url: http://en.wikipedia.org/wiki/Johnny_Herbert
     givenName: Johnny
@@ -170,7 +170,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: HER
+    driverCode3: HER
   - driverId: damon_hill
     url: http://en.wikipedia.org/wiki/Damon_Hill
     givenName: Damon
@@ -179,7 +179,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: HIL
+    driverCode3: HIL
   - driverId: irvine
     url: http://en.wikipedia.org/wiki/Eddie_Irvine
     givenName: Eddie
@@ -188,7 +188,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: IRV
+    driverCode3: IRV
   - driverId: lehto
     url: http://en.wikipedia.org/wiki/Jyrki_J%C3%A4rvilehto
     givenName: Jyrki
@@ -197,7 +197,7 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
-    code: JÄR
+    driverCode3: JÄR
   - driverId: katayama
     url: http://en.wikipedia.org/wiki/Ukyo_Katayama
     givenName: Ukyo
@@ -206,7 +206,7 @@ drivers:
     nationality: Japanese
     flag: 🇯🇵
     countryCode3: JPN
-    code: KAT
+    driverCode3: KAT
   - driverId: lamy
     url: http://en.wikipedia.org/wiki/Pedro_Lamy
     givenName: Pedro
@@ -215,7 +215,7 @@ drivers:
     nationality: Portuguese
     flag: 🇵🇹
     countryCode3: POR
-    code: LAM
+    driverCode3: LAM
   - driverId: martini
     url: http://en.wikipedia.org/wiki/Pierluigi_Martini
     givenName: Pierluigi
@@ -224,7 +224,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: MAR
+    driverCode3: MAR
   - driverId: naspetti
     url: http://en.wikipedia.org/wiki/Emanuele_Naspetti
     givenName: Emanuele
@@ -233,7 +233,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: NAS
+    driverCode3: NAS
   - driverId: patrese
     url: http://en.wikipedia.org/wiki/Riccardo_Patrese
     givenName: Riccardo
@@ -242,7 +242,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: PAT
+    driverCode3: PAT
   - driverId: prost
     url: http://en.wikipedia.org/wiki/Alain_Prost
     givenName: Alain
@@ -251,9 +251,8 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: PRO
+    driverCode3: PRO
   - driverId: michael_schumacher
-    code: MSC
     url: http://en.wikipedia.org/wiki/Michael_Schumacher
     givenName: Michael
     familyName: Schumacher
@@ -261,6 +260,7 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: MSC
   - driverId: senna
     url: http://en.wikipedia.org/wiki/Ayrton_Senna
     givenName: Ayrton
@@ -269,7 +269,7 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
-    code: SEN
+    driverCode3: SEN
   - driverId: suzuki
     url: http://en.wikipedia.org/wiki/Aguri_Suzuki
     givenName: Aguri
@@ -278,7 +278,7 @@ drivers:
     nationality: Japanese
     flag: 🇯🇵
     countryCode3: JPN
-    code: SUZ
+    driverCode3: SUZ
   - driverId: toshio_suzuki
     url: http://en.wikipedia.org/wiki/Toshio_Suzuki_(driver)
     givenName: Toshio
@@ -287,7 +287,7 @@ drivers:
     nationality: Japanese
     flag: 🇯🇵
     countryCode3: JPN
-    code: SUZ
+    driverCode3: SUZ
   - driverId: warwick
     url: http://en.wikipedia.org/wiki/Derek_Warwick
     givenName: Derek
@@ -296,7 +296,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: WAR
+    driverCode3: WAR
   - driverId: wendlinger
     url: http://en.wikipedia.org/wiki/Karl_Wendlinger
     givenName: Karl
@@ -305,7 +305,7 @@ drivers:
     nationality: Austrian
     flag: 🇦🇹
     countryCode3: AUT
-    code: WEN
+    driverCode3: WEN
   - driverId: zanardi
     url: http://en.wikipedia.org/wiki/Alex_Zanardi
     givenName: Alessandro
@@ -314,4 +314,4 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: ZAN
+    driverCode3: ZAN

@@ -1,7 +1,6 @@
 season: 2010
 drivers:
   - driverId: alguersuari
-    code: ALG
     url: http://en.wikipedia.org/wiki/Jaime_Alguersuari
     givenName: Jaime
     familyName: Alguersuari
@@ -9,9 +8,9 @@ drivers:
     nationality: Spanish
     flag: 🇪🇸
     countryCode3: ESP
+    driverCode3: ALG
   - driverId: alonso
     permanentNumber: 14
-    code: ALO
     url: http://en.wikipedia.org/wiki/Fernando_Alonso
     givenName: Fernando
     familyName: Alonso
@@ -19,8 +18,8 @@ drivers:
     nationality: Spanish
     flag: 🇪🇸
     countryCode3: ESP
+    driverCode3: ALO
   - driverId: barrichello
-    code: BAR
     url: http://en.wikipedia.org/wiki/Rubens_Barrichello
     givenName: Rubens
     familyName: Barrichello
@@ -28,8 +27,8 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: BAR
   - driverId: buemi
-    code: BUE
     url: http://en.wikipedia.org/wiki/S%C3%A9bastien_Buemi
     givenName: Sébastien
     familyName: Buemi
@@ -37,9 +36,9 @@ drivers:
     nationality: Swiss
     flag: 🇨🇭
     countryCode3: CHE
+    driverCode3: BUE
   - driverId: button
     permanentNumber: 22
-    code: BUT
     url: http://en.wikipedia.org/wiki/Jenson_Button
     givenName: Jenson
     familyName: Button
@@ -47,8 +46,8 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: BUT
   - driverId: chandhok
-    code: CHA
     url: http://en.wikipedia.org/wiki/Karun_Chandhok
     givenName: Karun
     familyName: Chandhok
@@ -56,8 +55,8 @@ drivers:
     nationality: Indian
     flag: 🇮🇳
     countryCode3: IND
+    driverCode3: CHA
   - driverId: rosa
-    code: DLR
     url: http://en.wikipedia.org/wiki/Pedro_de_la_Rosa
     givenName: Pedro
     familyName: de la Rosa
@@ -65,8 +64,8 @@ drivers:
     nationality: Spanish
     flag: 🇪🇸
     countryCode3: ESP
+    driverCode3: DLR
   - driverId: grassi
-    code: DIG
     url: http://en.wikipedia.org/wiki/Lucas_di_Grassi
     givenName: Lucas
     familyName: di Grassi
@@ -74,8 +73,8 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: DIG
   - driverId: glock
-    code: GLO
     url: http://en.wikipedia.org/wiki/Timo_Glock
     givenName: Timo
     familyName: Glock
@@ -83,9 +82,9 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: GLO
   - driverId: hamilton
     permanentNumber: 44
-    code: HAM
     url: http://en.wikipedia.org/wiki/Lewis_Hamilton
     givenName: Lewis
     familyName: Hamilton
@@ -93,8 +92,8 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: HAM
   - driverId: heidfeld
-    code: HEI
     url: http://en.wikipedia.org/wiki/Nick_Heidfeld
     givenName: Nick
     familyName: Heidfeld
@@ -102,9 +101,9 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: HEI
   - driverId: hulkenberg
     permanentNumber: 27
-    code: HUL
     url: http://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg
     givenName: Nico
     familyName: Hülkenberg
@@ -112,8 +111,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: HUL
   - driverId: klien
-    code: KLI
     url: http://en.wikipedia.org/wiki/Christian_Klien
     givenName: Christian
     familyName: Klien
@@ -121,9 +120,9 @@ drivers:
     nationality: Austrian
     flag: 🇦🇹
     countryCode3: AUT
+    driverCode3: KLI
   - driverId: kobayashi
     permanentNumber: 10
-    code: KOB
     url: http://en.wikipedia.org/wiki/Kamui_Kobayashi
     givenName: Kamui
     familyName: Kobayashi
@@ -131,8 +130,8 @@ drivers:
     nationality: Japanese
     flag: 🇯🇵
     countryCode3: JPN
+    driverCode3: KOB
   - driverId: kovalainen
-    code: KOV
     url: http://en.wikipedia.org/wiki/Heikki_Kovalainen
     givenName: Heikki
     familyName: Kovalainen
@@ -140,9 +139,9 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
+    driverCode3: KOV
   - driverId: kubica
     permanentNumber: 88
-    code: KUB
     url: http://en.wikipedia.org/wiki/Robert_Kubica
     givenName: Robert
     familyName: Kubica
@@ -150,8 +149,8 @@ drivers:
     nationality: Polish
     flag: 🇵🇱
     countryCode3: POL
+    driverCode3: KUB
   - driverId: liuzzi
-    code: LIU
     url: http://en.wikipedia.org/wiki/Vitantonio_Liuzzi
     givenName: Vitantonio
     familyName: Liuzzi
@@ -159,9 +158,9 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
+    driverCode3: LIU
   - driverId: massa
     permanentNumber: 19
-    code: MAS
     url: http://en.wikipedia.org/wiki/Felipe_Massa
     givenName: Felipe
     familyName: Massa
@@ -169,8 +168,8 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: MAS
   - driverId: petrov
-    code: PET
     url: http://en.wikipedia.org/wiki/Vitaly_Petrov
     givenName: Vitaly
     familyName: Petrov
@@ -178,9 +177,9 @@ drivers:
     nationality: Russian
     flag: 🇷🇺
     countryCode3: RUS
+    driverCode3: PET
   - driverId: rosberg
     permanentNumber: 6
-    code: ROS
     url: http://en.wikipedia.org/wiki/Nico_Rosberg
     givenName: Nico
     familyName: Rosberg
@@ -188,8 +187,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: ROS
   - driverId: michael_schumacher
-    code: MSC
     url: http://en.wikipedia.org/wiki/Michael_Schumacher
     givenName: Michael
     familyName: Schumacher
@@ -197,8 +196,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: MSC
   - driverId: bruno_senna
-    code: SEN
     url: http://en.wikipedia.org/wiki/Bruno_Senna
     givenName: Bruno
     familyName: Senna
@@ -206,9 +205,9 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: SEN
   - driverId: sutil
     permanentNumber: 99
-    code: SUT
     url: http://en.wikipedia.org/wiki/Adrian_Sutil
     givenName: Adrian
     familyName: Sutil
@@ -216,8 +215,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: SUT
   - driverId: trulli
-    code: TRU
     url: http://en.wikipedia.org/wiki/Jarno_Trulli
     givenName: Jarno
     familyName: Trulli
@@ -225,9 +224,9 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
+    driverCode3: TRU
   - driverId: vettel
     permanentNumber: 5
-    code: VET
     url: http://en.wikipedia.org/wiki/Sebastian_Vettel
     givenName: Sebastian
     familyName: Vettel
@@ -235,8 +234,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: VET
   - driverId: webber
-    code: WEB
     url: http://en.wikipedia.org/wiki/Mark_Webber_(racing_driver)
     givenName: Mark
     familyName: Webber
@@ -244,8 +243,8 @@ drivers:
     nationality: Australian
     flag: 🇦🇺
     countryCode3: AUS
+    driverCode3: WEB
   - driverId: yamamoto
-    code: YAM
     url: http://en.wikipedia.org/wiki/Sakon_Yamamoto
     givenName: Sakon
     familyName: Yamamoto
@@ -253,3 +252,4 @@ drivers:
     nationality: Japanese
     flag: 🇯🇵
     countryCode3: JPN
+    driverCode3: YAM

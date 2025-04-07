@@ -1,0 +1,56 @@
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/belteshazzar/f1-data/blob/main/schema/constructors.schema.yaml
+title: Constructors
+description: The constructors in a formula 1 season
+type: object
+properties:
+  season:
+    type: integer
+    required: true
+    description: The season of the data
+    example: 2025
+  constructors:
+    type: array
+    required: true
+    description: The array of constructors in the season
+    items:
+      type: object
+      properties:
+        constructorId:
+          type: string
+          required: true
+          description: The unique identifier for the constructor
+          example: alpine
+        url:
+          type: string
+          required: true
+          description: The URL of the driver on Wikipedia
+          example: http://en.wikipedia.org/wiki/Alexander_Albon
+        name:
+          type: string
+          required: true
+          description: The name of the constructor
+          example: http://en.wikipedia.org/wiki/Alpine_F1_Team
+        knownAs:
+          type: array
+          required: true
+          items:
+            type: string
+            description: A common form of the constructor's name
+            example: Alpine Renault
+        nationality:
+          type: string
+          required: true
+          description: The nationality of the constructor
+          example: French
+        countryCode3:
+          type: string
+          required: true
+          description: The 3-letter country code of the constructor's country
+          example: FRA
+        flag:
+          type: string
+          required: true
+          description: The unicode flag of the constructor's country
+          example: 🇫🇷

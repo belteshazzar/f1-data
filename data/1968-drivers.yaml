@@ -8,7 +8,7 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
-    code: AHR
+    driverCode3: AHR
   - driverId: amon
     url: http://en.wikipedia.org/wiki/Chris_Amon
     givenName: Chris
@@ -17,7 +17,7 @@ drivers:
     nationality: New Zealander
     flag: 🇳🇿
     countryCode3: NZL
-    code: AMO
+    driverCode3: AMO
   - driverId: mario_andretti
     url: http://en.wikipedia.org/wiki/Mario_Andretti
     givenName: Mario
@@ -26,7 +26,7 @@ drivers:
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
-    code: AND
+    driverCode3: AND
   - driverId: attwood
     url: http://en.wikipedia.org/wiki/Richard_Attwood
     givenName: Richard
@@ -35,7 +35,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: ATT
+    driverCode3: ATT
   - driverId: bell
     url: http://en.wikipedia.org/wiki/Derek_Bell_(auto_racer)
     givenName: Derek
@@ -44,7 +44,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: BEL
+    driverCode3: BEL
   - driverId: beltoise
     url: http://en.wikipedia.org/wiki/Jean-Pierre_Beltoise
     givenName: Jean-Pierre
@@ -53,9 +53,8 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: BEL
+    driverCode3: BEL
   - driverId: bianchi
-    code: BIA
     url: http://en.wikipedia.org/wiki/Lucien_Bianchi
     givenName: Lucien
     familyName: Bianchi
@@ -63,6 +62,7 @@ drivers:
     nationality: Belgian
     flag: 🇧🇪
     countryCode3: BEL
+    driverCode3: BIA
   - driverId: bonnier
     url: http://en.wikipedia.org/wiki/Joakim_Bonnier
     givenName: Jo
@@ -71,7 +71,7 @@ drivers:
     nationality: Swedish
     flag: 🇸🇪
     countryCode3: SWE
-    code: BON
+    driverCode3: BON
   - driverId: jack_brabham
     url: http://en.wikipedia.org/wiki/Jack_Brabham
     givenName: Jack
@@ -80,7 +80,7 @@ drivers:
     nationality: Australian
     flag: 🇦🇺
     countryCode3: AUS
-    code: BRA
+    driverCode3: BRA
   - driverId: brack
     url: http://en.wikipedia.org/wiki/Bill_Brack
     givenName: Bill
@@ -89,7 +89,7 @@ drivers:
     nationality: Canadian
     flag: 🇨🇦
     countryCode3: CAN
-    code: BRA
+    driverCode3: BRA
   - driverId: charlton
     url: http://en.wikipedia.org/wiki/Dave_Charlton
     givenName: Dave
@@ -98,7 +98,7 @@ drivers:
     nationality: South African
     flag: 🇿🇦
     countryCode3: ZAF
-    code: CHA
+    driverCode3: CHA
   - driverId: clark
     url: http://en.wikipedia.org/wiki/Jim_Clark
     givenName: Jim
@@ -107,7 +107,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: CLA
+    driverCode3: CLA
   - driverId: courage
     url: http://en.wikipedia.org/wiki/Piers_Courage
     givenName: Piers
@@ -116,7 +116,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: COU
+    driverCode3: COU
   - driverId: adamich
     url: http://en.wikipedia.org/wiki/Andrea_de_Adamich
     givenName: Andrea
@@ -125,7 +125,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: 'DE '
+    driverCode3: 'DE '
   - driverId: elford
     url: http://en.wikipedia.org/wiki/Vic_Elford
     givenName: Vic
@@ -134,7 +134,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: ELF
+    driverCode3: ELF
   - driverId: gardner
     url: http://en.wikipedia.org/wiki/Frank_Gardner_(driver)
     givenName: Frank
@@ -143,7 +143,7 @@ drivers:
     nationality: Australian
     flag: 🇦🇺
     countryCode3: AUS
-    code: GAR
+    driverCode3: GAR
   - driverId: gurney
     url: http://en.wikipedia.org/wiki/Dan_Gurney
     givenName: Dan
@@ -152,7 +152,7 @@ drivers:
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
-    code: GUR
+    driverCode3: GUR
   - driverId: hahne
     url: http://en.wikipedia.org/wiki/Hubert_Hahne
     givenName: Hubert
@@ -161,7 +161,7 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
-    code: HAH
+    driverCode3: HAH
   - driverId: hill
     url: http://en.wikipedia.org/wiki/Graham_Hill
     givenName: Graham
@@ -170,7 +170,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: HIL
+    driverCode3: HIL
   - driverId: hobbs
     url: http://en.wikipedia.org/wiki/David_Hobbs_(racing_driver)
     givenName: David
@@ -179,7 +179,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: HOB
+    driverCode3: HOB
   - driverId: hulme
     url: http://en.wikipedia.org/wiki/Denny_Hulme
     givenName: Denny
@@ -188,7 +188,7 @@ drivers:
     nationality: New Zealander
     flag: 🇳🇿
     countryCode3: NZL
-    code: HUL
+    driverCode3: HUL
   - driverId: ickx
     url: http://en.wikipedia.org/wiki/Jacky_Ickx
     givenName: Jacky
@@ -197,7 +197,7 @@ drivers:
     nationality: Belgian
     flag: 🇧🇪
     countryCode3: BEL
-    code: ICK
+    driverCode3: ICK
   - driverId: love
     url: http://en.wikipedia.org/wiki/John_Love_(racing_driver)
     givenName: John
@@ -206,7 +206,7 @@ drivers:
     nationality: Rhodesian
     flag: 🇷🇭
     countryCode3: RHO
-    code: LOV
+    driverCode3: LOV
   - driverId: mclaren
     url: http://en.wikipedia.org/wiki/Bruce_McLaren
     givenName: Bruce
@@ -215,7 +215,7 @@ drivers:
     nationality: New Zealander
     flag: 🇳🇿
     countryCode3: NZL
-    code: MCL
+    driverCode3: MCL
   - driverId: moser
     url: http://en.wikipedia.org/wiki/Silvio_Moser
     givenName: Silvio
@@ -224,7 +224,7 @@ drivers:
     nationality: Swiss
     flag: 🇨🇭
     countryCode3: CHE
-    code: MOS
+    driverCode3: MOS
   - driverId: oliver
     url: http://en.wikipedia.org/wiki/Jackie_Oliver
     givenName: Jackie
@@ -233,7 +233,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: OLI
+    driverCode3: OLI
   - driverId: pescarolo
     url: http://en.wikipedia.org/wiki/Henri_Pescarolo
     givenName: Henri
@@ -242,7 +242,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: PES
+    driverCode3: PES
   - driverId: pretorius
     url: http://en.wikipedia.org/wiki/Jackie_Pretorius
     givenName: Jackie
@@ -251,7 +251,7 @@ drivers:
     nationality: South African
     flag: 🇿🇦
     countryCode3: ZAF
-    code: PRE
+    driverCode3: PRE
   - driverId: redman
     url: http://en.wikipedia.org/wiki/Brian_Redman
     givenName: Brian
@@ -260,7 +260,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: RED
+    driverCode3: RED
   - driverId: rindt
     url: http://en.wikipedia.org/wiki/Jochen_Rindt
     givenName: Jochen
@@ -269,7 +269,7 @@ drivers:
     nationality: Austrian
     flag: 🇦🇹
     countryCode3: AUT
-    code: RIN
+    driverCode3: RIN
   - driverId: rodriguez
     url: http://en.wikipedia.org/wiki/Pedro_Rodr%C3%ADguez_(racing_driver)
     givenName: Pedro
@@ -278,7 +278,7 @@ drivers:
     nationality: Mexican
     flag: 🇲🇽
     countryCode3: MEX
-    code: ROD
+    driverCode3: ROD
   - driverId: scarfiotti
     url: http://en.wikipedia.org/wiki/Ludovico_Scarfiotti
     givenName: Ludovico
@@ -287,7 +287,7 @@ drivers:
     nationality: Italian
     flag: 🇮🇹
     countryCode3: ITA
-    code: SCA
+    driverCode3: SCA
   - driverId: jo_schlesser
     url: http://en.wikipedia.org/wiki/Jo_Schlesser
     givenName: Jo
@@ -296,7 +296,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: SCH
+    driverCode3: SCH
   - driverId: gavin
     url: http://en.wikipedia.org/wiki/Johnny_Servoz-Gavin
     givenName: Johnny
@@ -305,7 +305,7 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
-    code: SER
+    driverCode3: SER
   - driverId: siffert
     url: http://en.wikipedia.org/wiki/Jo_Siffert
     givenName: Jo
@@ -314,7 +314,7 @@ drivers:
     nationality: Swiss
     flag: 🇨🇭
     countryCode3: CHE
-    code: SIF
+    driverCode3: SIF
   - driverId: solana
     url: http://en.wikipedia.org/wiki/Mois%C3%A9s_Solana
     givenName: Moisés
@@ -323,7 +323,7 @@ drivers:
     nationality: Mexican
     flag: 🇲🇽
     countryCode3: MEX
-    code: SOL
+    driverCode3: SOL
   - driverId: spence
     url: http://en.wikipedia.org/wiki/Mike_Spence
     givenName: Mike
@@ -332,7 +332,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: SPE
+    driverCode3: SPE
   - driverId: stewart
     url: http://en.wikipedia.org/wiki/Jackie_Stewart
     givenName: Jackie
@@ -341,7 +341,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: STE
+    driverCode3: STE
   - driverId: surtees
     url: http://en.wikipedia.org/wiki/John_Surtees
     givenName: John
@@ -350,7 +350,7 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: SUR
+    driverCode3: SUR
   - driverId: tingle
     url: http://en.wikipedia.org/wiki/Sam_Tingle
     givenName: Sam
@@ -359,7 +359,7 @@ drivers:
     nationality: Rhodesian
     flag: 🇷🇭
     countryCode3: RHO
-    code: TIN
+    driverCode3: TIN
   - driverId: unser
     url: http://en.wikipedia.org/wiki/Bobby_Unser
     givenName: Bobby
@@ -368,7 +368,7 @@ drivers:
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
-    code: UNS
+    driverCode3: UNS
   - driverId: rooyen
     url: http://en.wikipedia.org/wiki/Basil_van_Rooyen
     givenName: Basil
@@ -377,7 +377,7 @@ drivers:
     nationality: South African
     flag: 🇿🇦
     countryCode3: ZAF
-    code: VAN
+    driverCode3: VAN
   - driverId: widdows
     url: http://en.wikipedia.org/wiki/Robin_Widdows
     givenName: Robin
@@ -386,4 +386,4 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
-    code: WID
+    driverCode3: WID

@@ -1,0 +1,122 @@
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/belteshazzar/f1-data/blob/main/schema/table-drivers.schema.yaml
+title: Season Table - Drivers
+description: The driver standings table for a formula 1 season
+type: object
+properties:
+  season:
+    type: integer
+    required: true
+    description: The season of the data
+    example: 2025
+  races:
+    type: array
+    required: true
+    description: The array of races in the season
+    items:
+      type: object
+      properties:
+        rounds:
+          type: integer
+          required: true
+          description: The season round as a number
+          example: 1
+        type:
+          enum: [ 'race', 'sprint' ]
+          required: true
+          description: The type of race this is
+          example: race
+        raceName:
+          type: string
+          required: true
+          description: The name of this race
+          example: Miami Grand Prix
+        raceCode3:
+          type: string
+          required: true
+          description: The 3-letter code for this race
+          example: MIA
+        flag:
+          type: string
+          required: true
+          description: The unicode flag of this race
+          example: 🇺🇸
+  drivers:
+    type: array
+    required: true
+    description: The array of drivers in the season
+    items:
+      type: object
+      properties:
+        driverId:
+          type: string
+          required: true
+          description: The unique ID of the driver
+          example: max_verstappen
+        familyName:
+          type: string
+          required: true
+          description: The family name of the driver
+          example: Verstappen
+        givenName:
+          type: string
+          required: true
+          description: The given name of the driver
+          example: Max
+        flag:
+          type: string
+          required: true
+          description: The unicode flag of the driver
+          example: 🇳🇱
+        number:
+          type: integer
+          required: true
+          description: The number of the driver
+          example: 33
+        countryCode3:
+          type: string
+          required: true
+          description: The 3-letter code of the drivers country
+          example: NLD
+        driverCode3:
+          type: string
+          required: true
+          description: The 3-letter code of the driver
+          example: VER
+        results:
+          type: array
+          required: true
+          description: The results of the driver in the season for each race
+          items:
+            type: object
+            required: true
+            description: The result for a single race in the season for this driver
+            properties:
+              position:
+                type: integer
+                required: true
+                example: 0
+              points:
+                type: integer
+                required: true
+                example: 0
+              status:
+                type: string
+                required: true
+                example: ''
+              constructorId:
+                type: string
+                required: true
+                description: The unique ID of the constructor
+                example: red_bull_racing
+              cumulative:
+                type: integer
+                required: true
+                description: The cumulative points for the driver in the season
+                example: 0
+              standing:
+                type: integer
+                required: true
+                description: The standing of the driver in the season at the completion of this race
+                example: 0

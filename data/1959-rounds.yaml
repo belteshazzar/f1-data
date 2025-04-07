@@ -1,173 +1,164 @@
 season: 1959
 rounds:
   - round: 1
-    raceNum: 76
     url: https://en.wikipedia.org/wiki/1959_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1959-05-10'
+    sessions:
+      - name: Race
+        date: '1959-05-10'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 2
-    raceNum: 77
     url: https://en.wikipedia.org/wiki/1959_Indianapolis_500
-    raceName: Indianapolis 500
+    name: Indianapolis 500
     raceCode3: USA
-    race:
-      date: '1959-05-30'
+    sessions:
+      - name: Race
+        date: '1959-05-30'
     circuit:
       circuitId: indianapolis
       url: https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway
-      circuitName: Indianapolis Motor Speedway
+      name: Indianapolis Motor Speedway
       location:
-        lat: '39.795'
-        long: '-86.2347'
         locality: Indianapolis
         country: USA
-        countryCode: US
+        latitude: 39.795
+        longitude: -86.2347
         flag: 🇺🇸
         countryCode3: USA
   - round: 3
-    raceNum: 78
     url: https://en.wikipedia.org/wiki/1959_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '1959-05-31'
+    sessions:
+      - name: Race
+        date: '1959-05-31'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
   - round: 4
-    raceNum: 79
     url: https://en.wikipedia.org/wiki/1959_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1959-07-05'
+    sessions:
+      - name: Race
+        date: '1959-07-05'
     circuit:
       circuitId: reims
       url: https://en.wikipedia.org/wiki/Reims-Gueux
-      circuitName: Reims-Gueux
+      name: Reims-Gueux
       location:
-        lat: '49.2542'
-        long: '3.93083'
         locality: Reims
         country: France
-        countryCode: FR
+        latitude: 49.2542
+        longitude: 3.93083
         flag: 🇫🇷
         countryCode3: FRA
   - round: 5
-    raceNum: 80
     url: https://en.wikipedia.org/wiki/1959_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1959-07-18'
+    sessions:
+      - name: Race
+        date: '1959-07-18'
     circuit:
       circuitId: aintree
       url: https://en.wikipedia.org/wiki/Aintree_Motor_Racing_Circuit
-      circuitName: Aintree
+      name: Aintree
       location:
-        lat: '53.4769'
-        long: '-2.94056'
         locality: Liverpool
         country: UK
-        countryCode: GB
+        latitude: 53.4769
+        longitude: -2.94056
         flag: 🇬🇧
         countryCode3: GBR
   - round: 6
-    raceNum: 81
     url: https://en.wikipedia.org/wiki/1959_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1959-08-02'
+    sessions:
+      - name: Race
+        date: '1959-08-02'
     circuit:
       circuitId: avus
       url: https://en.wikipedia.org/wiki/AVUS
-      circuitName: AVUS
+      name: AVUS
       location:
-        lat: '52.4806'
-        long: '13.2514'
         locality: Berlin
         country: Germany
-        countryCode: DE
+        latitude: 52.4806
+        longitude: 13.2514
         flag: 🇩🇪
         countryCode3: DEU
   - round: 7
-    raceNum: 82
     url: https://en.wikipedia.org/wiki/1959_Portuguese_Grand_Prix
-    raceName: Portuguese Grand Prix
+    name: Portuguese Grand Prix
     raceCode3: POR
-    race:
-      date: '1959-08-23'
+    sessions:
+      - name: Race
+        date: '1959-08-23'
     circuit:
       circuitId: monsanto
       url: https://en.wikipedia.org/wiki/Circuito_de_Monsanto
-      circuitName: Monsanto Park Circuit
+      name: Monsanto Park Circuit
       location:
-        lat: '38.7197'
-        long: '-9.20306'
         locality: Lisbon
         country: Portugal
-        countryCode: PT
+        latitude: 38.7197
+        longitude: -9.20306
         flag: 🇵🇹
         countryCode3: POR
   - round: 8
-    raceNum: 83
     url: https://en.wikipedia.org/wiki/1959_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1959-09-13'
+    sessions:
+      - name: Race
+        date: '1959-09-13'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 9
-    raceNum: 84
     url: https://en.wikipedia.org/wiki/1959_United_States_Grand_Prix
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
-    race:
-      date: '1959-12-12'
+    sessions:
+      - name: Race
+        date: '1959-12-12'
     circuit:
       circuitId: sebring
       url: https://en.wikipedia.org/wiki/Sebring_International_Raceway
-      circuitName: Sebring International Raceway
+      name: Sebring International Raceway
       location:
-        lat: '27.4547'
-        long: '-81.3483'
         locality: Florida
         country: USA
-        countryCode: US
+        latitude: 27.4547
+        longitude: -81.3483
         flag: 🇺🇸
         countryCode3: USA

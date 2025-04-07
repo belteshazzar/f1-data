@@ -1,478 +1,461 @@
 season: 2009
 rounds:
   - round: 1
-    raceNum: 804
     url: https://en.wikipedia.org/wiki/2009_Australian_Grand_Prix
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
-    race:
-      date: '2009-03-29'
-      time: 06:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-03-29'
+        time: 06:00:00Z
+      - name: Practice 1
+        date: '2009-03-27'
+      - name: Practice 2
+        date: '2009-03-27'
+      - name: Practice 3
+        date: '2009-03-28'
+      - name: Qualifying
+        date: '2009-03-28'
     circuit:
       circuitId: albert_park
       url: https://en.wikipedia.org/wiki/Albert_Park_Circuit
-      circuitName: Albert Park Grand Prix Circuit
+      name: Albert Park Grand Prix Circuit
       location:
-        lat: '-37.8497'
-        long: '144.968'
         locality: Melbourne
         country: Australia
-        countryCode: AU
+        latitude: -37.8497
+        longitude: 144.968
         flag: 🇦🇺
         countryCode3: AUS
-    firstPractice:
-      date: '2009-03-27'
-    secondPractice:
-      date: '2009-03-27'
-    thirdPractice:
-      date: '2009-03-28'
-    qualifying:
-      date: '2009-03-28'
   - round: 2
-    raceNum: 805
     url: https://en.wikipedia.org/wiki/2009_Malaysian_Grand_Prix
-    raceName: Malaysian Grand Prix
+    name: Malaysian Grand Prix
     raceCode3: MYS
-    race:
-      date: '2009-04-05'
-      time: 09:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-04-05'
+        time: 09:00:00Z
+      - name: Practice 1
+        date: '2009-04-03'
+      - name: Practice 2
+        date: '2009-04-03'
+      - name: Practice 3
+        date: '2009-04-04'
+      - name: Qualifying
+        date: '2009-04-04'
     circuit:
       circuitId: sepang
       url: https://en.wikipedia.org/wiki/Sepang_International_Circuit
-      circuitName: Sepang International Circuit
+      name: Sepang International Circuit
       location:
-        lat: '2.76083'
-        long: '101.738'
         locality: Kuala Lumpur
         country: Malaysia
-        countryCode: MY
+        latitude: 2.76083
+        longitude: 101.738
         flag: 🇲🇾
         countryCode3: MYS
-    firstPractice:
-      date: '2009-04-03'
-    secondPractice:
-      date: '2009-04-03'
-    thirdPractice:
-      date: '2009-04-04'
-    qualifying:
-      date: '2009-04-04'
   - round: 3
-    raceNum: 806
     url: https://en.wikipedia.org/wiki/2009_Chinese_Grand_Prix
-    raceName: Chinese Grand Prix
+    name: Chinese Grand Prix
     raceCode3: CHN
-    race:
-      date: '2009-04-19'
-      time: 07:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-04-19'
+        time: 07:00:00Z
+      - name: Practice 1
+        date: '2009-04-17'
+      - name: Practice 2
+        date: '2009-04-17'
+      - name: Practice 3
+        date: '2009-04-18'
+      - name: Qualifying
+        date: '2009-04-18'
     circuit:
       circuitId: shanghai
       url: https://en.wikipedia.org/wiki/Shanghai_International_Circuit
-      circuitName: Shanghai International Circuit
+      name: Shanghai International Circuit
       location:
-        lat: '31.3389'
-        long: '121.22'
         locality: Shanghai
         country: China
-        countryCode: CN
+        latitude: 31.3389
+        longitude: 121.22
         flag: 🇨🇳
         countryCode3: CHN
-    firstPractice:
-      date: '2009-04-17'
-    secondPractice:
-      date: '2009-04-17'
-    thirdPractice:
-      date: '2009-04-18'
-    qualifying:
-      date: '2009-04-18'
   - round: 4
-    raceNum: 807
     url: https://en.wikipedia.org/wiki/2009_Bahrain_Grand_Prix
-    raceName: Bahrain Grand Prix
+    name: Bahrain Grand Prix
     raceCode3: BAH
-    race:
-      date: '2009-04-26'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-04-26'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-04-24'
+      - name: Practice 2
+        date: '2009-04-24'
+      - name: Practice 3
+        date: '2009-04-25'
+      - name: Qualifying
+        date: '2009-04-25'
     circuit:
       circuitId: bahrain
       url: https://en.wikipedia.org/wiki/Bahrain_International_Circuit
-      circuitName: Bahrain International Circuit
+      name: Bahrain International Circuit
       location:
-        lat: '26.0325'
-        long: '50.5106'
         locality: Sakhir
         country: Bahrain
-        countryCode: BH
+        latitude: 26.0325
+        longitude: 50.5106
         flag: 🇧🇭
         countryCode3: BHR
-    firstPractice:
-      date: '2009-04-24'
-    secondPractice:
-      date: '2009-04-24'
-    thirdPractice:
-      date: '2009-04-25'
-    qualifying:
-      date: '2009-04-25'
   - round: 5
-    raceNum: 808
     url: https://en.wikipedia.org/wiki/2009_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '2009-05-10'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-05-10'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-05-08'
+      - name: Practice 2
+        date: '2009-05-08'
+      - name: Practice 3
+        date: '2009-05-09'
+      - name: Qualifying
+        date: '2009-05-09'
     circuit:
       circuitId: catalunya
       url: https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya
-      circuitName: Circuit de Barcelona-Catalunya
+      name: Circuit de Barcelona-Catalunya
       location:
-        lat: '41.57'
-        long: '2.26111'
         locality: Montmeló
         country: Spain
-        countryCode: ES
+        latitude: 41.57
+        longitude: 2.26111
         flag: 🇪🇸
         countryCode3: ESP
-    firstPractice:
-      date: '2009-05-08'
-    secondPractice:
-      date: '2009-05-08'
-    thirdPractice:
-      date: '2009-05-09'
-    qualifying:
-      date: '2009-05-09'
   - round: 6
-    raceNum: 809
     url: https://en.wikipedia.org/wiki/2009_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '2009-05-24'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-05-24'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-05-21'
+      - name: Practice 2
+        date: '2009-05-21'
+      - name: Practice 3
+        date: '2009-05-23'
+      - name: Qualifying
+        date: '2009-05-23'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
-    firstPractice:
-      date: '2009-05-21'
-    secondPractice:
-      date: '2009-05-21'
-    thirdPractice:
-      date: '2009-05-23'
-    qualifying:
-      date: '2009-05-23'
   - round: 7
-    raceNum: 810
     url: https://en.wikipedia.org/wiki/2009_Turkish_Grand_Prix
-    raceName: Turkish Grand Prix
+    name: Turkish Grand Prix
     raceCode3: TUR
-    race:
-      date: '2009-06-07'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-06-07'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-06-05'
+      - name: Practice 2
+        date: '2009-06-05'
+      - name: Practice 3
+        date: '2009-06-06'
+      - name: Qualifying
+        date: '2009-06-06'
     circuit:
       circuitId: istanbul
       url: https://en.wikipedia.org/wiki/Istanbul_Park
-      circuitName: Istanbul Park
+      name: Istanbul Park
       location:
-        lat: '40.9517'
-        long: '29.405'
         locality: Istanbul
         country: Turkey
-        countryCode: TR
+        latitude: 40.9517
+        longitude: 29.405
         flag: 🇹🇷
         countryCode3: TUR
-    firstPractice:
-      date: '2009-06-05'
-    secondPractice:
-      date: '2009-06-05'
-    thirdPractice:
-      date: '2009-06-06'
-    qualifying:
-      date: '2009-06-06'
   - round: 8
-    raceNum: 811
     url: https://en.wikipedia.org/wiki/2009_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '2009-06-21'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-06-21'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-06-19'
+      - name: Practice 2
+        date: '2009-06-19'
+      - name: Practice 3
+        date: '2009-06-20'
+      - name: Qualifying
+        date: '2009-06-20'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
-    firstPractice:
-      date: '2009-06-19'
-    secondPractice:
-      date: '2009-06-19'
-    thirdPractice:
-      date: '2009-06-20'
-    qualifying:
-      date: '2009-06-20'
   - round: 9
-    raceNum: 812
     url: https://en.wikipedia.org/wiki/2009_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '2009-07-12'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-07-12'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-07-10'
+      - name: Practice 2
+        date: '2009-07-10'
+      - name: Practice 3
+        date: '2009-07-11'
+      - name: Qualifying
+        date: '2009-07-11'
     circuit:
       circuitId: nurburgring
       url: https://en.wikipedia.org/wiki/N%C3%BCrburgring
-      circuitName: Nürburgring
+      name: Nürburgring
       location:
-        lat: '50.3356'
-        long: '6.9475'
         locality: Nürburg
         country: Germany
-        countryCode: DE
+        latitude: 50.3356
+        longitude: 6.9475
         flag: 🇩🇪
         countryCode3: DEU
-    firstPractice:
-      date: '2009-07-10'
-    secondPractice:
-      date: '2009-07-10'
-    thirdPractice:
-      date: '2009-07-11'
-    qualifying:
-      date: '2009-07-11'
   - round: 10
-    raceNum: 813
     url: https://en.wikipedia.org/wiki/2009_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '2009-07-26'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-07-26'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-07-24'
+      - name: Practice 2
+        date: '2009-07-24'
+      - name: Practice 3
+        date: '2009-07-25'
+      - name: Qualifying
+        date: '2009-07-25'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
-    firstPractice:
-      date: '2009-07-24'
-    secondPractice:
-      date: '2009-07-24'
-    thirdPractice:
-      date: '2009-07-25'
-    qualifying:
-      date: '2009-07-25'
   - round: 11
-    raceNum: 814
     url: https://en.wikipedia.org/wiki/2009_European_Grand_Prix
-    raceName: European Grand Prix
+    name: European Grand Prix
     raceCode3: EUR
-    race:
-      date: '2009-08-23'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-08-23'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-08-21'
+      - name: Practice 2
+        date: '2009-08-21'
+      - name: Practice 3
+        date: '2009-08-22'
+      - name: Qualifying
+        date: '2009-08-22'
     circuit:
       circuitId: valencia
       url: https://en.wikipedia.org/wiki/Valencia_Street_Circuit
-      circuitName: Valencia Street Circuit
+      name: Valencia Street Circuit
       location:
-        lat: '39.4589'
-        long: '-0.331667'
         locality: Valencia
         country: Spain
-        countryCode: ES
+        latitude: 39.4589
+        longitude: -0.331667
         flag: 🇪🇸
         countryCode3: ESP
-    firstPractice:
-      date: '2009-08-21'
-    secondPractice:
-      date: '2009-08-21'
-    thirdPractice:
-      date: '2009-08-22'
-    qualifying:
-      date: '2009-08-22'
   - round: 12
-    raceNum: 815
     url: https://en.wikipedia.org/wiki/2009_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '2009-08-30'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-08-30'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-08-28'
+      - name: Practice 2
+        date: '2009-08-28'
+      - name: Practice 3
+        date: '2009-08-29'
+      - name: Qualifying
+        date: '2009-08-29'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
-    firstPractice:
-      date: '2009-08-28'
-    secondPractice:
-      date: '2009-08-28'
-    thirdPractice:
-      date: '2009-08-29'
-    qualifying:
-      date: '2009-08-29'
   - round: 13
-    raceNum: 816
     url: https://en.wikipedia.org/wiki/2009_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '2009-09-13'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-09-13'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-09-11'
+      - name: Practice 2
+        date: '2009-09-11'
+      - name: Practice 3
+        date: '2009-09-12'
+      - name: Qualifying
+        date: '2009-09-12'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
-    firstPractice:
-      date: '2009-09-11'
-    secondPractice:
-      date: '2009-09-11'
-    thirdPractice:
-      date: '2009-09-12'
-    qualifying:
-      date: '2009-09-12'
   - round: 14
-    raceNum: 817
     url: https://en.wikipedia.org/wiki/2009_Singapore_Grand_Prix
-    raceName: Singapore Grand Prix
+    name: Singapore Grand Prix
     raceCode3: SIN
-    race:
-      date: '2009-09-27'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-09-27'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2009-09-25'
+      - name: Practice 2
+        date: '2009-09-25'
+      - name: Practice 3
+        date: '2009-09-26'
+      - name: Qualifying
+        date: '2009-09-26'
     circuit:
       circuitId: marina_bay
       url: https://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit
-      circuitName: Marina Bay Street Circuit
+      name: Marina Bay Street Circuit
       location:
-        lat: '1.2914'
-        long: '103.864'
         locality: Marina Bay
         country: Singapore
-        countryCode: SG
+        latitude: 1.2914
+        longitude: 103.864
         flag: 🇸🇬
         countryCode3: SGP
-    firstPractice:
-      date: '2009-09-25'
-    secondPractice:
-      date: '2009-09-25'
-    thirdPractice:
-      date: '2009-09-26'
-    qualifying:
-      date: '2009-09-26'
   - round: 15
-    raceNum: 818
     url: https://en.wikipedia.org/wiki/2009_Japanese_Grand_Prix
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
-    race:
-      date: '2009-10-04'
-      time: 05:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-10-04'
+        time: 05:00:00Z
+      - name: Practice 1
+        date: '2009-10-02'
+      - name: Practice 2
+        date: '2009-10-02'
+      - name: Practice 3
+        date: '2009-10-03'
+      - name: Qualifying
+        date: '2009-10-03'
     circuit:
       circuitId: suzuka
       url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
-      circuitName: Suzuka Circuit
+      name: Suzuka Circuit
       location:
-        lat: '34.8431'
-        long: '136.541'
         locality: Suzuka
         country: Japan
-        countryCode: JP
+        latitude: 34.8431
+        longitude: 136.541
         flag: 🇯🇵
         countryCode3: JPN
-    firstPractice:
-      date: '2009-10-02'
-    secondPractice:
-      date: '2009-10-02'
-    thirdPractice:
-      date: '2009-10-03'
-    qualifying:
-      date: '2009-10-03'
   - round: 16
-    raceNum: 819
     url: https://en.wikipedia.org/wiki/2009_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '2009-10-18'
-      time: 16:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-10-18'
+        time: 16:00:00Z
+      - name: Practice 1
+        date: '2009-10-16'
+      - name: Practice 2
+        date: '2009-10-16'
+      - name: Practice 3
+        date: '2009-10-17'
+      - name: Qualifying
+        date: '2009-10-17'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
-    firstPractice:
-      date: '2009-10-16'
-    secondPractice:
-      date: '2009-10-16'
-    thirdPractice:
-      date: '2009-10-17'
-    qualifying:
-      date: '2009-10-17'
   - round: 17
-    raceNum: 820
     url: https://en.wikipedia.org/wiki/2009_Abu_Dhabi_Grand_Prix
-    raceName: Abu Dhabi Grand Prix
+    name: Abu Dhabi Grand Prix
     raceCode3: UAE
-    race:
-      date: '2009-11-01'
-      time: 11:00:00Z
+    sessions:
+      - name: Race
+        date: '2009-11-01'
+        time: 11:00:00Z
+      - name: Practice 1
+        date: '2009-10-30'
+      - name: Practice 2
+        date: '2009-10-30'
+      - name: Practice 3
+        date: '2009-10-31'
+      - name: Qualifying
+        date: '2009-10-31'
     circuit:
       circuitId: yas_marina
       url: https://en.wikipedia.org/wiki/Yas_Marina_Circuit
-      circuitName: Yas Marina Circuit
+      name: Yas Marina Circuit
       location:
-        lat: '24.4672'
-        long: '54.6031'
         locality: Abu Dhabi
         country: UAE
-        countryCode: AE
+        latitude: 24.4672
+        longitude: 54.6031
         flag: 🇦🇪
         countryCode3: ARE
-    firstPractice:
-      date: '2009-10-30'
-    secondPractice:
-      date: '2009-10-30'
-    thirdPractice:
-      date: '2009-10-31'
-    qualifying:
-      date: '2009-10-31'

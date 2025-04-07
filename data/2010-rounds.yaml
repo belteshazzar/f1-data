@@ -1,534 +1,515 @@
 season: 2010
 rounds:
   - round: 1
-    raceNum: 821
     url: https://en.wikipedia.org/wiki/2010_Bahrain_Grand_Prix
-    raceName: Bahrain Grand Prix
+    name: Bahrain Grand Prix
     raceCode3: BAH
-    race:
-      date: '2010-03-14'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-03-14'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-03-12'
+      - name: Practice 2
+        date: '2010-03-12'
+      - name: Practice 3
+        date: '2010-03-13'
+      - name: Qualifying
+        date: '2010-03-13'
     circuit:
       circuitId: bahrain
       url: https://en.wikipedia.org/wiki/Bahrain_International_Circuit
-      circuitName: Bahrain International Circuit
+      name: Bahrain International Circuit
       location:
-        lat: '26.0325'
-        long: '50.5106'
         locality: Sakhir
         country: Bahrain
-        countryCode: BH
+        latitude: 26.0325
+        longitude: 50.5106
         flag: 🇧🇭
         countryCode3: BHR
-    firstPractice:
-      date: '2010-03-12'
-    secondPractice:
-      date: '2010-03-12'
-    thirdPractice:
-      date: '2010-03-13'
-    qualifying:
-      date: '2010-03-13'
   - round: 2
-    raceNum: 822
     url: https://en.wikipedia.org/wiki/2010_Australian_Grand_Prix
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
-    race:
-      date: '2010-03-28'
-      time: 06:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-03-28'
+        time: 06:00:00Z
+      - name: Practice 1
+        date: '2010-03-26'
+      - name: Practice 2
+        date: '2010-03-26'
+      - name: Practice 3
+        date: '2010-03-27'
+      - name: Qualifying
+        date: '2010-03-27'
     circuit:
       circuitId: albert_park
       url: https://en.wikipedia.org/wiki/Albert_Park_Circuit
-      circuitName: Albert Park Grand Prix Circuit
+      name: Albert Park Grand Prix Circuit
       location:
-        lat: '-37.8497'
-        long: '144.968'
         locality: Melbourne
         country: Australia
-        countryCode: AU
+        latitude: -37.8497
+        longitude: 144.968
         flag: 🇦🇺
         countryCode3: AUS
-    firstPractice:
-      date: '2010-03-26'
-    secondPractice:
-      date: '2010-03-26'
-    thirdPractice:
-      date: '2010-03-27'
-    qualifying:
-      date: '2010-03-27'
   - round: 3
-    raceNum: 823
     url: https://en.wikipedia.org/wiki/2010_Malaysian_Grand_Prix
-    raceName: Malaysian Grand Prix
+    name: Malaysian Grand Prix
     raceCode3: MYS
-    race:
-      date: '2010-04-04'
-      time: 08:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-04-04'
+        time: 08:00:00Z
+      - name: Practice 1
+        date: '2010-04-02'
+      - name: Practice 2
+        date: '2010-04-02'
+      - name: Practice 3
+        date: '2010-04-03'
+      - name: Qualifying
+        date: '2010-04-03'
     circuit:
       circuitId: sepang
       url: https://en.wikipedia.org/wiki/Sepang_International_Circuit
-      circuitName: Sepang International Circuit
+      name: Sepang International Circuit
       location:
-        lat: '2.76083'
-        long: '101.738'
         locality: Kuala Lumpur
         country: Malaysia
-        countryCode: MY
+        latitude: 2.76083
+        longitude: 101.738
         flag: 🇲🇾
         countryCode3: MYS
-    firstPractice:
-      date: '2010-04-02'
-    secondPractice:
-      date: '2010-04-02'
-    thirdPractice:
-      date: '2010-04-03'
-    qualifying:
-      date: '2010-04-03'
   - round: 4
-    raceNum: 824
     url: https://en.wikipedia.org/wiki/2010_Chinese_Grand_Prix
-    raceName: Chinese Grand Prix
+    name: Chinese Grand Prix
     raceCode3: CHN
-    race:
-      date: '2010-04-18'
-      time: 06:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-04-18'
+        time: 06:00:00Z
+      - name: Practice 1
+        date: '2010-04-16'
+      - name: Practice 2
+        date: '2010-04-16'
+      - name: Practice 3
+        date: '2010-04-17'
+      - name: Qualifying
+        date: '2010-04-17'
     circuit:
       circuitId: shanghai
       url: https://en.wikipedia.org/wiki/Shanghai_International_Circuit
-      circuitName: Shanghai International Circuit
+      name: Shanghai International Circuit
       location:
-        lat: '31.3389'
-        long: '121.22'
         locality: Shanghai
         country: China
-        countryCode: CN
+        latitude: 31.3389
+        longitude: 121.22
         flag: 🇨🇳
         countryCode3: CHN
-    firstPractice:
-      date: '2010-04-16'
-    secondPractice:
-      date: '2010-04-16'
-    thirdPractice:
-      date: '2010-04-17'
-    qualifying:
-      date: '2010-04-17'
   - round: 5
-    raceNum: 825
     url: https://en.wikipedia.org/wiki/2010_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '2010-05-09'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-05-09'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-05-07'
+      - name: Practice 2
+        date: '2010-05-07'
+      - name: Practice 3
+        date: '2010-05-08'
+      - name: Qualifying
+        date: '2010-05-08'
     circuit:
       circuitId: catalunya
       url: https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya
-      circuitName: Circuit de Barcelona-Catalunya
+      name: Circuit de Barcelona-Catalunya
       location:
-        lat: '41.57'
-        long: '2.26111'
         locality: Montmeló
         country: Spain
-        countryCode: ES
+        latitude: 41.57
+        longitude: 2.26111
         flag: 🇪🇸
         countryCode3: ESP
-    firstPractice:
-      date: '2010-05-07'
-    secondPractice:
-      date: '2010-05-07'
-    thirdPractice:
-      date: '2010-05-08'
-    qualifying:
-      date: '2010-05-08'
   - round: 6
-    raceNum: 826
     url: https://en.wikipedia.org/wiki/2010_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '2010-05-16'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-05-16'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-05-13'
+      - name: Practice 2
+        date: '2010-05-13'
+      - name: Practice 3
+        date: '2010-05-15'
+      - name: Qualifying
+        date: '2010-05-15'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
-    firstPractice:
-      date: '2010-05-13'
-    secondPractice:
-      date: '2010-05-13'
-    thirdPractice:
-      date: '2010-05-15'
-    qualifying:
-      date: '2010-05-15'
   - round: 7
-    raceNum: 827
     url: https://en.wikipedia.org/wiki/2010_Turkish_Grand_Prix
-    raceName: Turkish Grand Prix
+    name: Turkish Grand Prix
     raceCode3: TUR
-    race:
-      date: '2010-05-30'
-      time: 11:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-05-30'
+        time: 11:00:00Z
+      - name: Practice 1
+        date: '2010-05-28'
+      - name: Practice 2
+        date: '2010-05-28'
+      - name: Practice 3
+        date: '2010-05-29'
+      - name: Qualifying
+        date: '2010-05-29'
     circuit:
       circuitId: istanbul
       url: https://en.wikipedia.org/wiki/Istanbul_Park
-      circuitName: Istanbul Park
+      name: Istanbul Park
       location:
-        lat: '40.9517'
-        long: '29.405'
         locality: Istanbul
         country: Turkey
-        countryCode: TR
+        latitude: 40.9517
+        longitude: 29.405
         flag: 🇹🇷
         countryCode3: TUR
-    firstPractice:
-      date: '2010-05-28'
-    secondPractice:
-      date: '2010-05-28'
-    thirdPractice:
-      date: '2010-05-29'
-    qualifying:
-      date: '2010-05-29'
   - round: 8
-    raceNum: 828
     url: https://en.wikipedia.org/wiki/2010_Canadian_Grand_Prix
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
-    race:
-      date: '2010-06-13'
-      time: 16:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-06-13'
+        time: 16:00:00Z
+      - name: Practice 1
+        date: '2010-06-11'
+      - name: Practice 2
+        date: '2010-06-11'
+      - name: Practice 3
+        date: '2010-06-12'
+      - name: Qualifying
+        date: '2010-06-12'
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
-      circuitName: Circuit Gilles Villeneuve
+      name: Circuit Gilles Villeneuve
       location:
-        lat: '45.5'
-        long: '-73.5228'
         locality: Montreal
         country: Canada
-        countryCode: CA
+        latitude: 45.5
+        longitude: -73.5228
         flag: 🇨🇦
         countryCode3: CAN
-    firstPractice:
-      date: '2010-06-11'
-    secondPractice:
-      date: '2010-06-11'
-    thirdPractice:
-      date: '2010-06-12'
-    qualifying:
-      date: '2010-06-12'
   - round: 9
-    raceNum: 829
     url: https://en.wikipedia.org/wiki/2010_European_Grand_Prix
-    raceName: European Grand Prix
+    name: European Grand Prix
     raceCode3: EUR
-    race:
-      date: '2010-06-27'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-06-27'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-06-25'
+      - name: Practice 2
+        date: '2010-06-25'
+      - name: Practice 3
+        date: '2010-06-26'
+      - name: Qualifying
+        date: '2010-06-26'
     circuit:
       circuitId: valencia
       url: https://en.wikipedia.org/wiki/Valencia_Street_Circuit
-      circuitName: Valencia Street Circuit
+      name: Valencia Street Circuit
       location:
-        lat: '39.4589'
-        long: '-0.331667'
         locality: Valencia
         country: Spain
-        countryCode: ES
+        latitude: 39.4589
+        longitude: -0.331667
         flag: 🇪🇸
         countryCode3: ESP
-    firstPractice:
-      date: '2010-06-25'
-    secondPractice:
-      date: '2010-06-25'
-    thirdPractice:
-      date: '2010-06-26'
-    qualifying:
-      date: '2010-06-26'
   - round: 10
-    raceNum: 830
     url: https://en.wikipedia.org/wiki/2010_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '2010-07-11'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-07-11'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-07-09'
+      - name: Practice 2
+        date: '2010-07-09'
+      - name: Practice 3
+        date: '2010-07-10'
+      - name: Qualifying
+        date: '2010-07-10'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
-    firstPractice:
-      date: '2010-07-09'
-    secondPractice:
-      date: '2010-07-09'
-    thirdPractice:
-      date: '2010-07-10'
-    qualifying:
-      date: '2010-07-10'
   - round: 11
-    raceNum: 831
     url: https://en.wikipedia.org/wiki/2010_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '2010-07-25'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-07-25'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-07-23'
+      - name: Practice 2
+        date: '2010-07-23'
+      - name: Practice 3
+        date: '2010-07-24'
+      - name: Qualifying
+        date: '2010-07-24'
     circuit:
       circuitId: hockenheimring
       url: https://en.wikipedia.org/wiki/Hockenheimring
-      circuitName: Hockenheimring
+      name: Hockenheimring
       location:
-        lat: '49.3278'
-        long: '8.56583'
         locality: Hockenheim
         country: Germany
-        countryCode: DE
+        latitude: 49.3278
+        longitude: 8.56583
         flag: 🇩🇪
         countryCode3: DEU
-    firstPractice:
-      date: '2010-07-23'
-    secondPractice:
-      date: '2010-07-23'
-    thirdPractice:
-      date: '2010-07-24'
-    qualifying:
-      date: '2010-07-24'
   - round: 12
-    raceNum: 832
     url: https://en.wikipedia.org/wiki/2010_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '2010-08-01'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-08-01'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-07-30'
+      - name: Practice 2
+        date: '2010-07-30'
+      - name: Practice 3
+        date: '2010-07-31'
+      - name: Qualifying
+        date: '2010-07-31'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
-    firstPractice:
-      date: '2010-07-30'
-    secondPractice:
-      date: '2010-07-30'
-    thirdPractice:
-      date: '2010-07-31'
-    qualifying:
-      date: '2010-07-31'
   - round: 13
-    raceNum: 833
     url: https://en.wikipedia.org/wiki/2010_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '2010-08-29'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-08-29'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-08-27'
+      - name: Practice 2
+        date: '2010-08-27'
+      - name: Practice 3
+        date: '2010-08-28'
+      - name: Qualifying
+        date: '2010-08-28'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
-    firstPractice:
-      date: '2010-08-27'
-    secondPractice:
-      date: '2010-08-27'
-    thirdPractice:
-      date: '2010-08-28'
-    qualifying:
-      date: '2010-08-28'
   - round: 14
-    raceNum: 834
     url: https://en.wikipedia.org/wiki/2010_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '2010-09-12'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-09-12'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-09-10'
+      - name: Practice 2
+        date: '2010-09-10'
+      - name: Practice 3
+        date: '2010-09-11'
+      - name: Qualifying
+        date: '2010-09-11'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
-    firstPractice:
-      date: '2010-09-10'
-    secondPractice:
-      date: '2010-09-10'
-    thirdPractice:
-      date: '2010-09-11'
-    qualifying:
-      date: '2010-09-11'
   - round: 15
-    raceNum: 835
     url: https://en.wikipedia.org/wiki/2010_Singapore_Grand_Prix
-    raceName: Singapore Grand Prix
+    name: Singapore Grand Prix
     raceCode3: SIN
-    race:
-      date: '2010-09-26'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-09-26'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2010-09-24'
+      - name: Practice 2
+        date: '2010-09-24'
+      - name: Practice 3
+        date: '2010-09-25'
+      - name: Qualifying
+        date: '2010-09-25'
     circuit:
       circuitId: marina_bay
       url: https://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit
-      circuitName: Marina Bay Street Circuit
+      name: Marina Bay Street Circuit
       location:
-        lat: '1.2914'
-        long: '103.864'
         locality: Marina Bay
         country: Singapore
-        countryCode: SG
+        latitude: 1.2914
+        longitude: 103.864
         flag: 🇸🇬
         countryCode3: SGP
-    firstPractice:
-      date: '2010-09-24'
-    secondPractice:
-      date: '2010-09-24'
-    thirdPractice:
-      date: '2010-09-25'
-    qualifying:
-      date: '2010-09-25'
   - round: 16
-    raceNum: 836
     url: https://en.wikipedia.org/wiki/2010_Japanese_Grand_Prix
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
-    race:
-      date: '2010-10-10'
-      time: 06:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-10-10'
+        time: 06:00:00Z
+      - name: Practice 1
+        date: '2010-10-08'
+      - name: Practice 2
+        date: '2010-10-08'
+      - name: Practice 3
+        date: '2010-10-09'
+      - name: Qualifying
+        date: '2010-10-09'
     circuit:
       circuitId: suzuka
       url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
-      circuitName: Suzuka Circuit
+      name: Suzuka Circuit
       location:
-        lat: '34.8431'
-        long: '136.541'
         locality: Suzuka
         country: Japan
-        countryCode: JP
+        latitude: 34.8431
+        longitude: 136.541
         flag: 🇯🇵
         countryCode3: JPN
-    firstPractice:
-      date: '2010-10-08'
-    secondPractice:
-      date: '2010-10-08'
-    thirdPractice:
-      date: '2010-10-09'
-    qualifying:
-      date: '2010-10-09'
   - round: 17
-    raceNum: 837
     url: https://en.wikipedia.org/wiki/2010_Korean_Grand_Prix
-    raceName: Korean Grand Prix
+    name: Korean Grand Prix
     raceCode3: KOR
-    race:
-      date: '2010-10-24'
-      time: 05:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-10-24'
+        time: 05:00:00Z
+      - name: Practice 1
+        date: '2010-10-22'
+      - name: Practice 2
+        date: '2010-10-22'
+      - name: Practice 3
+        date: '2010-10-23'
+      - name: Qualifying
+        date: '2010-10-23'
     circuit:
       circuitId: yeongam
       url: https://en.wikipedia.org/wiki/Korea_International_Circuit
-      circuitName: Korean International Circuit
+      name: Korean International Circuit
       location:
-        lat: '34.7333'
-        long: '126.417'
         locality: Yeongam County
         country: Korea
-        countryCode: KR
+        latitude: 34.7333
+        longitude: 126.417
         flag: 🇰🇷
         countryCode3: KOR
-    firstPractice:
-      date: '2010-10-22'
-    secondPractice:
-      date: '2010-10-22'
-    thirdPractice:
-      date: '2010-10-23'
-    qualifying:
-      date: '2010-10-23'
   - round: 18
-    raceNum: 838
     url: https://en.wikipedia.org/wiki/2010_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '2010-11-07'
-      time: 16:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-11-07'
+        time: 16:00:00Z
+      - name: Practice 1
+        date: '2010-11-05'
+      - name: Practice 2
+        date: '2010-11-05'
+      - name: Practice 3
+        date: '2010-11-06'
+      - name: Qualifying
+        date: '2010-11-06'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
-    firstPractice:
-      date: '2010-11-05'
-    secondPractice:
-      date: '2010-11-05'
-    thirdPractice:
-      date: '2010-11-06'
-    qualifying:
-      date: '2010-11-06'
   - round: 19
-    raceNum: 839
     url: https://en.wikipedia.org/wiki/2010_Abu_Dhabi_Grand_Prix
-    raceName: Abu Dhabi Grand Prix
+    name: Abu Dhabi Grand Prix
     raceCode3: UAE
-    race:
-      date: '2010-11-14'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2010-11-14'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2010-11-12'
+      - name: Practice 2
+        date: '2010-11-12'
+      - name: Practice 3
+        date: '2010-11-13'
+      - name: Qualifying
+        date: '2010-11-13'
     circuit:
       circuitId: yas_marina
       url: https://en.wikipedia.org/wiki/Yas_Marina_Circuit
-      circuitName: Yas Marina Circuit
+      name: Yas Marina Circuit
       location:
-        lat: '24.4672'
-        long: '54.6031'
         locality: Abu Dhabi
         country: UAE
-        countryCode: AE
+        latitude: 24.4672
+        longitude: 54.6031
         flag: 🇦🇪
         countryCode3: ARE
-    firstPractice:
-      date: '2010-11-12'
-    secondPractice:
-      date: '2010-11-12'
-    thirdPractice:
-      date: '2010-11-13'
-    qualifying:
-      date: '2010-11-13'

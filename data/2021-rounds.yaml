@@ -1,618 +1,596 @@
 season: 2021
 rounds:
   - round: 1
-    raceNum: 1036
     url: https://en.wikipedia.org/wiki/2021_Bahrain_Grand_Prix
-    raceName: Bahrain Grand Prix
+    name: Bahrain Grand Prix
     raceCode3: BAH
-    race:
-      date: '2021-03-28'
-      time: 15:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-03-28'
+        time: 15:00:00Z
+      - name: Practice 1
+        date: '2021-03-26'
+      - name: Practice 2
+        date: '2021-03-26'
+      - name: Practice 3
+        date: '2021-03-27'
+      - name: Qualifying
+        date: '2021-03-27'
     circuit:
       circuitId: bahrain
       url: https://en.wikipedia.org/wiki/Bahrain_International_Circuit
-      circuitName: Bahrain International Circuit
+      name: Bahrain International Circuit
       location:
-        lat: '26.0325'
-        long: '50.5106'
         locality: Sakhir
         country: Bahrain
-        countryCode: BH
+        latitude: 26.0325
+        longitude: 50.5106
         flag: 🇧🇭
         countryCode3: BHR
-    firstPractice:
-      date: '2021-03-26'
-    secondPractice:
-      date: '2021-03-26'
-    thirdPractice:
-      date: '2021-03-27'
-    qualifying:
-      date: '2021-03-27'
   - round: 2
-    raceNum: 1037
     url: https://en.wikipedia.org/wiki/2021_Emilia_Romagna_Grand_Prix
-    raceName: Emilia Romagna Grand Prix
+    name: Emilia Romagna Grand Prix
     raceCode3: EMI
-    race:
-      date: '2021-04-18'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-04-18'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-04-16'
+      - name: Practice 2
+        date: '2021-04-16'
+      - name: Practice 3
+        date: '2021-04-17'
+      - name: Qualifying
+        date: '2021-04-17'
     circuit:
       circuitId: imola
       url: https://en.wikipedia.org/wiki/Imola_Circuit
-      circuitName: Autodromo Enzo e Dino Ferrari
+      name: Autodromo Enzo e Dino Ferrari
       location:
-        lat: '44.3439'
-        long: '11.7167'
         locality: Imola
         country: Italy
-        countryCode: IT
+        latitude: 44.3439
+        longitude: 11.7167
         flag: 🇮🇹
         countryCode3: ITA
-    firstPractice:
-      date: '2021-04-16'
-    secondPractice:
-      date: '2021-04-16'
-    thirdPractice:
-      date: '2021-04-17'
-    qualifying:
-      date: '2021-04-17'
   - round: 3
-    raceNum: 1038
     url: https://en.wikipedia.org/wiki/2021_Portuguese_Grand_Prix
-    raceName: Portuguese Grand Prix
+    name: Portuguese Grand Prix
     raceCode3: POR
-    race:
-      date: '2021-05-02'
-      time: 14:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-05-02'
+        time: 14:00:00Z
+      - name: Practice 1
+        date: '2021-04-30'
+      - name: Practice 2
+        date: '2021-04-30'
+      - name: Practice 3
+        date: '2021-05-01'
+      - name: Qualifying
+        date: '2021-05-01'
     circuit:
       circuitId: portimao
       url: https://en.wikipedia.org/wiki/Algarve_International_Circuit
-      circuitName: Autódromo Internacional do Algarve
+      name: Autódromo Internacional do Algarve
       location:
-        lat: '37.227'
-        long: '-8.6267'
         locality: Portimão
         country: Portugal
-        countryCode: PT
+        latitude: 37.227
+        longitude: -8.6267
         flag: 🇵🇹
         countryCode3: POR
-    firstPractice:
-      date: '2021-04-30'
-    secondPractice:
-      date: '2021-04-30'
-    thirdPractice:
-      date: '2021-05-01'
-    qualifying:
-      date: '2021-05-01'
   - round: 4
-    raceNum: 1039
     url: https://en.wikipedia.org/wiki/2021_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '2021-05-09'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-05-09'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-05-07'
+      - name: Practice 2
+        date: '2021-05-07'
+      - name: Practice 3
+        date: '2021-05-08'
+      - name: Qualifying
+        date: '2021-05-08'
     circuit:
       circuitId: catalunya
       url: https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya
-      circuitName: Circuit de Barcelona-Catalunya
+      name: Circuit de Barcelona-Catalunya
       location:
-        lat: '41.57'
-        long: '2.26111'
         locality: Montmeló
         country: Spain
-        countryCode: ES
+        latitude: 41.57
+        longitude: 2.26111
         flag: 🇪🇸
         countryCode3: ESP
-    firstPractice:
-      date: '2021-05-07'
-    secondPractice:
-      date: '2021-05-07'
-    thirdPractice:
-      date: '2021-05-08'
-    qualifying:
-      date: '2021-05-08'
   - round: 5
-    raceNum: 1040
     url: https://en.wikipedia.org/wiki/2021_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '2021-05-23'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-05-23'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-05-21'
+      - name: Practice 2
+        date: '2021-05-21'
+      - name: Practice 3
+        date: '2021-05-22'
+      - name: Qualifying
+        date: '2021-05-22'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
-    firstPractice:
-      date: '2021-05-21'
-    secondPractice:
-      date: '2021-05-21'
-    thirdPractice:
-      date: '2021-05-22'
-    qualifying:
-      date: '2021-05-22'
   - round: 6
-    raceNum: 1041
     url: https://en.wikipedia.org/wiki/2021_Azerbaijan_Grand_Prix
-    raceName: Azerbaijan Grand Prix
+    name: Azerbaijan Grand Prix
     raceCode3: AZE
-    race:
-      date: '2021-06-06'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-06-06'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2021-06-04'
+      - name: Practice 2
+        date: '2021-06-04'
+      - name: Practice 3
+        date: '2021-06-05'
+      - name: Qualifying
+        date: '2021-06-05'
     circuit:
       circuitId: baku
       url: https://en.wikipedia.org/wiki/Baku_City_Circuit
-      circuitName: Baku City Circuit
+      name: Baku City Circuit
       location:
-        lat: '40.3725'
-        long: '49.8533'
         locality: Baku
         country: Azerbaijan
-        countryCode: AZ
+        latitude: 40.3725
+        longitude: 49.8533
         flag: 🇦🇿
         countryCode3: AZE
-    firstPractice:
-      date: '2021-06-04'
-    secondPractice:
-      date: '2021-06-04'
-    thirdPractice:
-      date: '2021-06-05'
-    qualifying:
-      date: '2021-06-05'
   - round: 7
-    raceNum: 1042
     url: https://en.wikipedia.org/wiki/2021_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '2021-06-20'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-06-20'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-06-18'
+      - name: Practice 2
+        date: '2021-06-18'
+      - name: Practice 3
+        date: '2021-06-19'
+      - name: Qualifying
+        date: '2021-06-19'
     circuit:
       circuitId: ricard
       url: https://en.wikipedia.org/wiki/Circuit_Paul_Ricard
-      circuitName: Circuit Paul Ricard
+      name: Circuit Paul Ricard
       location:
-        lat: '43.2506'
-        long: '5.79167'
         locality: Le Castellet
         country: France
-        countryCode: FR
+        latitude: 43.2506
+        longitude: 5.79167
         flag: 🇫🇷
         countryCode3: FRA
-    firstPractice:
-      date: '2021-06-18'
-    secondPractice:
-      date: '2021-06-18'
-    thirdPractice:
-      date: '2021-06-19'
-    qualifying:
-      date: '2021-06-19'
   - round: 8
-    raceNum: 1043
     url: https://en.wikipedia.org/wiki/2021_Styrian_Grand_Prix
-    raceName: Styrian Grand Prix
+    name: Styrian Grand Prix
     raceCode3: STY
-    race:
-      date: '2021-06-27'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-06-27'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-06-25'
+      - name: Practice 2
+        date: '2021-06-25'
+      - name: Practice 3
+        date: '2021-06-26'
+      - name: Qualifying
+        date: '2021-06-26'
     circuit:
       circuitId: red_bull_ring
       url: https://en.wikipedia.org/wiki/Red_Bull_Ring
-      circuitName: Red Bull Ring
+      name: Red Bull Ring
       location:
-        lat: '47.2197'
-        long: '14.7647'
         locality: Spielberg
         country: Austria
-        countryCode: AT
+        latitude: 47.2197
+        longitude: 14.7647
         flag: 🇦🇹
         countryCode3: AUT
-    firstPractice:
-      date: '2021-06-25'
-    secondPractice:
-      date: '2021-06-25'
-    thirdPractice:
-      date: '2021-06-26'
-    qualifying:
-      date: '2021-06-26'
   - round: 9
-    raceNum: 1044
     url: https://en.wikipedia.org/wiki/2021_Austrian_Grand_Prix
-    raceName: Austrian Grand Prix
+    name: Austrian Grand Prix
     raceCode3: AUT
-    race:
-      date: '2021-07-04'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-07-04'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-07-02'
+      - name: Practice 2
+        date: '2021-07-02'
+      - name: Practice 3
+        date: '2021-07-03'
+      - name: Qualifying
+        date: '2021-07-03'
     circuit:
       circuitId: red_bull_ring
       url: https://en.wikipedia.org/wiki/Red_Bull_Ring
-      circuitName: Red Bull Ring
+      name: Red Bull Ring
       location:
-        lat: '47.2197'
-        long: '14.7647'
         locality: Spielberg
         country: Austria
-        countryCode: AT
+        latitude: 47.2197
+        longitude: 14.7647
         flag: 🇦🇹
         countryCode3: AUT
-    firstPractice:
-      date: '2021-07-02'
-    secondPractice:
-      date: '2021-07-02'
-    thirdPractice:
-      date: '2021-07-03'
-    qualifying:
-      date: '2021-07-03'
   - round: 10
-    raceNum: 1045
     url: https://en.wikipedia.org/wiki/2021_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '2021-07-18'
-      time: 14:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-07-18'
+        time: 14:00:00Z
+      - name: Practice 1
+        date: '2021-07-16'
+      - name: Practice 2
+        date: '2021-07-17'
+      - name: Qualifying
+        date: '2021-07-16'
+      - name: Sprint
+        date: '2021-07-17'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
-    firstPractice:
-      date: '2021-07-16'
-    secondPractice:
-      date: '2021-07-17'
-    qualifying:
-      date: '2021-07-16'
-    sprint:
-      date: '2021-07-17'
   - round: 11
-    raceNum: 1046
     url: https://en.wikipedia.org/wiki/2021_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '2021-08-01'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-08-01'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-07-30'
+      - name: Practice 2
+        date: '2021-07-30'
+      - name: Practice 3
+        date: '2021-07-31'
+      - name: Qualifying
+        date: '2021-07-31'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
-    firstPractice:
-      date: '2021-07-30'
-    secondPractice:
-      date: '2021-07-30'
-    thirdPractice:
-      date: '2021-07-31'
-    qualifying:
-      date: '2021-07-31'
   - round: 12
-    raceNum: 1047
     url: https://en.wikipedia.org/wiki/2021_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '2021-08-29'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-08-29'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-08-27'
+      - name: Practice 2
+        date: '2021-08-27'
+      - name: Practice 3
+        date: '2021-08-28'
+      - name: Qualifying
+        date: '2021-08-28'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
-    firstPractice:
-      date: '2021-08-27'
-    secondPractice:
-      date: '2021-08-27'
-    thirdPractice:
-      date: '2021-08-28'
-    qualifying:
-      date: '2021-08-28'
   - round: 13
-    raceNum: 1048
     url: https://en.wikipedia.org/wiki/2021_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '2021-09-05'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-09-05'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-09-03'
+      - name: Practice 2
+        date: '2021-09-03'
+      - name: Practice 3
+        date: '2021-09-04'
+      - name: Qualifying
+        date: '2021-09-04'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
-    firstPractice:
-      date: '2021-09-03'
-    secondPractice:
-      date: '2021-09-03'
-    thirdPractice:
-      date: '2021-09-04'
-    qualifying:
-      date: '2021-09-04'
   - round: 14
-    raceNum: 1049
     url: https://en.wikipedia.org/wiki/2021_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '2021-09-12'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-09-12'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-09-10'
+      - name: Practice 2
+        date: '2021-09-11'
+      - name: Qualifying
+        date: '2021-09-10'
+      - name: Sprint
+        date: '2021-09-11'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
-    firstPractice:
-      date: '2021-09-10'
-    secondPractice:
-      date: '2021-09-11'
-    qualifying:
-      date: '2021-09-10'
-    sprint:
-      date: '2021-09-11'
   - round: 15
-    raceNum: 1050
     url: https://en.wikipedia.org/wiki/2021_Russian_Grand_Prix
-    raceName: Russian Grand Prix
+    name: Russian Grand Prix
     raceCode3: RUS
-    race:
-      date: '2021-09-26'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-09-26'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2021-09-24'
+      - name: Practice 2
+        date: '2021-09-24'
+      - name: Practice 3
+        date: '2021-09-25'
+      - name: Qualifying
+        date: '2021-09-25'
     circuit:
       circuitId: sochi
       url: https://en.wikipedia.org/wiki/Sochi_Autodrom
-      circuitName: Sochi Autodrom
+      name: Sochi Autodrom
       location:
-        lat: '43.4057'
-        long: '39.9578'
         locality: Sochi
         country: Russia
-        countryCode: RU
+        latitude: 43.4057
+        longitude: 39.9578
         flag: 🇷🇺
         countryCode3: RUS
-    firstPractice:
-      date: '2021-09-24'
-    secondPractice:
-      date: '2021-09-24'
-    thirdPractice:
-      date: '2021-09-25'
-    qualifying:
-      date: '2021-09-25'
   - round: 16
-    raceNum: 1051
     url: https://en.wikipedia.org/wiki/2021_Turkish_Grand_Prix
-    raceName: Turkish Grand Prix
+    name: Turkish Grand Prix
     raceCode3: TUR
-    race:
-      date: '2021-10-10'
-      time: 12:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-10-10'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2021-10-08'
+      - name: Practice 2
+        date: '2021-10-08'
+      - name: Practice 3
+        date: '2021-10-09'
+      - name: Qualifying
+        date: '2021-10-09'
     circuit:
       circuitId: istanbul
       url: https://en.wikipedia.org/wiki/Istanbul_Park
-      circuitName: Istanbul Park
+      name: Istanbul Park
       location:
-        lat: '40.9517'
-        long: '29.405'
         locality: Istanbul
         country: Turkey
-        countryCode: TR
+        latitude: 40.9517
+        longitude: 29.405
         flag: 🇹🇷
         countryCode3: TUR
-    firstPractice:
-      date: '2021-10-08'
-    secondPractice:
-      date: '2021-10-08'
-    thirdPractice:
-      date: '2021-10-09'
-    qualifying:
-      date: '2021-10-09'
   - round: 17
-    raceNum: 1052
     url: https://en.wikipedia.org/wiki/2021_United_States_Grand_Prix
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
-    race:
-      date: '2021-10-24'
-      time: 19:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-10-24'
+        time: 19:00:00Z
+      - name: Practice 1
+        date: '2021-10-22'
+      - name: Practice 2
+        date: '2021-10-22'
+      - name: Practice 3
+        date: '2021-10-23'
+      - name: Qualifying
+        date: '2021-10-23'
     circuit:
       circuitId: americas
       url: https://en.wikipedia.org/wiki/Circuit_of_the_Americas
-      circuitName: Circuit of the Americas
+      name: Circuit of the Americas
       location:
-        lat: '30.1328'
-        long: '-97.6411'
         locality: Austin
         country: USA
-        countryCode: US
+        latitude: 30.1328
+        longitude: -97.6411
         flag: 🇺🇸
         countryCode3: USA
-    firstPractice:
-      date: '2021-10-22'
-    secondPractice:
-      date: '2021-10-22'
-    thirdPractice:
-      date: '2021-10-23'
-    qualifying:
-      date: '2021-10-23'
   - round: 18
-    raceNum: 1053
     url: https://en.wikipedia.org/wiki/2021_Mexico_City_Grand_Prix
-    raceName: Mexico City Grand Prix
+    name: Mexico City Grand Prix
     raceCode3: MXC
-    race:
-      date: '2021-11-07'
-      time: 19:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-11-07'
+        time: 19:00:00Z
+      - name: Practice 1
+        date: '2021-11-05'
+      - name: Practice 2
+        date: '2021-11-05'
+      - name: Practice 3
+        date: '2021-11-06'
+      - name: Qualifying
+        date: '2021-11-06'
     circuit:
       circuitId: rodriguez
       url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez
-      circuitName: Autódromo Hermanos Rodríguez
+      name: Autódromo Hermanos Rodríguez
       location:
-        lat: '19.4042'
-        long: '-99.0907'
         locality: Mexico City
         country: Mexico
-        countryCode: MX
+        latitude: 19.4042
+        longitude: -99.0907
         flag: 🇲🇽
         countryCode3: MEX
-    firstPractice:
-      date: '2021-11-05'
-    secondPractice:
-      date: '2021-11-05'
-    thirdPractice:
-      date: '2021-11-06'
-    qualifying:
-      date: '2021-11-06'
   - round: 19
-    raceNum: 1054
     url: https://en.wikipedia.org/wiki/2021_S%C3%A3o_Paulo_Grand_Prix
-    raceName: São Paulo Grand Prix
+    name: São Paulo Grand Prix
     raceCode3: SAP
-    race:
-      date: '2021-11-14'
-      time: 17:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-11-14'
+        time: 17:00:00Z
+      - name: Practice 1
+        date: '2021-11-12'
+      - name: Practice 2
+        date: '2021-11-13'
+      - name: Qualifying
+        date: '2021-11-12'
+      - name: Sprint
+        date: '2021-11-13'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
-    firstPractice:
-      date: '2021-11-12'
-    secondPractice:
-      date: '2021-11-13'
-    qualifying:
-      date: '2021-11-12'
-    sprint:
-      date: '2021-11-13'
   - round: 20
-    raceNum: 1055
     url: https://en.wikipedia.org/wiki/2021_Qatar_Grand_Prix
-    raceName: Qatar Grand Prix
+    name: Qatar Grand Prix
     raceCode3: QAT
-    race:
-      date: '2021-11-21'
-      time: 14:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-11-21'
+        time: 14:00:00Z
+      - name: Practice 1
+        date: '2021-11-19'
+      - name: Practice 2
+        date: '2021-11-19'
+      - name: Practice 3
+        date: '2021-11-20'
+      - name: Qualifying
+        date: '2021-11-20'
     circuit:
       circuitId: losail
       url: https://en.wikipedia.org/wiki/Lusail_International_Circuit
-      circuitName: Losail International Circuit
+      name: Losail International Circuit
       location:
-        lat: '25.49'
-        long: '51.4542'
         locality: Al Daayen
         country: Qatar
-        countryCode: QA
+        latitude: 25.49
+        longitude: 51.4542
         flag: 🇶🇦
         countryCode3: QAT
-    firstPractice:
-      date: '2021-11-19'
-    secondPractice:
-      date: '2021-11-19'
-    thirdPractice:
-      date: '2021-11-20'
-    qualifying:
-      date: '2021-11-20'
   - round: 21
-    raceNum: 1056
     url: https://en.wikipedia.org/wiki/2021_Saudi_Arabian_Grand_Prix
-    raceName: Saudi Arabian Grand Prix
+    name: Saudi Arabian Grand Prix
     raceCode3: SAU
-    race:
-      date: '2021-12-05'
-      time: 17:30:00Z
+    sessions:
+      - name: Race
+        date: '2021-12-05'
+        time: 17:30:00Z
+      - name: Practice 1
+        date: '2021-12-03'
+      - name: Practice 2
+        date: '2021-12-03'
+      - name: Practice 3
+        date: '2021-12-04'
+      - name: Qualifying
+        date: '2021-12-04'
     circuit:
       circuitId: jeddah
       url: https://en.wikipedia.org/wiki/Jeddah_Corniche_Circuit
-      circuitName: Jeddah Corniche Circuit
+      name: Jeddah Corniche Circuit
       location:
-        lat: '21.6319'
-        long: '39.1044'
         locality: Jeddah
         country: Saudi Arabia
-        countryCode: SA
+        latitude: 21.6319
+        longitude: 39.1044
         flag: 🇸🇦
         countryCode3: SAU
-    firstPractice:
-      date: '2021-12-03'
-    secondPractice:
-      date: '2021-12-03'
-    thirdPractice:
-      date: '2021-12-04'
-    qualifying:
-      date: '2021-12-04'
   - round: 22
-    raceNum: 1057
     url: https://en.wikipedia.org/wiki/2021_Abu_Dhabi_Grand_Prix
-    raceName: Abu Dhabi Grand Prix
+    name: Abu Dhabi Grand Prix
     raceCode3: UAE
-    race:
-      date: '2021-12-12'
-      time: 13:00:00Z
+    sessions:
+      - name: Race
+        date: '2021-12-12'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2021-12-10'
+      - name: Practice 2
+        date: '2021-12-10'
+      - name: Practice 3
+        date: '2021-12-11'
+      - name: Qualifying
+        date: '2021-12-11'
     circuit:
       circuitId: yas_marina
       url: https://en.wikipedia.org/wiki/Yas_Marina_Circuit
-      circuitName: Yas Marina Circuit
+      name: Yas Marina Circuit
       location:
-        lat: '24.4672'
-        long: '54.6031'
         locality: Abu Dhabi
         country: UAE
-        countryCode: AE
+        latitude: 24.4672
+        longitude: 54.6031
         flag: 🇦🇪
         countryCode3: ARE
-    firstPractice:
-      date: '2021-12-10'
-    secondPractice:
-      date: '2021-12-10'
-    thirdPractice:
-      date: '2021-12-11'
-    qualifying:
-      date: '2021-12-11'

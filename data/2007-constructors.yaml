@@ -1,79 +1,90 @@
-season: '2007'
+season: 2007
 constructors:
   - constructorId: bmw_sauber
     url: http://en.wikipedia.org/wiki/BMW_Sauber
     name: BMW Sauber
     nationality: German
-    countryCode: DE
     flag: 🇩🇪
     countryCode3: DEU
+    knownAs:
+      - BMW Sauber
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Ferrari
   - constructorId: honda
     url: http://en.wikipedia.org/wiki/Honda_Racing_F1
     name: Honda
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    knownAs:
+      - Honda
   - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/McLaren
     name: McLaren
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - McLaren
   - constructorId: red_bull
     url: http://en.wikipedia.org/wiki/Red_Bull_Racing
     name: Red Bull
     nationality: Austrian
-    countryCode: AT
     flag: 🇦🇹
     countryCode3: AUT
+    knownAs:
+      - Red Bull
   - constructorId: renault
     url: http://en.wikipedia.org/wiki/Renault_in_Formula_One
     name: Renault
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    knownAs:
+      - Renault
   - constructorId: spyker
     url: http://en.wikipedia.org/wiki/Spyker_F1
     name: Spyker
     nationality: Dutch
-    countryCode: NL
     flag: 🇳🇱
     countryCode3: NLD
+    knownAs:
+      - Spyker
   - constructorId: super_aguri
     url: http://en.wikipedia.org/wiki/Super_Aguri_F1
     name: Super Aguri
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    knownAs:
+      - Super Aguri
   - constructorId: toro_rosso
     url: http://en.wikipedia.org/wiki/Scuderia_Toro_Rosso
     name: Toro Rosso
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Toro Rosso
   - constructorId: toyota
     url: http://en.wikipedia.org/wiki/Toyota_Racing
     name: Toyota
     nationality: Japanese
-    countryCode: JP
     flag: 🇯🇵
     countryCode3: JPN
+    knownAs:
+      - Toyota
   - constructorId: williams
     url: http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering
     name: Williams
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Williams

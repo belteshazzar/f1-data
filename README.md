@@ -19,3 +19,12 @@ node index.js get -y 2025 -t constructors # ergast/2025-constructors.yaml
 node index.js get -y 2025 -r 1            # data/2025-1-race.yaml
 node index.js get -y 2025 -r 1 -s r       # data/2025-1-race.yaml
 
+## Convert Jolpica F1 Information
+
+node index.js convert -y 1950 -t rounds   # data/1950-rounds.yaml
+
+## Check Data Against Schema
+
+node index.js check data/1950-rounds.yaml schema/rounds.schema.yaml
+node index.js check data/1950-drivers.yaml schema/drivers.schema.yaml
+node index.js check data/1950-constructors.yaml schema/constructors.schema.yaml

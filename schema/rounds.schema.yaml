@@ -1,0 +1,115 @@
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/belteshazzar/f1-data/blob/main/schema/rounds.schema.yaml
+title: Rounds
+description: The rounds in a formula 1 season
+type: object
+properties:
+  season:
+    type: integer
+    required: true
+    description: The season of the data
+    example: 2025
+  rounds:
+    type: array
+    required: true
+    description: The array of rounds in the season
+    items:
+      type: object
+      properties:
+        round:
+          type: integer
+          required: true
+          description: The number of the round in the season
+          example: 1
+        url:
+          type: string
+          required: true
+          description: The URL of the round on Wikipedia
+          example: https://en.wikipedia.org/wiki/2025_Australian_Grand_Prix
+        name:
+          type: string
+          required: true
+          description: The name of the round
+          example: Australian Grand Prix
+        raceCode3:
+          type: string
+          required: true
+          description: The 3-letter code of the round
+          example: FRA
+        sessions:
+          type: array
+          required: true
+          description: The array of sessions in the round
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+                required: true
+                description: The name of the session
+                example: Practice 1
+              date:
+                type: string
+                required: true
+                description: The date of the session
+                example: '2025-03-14'
+              time:
+                type: string
+                description: The time of the session
+                example: 00:00:00Z
+        circuit:
+          type: object
+          required: true
+          description: THe circuit of the round
+          properties:
+            circuitId:
+              type: string
+              required: true
+              description: The ID of the circuit
+              example: albert_park
+            url:
+              type: string
+              required: true
+              description: The URL of the circuit on Wikipedia
+              example: https://en.wikipedia.org/wiki/Albert_Park_Circuit
+            name:
+              type: string
+              required: true
+              description: The name of the circuit
+              example: Albert Park Circuit
+            location:
+              type: object
+              required: true
+              description: The location of the circuit
+              properties:
+                latitude:
+                  type: number
+                  required: true
+                  description: The latitude of the circuit
+                  example: -37.8497
+                longitude:
+                  type: number
+                  required: true
+                  description: The longitude of the circuit
+                  example: 144.9681
+                locality:
+                  type: string
+                  required: true
+                  description: The locality of the circuit
+                  example: Melbourne
+                country:
+                  type: string
+                  required: true
+                  description: The country of the circuit
+                  example: Australia
+                countryCode3:
+                  type: string
+                  required: true
+                  description: The 3-letter country code of the circuit
+                  example: AUS
+                flag:
+                  type: string
+                  required: true
+                  description: The unicode flag of the country
+                  example: 🇦🇺

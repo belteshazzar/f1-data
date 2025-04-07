@@ -1,325 +1,308 @@
 season: 1995
 rounds:
   - round: 1
-    raceNum: 565
     url: https://en.wikipedia.org/wiki/1995_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '1995-03-26'
+    sessions:
+      - name: Race
+        date: '1995-03-26'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
   - round: 2
-    raceNum: 566
     url: https://en.wikipedia.org/wiki/1995_Argentine_Grand_Prix
-    raceName: Argentine Grand Prix
+    name: Argentine Grand Prix
     raceCode3: ARG
-    race:
-      date: '1995-04-09'
+    sessions:
+      - name: Race
+        date: '1995-04-09'
     circuit:
       circuitId: galvez
       url: https://en.wikipedia.org/wiki/Autódromo_Oscar_y_Juan_Gálvez
-      circuitName: Autódromo Juan y Oscar Gálvez
+      name: Autódromo Juan y Oscar Gálvez
       location:
-        lat: '-34.6943'
-        long: '-58.4593'
         locality: Buenos Aires
         country: Argentina
-        countryCode: AR
+        latitude: -34.6943
+        longitude: -58.4593
         flag: 🇦🇷
         countryCode3: ARG
   - round: 3
-    raceNum: 567
     url: https://en.wikipedia.org/wiki/1995_San_Marino_Grand_Prix
-    raceName: San Marino Grand Prix
+    name: San Marino Grand Prix
     raceCode3: SMR
-    race:
-      date: '1995-04-30'
+    sessions:
+      - name: Race
+        date: '1995-04-30'
     circuit:
       circuitId: imola
       url: https://en.wikipedia.org/wiki/Imola_Circuit
-      circuitName: Autodromo Enzo e Dino Ferrari
+      name: Autodromo Enzo e Dino Ferrari
       location:
-        lat: '44.3439'
-        long: '11.7167'
         locality: Imola
         country: Italy
-        countryCode: IT
+        latitude: 44.3439
+        longitude: 11.7167
         flag: 🇮🇹
         countryCode3: ITA
   - round: 4
-    raceNum: 568
     url: https://en.wikipedia.org/wiki/1995_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '1995-05-14'
+    sessions:
+      - name: Race
+        date: '1995-05-14'
     circuit:
       circuitId: catalunya
       url: https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya
-      circuitName: Circuit de Barcelona-Catalunya
+      name: Circuit de Barcelona-Catalunya
       location:
-        lat: '41.57'
-        long: '2.26111'
         locality: Montmeló
         country: Spain
-        countryCode: ES
+        latitude: 41.57
+        longitude: 2.26111
         flag: 🇪🇸
         countryCode3: ESP
   - round: 5
-    raceNum: 569
     url: https://en.wikipedia.org/wiki/1995_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1995-05-28'
+    sessions:
+      - name: Race
+        date: '1995-05-28'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 6
-    raceNum: 570
     url: https://en.wikipedia.org/wiki/1995_Canadian_Grand_Prix
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
-    race:
-      date: '1995-06-11'
+    sessions:
+      - name: Race
+        date: '1995-06-11'
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
-      circuitName: Circuit Gilles Villeneuve
+      name: Circuit Gilles Villeneuve
       location:
-        lat: '45.5'
-        long: '-73.5228'
         locality: Montreal
         country: Canada
-        countryCode: CA
+        latitude: 45.5
+        longitude: -73.5228
         flag: 🇨🇦
         countryCode3: CAN
   - round: 7
-    raceNum: 571
     url: https://en.wikipedia.org/wiki/1995_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1995-07-02'
+    sessions:
+      - name: Race
+        date: '1995-07-02'
     circuit:
       circuitId: magny_cours
       url: https://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours
-      circuitName: Circuit de Nevers Magny-Cours
+      name: Circuit de Nevers Magny-Cours
       location:
-        lat: '46.8642'
-        long: '3.16361'
         locality: Magny Cours
         country: France
-        countryCode: FR
+        latitude: 46.8642
+        longitude: 3.16361
         flag: 🇫🇷
         countryCode3: FRA
   - round: 8
-    raceNum: 572
     url: https://en.wikipedia.org/wiki/1995_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1995-07-16'
+    sessions:
+      - name: Race
+        date: '1995-07-16'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 9
-    raceNum: 573
     url: https://en.wikipedia.org/wiki/1995_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1995-07-30'
+    sessions:
+      - name: Race
+        date: '1995-07-30'
     circuit:
       circuitId: hockenheimring
       url: https://en.wikipedia.org/wiki/Hockenheimring
-      circuitName: Hockenheimring
+      name: Hockenheimring
       location:
-        lat: '49.3278'
-        long: '8.56583'
         locality: Hockenheim
         country: Germany
-        countryCode: DE
+        latitude: 49.3278
+        longitude: 8.56583
         flag: 🇩🇪
         countryCode3: DEU
   - round: 10
-    raceNum: 574
     url: https://en.wikipedia.org/wiki/1995_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '1995-08-13'
+    sessions:
+      - name: Race
+        date: '1995-08-13'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
   - round: 11
-    raceNum: 575
     url: https://en.wikipedia.org/wiki/1995_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1995-08-27'
+    sessions:
+      - name: Race
+        date: '1995-08-27'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
   - round: 12
-    raceNum: 576
     url: https://en.wikipedia.org/wiki/1995_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1995-09-10'
+    sessions:
+      - name: Race
+        date: '1995-09-10'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 13
-    raceNum: 577
     url: https://en.wikipedia.org/wiki/1995_Portuguese_Grand_Prix
-    raceName: Portuguese Grand Prix
+    name: Portuguese Grand Prix
     raceCode3: POR
-    race:
-      date: '1995-09-24'
+    sessions:
+      - name: Race
+        date: '1995-09-24'
     circuit:
       circuitId: estoril
       url: https://en.wikipedia.org/wiki/Circuito_do_Estoril
-      circuitName: Autódromo do Estoril
+      name: Autódromo do Estoril
       location:
-        lat: '38.7506'
-        long: '-9.39417'
         locality: Estoril
         country: Portugal
-        countryCode: PT
+        latitude: 38.7506
+        longitude: -9.39417
         flag: 🇵🇹
         countryCode3: POR
   - round: 14
-    raceNum: 578
     url: https://en.wikipedia.org/wiki/1995_European_Grand_Prix
-    raceName: European Grand Prix
+    name: European Grand Prix
     raceCode3: EUR
-    race:
-      date: '1995-10-01'
+    sessions:
+      - name: Race
+        date: '1995-10-01'
     circuit:
       circuitId: nurburgring
       url: https://en.wikipedia.org/wiki/N%C3%BCrburgring
-      circuitName: Nürburgring
+      name: Nürburgring
       location:
-        lat: '50.3356'
-        long: '6.9475'
         locality: Nürburg
         country: Germany
-        countryCode: DE
+        latitude: 50.3356
+        longitude: 6.9475
         flag: 🇩🇪
         countryCode3: DEU
   - round: 15
-    raceNum: 579
     url: https://en.wikipedia.org/wiki/1995_Pacific_Grand_Prix
-    raceName: Pacific Grand Prix
+    name: Pacific Grand Prix
     raceCode3: PAC
-    race:
-      date: '1995-10-22'
+    sessions:
+      - name: Race
+        date: '1995-10-22'
     circuit:
       circuitId: okayama
       url: https://en.wikipedia.org/wiki/Okayama_International_Circuit
-      circuitName: Okayama International Circuit
+      name: Okayama International Circuit
       location:
-        lat: '34.915'
-        long: '134.221'
         locality: Okayama
         country: Japan
-        countryCode: JP
+        latitude: 34.915
+        longitude: 134.221
         flag: 🇯🇵
         countryCode3: JPN
   - round: 16
-    raceNum: 580
     url: https://en.wikipedia.org/wiki/1995_Japanese_Grand_Prix
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
-    race:
-      date: '1995-10-29'
+    sessions:
+      - name: Race
+        date: '1995-10-29'
     circuit:
       circuitId: suzuka
       url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
-      circuitName: Suzuka Circuit
+      name: Suzuka Circuit
       location:
-        lat: '34.8431'
-        long: '136.541'
         locality: Suzuka
         country: Japan
-        countryCode: JP
+        latitude: 34.8431
+        longitude: 136.541
         flag: 🇯🇵
         countryCode3: JPN
   - round: 17
-    raceNum: 581
     url: https://en.wikipedia.org/wiki/1995_Australian_Grand_Prix
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
-    race:
-      date: '1995-11-12'
+    sessions:
+      - name: Race
+        date: '1995-11-12'
     circuit:
       circuitId: adelaide
       url: https://en.wikipedia.org/wiki/Adelaide_Street_Circuit
-      circuitName: Adelaide Street Circuit
+      name: Adelaide Street Circuit
       location:
-        lat: '-34.9272'
-        long: '138.617'
         locality: Adelaide
         country: Australia
-        countryCode: AU
+        latitude: -34.9272
+        longitude: 138.617
         flag: 🇦🇺
         countryCode3: AUS

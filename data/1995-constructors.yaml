@@ -1,93 +1,106 @@
-season: '1995'
+season: 1995
 constructors:
   - constructorId: benetton
     url: http://en.wikipedia.org/wiki/Benetton_Formula
     name: Benetton
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Benetton
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Ferrari
   - constructorId: footwork
     url: http://en.wikipedia.org/wiki/Footwork_Arrows
     name: Footwork
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Footwork
   - constructorId: forti
     url: http://en.wikipedia.org/wiki/Forti
     name: Forti
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Forti
   - constructorId: jordan
     url: http://en.wikipedia.org/wiki/Jordan_Grand_Prix
     name: Jordan
     nationality: Irish
-    countryCode: IE
     flag: 🇮🇪
     countryCode3: IRE
+    knownAs:
+      - Jordan
   - constructorId: ligier
     url: http://en.wikipedia.org/wiki/Ligier
     name: Ligier
     nationality: French
-    countryCode: FR
     flag: 🇫🇷
     countryCode3: FRA
+    knownAs:
+      - Ligier
   - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/McLaren
     name: McLaren
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - McLaren
   - constructorId: minardi
     url: http://en.wikipedia.org/wiki/Minardi
     name: Minardi
     nationality: Italian
-    countryCode: IT
     flag: 🇮🇹
     countryCode3: ITA
+    knownAs:
+      - Minardi
   - constructorId: pacific
     url: http://en.wikipedia.org/wiki/Pacific_Racing
     name: Pacific
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Pacific
   - constructorId: sauber
     url: http://en.wikipedia.org/wiki/Sauber_Motorsport
     name: Sauber
     nationality: Swiss
-    countryCode: CH
     flag: 🇨🇭
     countryCode3: CHE
+    knownAs:
+      - Sauber
   - constructorId: simtek
     url: http://en.wikipedia.org/wiki/Simtek
     name: Simtek
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Simtek
   - constructorId: tyrrell
     url: http://en.wikipedia.org/wiki/Tyrrell_Racing
     name: Tyrrell
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Tyrrell
   - constructorId: williams
     url: http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering
     name: Williams
     nationality: British
-    countryCode: GB
     flag: 🇬🇧
     countryCode3: GBR
+    knownAs:
+      - Williams

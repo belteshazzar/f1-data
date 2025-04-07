@@ -1,306 +1,290 @@
 season: 1990
 rounds:
   - round: 1
-    raceNum: 485
     url: https://en.wikipedia.org/wiki/1990_United_States_Grand_Prix
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
-    race:
-      date: '1990-03-11'
+    sessions:
+      - name: Race
+        date: '1990-03-11'
     circuit:
       circuitId: phoenix
       url: https://en.wikipedia.org/wiki/Phoenix_street_circuit
-      circuitName: Phoenix street circuit
+      name: Phoenix street circuit
       location:
-        lat: '33.4479'
-        long: '-112.075'
         locality: Phoenix
         country: USA
-        countryCode: US
+        latitude: 33.4479
+        longitude: -112.075
         flag: 🇺🇸
         countryCode3: USA
   - round: 2
-    raceNum: 486
     url: https://en.wikipedia.org/wiki/1990_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '1990-03-25'
+    sessions:
+      - name: Race
+        date: '1990-03-25'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
   - round: 3
-    raceNum: 487
     url: https://en.wikipedia.org/wiki/1990_San_Marino_Grand_Prix
-    raceName: San Marino Grand Prix
+    name: San Marino Grand Prix
     raceCode3: SMR
-    race:
-      date: '1990-05-13'
+    sessions:
+      - name: Race
+        date: '1990-05-13'
     circuit:
       circuitId: imola
       url: https://en.wikipedia.org/wiki/Imola_Circuit
-      circuitName: Autodromo Enzo e Dino Ferrari
+      name: Autodromo Enzo e Dino Ferrari
       location:
-        lat: '44.3439'
-        long: '11.7167'
         locality: Imola
         country: Italy
-        countryCode: IT
+        latitude: 44.3439
+        longitude: 11.7167
         flag: 🇮🇹
         countryCode3: ITA
   - round: 4
-    raceNum: 488
     url: https://en.wikipedia.org/wiki/1990_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1990-05-27'
+    sessions:
+      - name: Race
+        date: '1990-05-27'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 5
-    raceNum: 489
     url: https://en.wikipedia.org/wiki/1990_Canadian_Grand_Prix
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
-    race:
-      date: '1990-06-10'
+    sessions:
+      - name: Race
+        date: '1990-06-10'
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
-      circuitName: Circuit Gilles Villeneuve
+      name: Circuit Gilles Villeneuve
       location:
-        lat: '45.5'
-        long: '-73.5228'
         locality: Montreal
         country: Canada
-        countryCode: CA
+        latitude: 45.5
+        longitude: -73.5228
         flag: 🇨🇦
         countryCode3: CAN
   - round: 6
-    raceNum: 490
     url: https://en.wikipedia.org/wiki/1990_Mexican_Grand_Prix
-    raceName: Mexican Grand Prix
+    name: Mexican Grand Prix
     raceCode3: MEX
-    race:
-      date: '1990-06-24'
+    sessions:
+      - name: Race
+        date: '1990-06-24'
     circuit:
       circuitId: rodriguez
       url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez
-      circuitName: Autódromo Hermanos Rodríguez
+      name: Autódromo Hermanos Rodríguez
       location:
-        lat: '19.4042'
-        long: '-99.0907'
         locality: Mexico City
         country: Mexico
-        countryCode: MX
+        latitude: 19.4042
+        longitude: -99.0907
         flag: 🇲🇽
         countryCode3: MEX
   - round: 7
-    raceNum: 491
     url: https://en.wikipedia.org/wiki/1990_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1990-07-08'
+    sessions:
+      - name: Race
+        date: '1990-07-08'
     circuit:
       circuitId: ricard
       url: https://en.wikipedia.org/wiki/Circuit_Paul_Ricard
-      circuitName: Circuit Paul Ricard
+      name: Circuit Paul Ricard
       location:
-        lat: '43.2506'
-        long: '5.79167'
         locality: Le Castellet
         country: France
-        countryCode: FR
+        latitude: 43.2506
+        longitude: 5.79167
         flag: 🇫🇷
         countryCode3: FRA
   - round: 8
-    raceNum: 492
     url: https://en.wikipedia.org/wiki/1990_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1990-07-15'
+    sessions:
+      - name: Race
+        date: '1990-07-15'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 9
-    raceNum: 493
     url: https://en.wikipedia.org/wiki/1990_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1990-07-29'
+    sessions:
+      - name: Race
+        date: '1990-07-29'
     circuit:
       circuitId: hockenheimring
       url: https://en.wikipedia.org/wiki/Hockenheimring
-      circuitName: Hockenheimring
+      name: Hockenheimring
       location:
-        lat: '49.3278'
-        long: '8.56583'
         locality: Hockenheim
         country: Germany
-        countryCode: DE
+        latitude: 49.3278
+        longitude: 8.56583
         flag: 🇩🇪
         countryCode3: DEU
   - round: 10
-    raceNum: 494
     url: https://en.wikipedia.org/wiki/1990_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '1990-08-12'
+    sessions:
+      - name: Race
+        date: '1990-08-12'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
   - round: 11
-    raceNum: 495
     url: https://en.wikipedia.org/wiki/1990_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1990-08-26'
+    sessions:
+      - name: Race
+        date: '1990-08-26'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
   - round: 12
-    raceNum: 496
     url: https://en.wikipedia.org/wiki/1990_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1990-09-09'
+    sessions:
+      - name: Race
+        date: '1990-09-09'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 13
-    raceNum: 497
     url: https://en.wikipedia.org/wiki/1990_Portuguese_Grand_Prix
-    raceName: Portuguese Grand Prix
+    name: Portuguese Grand Prix
     raceCode3: POR
-    race:
-      date: '1990-09-23'
+    sessions:
+      - name: Race
+        date: '1990-09-23'
     circuit:
       circuitId: estoril
       url: https://en.wikipedia.org/wiki/Circuito_do_Estoril
-      circuitName: Autódromo do Estoril
+      name: Autódromo do Estoril
       location:
-        lat: '38.7506'
-        long: '-9.39417'
         locality: Estoril
         country: Portugal
-        countryCode: PT
+        latitude: 38.7506
+        longitude: -9.39417
         flag: 🇵🇹
         countryCode3: POR
   - round: 14
-    raceNum: 498
     url: https://en.wikipedia.org/wiki/1990_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '1990-09-30'
+    sessions:
+      - name: Race
+        date: '1990-09-30'
     circuit:
       circuitId: jerez
       url: https://en.wikipedia.org/wiki/Circuito_de_Jerez
-      circuitName: Circuito de Jerez
+      name: Circuito de Jerez
       location:
-        lat: '36.7083'
-        long: '-6.03417'
         locality: Jerez de la Frontera
         country: Spain
-        countryCode: ES
+        latitude: 36.7083
+        longitude: -6.03417
         flag: 🇪🇸
         countryCode3: ESP
   - round: 15
-    raceNum: 499
     url: https://en.wikipedia.org/wiki/1990_Japanese_Grand_Prix
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
-    race:
-      date: '1990-10-21'
+    sessions:
+      - name: Race
+        date: '1990-10-21'
     circuit:
       circuitId: suzuka
       url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
-      circuitName: Suzuka Circuit
+      name: Suzuka Circuit
       location:
-        lat: '34.8431'
-        long: '136.541'
         locality: Suzuka
         country: Japan
-        countryCode: JP
+        latitude: 34.8431
+        longitude: 136.541
         flag: 🇯🇵
         countryCode3: JPN
   - round: 16
-    raceNum: 500
     url: https://en.wikipedia.org/wiki/1990_Australian_Grand_Prix
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
-    race:
-      date: '1990-11-04'
+    sessions:
+      - name: Race
+        date: '1990-11-04'
     circuit:
       circuitId: adelaide
       url: https://en.wikipedia.org/wiki/Adelaide_Street_Circuit
-      circuitName: Adelaide Street Circuit
+      name: Adelaide Street Circuit
       location:
-        lat: '-34.9272'
-        long: '138.617'
         locality: Adelaide
         country: Australia
-        countryCode: AU
+        latitude: -34.9272
+        longitude: 138.617
         flag: 🇦🇺
         countryCode3: AUS

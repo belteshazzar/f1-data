@@ -1,268 +1,254 @@
 season: 1975
 rounds:
   - round: 1
-    raceNum: 251
     url: https://en.wikipedia.org/wiki/1975_Argentine_Grand_Prix
-    raceName: Argentine Grand Prix
+    name: Argentine Grand Prix
     raceCode3: ARG
-    race:
-      date: '1975-01-12'
+    sessions:
+      - name: Race
+        date: '1975-01-12'
     circuit:
       circuitId: galvez
       url: https://en.wikipedia.org/wiki/Autódromo_Oscar_y_Juan_Gálvez
-      circuitName: Autódromo Juan y Oscar Gálvez
+      name: Autódromo Juan y Oscar Gálvez
       location:
-        lat: '-34.6943'
-        long: '-58.4593'
         locality: Buenos Aires
         country: Argentina
-        countryCode: AR
+        latitude: -34.6943
+        longitude: -58.4593
         flag: 🇦🇷
         countryCode3: ARG
   - round: 2
-    raceNum: 252
     url: https://en.wikipedia.org/wiki/1975_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '1975-01-26'
+    sessions:
+      - name: Race
+        date: '1975-01-26'
     circuit:
       circuitId: interlagos
       url: https://en.wikipedia.org/wiki/Interlagos_Circuit
-      circuitName: Autódromo José Carlos Pace
+      name: Autódromo José Carlos Pace
       location:
-        lat: '-23.7036'
-        long: '-46.6997'
         locality: São Paulo
         country: Brazil
-        countryCode: BR
+        latitude: -23.7036
+        longitude: -46.6997
         flag: 🇧🇷
         countryCode3: BRA
   - round: 3
-    raceNum: 253
     url: https://en.wikipedia.org/wiki/1975_South_African_Grand_Prix
-    raceName: South African Grand Prix
+    name: South African Grand Prix
     raceCode3: ZAF
-    race:
-      date: '1975-03-01'
+    sessions:
+      - name: Race
+        date: '1975-03-01'
     circuit:
       circuitId: kyalami
       url: https://en.wikipedia.org/wiki/Kyalami
-      circuitName: Kyalami
+      name: Kyalami
       location:
-        lat: '-25.9894'
-        long: '28.0767'
         locality: Midrand
         country: South Africa
-        countryCode: ZA
+        latitude: -25.9894
+        longitude: 28.0767
         flag: 🇿🇦
         countryCode3: ZAF
   - round: 4
-    raceNum: 254
     url: https://en.wikipedia.org/wiki/1975_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '1975-04-27'
+    sessions:
+      - name: Race
+        date: '1975-04-27'
     circuit:
       circuitId: montjuic
       url: https://en.wikipedia.org/wiki/Montju%C3%AFc_circuit
-      circuitName: Montjuïc
+      name: Montjuïc
       location:
-        lat: '41.3664'
-        long: '2.15167'
         locality: Barcelona
         country: Spain
-        countryCode: ES
+        latitude: 41.3664
+        longitude: 2.15167
         flag: 🇪🇸
         countryCode3: ESP
   - round: 5
-    raceNum: 255
     url: https://en.wikipedia.org/wiki/1975_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1975-05-11'
+    sessions:
+      - name: Race
+        date: '1975-05-11'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 6
-    raceNum: 256
     url: https://en.wikipedia.org/wiki/1975_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1975-05-25'
+    sessions:
+      - name: Race
+        date: '1975-05-25'
     circuit:
       circuitId: zolder
       url: https://en.wikipedia.org/wiki/Circuit_Zolder
-      circuitName: Zolder
+      name: Zolder
       location:
-        lat: '50.9894'
-        long: '5.25694'
         locality: Heusden-Zolder
         country: Belgium
-        countryCode: BE
+        latitude: 50.9894
+        longitude: 5.25694
         flag: 🇧🇪
         countryCode3: BEL
   - round: 7
-    raceNum: 257
     url: https://en.wikipedia.org/wiki/1975_Swedish_Grand_Prix
-    raceName: Swedish Grand Prix
+    name: Swedish Grand Prix
     raceCode3: SWE
-    race:
-      date: '1975-06-08'
+    sessions:
+      - name: Race
+        date: '1975-06-08'
     circuit:
       circuitId: anderstorp
       url: https://en.wikipedia.org/wiki/Anderstorp_Raceway
-      circuitName: Scandinavian Raceway
+      name: Scandinavian Raceway
       location:
-        lat: '57.2653'
-        long: '13.6042'
         locality: Anderstorp
         country: Sweden
-        countryCode: SE
+        latitude: 57.2653
+        longitude: 13.6042
         flag: 🇸🇪
         countryCode3: SWE
   - round: 8
-    raceNum: 258
     url: https://en.wikipedia.org/wiki/1975_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '1975-06-22'
+    sessions:
+      - name: Race
+        date: '1975-06-22'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
   - round: 9
-    raceNum: 259
     url: https://en.wikipedia.org/wiki/1975_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1975-07-06'
+    sessions:
+      - name: Race
+        date: '1975-07-06'
     circuit:
       circuitId: ricard
       url: https://en.wikipedia.org/wiki/Circuit_Paul_Ricard
-      circuitName: Circuit Paul Ricard
+      name: Circuit Paul Ricard
       location:
-        lat: '43.2506'
-        long: '5.79167'
         locality: Le Castellet
         country: France
-        countryCode: FR
+        latitude: 43.2506
+        longitude: 5.79167
         flag: 🇫🇷
         countryCode3: FRA
   - round: 10
-    raceNum: 260
     url: https://en.wikipedia.org/wiki/1975_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1975-07-19'
+    sessions:
+      - name: Race
+        date: '1975-07-19'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 11
-    raceNum: 261
     url: https://en.wikipedia.org/wiki/1975_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1975-08-03'
+    sessions:
+      - name: Race
+        date: '1975-08-03'
     circuit:
       circuitId: nurburgring
       url: https://en.wikipedia.org/wiki/N%C3%BCrburgring
-      circuitName: Nürburgring
+      name: Nürburgring
       location:
-        lat: '50.3356'
-        long: '6.9475'
         locality: Nürburg
         country: Germany
-        countryCode: DE
+        latitude: 50.3356
+        longitude: 6.9475
         flag: 🇩🇪
         countryCode3: DEU
   - round: 12
-    raceNum: 262
     url: https://en.wikipedia.org/wiki/1975_Austrian_Grand_Prix
-    raceName: Austrian Grand Prix
+    name: Austrian Grand Prix
     raceCode3: AUT
-    race:
-      date: '1975-08-17'
+    sessions:
+      - name: Race
+        date: '1975-08-17'
     circuit:
       circuitId: red_bull_ring
       url: https://en.wikipedia.org/wiki/Red_Bull_Ring
-      circuitName: Red Bull Ring
+      name: Red Bull Ring
       location:
-        lat: '47.2197'
-        long: '14.7647'
         locality: Spielberg
         country: Austria
-        countryCode: AT
+        latitude: 47.2197
+        longitude: 14.7647
         flag: 🇦🇹
         countryCode3: AUT
   - round: 13
-    raceNum: 263
     url: https://en.wikipedia.org/wiki/1975_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1975-09-07'
+    sessions:
+      - name: Race
+        date: '1975-09-07'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 14
-    raceNum: 264
     url: https://en.wikipedia.org/wiki/1975_United_States_Grand_Prix
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
-    race:
-      date: '1975-10-05'
+    sessions:
+      - name: Race
+        date: '1975-10-05'
     circuit:
       circuitId: watkins_glen
       url: https://en.wikipedia.org/wiki/Watkins_Glen_International
-      circuitName: Watkins Glen
+      name: Watkins Glen
       location:
-        lat: '42.3369'
-        long: '-76.9272'
         locality: New York State
         country: USA
-        countryCode: US
+        latitude: 42.3369
+        longitude: -76.9272
         flag: 🇺🇸
         countryCode3: USA

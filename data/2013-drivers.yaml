@@ -2,7 +2,6 @@ season: 2013
 drivers:
   - driverId: alonso
     permanentNumber: 14
-    code: ALO
     url: http://en.wikipedia.org/wiki/Fernando_Alonso
     givenName: Fernando
     familyName: Alonso
@@ -10,9 +9,9 @@ drivers:
     nationality: Spanish
     flag: 🇪🇸
     countryCode3: ESP
+    driverCode3: ALO
   - driverId: jules_bianchi
     permanentNumber: 17
-    code: BIA
     url: http://en.wikipedia.org/wiki/Jules_Bianchi
     givenName: Jules
     familyName: Bianchi
@@ -20,9 +19,9 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
+    driverCode3: BIA
   - driverId: bottas
     permanentNumber: 77
-    code: BOT
     url: http://en.wikipedia.org/wiki/Valtteri_Bottas
     givenName: Valtteri
     familyName: Bottas
@@ -30,9 +29,9 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
+    driverCode3: BOT
   - driverId: button
     permanentNumber: 22
-    code: BUT
     url: http://en.wikipedia.org/wiki/Jenson_Button
     givenName: Jenson
     familyName: Button
@@ -40,9 +39,9 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: BUT
   - driverId: chilton
     permanentNumber: 4
-    code: CHI
     url: http://en.wikipedia.org/wiki/Max_Chilton
     givenName: Max
     familyName: Chilton
@@ -50,9 +49,9 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: CHI
   - driverId: resta
     permanentNumber: 40
-    code: DIR
     url: http://en.wikipedia.org/wiki/Paul_di_Resta
     givenName: Paul
     familyName: di Resta
@@ -60,9 +59,9 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: DIR
   - driverId: grosjean
     permanentNumber: 8
-    code: GRO
     url: http://en.wikipedia.org/wiki/Romain_Grosjean
     givenName: Romain
     familyName: Grosjean
@@ -70,9 +69,9 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
+    driverCode3: GRO
   - driverId: gutierrez
     permanentNumber: 21
-    code: GUT
     url: http://en.wikipedia.org/wiki/Esteban_Guti%C3%A9rrez
     givenName: Esteban
     familyName: Gutiérrez
@@ -80,9 +79,9 @@ drivers:
     nationality: Mexican
     flag: 🇲🇽
     countryCode3: MEX
+    driverCode3: GUT
   - driverId: hamilton
     permanentNumber: 44
-    code: HAM
     url: http://en.wikipedia.org/wiki/Lewis_Hamilton
     givenName: Lewis
     familyName: Hamilton
@@ -90,9 +89,9 @@ drivers:
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
+    driverCode3: HAM
   - driverId: hulkenberg
     permanentNumber: 27
-    code: HUL
     url: http://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg
     givenName: Nico
     familyName: Hülkenberg
@@ -100,8 +99,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: HUL
   - driverId: kovalainen
-    code: KOV
     url: http://en.wikipedia.org/wiki/Heikki_Kovalainen
     givenName: Heikki
     familyName: Kovalainen
@@ -109,9 +108,9 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
+    driverCode3: KOV
   - driverId: maldonado
     permanentNumber: 13
-    code: MAL
     url: http://en.wikipedia.org/wiki/Pastor_Maldonado
     givenName: Pastor
     familyName: Maldonado
@@ -119,9 +118,9 @@ drivers:
     nationality: Venezuelan
     flag: 🇻🇪
     countryCode3: VEN
+    driverCode3: MAL
   - driverId: massa
     permanentNumber: 19
-    code: MAS
     url: http://en.wikipedia.org/wiki/Felipe_Massa
     givenName: Felipe
     familyName: Massa
@@ -129,9 +128,9 @@ drivers:
     nationality: Brazilian
     flag: 🇧🇷
     countryCode3: BRA
+    driverCode3: MAS
   - driverId: perez
     permanentNumber: 11
-    code: PER
     url: http://en.wikipedia.org/wiki/Sergio_P%C3%A9rez
     givenName: Sergio
     familyName: Pérez
@@ -139,8 +138,8 @@ drivers:
     nationality: Mexican
     flag: 🇲🇽
     countryCode3: MEX
+    driverCode3: PER
   - driverId: pic
-    code: PIC
     url: http://en.wikipedia.org/wiki/Charles_Pic
     givenName: Charles
     familyName: Pic
@@ -148,9 +147,9 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
+    driverCode3: PIC
   - driverId: raikkonen
     permanentNumber: 7
-    code: RAI
     url: http://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen
     givenName: Kimi
     familyName: Räikkönen
@@ -158,9 +157,9 @@ drivers:
     nationality: Finnish
     flag: 🇫🇮
     countryCode3: FIN
+    driverCode3: RAI
   - driverId: ricciardo
     permanentNumber: 3
-    code: RIC
     url: http://en.wikipedia.org/wiki/Daniel_Ricciardo
     givenName: Daniel
     familyName: Ricciardo
@@ -168,9 +167,9 @@ drivers:
     nationality: Australian
     flag: 🇦🇺
     countryCode3: AUS
+    driverCode3: RIC
   - driverId: rosberg
     permanentNumber: 6
-    code: ROS
     url: http://en.wikipedia.org/wiki/Nico_Rosberg
     givenName: Nico
     familyName: Rosberg
@@ -178,9 +177,9 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: ROS
   - driverId: sutil
     permanentNumber: 99
-    code: SUT
     url: http://en.wikipedia.org/wiki/Adrian_Sutil
     givenName: Adrian
     familyName: Sutil
@@ -188,8 +187,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: SUT
   - driverId: garde
-    code: VDG
     url: http://en.wikipedia.org/wiki/Giedo_van_der_Garde
     givenName: Giedo
     familyName: van der Garde
@@ -197,9 +196,9 @@ drivers:
     nationality: Dutch
     flag: 🇳🇱
     countryCode3: NLD
+    driverCode3: VDG
   - driverId: vergne
     permanentNumber: 25
-    code: VER
     url: http://en.wikipedia.org/wiki/Jean-%C3%89ric_Vergne
     givenName: Jean-Éric
     familyName: Vergne
@@ -207,9 +206,9 @@ drivers:
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
+    driverCode3: VER
   - driverId: vettel
     permanentNumber: 5
-    code: VET
     url: http://en.wikipedia.org/wiki/Sebastian_Vettel
     givenName: Sebastian
     familyName: Vettel
@@ -217,8 +216,8 @@ drivers:
     nationality: German
     flag: 🇩🇪
     countryCode3: DEU
+    driverCode3: VET
   - driverId: webber
-    code: WEB
     url: http://en.wikipedia.org/wiki/Mark_Webber_(racing_driver)
     givenName: Mark
     familyName: Webber
@@ -226,3 +225,4 @@ drivers:
     nationality: Australian
     flag: 🇦🇺
     countryCode3: AUS
+    driverCode3: WEB

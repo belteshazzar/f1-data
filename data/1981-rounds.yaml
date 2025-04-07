@@ -1,287 +1,272 @@
 season: 1981
 rounds:
   - round: 1
-    raceNum: 343
     url: https://en.wikipedia.org/wiki/1981_United_States_Grand_Prix_West
-    raceName: United States Grand Prix West
+    name: United States Grand Prix West
     raceCode3: USW
-    race:
-      date: '1981-03-15'
+    sessions:
+      - name: Race
+        date: '1981-03-15'
     circuit:
       circuitId: long_beach
       url: https://en.wikipedia.org/wiki/Long_Beach,_California
-      circuitName: Long Beach
+      name: Long Beach
       location:
-        lat: '33.7651'
-        long: '-118.189'
         locality: California
         country: USA
-        countryCode: US
+        latitude: 33.7651
+        longitude: -118.189
         flag: 🇺🇸
         countryCode3: USA
   - round: 2
-    raceNum: 344
     url: https://en.wikipedia.org/wiki/1981_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '1981-03-29'
+    sessions:
+      - name: Race
+        date: '1981-03-29'
     circuit:
       circuitId: jacarepagua
       url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet
-      circuitName: Autódromo Internacional Nelson Piquet
+      name: Autódromo Internacional Nelson Piquet
       location:
-        lat: '-22.9756'
-        long: '-43.395'
         locality: Rio de Janeiro
         country: Brazil
-        countryCode: BR
+        latitude: -22.9756
+        longitude: -43.395
         flag: 🇧🇷
         countryCode3: BRA
   - round: 3
-    raceNum: 345
     url: https://en.wikipedia.org/wiki/1981_Argentine_Grand_Prix
-    raceName: Argentine Grand Prix
+    name: Argentine Grand Prix
     raceCode3: ARG
-    race:
-      date: '1981-04-12'
+    sessions:
+      - name: Race
+        date: '1981-04-12'
     circuit:
       circuitId: galvez
       url: https://en.wikipedia.org/wiki/Autódromo_Oscar_y_Juan_Gálvez
-      circuitName: Autódromo Juan y Oscar Gálvez
+      name: Autódromo Juan y Oscar Gálvez
       location:
-        lat: '-34.6943'
-        long: '-58.4593'
         locality: Buenos Aires
         country: Argentina
-        countryCode: AR
+        latitude: -34.6943
+        longitude: -58.4593
         flag: 🇦🇷
         countryCode3: ARG
   - round: 4
-    raceNum: 346
     url: https://en.wikipedia.org/wiki/1981_San_Marino_Grand_Prix
-    raceName: San Marino Grand Prix
+    name: San Marino Grand Prix
     raceCode3: SMR
-    race:
-      date: '1981-05-03'
+    sessions:
+      - name: Race
+        date: '1981-05-03'
     circuit:
       circuitId: imola
       url: https://en.wikipedia.org/wiki/Imola_Circuit
-      circuitName: Autodromo Enzo e Dino Ferrari
+      name: Autodromo Enzo e Dino Ferrari
       location:
-        lat: '44.3439'
-        long: '11.7167'
         locality: Imola
         country: Italy
-        countryCode: IT
+        latitude: 44.3439
+        longitude: 11.7167
         flag: 🇮🇹
         countryCode3: ITA
   - round: 5
-    raceNum: 347
     url: https://en.wikipedia.org/wiki/1981_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1981-05-17'
+    sessions:
+      - name: Race
+        date: '1981-05-17'
     circuit:
       circuitId: zolder
       url: https://en.wikipedia.org/wiki/Circuit_Zolder
-      circuitName: Zolder
+      name: Zolder
       location:
-        lat: '50.9894'
-        long: '5.25694'
         locality: Heusden-Zolder
         country: Belgium
-        countryCode: BE
+        latitude: 50.9894
+        longitude: 5.25694
         flag: 🇧🇪
         countryCode3: BEL
   - round: 6
-    raceNum: 348
     url: https://en.wikipedia.org/wiki/1981_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1981-05-31'
+    sessions:
+      - name: Race
+        date: '1981-05-31'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 7
-    raceNum: 349
     url: https://en.wikipedia.org/wiki/1981_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '1981-06-21'
+    sessions:
+      - name: Race
+        date: '1981-06-21'
     circuit:
       circuitId: jarama
       url: https://en.wikipedia.org/wiki/Circuito_del_Jarama
-      circuitName: Jarama
+      name: Jarama
       location:
-        lat: '40.6171'
-        long: '-3.58558'
         locality: Madrid
         country: Spain
-        countryCode: ES
+        latitude: 40.6171
+        longitude: -3.58558
         flag: 🇪🇸
         countryCode3: ESP
   - round: 8
-    raceNum: 350
     url: https://en.wikipedia.org/wiki/1981_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1981-07-05'
+    sessions:
+      - name: Race
+        date: '1981-07-05'
     circuit:
       circuitId: dijon
       url: https://en.wikipedia.org/wiki/Dijon-Prenois
-      circuitName: Dijon-Prenois
+      name: Dijon-Prenois
       location:
-        lat: '47.3625'
-        long: '4.89913'
         locality: Dijon
         country: France
-        countryCode: FR
+        latitude: 47.3625
+        longitude: 4.89913
         flag: 🇫🇷
         countryCode3: FRA
   - round: 9
-    raceNum: 351
     url: https://en.wikipedia.org/wiki/1981_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1981-07-18'
+    sessions:
+      - name: Race
+        date: '1981-07-18'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 10
-    raceNum: 352
     url: https://en.wikipedia.org/wiki/1981_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1981-08-02'
+    sessions:
+      - name: Race
+        date: '1981-08-02'
     circuit:
       circuitId: hockenheimring
       url: https://en.wikipedia.org/wiki/Hockenheimring
-      circuitName: Hockenheimring
+      name: Hockenheimring
       location:
-        lat: '49.3278'
-        long: '8.56583'
         locality: Hockenheim
         country: Germany
-        countryCode: DE
+        latitude: 49.3278
+        longitude: 8.56583
         flag: 🇩🇪
         countryCode3: DEU
   - round: 11
-    raceNum: 353
     url: https://en.wikipedia.org/wiki/1981_Austrian_Grand_Prix
-    raceName: Austrian Grand Prix
+    name: Austrian Grand Prix
     raceCode3: AUT
-    race:
-      date: '1981-08-16'
+    sessions:
+      - name: Race
+        date: '1981-08-16'
     circuit:
       circuitId: red_bull_ring
       url: https://en.wikipedia.org/wiki/Red_Bull_Ring
-      circuitName: Red Bull Ring
+      name: Red Bull Ring
       location:
-        lat: '47.2197'
-        long: '14.7647'
         locality: Spielberg
         country: Austria
-        countryCode: AT
+        latitude: 47.2197
+        longitude: 14.7647
         flag: 🇦🇹
         countryCode3: AUT
   - round: 12
-    raceNum: 354
     url: https://en.wikipedia.org/wiki/1981_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '1981-08-30'
+    sessions:
+      - name: Race
+        date: '1981-08-30'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
   - round: 13
-    raceNum: 355
     url: https://en.wikipedia.org/wiki/1981_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1981-09-13'
+    sessions:
+      - name: Race
+        date: '1981-09-13'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 14
-    raceNum: 356
     url: https://en.wikipedia.org/wiki/1981_Canadian_Grand_Prix
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
-    race:
-      date: '1981-09-27'
+    sessions:
+      - name: Race
+        date: '1981-09-27'
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
-      circuitName: Circuit Gilles Villeneuve
+      name: Circuit Gilles Villeneuve
       location:
-        lat: '45.5'
-        long: '-73.5228'
         locality: Montreal
         country: Canada
-        countryCode: CA
+        latitude: 45.5
+        longitude: -73.5228
         flag: 🇨🇦
         countryCode3: CAN
   - round: 15
-    raceNum: 357
     url: https://en.wikipedia.org/wiki/1981_Caesars_Palace_Grand_Prix
-    raceName: Caesars Palace Grand Prix
+    name: Caesars Palace Grand Prix
     raceCode3: CPL
-    race:
-      date: '1981-10-17'
+    sessions:
+      - name: Race
+        date: '1981-10-17'
     circuit:
       circuitId: las_vegas
       url: https://en.wikipedia.org/wiki/Las_Vegas_Strip_Circuit
-      circuitName: Las Vegas Street Circuit
+      name: Las Vegas Street Circuit
       location:
-        lat: '36.1162'
-        long: '-115.174'
         locality: Nevada
         country: USA
-        countryCode: US
+        latitude: 36.1162
+        longitude: -115.174
         flag: 🇺🇸
         countryCode3: USA

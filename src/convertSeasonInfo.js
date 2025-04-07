@@ -83,60 +83,63 @@ export function convertSeasonInfo(values) {
 
   if (type == 'rounds') {
 
-    let raceNum = 1
-    if (values.year > 1950) {
-      let prev = yaml.load(fs.readFileSync(`data/${values.year-1}-rounds.yaml`, 'utf8'));
-      raceNum = prev.rounds[prev.rounds.length-1].raceNum + 1
-    }
-
     out.season = doc.MRData.RaceTable.season*1;
     out.rounds = [];
 
     doc.MRData.RaceTable.Races.forEach(r => {
       let o = {
         round: r.round*1,
-        raceNum: raceNum++,
         url: r.url,
-        raceName: r.raceName,
+        name: r.raceName,
         raceCode3: raceCode3For(r.raceName),
-        race: {
+        sessions: [{
+          name: 'Race',
           date: r.date,
           time: r.time
-        },
+        }],
         circuit: r.Circuit
       };
       out.rounds.push(o);
 
+      o.circuit.name = r.Circuit.circuitName;
+      delete o.circuit.circuitName;
       o.circuit.location = r.Circuit.Location;
       delete o.circuit.Location;
 
       let { code, flag, code3 } = countryInfoFor(o.circuit.location.country);
-      o.circuit.location.countryCode = code;
+      o.circuit.location.latitude = o.circuit.location.lat*1.0;
+      o.circuit.location.longitude = o.circuit.location.long*1.0;
+      delete o.circuit.location.lat;
+      delete o.circuit.location.long;
       o.circuit.location.flag = flag;
       o.circuit.location.countryCode3 = code3;
 
       if (r.FirstPractice) {
-        o.firstPractice = r.FirstPractice;
+        o.sessions.push(Object.assign({ name: 'Practice 1' }, r.FirstPractice ));
       }
 
       if (r.SecondPractice) {
-        o.secondPractice = r.SecondPractice;
+        o.sessions.push(Object.assign({ name: 'Practice 2' }, r.SecondPractice ));
       }
 
       if (r.ThirdPractice) {
-        o.thirdPractice = r.ThirdPractice;
+        o.sessions.push(Object.assign({ name: 'Practice 3' }, r.ThirdPractice ));
       }
 
       if (r.Qualifying) {
-        o.qualifying = r.Qualifying;
+        o.sessions.push(Object.assign({ name: 'Qualifying' }, r.Qualifying ));
       }
 
       if (r.SprintQualifying) {
-        o.sprintQualifying = r.SprintQualifying;
+        o.sessions.push(Object.assign({ name: 'Sprint Qualifying' }, r.SprintQualifying ));
+      }
+
+      if (r.SprintShootout) {
+        o.sessions.push(Object.assign({ name: 'Sprint Shootout' }, r.SprintShootout ));
       }
 
       if (r.Sprint) {
-        o.sprint = r.Sprint;
+        o.sessions.push(Object.assign({ name: 'Sprint' }, r.Sprint ));
       }
     });
   } else if (type == 'drivers') {
@@ -153,7 +156,10 @@ export function convertSeasonInfo(values) {
         r.permanentNumber = r.permanentNumber*1
       }
       if (r.code === undefined) {
-        r.code = r.familyName.toUpperCase().substring(0, 3);
+        r.driverCode3 = r.familyName.toUpperCase().substring(0, 3);
+      } else {
+        r.driverCode3 = r.code
+        delete r.code;
       }
 
       out.drivers.push(r);
@@ -161,14 +167,15 @@ export function convertSeasonInfo(values) {
     });
 
   } else if (type == 'constructors') {
-    out.season = doc.MRData.ConstructorTable.season;
+    out.season = doc.MRData.ConstructorTable.season*1;
     out.constructors = [];
 
     doc.MRData.ConstructorTable.Constructors.forEach(r => {
       let { code, flag, code3 } = countryInfoFor(r.nationality);
-      r.countryCode = code;
+      //r.countryCode = code;
       r.flag = flag;
       r.countryCode3 = code3;
+      r.knownAs = [ r.name ];
 
       out.constructors.push(r);
     });

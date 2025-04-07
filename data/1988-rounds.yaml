@@ -1,306 +1,290 @@
 season: 1988
 rounds:
   - round: 1
-    raceNum: 453
     url: https://en.wikipedia.org/wiki/1988_Brazilian_Grand_Prix
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
-    race:
-      date: '1988-04-03'
+    sessions:
+      - name: Race
+        date: '1988-04-03'
     circuit:
       circuitId: jacarepagua
       url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet
-      circuitName: Autódromo Internacional Nelson Piquet
+      name: Autódromo Internacional Nelson Piquet
       location:
-        lat: '-22.9756'
-        long: '-43.395'
         locality: Rio de Janeiro
         country: Brazil
-        countryCode: BR
+        latitude: -22.9756
+        longitude: -43.395
         flag: 🇧🇷
         countryCode3: BRA
   - round: 2
-    raceNum: 454
     url: https://en.wikipedia.org/wiki/1988_San_Marino_Grand_Prix
-    raceName: San Marino Grand Prix
+    name: San Marino Grand Prix
     raceCode3: SMR
-    race:
-      date: '1988-05-01'
+    sessions:
+      - name: Race
+        date: '1988-05-01'
     circuit:
       circuitId: imola
       url: https://en.wikipedia.org/wiki/Imola_Circuit
-      circuitName: Autodromo Enzo e Dino Ferrari
+      name: Autodromo Enzo e Dino Ferrari
       location:
-        lat: '44.3439'
-        long: '11.7167'
         locality: Imola
         country: Italy
-        countryCode: IT
+        latitude: 44.3439
+        longitude: 11.7167
         flag: 🇮🇹
         countryCode3: ITA
   - round: 3
-    raceNum: 455
     url: https://en.wikipedia.org/wiki/1988_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1988-05-15'
+    sessions:
+      - name: Race
+        date: '1988-05-15'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 4
-    raceNum: 456
     url: https://en.wikipedia.org/wiki/1988_Mexican_Grand_Prix
-    raceName: Mexican Grand Prix
+    name: Mexican Grand Prix
     raceCode3: MEX
-    race:
-      date: '1988-05-29'
+    sessions:
+      - name: Race
+        date: '1988-05-29'
     circuit:
       circuitId: rodriguez
       url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez
-      circuitName: Autódromo Hermanos Rodríguez
+      name: Autódromo Hermanos Rodríguez
       location:
-        lat: '19.4042'
-        long: '-99.0907'
         locality: Mexico City
         country: Mexico
-        countryCode: MX
+        latitude: 19.4042
+        longitude: -99.0907
         flag: 🇲🇽
         countryCode3: MEX
   - round: 5
-    raceNum: 457
     url: https://en.wikipedia.org/wiki/1988_Canadian_Grand_Prix
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
-    race:
-      date: '1988-06-12'
+    sessions:
+      - name: Race
+        date: '1988-06-12'
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
-      circuitName: Circuit Gilles Villeneuve
+      name: Circuit Gilles Villeneuve
       location:
-        lat: '45.5'
-        long: '-73.5228'
         locality: Montreal
         country: Canada
-        countryCode: CA
+        latitude: 45.5
+        longitude: -73.5228
         flag: 🇨🇦
         countryCode3: CAN
   - round: 6
-    raceNum: 458
     url: https://en.wikipedia.org/wiki/1988_Detroit_Grand_Prix
-    raceName: Detroit Grand Prix
+    name: Detroit Grand Prix
     raceCode3: DET
-    race:
-      date: '1988-06-19'
+    sessions:
+      - name: Race
+        date: '1988-06-19'
     circuit:
       circuitId: detroit
       url: https://en.wikipedia.org/wiki/Detroit_street_circuit
-      circuitName: Detroit Street Circuit
+      name: Detroit Street Circuit
       location:
-        lat: '42.3298'
-        long: '-83.0401'
         locality: Detroit
         country: USA
-        countryCode: US
+        latitude: 42.3298
+        longitude: -83.0401
         flag: 🇺🇸
         countryCode3: USA
   - round: 7
-    raceNum: 459
     url: https://en.wikipedia.org/wiki/1988_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1988-07-03'
+    sessions:
+      - name: Race
+        date: '1988-07-03'
     circuit:
       circuitId: ricard
       url: https://en.wikipedia.org/wiki/Circuit_Paul_Ricard
-      circuitName: Circuit Paul Ricard
+      name: Circuit Paul Ricard
       location:
-        lat: '43.2506'
-        long: '5.79167'
         locality: Le Castellet
         country: France
-        countryCode: FR
+        latitude: 43.2506
+        longitude: 5.79167
         flag: 🇫🇷
         countryCode3: FRA
   - round: 8
-    raceNum: 460
     url: https://en.wikipedia.org/wiki/1988_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1988-07-10'
+    sessions:
+      - name: Race
+        date: '1988-07-10'
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
-      circuitName: Silverstone Circuit
+      name: Silverstone Circuit
       location:
-        lat: '52.0786'
-        long: '-1.01694'
         locality: Silverstone
         country: UK
-        countryCode: GB
+        latitude: 52.0786
+        longitude: -1.01694
         flag: 🇬🇧
         countryCode3: GBR
   - round: 9
-    raceNum: 461
     url: https://en.wikipedia.org/wiki/1988_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1988-07-24'
+    sessions:
+      - name: Race
+        date: '1988-07-24'
     circuit:
       circuitId: hockenheimring
       url: https://en.wikipedia.org/wiki/Hockenheimring
-      circuitName: Hockenheimring
+      name: Hockenheimring
       location:
-        lat: '49.3278'
-        long: '8.56583'
         locality: Hockenheim
         country: Germany
-        countryCode: DE
+        latitude: 49.3278
+        longitude: 8.56583
         flag: 🇩🇪
         countryCode3: DEU
   - round: 10
-    raceNum: 462
     url: https://en.wikipedia.org/wiki/1988_Hungarian_Grand_Prix
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
-    race:
-      date: '1988-08-07'
+    sessions:
+      - name: Race
+        date: '1988-08-07'
     circuit:
       circuitId: hungaroring
       url: https://en.wikipedia.org/wiki/Hungaroring
-      circuitName: Hungaroring
+      name: Hungaroring
       location:
-        lat: '47.5789'
-        long: '19.2486'
         locality: Budapest
         country: Hungary
-        countryCode: HU
+        latitude: 47.5789
+        longitude: 19.2486
         flag: 🇭🇺
         countryCode3: HUN
   - round: 11
-    raceNum: 463
     url: https://en.wikipedia.org/wiki/1988_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1988-08-28'
+    sessions:
+      - name: Race
+        date: '1988-08-28'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
   - round: 12
-    raceNum: 464
     url: https://en.wikipedia.org/wiki/1988_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1988-09-11'
+    sessions:
+      - name: Race
+        date: '1988-09-11'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 13
-    raceNum: 465
     url: https://en.wikipedia.org/wiki/1988_Portuguese_Grand_Prix
-    raceName: Portuguese Grand Prix
+    name: Portuguese Grand Prix
     raceCode3: POR
-    race:
-      date: '1988-09-25'
+    sessions:
+      - name: Race
+        date: '1988-09-25'
     circuit:
       circuitId: estoril
       url: https://en.wikipedia.org/wiki/Circuito_do_Estoril
-      circuitName: Autódromo do Estoril
+      name: Autódromo do Estoril
       location:
-        lat: '38.7506'
-        long: '-9.39417'
         locality: Estoril
         country: Portugal
-        countryCode: PT
+        latitude: 38.7506
+        longitude: -9.39417
         flag: 🇵🇹
         countryCode3: POR
   - round: 14
-    raceNum: 466
     url: https://en.wikipedia.org/wiki/1988_Spanish_Grand_Prix
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
-    race:
-      date: '1988-10-02'
+    sessions:
+      - name: Race
+        date: '1988-10-02'
     circuit:
       circuitId: jerez
       url: https://en.wikipedia.org/wiki/Circuito_de_Jerez
-      circuitName: Circuito de Jerez
+      name: Circuito de Jerez
       location:
-        lat: '36.7083'
-        long: '-6.03417'
         locality: Jerez de la Frontera
         country: Spain
-        countryCode: ES
+        latitude: 36.7083
+        longitude: -6.03417
         flag: 🇪🇸
         countryCode3: ESP
   - round: 15
-    raceNum: 467
     url: https://en.wikipedia.org/wiki/1988_Japanese_Grand_Prix
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
-    race:
-      date: '1988-10-30'
+    sessions:
+      - name: Race
+        date: '1988-10-30'
     circuit:
       circuitId: suzuka
       url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
-      circuitName: Suzuka Circuit
+      name: Suzuka Circuit
       location:
-        lat: '34.8431'
-        long: '136.541'
         locality: Suzuka
         country: Japan
-        countryCode: JP
+        latitude: 34.8431
+        longitude: 136.541
         flag: 🇯🇵
         countryCode3: JPN
   - round: 16
-    raceNum: 468
     url: https://en.wikipedia.org/wiki/1988_Australian_Grand_Prix
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
-    race:
-      date: '1988-11-13'
+    sessions:
+      - name: Race
+        date: '1988-11-13'
     circuit:
       circuitId: adelaide
       url: https://en.wikipedia.org/wiki/Adelaide_Street_Circuit
-      circuitName: Adelaide Street Circuit
+      name: Adelaide Street Circuit
       location:
-        lat: '-34.9272'
-        long: '138.617'
         locality: Adelaide
         country: Australia
-        countryCode: AU
+        latitude: -34.9272
+        longitude: 138.617
         flag: 🇦🇺
         countryCode3: AUS

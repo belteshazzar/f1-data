@@ -1,173 +1,164 @@
 season: 1962
 rounds:
   - round: 1
-    raceNum: 103
     url: https://en.wikipedia.org/wiki/1962_Dutch_Grand_Prix
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
-    race:
-      date: '1962-05-20'
+    sessions:
+      - name: Race
+        date: '1962-05-20'
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
-      circuitName: Circuit Park Zandvoort
+      name: Circuit Park Zandvoort
       location:
-        lat: '52.3888'
-        long: '4.54092'
         locality: Zandvoort
         country: Netherlands
-        countryCode: NL
+        latitude: 52.3888
+        longitude: 4.54092
         flag: 🇳🇱
         countryCode3: NLD
   - round: 2
-    raceNum: 104
     url: https://en.wikipedia.org/wiki/1962_Monaco_Grand_Prix
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
-    race:
-      date: '1962-06-03'
+    sessions:
+      - name: Race
+        date: '1962-06-03'
     circuit:
       circuitId: monaco
       url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
-      circuitName: Circuit de Monaco
+      name: Circuit de Monaco
       location:
-        lat: '43.7347'
-        long: '7.42056'
         locality: Monte-Carlo
         country: Monaco
-        countryCode: MC
+        latitude: 43.7347
+        longitude: 7.42056
         flag: 🇲🇨
         countryCode3: MCO
   - round: 3
-    raceNum: 105
     url: https://en.wikipedia.org/wiki/1962_Belgian_Grand_Prix
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
-    race:
-      date: '1962-06-17'
+    sessions:
+      - name: Race
+        date: '1962-06-17'
     circuit:
       circuitId: spa
       url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
-      circuitName: Circuit de Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
       location:
-        lat: '50.4372'
-        long: '5.97139'
         locality: Spa
         country: Belgium
-        countryCode: BE
+        latitude: 50.4372
+        longitude: 5.97139
         flag: 🇧🇪
         countryCode3: BEL
   - round: 4
-    raceNum: 106
     url: https://en.wikipedia.org/wiki/1962_French_Grand_Prix
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
-    race:
-      date: '1962-07-08'
+    sessions:
+      - name: Race
+        date: '1962-07-08'
     circuit:
       circuitId: essarts
       url: https://en.wikipedia.org/wiki/Rouen-Les-Essarts
-      circuitName: Rouen-Les-Essarts
+      name: Rouen-Les-Essarts
       location:
-        lat: '49.3306'
-        long: '1.00458'
         locality: Rouen
         country: France
-        countryCode: FR
+        latitude: 49.3306
+        longitude: 1.00458
         flag: 🇫🇷
         countryCode3: FRA
   - round: 5
-    raceNum: 107
     url: https://en.wikipedia.org/wiki/1962_British_Grand_Prix
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
-    race:
-      date: '1962-07-21'
+    sessions:
+      - name: Race
+        date: '1962-07-21'
     circuit:
       circuitId: aintree
       url: https://en.wikipedia.org/wiki/Aintree_Motor_Racing_Circuit
-      circuitName: Aintree
+      name: Aintree
       location:
-        lat: '53.4769'
-        long: '-2.94056'
         locality: Liverpool
         country: UK
-        countryCode: GB
+        latitude: 53.4769
+        longitude: -2.94056
         flag: 🇬🇧
         countryCode3: GBR
   - round: 6
-    raceNum: 108
     url: https://en.wikipedia.org/wiki/1962_German_Grand_Prix
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
-    race:
-      date: '1962-08-05'
+    sessions:
+      - name: Race
+        date: '1962-08-05'
     circuit:
       circuitId: nurburgring
       url: https://en.wikipedia.org/wiki/N%C3%BCrburgring
-      circuitName: Nürburgring
+      name: Nürburgring
       location:
-        lat: '50.3356'
-        long: '6.9475'
         locality: Nürburg
         country: Germany
-        countryCode: DE
+        latitude: 50.3356
+        longitude: 6.9475
         flag: 🇩🇪
         countryCode3: DEU
   - round: 7
-    raceNum: 109
     url: https://en.wikipedia.org/wiki/1962_Italian_Grand_Prix
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
-    race:
-      date: '1962-09-16'
+    sessions:
+      - name: Race
+        date: '1962-09-16'
     circuit:
       circuitId: monza
       url: https://en.wikipedia.org/wiki/Monza_Circuit
-      circuitName: Autodromo Nazionale di Monza
+      name: Autodromo Nazionale di Monza
       location:
-        lat: '45.6156'
-        long: '9.28111'
         locality: Monza
         country: Italy
-        countryCode: IT
+        latitude: 45.6156
+        longitude: 9.28111
         flag: 🇮🇹
         countryCode3: ITA
   - round: 8
-    raceNum: 110
     url: https://en.wikipedia.org/wiki/1962_United_States_Grand_Prix
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
-    race:
-      date: '1962-10-07'
+    sessions:
+      - name: Race
+        date: '1962-10-07'
     circuit:
       circuitId: watkins_glen
       url: https://en.wikipedia.org/wiki/Watkins_Glen_International
-      circuitName: Watkins Glen
+      name: Watkins Glen
       location:
-        lat: '42.3369'
-        long: '-76.9272'
         locality: New York State
         country: USA
-        countryCode: US
+        latitude: 42.3369
+        longitude: -76.9272
         flag: 🇺🇸
         countryCode3: USA
   - round: 9
-    raceNum: 111
     url: https://en.wikipedia.org/wiki/1962_South_African_Grand_Prix
-    raceName: South African Grand Prix
+    name: South African Grand Prix
     raceCode3: ZAF
-    race:
-      date: '1962-12-29'
+    sessions:
+      - name: Race
+        date: '1962-12-29'
     circuit:
       circuitId: george
       url: https://en.wikipedia.org/wiki/Prince_George_Circuit
-      circuitName: Prince George Circuit
+      name: Prince George Circuit
       location:
-        lat: '-33.0486'
-        long: '27.8736'
         locality: Eastern Cape Province
         country: South Africa
-        countryCode: ZA
+        latitude: -33.0486
+        longitude: 27.8736
         flag: 🇿🇦
         countryCode3: ZAF
