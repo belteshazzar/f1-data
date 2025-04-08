@@ -1,180 +1,158 @@
-season: '2013'
-round: '7'
-session: race
+season: 2013
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '25'
-    grid: '1'
-    laps: '70'
-    status: Finished
-    driver: vettel
-    constructor: red_bull
+  - position: 1
+    driverId: vettel
+    constructorId: red_bull
+    laps: 70
     time: '1:32:09.143'
-  - position: '2'
-    points: '18'
-    grid: '6'
-    laps: '70'
     status: Finished
-    driver: alonso
-    constructor: ferrari
+    points: 25
+  - position: 2
+    driverId: alonso
+    constructorId: ferrari
+    laps: 70
     time: '+14.408'
-  - position: '3'
-    points: '15'
-    grid: '2'
-    laps: '70'
     status: Finished
-    driver: hamilton
-    constructor: mercedes
+    points: 18
+  - position: 3
+    driverId: hamilton
+    constructorId: mercedes
+    laps: 70
     time: '+15.942'
-  - position: '4'
-    points: '12'
-    grid: '5'
-    laps: '70'
     status: Finished
-    driver: webber
-    constructor: red_bull
+    points: 15
+  - position: 4
+    driverId: webber
+    constructorId: red_bull
+    laps: 70
     time: '+25.731'
-  - position: '5'
-    points: '10'
-    grid: '4'
-    laps: '70'
     status: Finished
-    driver: rosberg
-    constructor: mercedes
+    points: 12
+  - position: 5
+    driverId: rosberg
+    constructorId: mercedes
+    laps: 70
     time: '+1:09.725'
-  - position: '6'
-    points: '8'
-    grid: '7'
-    laps: '69'
-    status: +1 Lap
-    driver: vergne
-    constructor: toro_rosso
-    time: null
-  - position: '7'
-    points: '6'
-    grid: '17'
-    laps: '69'
-    status: +1 Lap
-    driver: resta
-    constructor: force_india
-    time: null
-  - position: '8'
-    points: '4'
-    grid: '16'
-    laps: '69'
-    status: +1 Lap
-    driver: massa
-    constructor: ferrari
-    time: null
-  - position: '9'
-    points: '2'
-    grid: '10'
-    laps: '69'
-    status: +1 Lap
-    driver: raikkonen
-    constructor: lotus_f1
-    time: null
-  - position: '10'
-    points: '1'
-    grid: '8'
-    laps: '69'
-    status: +1 Lap
-    driver: sutil
-    constructor: force_india
-    time: null
-  - position: '11'
-    points: '0'
-    grid: '12'
-    laps: '69'
-    status: +1 Lap
-    driver: perez
-    constructor: mclaren
-    time: null
-  - position: '12'
-    points: '0'
-    grid: '14'
-    laps: '69'
-    status: +1 Lap
-    driver: button
-    constructor: mclaren
-    time: null
-  - position: '13'
-    points: '0'
-    grid: '22'
-    laps: '69'
-    status: +1 Lap
-    driver: grosjean
-    constructor: lotus_f1
-    time: null
-  - position: '14'
-    points: '0'
-    grid: '3'
-    laps: '69'
-    status: +1 Lap
-    driver: bottas
-    constructor: williams
-    time: null
-  - position: '15'
-    points: '0'
-    grid: '11'
-    laps: '68'
-    status: +2 Laps
-    driver: ricciardo
-    constructor: toro_rosso
-    time: null
-  - position: '16'
-    points: '0'
-    grid: '13'
-    laps: '68'
-    status: +2 Laps
-    driver: maldonado
-    constructor: williams
-    time: null
-  - position: '17'
-    points: '0'
-    grid: '19'
-    laps: '68'
-    status: +2 Laps
-    driver: jules_bianchi
-    constructor: marussia
-    time: null
-  - position: '18'
-    points: '0'
-    grid: '18'
-    laps: '67'
-    status: +3 Laps
-    driver: pic
-    constructor: caterham
-    time: null
-  - position: '19'
-    points: '0'
-    grid: '20'
-    laps: '67'
-    status: +3 Laps
-    driver: chilton
-    constructor: marussia
-    time: null
-  - position: '20'
-    points: '0'
-    grid: '15'
-    laps: '63'
+    status: Finished
+    points: 10
+  - position: 6
+    driverId: vergne
+    constructorId: toro_rosso
+    laps: 69
+    time: ''
+    status: Finished
+    points: 8
+  - position: 7
+    driverId: resta
+    constructorId: force_india
+    laps: 69
+    time: ''
+    status: Finished
+    points: 6
+  - position: 8
+    driverId: massa
+    constructorId: ferrari
+    laps: 69
+    time: ''
+    status: Finished
+    points: 4
+  - position: 9
+    driverId: raikkonen
+    constructorId: lotus_f1
+    laps: 69
+    time: ''
+    status: Finished
+    points: 2
+  - position: 10
+    driverId: sutil
+    constructorId: force_india
+    laps: 69
+    time: ''
+    status: Finished
+    points: 1
+  - position: 11
+    driverId: perez
+    constructorId: mclaren
+    laps: 69
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: button
+    constructorId: mclaren
+    laps: 69
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: grosjean
+    constructorId: lotus_f1
+    laps: 69
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: bottas
+    constructorId: williams
+    laps: 69
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: ricciardo
+    constructorId: toro_rosso
+    laps: 68
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: maldonado
+    constructorId: williams
+    laps: 68
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: jules_bianchi
+    constructorId: marussia
+    laps: 68
+    time: ''
+    status: Finished
+    points: 0
+  - position: 18
+    driverId: pic
+    constructorId: caterham
+    laps: 67
+    time: ''
+    status: Finished
+    points: 0
+  - position: 19
+    driverId: chilton
+    constructorId: marussia
+    laps: 67
+    time: ''
+    status: Finished
+    points: 0
+  - position: 20
+    driverId: gutierrez
+    constructorId: sauber
+    laps: 63
+    time: ''
     status: Accident
-    driver: gutierrez
-    constructor: sauber
-    time: null
-  - position: '21'
-    points: '0'
-    grid: '9'
-    laps: '45'
+    points: 0
+  - position: 21
+    driverId: hulkenberg
+    constructorId: sauber
+    laps: 45
+    time: ''
     status: Collision
-    driver: hulkenberg
-    constructor: sauber
-    time: null
-  - position: '22'
-    points: '0'
-    grid: '21'
-    laps: '43'
+    points: 0
+  - position: 22
+    driverId: garde
+    constructorId: caterham
+    laps: 43
+    time: ''
     status: Collision
-    driver: garde
-    constructor: caterham
-    time: null
+    points: 0

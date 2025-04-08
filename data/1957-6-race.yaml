@@ -1,220 +1,172 @@
-season: '1957'
-round: '6'
-session: race
+season: 1957
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '22'
-    status: Finished
-    driver: fangio
-    constructor: maserati
+  - position: 1
+    driverId: fangio
+    constructorId: maserati
+    laps: 22
     time: '3:30:38.300'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '22'
     status: Finished
-    driver: hawthorn
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: hawthorn
+    constructorId: ferrari
+    laps: 22
     time: '+3.600'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '4'
-    laps: '22'
     status: Finished
-    driver: collins
-    constructor: ferrari
+    points: 6
+  - position: 3
+    driverId: collins
+    constructorId: ferrari
+    laps: 22
     time: '+35.600'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '8'
-    laps: '22'
     status: Finished
-    driver: musso
-    constructor: ferrari
+    points: 4
+  - position: 4
+    driverId: musso
+    constructorId: ferrari
+    laps: 22
     time: '+3:37.600'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '7'
-    laps: '22'
     status: Finished
-    driver: moss
-    constructor: vanwall
+    points: 3
+  - position: 5
+    driverId: moss
+    constructorId: vanwall
+    laps: 22
     time: '+4:37.200'
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '3'
-    laps: '22'
     status: Finished
-    driver: behra
-    constructor: maserati
+    points: 2
+  - position: 6
+    driverId: behra
+    constructorId: maserati
+    laps: 22
     time: '+4:38.500'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '6'
-    laps: '22'
     status: Finished
-    driver: schell
-    constructor: maserati
+    points: 0
+  - position: 7
+    driverId: schell
+    constructorId: maserati
+    laps: 22
     time: '+6:47.500'
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '10'
-    laps: '21'
-    status: +1 Lap
-    driver: gregory
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '5'
-    laps: '21'
-    status: +1 Lap
-    driver: brooks
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '13'
-    laps: '21'
-    status: +1 Lap
-    driver: scarlatti
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '16'
-    laps: '21'
-    status: +1 Lap
-    driver: halford
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '12'
-    laps: '21'
-    status: +1 Lap
-    driver: barth
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '17'
-    laps: '20'
-    status: +2 Laps
-    driver: naylor
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '20'
-    laps: '20'
-    status: +2 Laps
-    driver: beaufort
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '22'
-    laps: '17'
-    status: +5 Laps
-    driver: marsh
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '11'
-    laps: '14'
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: gregory
+    constructorId: maserati
+    laps: 21
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: brooks
+    constructorId: vanwall
+    laps: 21
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: scarlatti
+    constructorId: maserati
+    laps: 21
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: halford
+    constructorId: maserati
+    laps: 21
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: barth
+    constructorId: porsche
+    laps: 21
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: naylor
+    constructorId: cooper
+    laps: 20
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: beaufort
+    constructorId: porsche
+    laps: 20
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: marsh
+    constructorId: cooper
+    laps: 17
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: herrmann
+    constructorId: maserati
+    laps: 14
+    time: ''
     status: Chassis
-    driver: herrmann
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '15'
-    laps: '13'
+    points: 0
+  - position: 17
+    driverId: maglioli
+    constructorId: porsche
+    laps: 13
+    time: ''
     status: Engine
-    driver: maglioli
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '14'
-    laps: '11'
+    points: 0
+  - position: 18
+    driverId: salvadori
+    constructorId: cooper
+    laps: 11
+    time: ''
     status: Suspension
-    driver: salvadori
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '21'
-    laps: '11'
+    points: 0
+  - position: 19
+    driverId: godia
+    constructorId: maserati
+    laps: 11
+    time: ''
     status: Steering
-    driver: godia
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '9'
-    laps: '10'
+    points: 0
+  - position: 20
+    driverId: lewis-evans
+    constructorId: vanwall
+    laps: 10
+    time: ''
     status: Gearbox
-    driver: lewis-evans
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '18'
-    laps: '6'
+    points: 0
+  - position: 21
+    driverId: jack_brabham
+    constructorId: cooper
+    laps: 6
+    time: ''
     status: Transmission
-    driver: jack_brabham
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '23'
-    laps: '4'
+    points: 0
+  - position: 22
+    driverId: england
+    constructorId: cooper
+    laps: 4
+    time: ''
     status: Distributor
-    driver: england
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '24'
-    laps: '3'
+    points: 0
+  - position: 23
+    driverId: gibson
+    constructorId: cooper
+    laps: 3
+    time: ''
     status: Steering
-    driver: gibson
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '19'
-    laps: '2'
+    points: 0
+  - position: 24
+    driverId: gould
+    constructorId: maserati
+    laps: 2
+    time: ''
     status: Axle
-    driver: gould
-    constructor: maserati
-    time: null
-    fastestLap: null
+    points: 0

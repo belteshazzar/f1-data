@@ -1,202 +1,158 @@
-season: '2001'
-round: '7'
-session: race
+season: 2001
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '10'
-    grid: '2'
-    laps: '78'
-    status: Finished
-    driver: michael_schumacher
-    constructor: ferrari
+  - position: 1
+    driverId: michael_schumacher
+    constructorId: ferrari
+    laps: 78
     time: '1:47:22.561'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '4'
-    laps: '78'
     status: Finished
-    driver: barrichello
-    constructor: ferrari
+    points: 10
+  - position: 2
+    driverId: barrichello
+    constructorId: ferrari
+    laps: 78
     time: '+0.431'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '6'
-    laps: '78'
     status: Finished
-    driver: irvine
-    constructor: jaguar
+    points: 6
+  - position: 3
+    driverId: irvine
+    constructorId: jaguar
+    laps: 78
     time: '+30.698'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '9'
-    laps: '78'
     status: Finished
-    driver: villeneuve
-    constructor: bar
+    points: 4
+  - position: 4
+    driverId: villeneuve
+    constructorId: bar
+    laps: 78
     time: '+32.454'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '1'
-    laps: '77'
-    status: +1 Lap
-    driver: coulthard
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '11'
-    laps: '77'
-    status: +1 Lap
-    driver: alesi
-    constructor: prost
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '17'
-    laps: '77'
-    status: +1 Lap
-    driver: button
-    constructor: benetton
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '77'
-    status: +1 Lap
-    driver: verstappen
-    constructor: arrows
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '20'
-    laps: '76'
-    status: +2 Laps
-    driver: bernoldi
-    constructor: arrows
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '15'
-    laps: '73'
-    status: +5 Laps
-    driver: raikkonen
-    constructor: sauber
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '5'
-    laps: '57'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: coulthard
+    constructorId: mclaren
+    laps: 77
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: alesi
+    constructorId: prost
+    laps: 77
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: button
+    constructorId: benetton
+    laps: 77
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: verstappen
+    constructorId: arrows
+    laps: 77
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: bernoldi
+    constructorId: arrows
+    laps: 76
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: raikkonen
+    constructorId: sauber
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: ralf_schumacher
+    constructorId: williams
+    laps: 57
+    time: ''
     status: Electrical
-    driver: ralf_schumacher
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '22'
-    laps: '56'
+    points: 0
+  - position: 12
+    driverId: marques
+    constructorId: minardi
+    laps: 56
+    time: ''
     status: Transmission
-    driver: marques
-    constructor: minardi
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '18'
-    laps: '54'
+    points: 0
+  - position: 13
+    driverId: alonso
+    constructorId: minardi
+    laps: 54
+    time: ''
     status: Gearbox
-    driver: alonso
-    constructor: minardi
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '13'
-    laps: '49'
+    points: 0
+  - position: 14
+    driverId: frentzen
+    constructorId: jordan
+    laps: 49
+    time: ''
     status: Accident
-    driver: frentzen
-    constructor: jordan
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '10'
-    laps: '43'
+    points: 0
+  - position: 15
+    driverId: fisichella
+    constructorId: benetton
+    laps: 43
+    time: ''
     status: Gearbox
-    driver: fisichella
-    constructor: benetton
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '8'
-    laps: '30'
+    points: 0
+  - position: 16
+    driverId: trulli
+    constructorId: jordan
+    laps: 30
+    time: ''
     status: Hydraulics
-    driver: trulli
-    constructor: jordan
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '21'
-    laps: '24'
+    points: 0
+  - position: 17
+    driverId: burti
+    constructorId: prost
+    laps: 24
+    time: ''
     status: Gearbox
-    driver: burti
-    constructor: prost
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '14'
-    laps: '18'
+    points: 0
+  - position: 18
+    driverId: rosa
+    constructorId: jaguar
+    laps: 18
+    time: ''
     status: Hydraulics
-    driver: rosa
-    constructor: jaguar
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '3'
-    laps: '15'
+    points: 0
+  - position: 19
+    driverId: hakkinen
+    constructorId: mclaren
+    laps: 15
+    time: ''
     status: Steering
-    driver: hakkinen
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '12'
-    laps: '13'
+    points: 0
+  - position: 20
+    driverId: panis
+    constructorId: bar
+    laps: 13
+    time: ''
     status: Steering
-    driver: panis
-    constructor: bar
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '7'
-    laps: '2'
+    points: 0
+  - position: 21
+    driverId: montoya
+    constructorId: williams
+    laps: 2
+    time: ''
     status: Spun off
-    driver: montoya
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '16'
-    laps: '0'
+    points: 0
+  - position: 22
+    driverId: heidfeld
+    constructorId: sauber
+    laps: 0
+    time: ''
     status: Collision
-    driver: heidfeld
-    constructor: sauber
-    time: null
-    fastestLap: null
+    points: 0

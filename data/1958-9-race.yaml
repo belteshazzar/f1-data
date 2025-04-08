@@ -1,139 +1,109 @@
-season: '1958'
-round: '9'
-session: race
+season: 1958
+round: 9
+session: Race
 results:
-  - position: '1'
-    points: '8'
-    grid: '1'
-    laps: '50'
-    status: Finished
-    driver: moss
-    constructor: vanwall
+  - position: 1
+    driverId: moss
+    constructorId: vanwall
+    laps: 50
     time: '2:11:27.800'
-    fastestLap: null
-  - position: '2'
-    points: '7'
-    grid: '2'
-    laps: '50'
     status: Finished
-    driver: hawthorn
-    constructor: ferrari
+    points: 8
+  - position: 2
+    driverId: hawthorn
+    constructorId: ferrari
+    laps: 50
     time: '+5:12.750'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '3'
-    laps: '49'
-    status: +1 Lap
-    driver: lewis-evans
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '4'
-    laps: '49'
-    status: +1 Lap
-    driver: behra
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '6'
-    laps: '49'
-    status: +1 Lap
-    driver: trips
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '7'
-    laps: '49'
-    status: +1 Lap
-    driver: schell
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '48'
-    status: +2 Laps
-    driver: jack_brabham
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '9'
-    laps: '48'
-    status: +2 Laps
-    driver: trintignant
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '11'
-    laps: '46'
-    status: +4 Laps
-    driver: salvadori
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '10'
-    laps: '47'
+    status: Finished
+    points: 7
+  - position: 3
+    driverId: lewis-evans
+    constructorId: vanwall
+    laps: 49
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: behra
+    constructorId: brm
+    laps: 49
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: trips
+    constructorId: ferrari
+    laps: 49
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: schell
+    constructorId: brm
+    laps: 49
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: jack_brabham
+    constructorId: cooper
+    laps: 48
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: trintignant
+    constructorId: cooper
+    laps: 48
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: salvadori
+    constructorId: cooper
+    laps: 46
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: shelby
+    constructorId: maserati
+    laps: 47
+    time: ''
     status: Brakes
-    driver: shelby
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '5'
-    laps: '37'
+    points: 0
+  - position: 11
+    driverId: brooks
+    constructorId: vanwall
+    laps: 37
+    time: ''
     status: Spun off
-    driver: brooks
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '12'
-    laps: '25'
+    points: 0
+  - position: 12
+    driverId: hill
+    constructorId: team_lotus
+    laps: 25
+    time: ''
     status: Spun off
-    driver: hill
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '13'
-    laps: '15'
+    points: 0
+  - position: 13
+    driverId: allison
+    constructorId: maserati
+    laps: 15
+    time: ''
     status: Engine
-    driver: allison
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '14'
-    laps: '9'
+    points: 0
+  - position: 14
+    driverId: bonnier
+    constructorId: maserati
+    laps: 9
+    time: ''
     status: Physical
-    driver: bonnier
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '15'
-    laps: '6'
+    points: 0
+  - position: 15
+    driverId: filippis
+    constructorId: maserati
+    laps: 6
+    time: ''
     status: Engine
-    driver: filippis
-    constructor: maserati
-    time: null
-    fastestLap: null
+    points: 0

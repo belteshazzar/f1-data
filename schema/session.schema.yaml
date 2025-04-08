@@ -1,0 +1,73 @@
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/belteshazzar/f1-data/blob/main/schema/session.schema.yaml
+title: Session Results
+description: The results of a formula 1 session
+type: object
+properties:
+  season:
+    type: integer
+    required: true
+    description: The season of the data
+    example: 2025
+  round:
+    type: integer
+    required: true
+    description: The round in the season
+    example: 3
+  session:
+    type: string
+    required: true
+    description: The name of the session
+    example: Race
+  results:
+    type: array
+    required: true
+    description: The array of results for the session
+    items:
+      type: object
+      properties:
+        position:
+          type: integer
+          required: true
+          description: The finishing position of this result
+          example: 1
+        driverId:
+          type: string
+          required: true
+          description: The unique identifier for the driver
+          example: albon
+        constructorId:
+          type: string
+          required: true
+          description: The unique identifier for the constructor
+          example: red_bull
+        laps:
+          type: integer
+          required: false
+          description: The number of laps completed by the driver
+          example: 53
+        time:
+          type: string
+          required: false
+          description: Finishing time of the driver
+          example: '1:22:06.983'
+        times:
+          type: array
+          required: false
+          description: The array of times for each part of the session
+          items:
+            type: string
+            required: true
+            description: The time for this part of the session
+            example: '1:22.456'
+        status:
+          type: string
+          required: false
+          description: The status of the driver
+          example: Finished
+        points:
+          type: number
+          required: false
+          description: The number of points awarded to the driver
+          example: 25

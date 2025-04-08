@@ -1,238 +1,186 @@
-season: '1995'
-round: '4'
-session: race
+season: 1995
+round: 4
+session: Race
 results:
-  - position: '1'
-    points: '10'
-    grid: '1'
-    laps: '65'
-    status: Finished
-    driver: michael_schumacher
-    constructor: benetton
+  - position: 1
+    driverId: michael_schumacher
+    constructorId: benetton
+    laps: 65
     time: '1:34:20.507'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '7'
-    laps: '65'
     status: Finished
-    driver: herbert
-    constructor: benetton
+    points: 10
+  - position: 2
+    driverId: herbert
+    constructorId: benetton
+    laps: 65
     time: '+51.988'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '3'
-    laps: '65'
     status: Finished
-    driver: berger
-    constructor: ferrari
+    points: 6
+  - position: 3
+    driverId: berger
+    constructorId: ferrari
+    laps: 65
     time: '+1:05.237'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '5'
-    laps: '65'
     status: Finished
-    driver: damon_hill
-    constructor: williams
+    points: 4
+  - position: 4
+    driverId: damon_hill
+    constructorId: williams
+    laps: 65
     time: '+2:01.749'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '6'
-    laps: '64'
-    status: +1 Lap
-    driver: irvine
-    constructor: jordan
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '15'
-    laps: '64'
-    status: +1 Lap
-    driver: panis
-    constructor: ligier
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '64'
-    status: +1 Lap
-    driver: barrichello
-    constructor: jordan
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '12'
-    laps: '64'
-    status: +1 Lap
-    driver: frentzen
-    constructor: sauber
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '11'
-    laps: '64'
-    status: +1 Lap
-    driver: brundle
-    constructor: ligier
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '13'
-    laps: '64'
-    status: +1 Lap
-    driver: salo
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '14'
-    laps: '63'
-    status: +2 Laps
-    driver: morbidelli
-    constructor: footwork
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '16'
-    laps: '63'
-    status: +2 Laps
-    driver: verstappen
-    constructor: simtek
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '20'
-    laps: '63'
-    status: +2 Laps
-    driver: wendlinger
-    constructor: sauber
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '19'
-    laps: '62'
-    status: +3 Laps
-    driver: martini
-    constructor: minardi
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '22'
-    laps: '61'
-    status: +4 Laps
-    driver: schiattarella
-    constructor: simtek
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '17'
-    laps: '56'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: irvine
+    constructorId: jordan
+    laps: 64
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: panis
+    constructorId: ligier
+    laps: 64
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: barrichello
+    constructorId: jordan
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: frentzen
+    constructorId: sauber
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: brundle
+    constructorId: ligier
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: salo
+    constructorId: tyrrell
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: morbidelli
+    constructorId: footwork
+    laps: 63
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: verstappen
+    constructorId: simtek
+    laps: 63
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: wendlinger
+    constructorId: sauber
+    laps: 63
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: martini
+    constructorId: minardi
+    laps: 62
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: schiattarella
+    constructorId: simtek
+    laps: 61
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: katayama
+    constructorId: tyrrell
+    laps: 56
+    time: ''
     status: Engine
-    driver: katayama
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '4'
-    laps: '54'
+    points: 0
+  - position: 17
+    driverId: coulthard
+    constructorId: williams
+    laps: 54
+    time: ''
     status: Gearbox
-    driver: coulthard
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '9'
-    laps: '53'
+    points: 0
+  - position: 18
+    driverId: hakkinen
+    constructorId: mclaren
+    laps: 53
+    time: ''
     status: Fuel system
-    driver: hakkinen
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '43'
+    points: 0
+  - position: 19
+    driverId: inoue
+    constructorId: footwork
+    laps: 43
+    time: ''
     status: Transmission
-    driver: inoue
-    constructor: footwork
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '24'
-    laps: '43'
+    points: 0
+  - position: 20
+    driverId: gachot
+    constructorId: pacific
+    laps: 43
+    time: ''
     status: Heat shield fire
-    driver: gachot
-    constructor: pacific
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '25'
-    laps: '39'
+    points: 0
+  - position: 21
+    driverId: moreno
+    constructorId: forti
+    laps: 39
+    time: ''
     status: Overheating
-    driver: moreno
-    constructor: forti
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '2'
-    laps: '25'
+    points: 0
+  - position: 22
+    driverId: alesi
+    constructorId: ferrari
+    laps: 25
+    time: ''
     status: Engine
-    driver: alesi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '21'
-    laps: '21'
+    points: 0
+  - position: 23
+    driverId: badoer
+    constructorId: minardi
+    laps: 21
+    time: ''
     status: Gearbox
-    driver: badoer
-    constructor: minardi
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '10'
-    laps: '18'
+    points: 0
+  - position: 24
+    driverId: mansell
+    constructorId: mclaren
+    laps: 18
+    time: ''
     status: Handling
-    driver: mansell
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '26'
-    laps: '17'
+    points: 0
+  - position: 25
+    driverId: diniz
+    constructorId: forti
+    laps: 17
+    time: ''
     status: Gearbox
-    driver: diniz
-    constructor: forti
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '23'
-    laps: '0'
+    points: 0
+  - position: 26
+    driverId: montermini
+    constructorId: pacific
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: montermini
-    constructor: pacific
-    time: null
-    fastestLap: null
+    points: 0

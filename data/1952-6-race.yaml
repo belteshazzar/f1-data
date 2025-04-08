@@ -1,274 +1,214 @@
-season: '1952'
-round: '6'
-session: race
+season: 1952
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '18'
-    status: Finished
-    driver: ascari
-    constructor: ferrari
+  - position: 1
+    driverId: ascari
+    constructorId: ferrari
+    laps: 18
     time: '3:06:13.300'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '18'
     status: Finished
-    driver: farina
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: farina
+    constructorId: ferrari
+    laps: 18
     time: '+14.100'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '6'
-    laps: '18'
     status: Finished
-    driver: fischer
-    constructor: ferrari
+    points: 6
+  - position: 3
+    driverId: fischer
+    constructorId: ferrari
+    laps: 18
     time: '+7:10.100'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '5'
-    laps: '17'
-    status: +1 Lap
-    driver: taruffi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '11'
-    laps: '17'
-    status: +1 Lap
-    driver: behra
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '17'
-    laps: '16'
-    status: +2 Laps
-    driver: laurent
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '12'
-    laps: '16'
-    status: +2 Laps
-    driver: riess
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '15'
-    laps: '16'
-    status: +2 Laps
-    driver: ulmen
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '22'
-    laps: '15'
-    status: +3 Laps
-    driver: niedermayr
-    constructor: afm
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '32'
-    laps: '15'
-    status: +3 Laps
-    driver: claes
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '8'
-    laps: '14'
-    status: +4 Laps
-    driver: klenk
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '29'
-    laps: '14'
-    status: +4 Laps
-    driver: klodwig
-    constructor: bmw
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '4'
-    laps: '8'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: taruffi
+    constructorId: ferrari
+    laps: 17
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: behra
+    constructorId: gordini
+    laps: 17
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: laurent
+    constructorId: ferrari
+    laps: 16
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: riess
+    constructorId: veritas
+    laps: 16
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: ulmen
+    constructorId: veritas
+    laps: 16
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: niedermayr
+    constructorId: afm
+    laps: 15
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: claes
+    constructorId: hwm
+    laps: 15
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: klenk
+    constructorId: veritas
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: klodwig
+    constructorId: bmw
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: manzon
+    constructorId: gordini
+    laps: 8
+    time: ''
     status: Accident
-    driver: manzon
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '9'
-    laps: '7'
+    points: 0
+  - position: 14
+    driverId: heeks
+    constructorId: afm
+    laps: 7
+    time: ''
     status: Retired
-    driver: heeks
-    constructor: afm
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '14'
-    laps: '6'
+    points: 0
+  - position: 15
+    driverId: gaze
+    constructorId: hwm
+    laps: 6
+    time: ''
     status: Gearbox
-    driver: gaze
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '19'
-    laps: '5'
+    points: 0
+  - position: 16
+    driverId: brudes
+    constructorId: veritas
+    laps: 5
+    time: ''
     status: Engine
-    driver: brudes
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '25'
-    laps: '5'
+    points: 0
+  - position: 17
+    driverId: balsa
+    constructorId: bmw
+    laps: 5
+    time: ''
     status: Retired
-    driver: balsa
-    constructor: bmw
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '30'
-    laps: '5'
+    points: 0
+  - position: 18
+    driverId: bechem
+    constructorId: bmw
+    laps: 5
+    time: ''
     status: Ignition
-    driver: bechem
-    constructor: bmw
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '26'
-    laps: '4'
+    points: 0
+  - position: 19
+    driverId: cantoni
+    constructorId: maserati
+    laps: 4
+    time: ''
     status: Axle
-    driver: cantoni
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '23'
-    laps: '3'
+    points: 0
+  - position: 20
+    driverId: krause
+    constructorId: bmw
+    laps: 3
+    time: ''
     status: Retired
-    driver: krause
-    constructor: bmw
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '24'
-    laps: '3'
+    points: 0
+  - position: 21
+    driverId: schoeller
+    constructorId: ferrari
+    laps: 3
+    time: ''
     status: Suspension
-    driver: schoeller
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '21'
-    laps: '2'
+    points: 0
+  - position: 22
+    driverId: aston
+    constructorId: butterworth
+    laps: 2
+    time: ''
     status: Oil pressure
-    driver: aston
-    constructor: butterworth
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '3'
-    laps: '1'
+    points: 0
+  - position: 23
+    driverId: trintignant
+    constructorId: gordini
+    laps: 1
+    time: ''
     status: Accident
-    driver: trintignant
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '7'
-    laps: '1'
+    points: 0
+  - position: 24
+    driverId: pietsch
+    constructorId: veritas
+    laps: 1
+    time: ''
     status: Gearbox
-    driver: pietsch
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '10'
-    laps: '1'
+    points: 0
+  - position: 25
+    driverId: bonetto
+    constructorId: maserati
+    laps: 1
+    time: ''
     status: Disqualified
-    driver: bonetto
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '13'
-    laps: '1'
+    points: 0
+  - position: 26
+    driverId: frere
+    constructorId: hwm
+    laps: 1
+    time: ''
     status: Gearbox
-    driver: frere
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '27'
-    points: '0'
-    grid: '18'
-    laps: '1'
+    points: 0
+  - position: 27
+    driverId: helfrich
+    constructorId: veritas
+    laps: 1
+    time: ''
     status: Retired
-    driver: helfrich
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '28'
-    points: '0'
-    grid: '20'
-    laps: '1'
+    points: 0
+  - position: 28
+    driverId: peters
+    constructorId: veritas
+    laps: 1
+    time: ''
     status: Retired
-    driver: peters
-    constructor: veritas
-    time: null
-    fastestLap: null
-  - position: '29'
-    points: '0'
-    grid: '27'
-    laps: '1'
+    points: 0
+  - position: 29
+    driverId: carini
+    constructorId: ferrari
+    laps: 1
+    time: ''
     status: Brakes
-    driver: carini
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '30'
-    points: '0'
-    grid: '16'
-    laps: '0'
+    points: 0
+  - position: 30
+    driverId: bianco
+    constructorId: maserati
+    laps: 0
+    time: ''
     status: Retired
-    driver: bianco
-    constructor: maserati
-    time: null
-    fastestLap: null
+    points: 0

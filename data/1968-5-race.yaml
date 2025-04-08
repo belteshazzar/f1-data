@@ -1,175 +1,137 @@
-season: '1968'
-round: '5'
-session: race
+season: 1968
+round: 5
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '5'
-    laps: '90'
-    status: Finished
-    driver: stewart
-    constructor: matra-ford
+  - position: 1
+    driverId: stewart
+    constructorId: matra-ford
+    laps: 90
     time: '2:46:11.200'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '16'
-    laps: '90'
     status: Finished
-    driver: beltoise
-    constructor: matra
+    points: 9
+  - position: 2
+    driverId: beltoise
+    constructorId: matra
+    laps: 90
     time: '+1:33.930'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '11'
-    laps: '89'
-    status: +1 Lap
-    driver: rodriguez
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '6'
-    laps: '88'
-    status: +2 Laps
-    driver: ickx
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '7'
-    laps: '87'
-    status: +3 Laps
-    driver: moser
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '1'
-    laps: '85'
-    status: +5 Laps
-    driver: amon
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '15'
-    laps: '85'
-    status: +5 Laps
-    driver: attwood
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '82'
-    status: +8 Laps
-    driver: bonnier
-    constructor: mclaren-brm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '3'
-    laps: '81'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: rodriguez
+    constructorId: brm
+    laps: 89
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: ickx
+    constructorId: ferrari
+    laps: 88
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: moser
+    constructorId: brabham-repco
+    laps: 87
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: amon
+    constructorId: ferrari
+    laps: 85
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: attwood
+    constructorId: brm
+    laps: 85
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: bonnier
+    constructorId: mclaren-brm
+    laps: 82
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: hill
+    constructorId: lotus-ford
+    laps: 81
+    time: ''
     status: Accident
-    driver: hill
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '10'
-    laps: '80'
+    points: 0
+  - position: 10
+    driverId: oliver
+    constructorId: lotus-ford
+    laps: 80
+    time: ''
     status: Not classified
-    driver: oliver
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '12'
-    laps: '63'
+    points: 0
+  - position: 11
+    driverId: gurney
+    constructorId: brabham-repco
+    laps: 63
+    time: ''
     status: Throttle
-    driver: gurney
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '13'
-    laps: '55'
+    points: 0
+  - position: 12
+    driverId: siffert
+    constructorId: lotus-ford
+    laps: 55
+    time: ''
     status: Gearbox
-    driver: siffert
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '9'
-    laps: '50'
+    points: 0
+  - position: 13
+    driverId: surtees
+    constructorId: honda
+    laps: 50
+    time: ''
     status: Alternator
-    driver: surtees
-    constructor: honda
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '14'
-    laps: '50'
+    points: 0
+  - position: 14
+    driverId: courage
+    constructorId: brm
+    laps: 50
+    time: ''
     status: Spun off
-    driver: courage
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '2'
-    laps: '39'
+    points: 0
+  - position: 15
+    driverId: rindt
+    constructorId: brabham-repco
+    laps: 39
+    time: ''
     status: Ignition
-    driver: rindt
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '4'
-    laps: '22'
+    points: 0
+  - position: 16
+    driverId: jack_brabham
+    constructorId: brabham-repco
+    laps: 22
+    time: ''
     status: Spun off
-    driver: jack_brabham
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '8'
-    laps: '19'
+    points: 0
+  - position: 17
+    driverId: mclaren
+    constructorId: mclaren-ford
+    laps: 19
+    time: ''
     status: Accident
-    driver: mclaren
-    constructor: mclaren-ford
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '7'
-    laps: '10'
+    points: 0
+  - position: 18
+    driverId: hulme
+    constructorId: mclaren-ford
+    laps: 10
+    time: ''
     status: Ignition
-    driver: hulme
-    constructor: mclaren-ford
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '9'
+    points: 0
+  - position: 19
+    driverId: bianchi
+    constructorId: cooper-brm
+    laps: 9
+    time: ''
     status: Accident
-    driver: bianchi
-    constructor: cooper-brm
-    time: null
-    fastestLap: null
+    points: 0

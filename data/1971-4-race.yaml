@@ -1,211 +1,165 @@
-season: '1971'
-round: '4'
-session: race
+season: 1971
+round: 4
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '70'
-    status: Finished
-    driver: ickx
-    constructor: ferrari
+  - position: 1
+    driverId: ickx
+    constructorId: ferrari
+    laps: 70
     time: '1:56'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '70'
     status: Finished
-    driver: rodriguez
-    constructor: brm
+    points: 9
+  - position: 2
+    driverId: rodriguez
+    constructorId: brm
+    laps: 70
     time: '+7.990'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '4'
-    laps: '69'
-    status: +1 Lap
-    driver: regazzoni
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '13'
-    laps: '68'
-    status: +2 Laps
-    driver: peterson
-    constructor: march-ford
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '7'
-    laps: '68'
-    status: +2 Laps
-    driver: surtees
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '8'
-    laps: '68'
-    status: +2 Laps
-    driver: siffert
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '9'
-    laps: '66'
-    status: +4 Laps
-    driver: ganley
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '21'
-    laps: '65'
-    status: +5 Laps
-    driver: lennep
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '11'
-    laps: '65'
-    status: +5 Laps
-    driver: beltoise
-    constructor: matra
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '16'
-    laps: '65'
-    status: +5 Laps
-    driver: hill
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '3'
-    laps: '65'
-    status: +5 Laps
-    driver: stewart
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '14'
-    laps: '63'
-    status: +7 Laps
-    driver: hulme
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '15'
-    laps: '62'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: regazzoni
+    constructorId: ferrari
+    laps: 69
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: peterson
+    constructorId: march-ford
+    laps: 68
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: surtees
+    constructorId: surtees
+    laps: 68
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: siffert
+    constructorId: brm
+    laps: 68
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: ganley
+    constructorId: brm
+    laps: 66
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: lennep
+    constructorId: surtees
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: beltoise
+    constructorId: matra
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: hill
+    constructorId: brabham
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: stewart
+    constructorId: tyrrell
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: hulme
+    constructorId: mclaren
+    laps: 63
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: pescarolo
+    constructorId: march-ford
+    laps: 62
+    time: ''
     status: Not classified
-    driver: pescarolo
-    constructor: march-ford
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '24'
-    laps: '60'
+    points: 0
+  - position: 14
+    driverId: barber
+    constructorId: march-ford
+    laps: 60
+    time: ''
     status: Not classified
-    driver: barber
-    constructor: march-ford
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '23'
-    laps: '60'
+    points: 0
+  - position: 15
+    driverId: gethin
+    constructorId: mclaren
+    laps: 60
+    time: ''
     status: Not classified
-    driver: gethin
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '17'
-    laps: '57'
+    points: 0
+  - position: 16
+    driverId: roig
+    constructorId: march-ford
+    laps: 57
+    time: ''
     status: Engine
-    driver: roig
-    constructor: march-ford
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '19'
-    laps: '39'
+    points: 0
+  - position: 17
+    driverId: schenken
+    constructorId: brabham
+    laps: 39
+    time: ''
     status: Suspension
-    driver: schenken
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '12'
-    laps: '29'
+    points: 0
+  - position: 18
+    driverId: cevert
+    constructorId: tyrrell
+    laps: 29
+    time: ''
     status: Accident
-    driver: cevert
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '19'
+    points: 0
+  - position: 19
+    driverId: stommelen
+    constructorId: surtees
+    laps: 19
+    time: ''
     status: Disqualified
-    driver: stommelen
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '4'
-    laps: '17'
+    points: 0
+  - position: 20
+    driverId: wisell
+    constructorId: lotus-ford
+    laps: 17
+    time: ''
     status: Disqualified
-    driver: wisell
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '16'
-    laps: '5'
+    points: 0
+  - position: 21
+    driverId: mario_andretti
+    constructorId: ferrari
+    laps: 5
+    time: ''
     status: Fuel pump
-    driver: mario_andretti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '22'
-    laps: '5'
+    points: 0
+  - position: 22
+    driverId: walker
+    constructorId: lotus-pw
+    laps: 5
+    time: ''
     status: Accident
-    driver: walker
-    constructor: lotus-pw
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '5'
-    laps: '2'
+    points: 0
+  - position: 23
+    driverId: amon
+    constructorId: matra
+    laps: 2
+    time: ''
     status: Spun off
-    driver: amon
-    constructor: matra
-    time: null
-    fastestLap: null
+    points: 0

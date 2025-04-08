@@ -1,265 +1,207 @@
-season: '1950'
-round: '7'
-session: race
+season: 1950
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '8'
-    grid: '3'
-    laps: '80'
-    status: Finished
-    driver: farina
-    constructor: alfa
+  - position: 1
+    driverId: farina
+    constructorId: alfa
+    laps: 80
     time: '2:51:17.400'
-    fastestLap: null
-  - position: '2'
-    points: '3'
-    grid: '6'
-    laps: '80'
     status: Finished
-    driver: serafini
-    constructor: ferrari
+    points: 8
+  - position: 2
+    driverId: serafini
+    constructorId: ferrari
+    laps: 80
     time: '+1:18.600'
-    fastestLap: null
-  - position: '2'
-    points: '3'
-    grid: '6'
-    laps: '80'
     status: Finished
-    driver: ascari
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '5'
-    laps: '80'
+    points: 3
+  - position: 2
+    driverId: ascari
+    constructorId: ferrari
+    laps: 80
+    time: ''
     status: Finished
-    driver: fagioli
-    constructor: alfa
+    points: 3
+  - position: 3
+    driverId: fagioli
+    constructorId: alfa
+    laps: 80
     time: '+1:35.600'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '13'
-    laps: '75'
-    status: +5 Laps
-    driver: rosier
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '16'
-    laps: '75'
-    status: +5 Laps
-    driver: etancelin
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '17'
-    laps: '72'
-    status: +8 Laps
-    driver: graffenried
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '18'
-    laps: '72'
-    status: +8 Laps
-    driver: whitehead
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '24'
-    laps: '56'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: rosier
+    constructorId: lago
+    laps: 75
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: etancelin
+    constructorId: lago
+    laps: 75
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: graffenried
+    constructorId: maserati
+    laps: 72
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: whitehead
+    constructorId: ferrari
+    laps: 72
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: murray
+    constructorId: maserati
+    laps: 56
+    time: ''
     status: Gearbox
-    driver: murray
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '21'
-    laps: '51'
+    points: 0
+  - position: 9
+    driverId: harrison
+    constructorId: era
+    laps: 51
+    time: ''
     status: Radiator
-    driver: harrison
-    constructor: era
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '8'
-    laps: '48'
+    points: 0
+  - position: 10
+    driverId: sommer
+    constructorId: lago
+    laps: 48
+    time: ''
     status: Gearbox
-    driver: sommer
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '11'
-    laps: '42'
+    points: 0
+  - position: 11
+    driverId: guy_mairesse
+    constructorId: lago
+    laps: 42
+    time: ''
     status: Oil pipe
-    driver: guy_mairesse
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '9'
-    laps: '39'
+    points: 0
+  - position: 12
+    driverId: rol
+    constructorId: maserati
+    laps: 39
+    time: ''
     status: Retired
-    driver: rol
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '7'
-    laps: '34'
+    points: 0
+  - position: 13
+    driverId: fangio
+    constructorId: alfa
+    laps: 34
+    time: ''
     status: Engine
-    driver: fangio
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '7'
-    laps: '34'
+    points: 0
+  - position: 13
+    driverId: taruffi
+    constructorId: alfa
+    laps: 34
+    time: ''
     status: Engine
-    driver: taruffi
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '20'
-    laps: '29'
+    points: 0
+  - position: 14
+    driverId: levegh
+    constructorId: lago
+    laps: 29
+    time: ''
     status: Gearbox
-    driver: levegh
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '1'
-    grid: '1'
-    laps: '23'
+    points: 0
+  - position: 15
+    driverId: fangio
+    constructorId: alfa
+    laps: 23
+    time: ''
     status: Gearbox
-    driver: fangio
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '22'
-    laps: '22'
+    points: 1
+  - position: 16
+    driverId: claes
+    constructorId: lago
+    laps: 22
+    time: ''
     status: Overheating
-    driver: claes
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '2'
-    laps: '21'
+    points: 0
+  - position: 17
+    driverId: ascari
+    constructorId: ferrari
+    laps: 21
+    time: ''
     status: Engine
-    driver: ascari
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '25'
-    laps: '17'
+    points: 0
+  - position: 18
+    driverId: biondetti
+    constructorId: ferrari
+    laps: 17
+    time: ''
     status: Engine
-    driver: biondetti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '16'
-    laps: '16'
+    points: 0
+  - position: 19
+    driverId: louveau
+    constructorId: lago
+    laps: 16
+    time: ''
     status: Brakes
-    driver: louveau
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '26'
-    laps: '15'
+    points: 0
+  - position: 20
+    driverId: comotti
+    constructorId: maserati
+    laps: 15
+    time: ''
     status: Retired
-    driver: comotti
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '12'
-    laps: '13'
+    points: 0
+  - position: 21
+    driverId: trintignant
+    constructorId: simca
+    laps: 13
+    time: ''
     status: Water pipe
-    driver: trintignant
-    constructor: simca
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '19'
-    laps: '13'
+    points: 0
+  - position: 22
+    driverId: chiron
+    constructorId: maserati
+    laps: 13
+    time: ''
     status: Oil pressure
-    driver: chiron
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '4'
-    laps: '11'
+    points: 0
+  - position: 23
+    driverId: sanesi
+    constructorId: alfa
+    laps: 11
+    time: ''
     status: Engine
-    driver: sanesi
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '10'
-    laps: '7'
+    points: 0
+  - position: 24
+    driverId: manzon
+    constructorId: simca
+    laps: 7
+    time: ''
     status: Transmission
-    driver: manzon
-    constructor: simca
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '15'
-    laps: '1'
+    points: 0
+  - position: 25
+    driverId: bira
+    constructorId: maserati
+    laps: 1
+    time: ''
     status: Engine
-    driver: bira
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '27'
-    laps: '0'
+    points: 0
+  - position: 26
+    driverId: pietsch
+    constructorId: maserati
+    laps: 0
+    time: ''
     status: Engine
-    driver: pietsch
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '27'
-    points: '0'
-    grid: '23'
-    laps: '0'
+    points: 0
+  - position: 27
+    driverId: bonetto
+    constructorId: milano
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: bonetto
-    constructor: milano
-    time: null
-    fastestLap: null
+    points: 0

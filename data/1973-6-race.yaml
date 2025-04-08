@@ -1,229 +1,179 @@
-season: '1973'
-round: '6'
-session: race
+season: 1973
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '78'
-    status: Finished
-    driver: stewart
-    constructor: tyrrell
+  - position: 1
+    driverId: stewart
+    constructorId: tyrrell
+    laps: 78
     time: '1:57:44.300'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '5'
-    laps: '78'
     status: Finished
-    driver: emerson_fittipaldi
-    constructor: team_lotus
+    points: 9
+  - position: 2
+    driverId: emerson_fittipaldi
+    constructorId: team_lotus
+    laps: 78
     time: '+1.300'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '2'
-    laps: '77'
-    status: +1 Lap
-    driver: peterson
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '4'
-    laps: '77'
-    status: +1 Lap
-    driver: cevert
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '15'
-    laps: '76'
-    status: +2 Laps
-    driver: revson
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '3'
-    laps: '76'
-    status: +2 Laps
-    driver: hulme
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '25'
-    laps: '75'
-    status: +3 Laps
-    driver: adamich
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '13'
-    laps: '75'
-    status: +3 Laps
-    driver: hailwood
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '18'
-    laps: '73'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: peterson
+    constructorId: team_lotus
+    laps: 77
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: cevert
+    constructorId: tyrrell
+    laps: 77
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: revson
+    constructorId: mclaren
+    laps: 76
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: hulme
+    constructorId: mclaren
+    laps: 76
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: adamich
+    constructorId: brabham
+    laps: 75
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: hailwood
+    constructorId: surtees
+    laps: 75
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: hunt
+    constructorId: march
+    laps: 73
+    time: ''
     status: Engine
-    driver: hunt
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '22'
-    laps: '72'
-    status: +6 Laps
-    driver: oliver
-    constructor: shadow
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '9'
-    laps: '71'
+    points: 0
+  - position: 10
+    driverId: oliver
+    constructorId: shadow
+    laps: 72
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: wilson_fittipaldi
+    constructorId: brabham
+    laps: 71
+    time: ''
     status: Fuel system
-    driver: wilson_fittipaldi
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '14'
-    laps: '67'
+    points: 0
+  - position: 12
+    driverId: jarier
+    constructorId: march
+    laps: 67
+    time: ''
     status: Gearbox
-    driver: jarier
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '24'
-    laps: '62'
+    points: 0
+  - position: 13
+    driverId: hill
+    constructorId: shadow
+    laps: 62
+    time: ''
     status: Suspension
-    driver: hill
-    constructor: shadow
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '16'
-    laps: '58'
+    points: 0
+  - position: 14
+    driverId: merzario
+    constructorId: ferrari
+    laps: 58
+    time: ''
     status: Oil pressure
-    driver: merzario
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '19'
-    laps: '46'
+    points: 0
+  - position: 15
+    driverId: reutemann
+    constructorId: brabham
+    laps: 46
+    time: ''
     status: Gearbox
-    driver: reutemann
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '7'
-    laps: '44'
+    points: 0
+  - position: 16
+    driverId: ickx
+    constructorId: ferrari
+    laps: 44
+    time: ''
     status: Halfshaft
-    driver: ickx
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '10'
-    laps: '41'
+    points: 0
+  - position: 17
+    driverId: ganley
+    constructorId: iso_marlboro
+    laps: 41
+    time: ''
     status: Halfshaft
-    driver: ganley
-    constructor: iso_marlboro
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '11'
-    laps: '39'
+    points: 0
+  - position: 18
+    driverId: beltoise
+    constructorId: brm
+    laps: 39
+    time: ''
     status: Accident
-    driver: beltoise
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '17'
-    laps: '31'
+    points: 0
+  - position: 19
+    driverId: pace
+    constructorId: surtees
+    laps: 31
+    time: ''
     status: Halfshaft
-    driver: pace
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '23'
-    laps: '31'
+    points: 0
+  - position: 20
+    driverId: purley
+    constructorId: march
+    laps: 31
+    time: ''
     status: Fuel leak
-    driver: purley
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '21'
-    laps: '30'
+    points: 0
+  - position: 21
+    driverId: galli
+    constructorId: iso_marlboro
+    laps: 30
+    time: ''
     status: Halfshaft
-    driver: galli
-    constructor: iso_marlboro
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '6'
-    laps: '24'
+    points: 0
+  - position: 22
+    driverId: lauda
+    constructorId: brm
+    laps: 24
+    time: ''
     status: Gearbox
-    driver: lauda
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '12'
-    laps: '22'
+    points: 0
+  - position: 23
+    driverId: amon
+    constructorId: tecno
+    laps: 22
+    time: ''
     status: Overheating
-    driver: amon
-    constructor: tecno
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '8'
-    laps: '15'
+    points: 0
+  - position: 24
+    driverId: regazzoni
+    constructorId: brm
+    laps: 15
+    time: ''
     status: Brakes
-    driver: regazzoni
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '20'
-    laps: '3'
+    points: 0
+  - position: 25
+    driverId: beuttler
+    constructorId: march
+    laps: 3
+    time: ''
     status: Engine
-    driver: beuttler
-    constructor: march
-    time: null
-    fastestLap: null
+    points: 0

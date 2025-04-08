@@ -1,319 +1,249 @@
-season: '1955'
-round: '1'
-session: race
+season: 1955
+round: 1
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '3'
-    laps: '96'
-    status: Finished
-    driver: fangio
-    constructor: mercedes
+  - position: 1
+    driverId: fangio
+    constructorId: mercedes
+    laps: 96
     time: '3:00:38.600'
-    fastestLap: null
-  - position: '2'
-    points: '2'
-    grid: '1'
-    laps: '96'
     status: Finished
-    driver: farina
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: farina
+    constructorId: ferrari
+    laps: 96
     time: '+1:29.600'
-    fastestLap: null
-  - position: '2'
-    points: '2'
-    grid: '1'
-    laps: '96'
     status: Finished
-    driver: gonzalez
-    constructor: ferrari
+    points: 2
+  - position: 2
+    driverId: gonzalez
+    constructorId: ferrari
+    laps: 96
     time: '+1:29.600'
-    fastestLap: null
-  - position: '2'
-    points: '2'
-    grid: '1'
-    laps: '96'
     status: Finished
-    driver: trintignant
-    constructor: ferrari
+    points: 2
+  - position: 2
+    driverId: trintignant
+    constructorId: ferrari
+    laps: 96
     time: '+1:29.600'
-    fastestLap: null
-  - position: '3'
-    points: '1.33'
-    grid: '5'
-    laps: '94'
-    status: +2 Laps
-    driver: maglioli
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '3'
-    points: '1.33'
-    grid: '5'
-    laps: '94'
-    status: +2 Laps
-    driver: farina
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '3'
-    points: '1.33'
-    grid: '5'
-    laps: '94'
-    status: +2 Laps
-    driver: trintignant
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '1'
-    grid: '10'
-    laps: '94'
-    status: +2 Laps
-    driver: herrmann
-    constructor: mercedes
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '1'
-    grid: '10'
-    laps: '94'
-    status: +2 Laps
-    driver: moss
-    constructor: mercedes
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '1'
-    grid: '10'
-    laps: '94'
-    status: +2 Laps
-    driver: kling
-    constructor: mercedes
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '16'
-    laps: '91'
-    status: +5 Laps
-    driver: mieres
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '7'
-    laps: '88'
-    status: +8 Laps
-    driver: schell
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '7'
-    laps: '88'
-    status: +8 Laps
-    driver: behra
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '18'
-    laps: '83'
-    status: +13 Laps
-    driver: schell
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '18'
-    laps: '83'
-    status: +13 Laps
-    driver: musso
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '18'
-    laps: '83'
-    status: +13 Laps
-    driver: mantovani
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '54'
+    status: Finished
+    points: 2
+  - position: 3
+    driverId: maglioli
+    constructorId: ferrari
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1.33
+  - position: 3
+    driverId: farina
+    constructorId: ferrari
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1.33
+  - position: 3
+    driverId: trintignant
+    constructorId: ferrari
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1.33
+  - position: 4
+    driverId: herrmann
+    constructorId: mercedes
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1
+  - position: 4
+    driverId: moss
+    constructorId: mercedes
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1
+  - position: 4
+    driverId: kling
+    constructorId: mercedes
+    laps: 94
+    time: ''
+    status: Finished
+    points: 1
+  - position: 5
+    driverId: mieres
+    constructorId: maserati
+    laps: 91
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: schell
+    constructorId: maserati
+    laps: 88
+    time: ''
+    status: Finished
+    points: 0
+  - position: 6
+    driverId: behra
+    constructorId: maserati
+    laps: 88
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: schell
+    constructorId: maserati
+    laps: 83
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: musso
+    constructorId: maserati
+    laps: 83
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: mantovani
+    constructorId: maserati
+    laps: 83
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: mantovani
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Engine
-    driver: mantovani
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '54'
+    points: 0
+  - position: 8
+    driverId: behra
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Engine
-    driver: behra
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '54'
+    points: 0
+  - position: 8
+    driverId: musso
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Engine
-    driver: musso
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '20'
-    laps: '54'
+    points: 0
+  - position: 9
+    driverId: schell
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Fuel pressure
-    driver: schell
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '20'
-    laps: '54'
+    points: 0
+  - position: 9
+    driverId: menditeguy
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Fuel pressure
-    driver: menditeguy
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '20'
-    laps: '54'
+    points: 0
+  - position: 9
+    driverId: bucci
+    constructorId: maserati
+    laps: 54
+    time: ''
     status: Fuel pressure
-    driver: bucci
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '17'
-    laps: '38'
+    points: 0
+  - position: 10
+    driverId: iglesias
+    constructorId: gordini
+    laps: 38
+    time: ''
     status: Transmission
-    driver: iglesias
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '14'
-    laps: '36'
+    points: 0
+  - position: 11
+    driverId: trintignant
+    constructorId: ferrari
+    laps: 36
+    time: ''
     status: Engine
-    driver: trintignant
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '12'
-    laps: '35'
+    points: 0
+  - position: 12
+    driverId: castellotti
+    constructorId: lancia
+    laps: 35
+    time: ''
     status: Accident
-    driver: castellotti
-    constructor: lancia
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '12'
-    laps: '35'
+    points: 0
+  - position: 12
+    driverId: villoresi
+    constructorId: lancia
+    laps: 35
+    time: ''
     status: Accident
-    driver: villoresi
-    constructor: lancia
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '8'
-    laps: '29'
+    points: 0
+  - position: 13
+    driverId: moss
+    constructorId: mercedes
+    laps: 29
+    time: ''
     status: Fuel system
-    driver: moss
-    constructor: mercedes
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '21'
-    laps: '22'
+    points: 0
+  - position: 14
+    driverId: uria
+    constructorId: maserati
+    laps: 22
+    time: ''
     status: Out of fuel
-    driver: uria
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '2'
-    laps: '21'
+    points: 0
+  - position: 15
+    driverId: ascari
+    constructorId: lancia
+    laps: 21
+    time: ''
     status: Accident
-    driver: ascari
-    constructor: lancia
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '15'
-    laps: '7'
+    points: 0
+  - position: 16
+    driverId: bayol
+    constructorId: gordini
+    laps: 7
+    time: ''
     status: Transmission
-    driver: bayol
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '4'
-    laps: '2'
+    points: 0
+  - position: 17
+    driverId: behra
+    constructorId: maserati
+    laps: 2
+    time: ''
     status: Accident
-    driver: behra
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '6'
-    laps: '2'
+    points: 0
+  - position: 18
+    driverId: kling
+    constructorId: mercedes
+    laps: 2
+    time: ''
     status: Accident
-    driver: kling
-    constructor: mercedes
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '11'
-    laps: '2'
+    points: 0
+  - position: 19
+    driverId: villoresi
+    constructorId: lancia
+    laps: 2
+    time: ''
     status: Fuel leak
-    driver: villoresi
-    constructor: lancia
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '9'
-    laps: '1'
+    points: 0
+  - position: 20
+    driverId: birger
+    constructorId: gordini
+    laps: 1
+    time: ''
     status: Accident
-    driver: birger
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '13'
-    laps: '1'
+    points: 0
+  - position: 21
+    driverId: menditeguy
+    constructorId: maserati
+    laps: 1
+    time: ''
     status: Accident
-    driver: menditeguy
-    constructor: maserati
-    time: null
-    fastestLap: null
+    points: 0

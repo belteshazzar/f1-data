@@ -1,166 +1,144 @@
-season: '2008'
-round: '5'
-session: race
+season: 2008
+round: 5
+session: Race
 results:
-  - position: '1'
-    points: '10'
-    grid: '1'
-    laps: '58'
-    status: Finished
-    driver: massa
-    constructor: ferrari
+  - position: 1
+    driverId: massa
+    constructorId: ferrari
+    laps: 58
     time: '1:26:49.451'
-  - position: '2'
-    points: '8'
-    grid: '3'
-    laps: '58'
     status: Finished
-    driver: hamilton
-    constructor: mclaren
+    points: 10
+  - position: 2
+    driverId: hamilton
+    constructorId: mclaren
+    laps: 58
     time: '+3.779'
-  - position: '3'
-    points: '6'
-    grid: '4'
-    laps: '58'
     status: Finished
-    driver: raikkonen
-    constructor: ferrari
+    points: 8
+  - position: 3
+    driverId: raikkonen
+    constructorId: ferrari
+    laps: 58
     time: '+4.271'
-  - position: '4'
-    points: '5'
-    grid: '5'
-    laps: '58'
     status: Finished
-    driver: kubica
-    constructor: bmw_sauber
+    points: 6
+  - position: 4
+    driverId: kubica
+    constructorId: bmw_sauber
+    laps: 58
     time: '+21.945'
-  - position: '5'
-    points: '4'
-    grid: '9'
-    laps: '58'
     status: Finished
-    driver: heidfeld
-    constructor: bmw_sauber
+    points: 5
+  - position: 5
+    driverId: heidfeld
+    constructorId: bmw_sauber
+    laps: 58
     time: '+38.741'
-  - position: '6'
-    points: '3'
-    grid: '7'
-    laps: '58'
     status: Finished
-    driver: alonso
-    constructor: renault
+    points: 4
+  - position: 6
+    driverId: alonso
+    constructorId: renault
+    laps: 58
     time: '+53.724'
-  - position: '7'
-    points: '2'
-    grid: '6'
-    laps: '58'
     status: Finished
-    driver: webber
-    constructor: red_bull
+    points: 3
+  - position: 7
+    driverId: webber
+    constructorId: red_bull
+    laps: 58
     time: '+1:04.229'
-  - position: '8'
-    points: '1'
-    grid: '11'
-    laps: '58'
     status: Finished
-    driver: rosberg
-    constructor: williams
+    points: 2
+  - position: 8
+    driverId: rosberg
+    constructorId: williams
+    laps: 58
     time: '+1:11.406'
-  - position: '9'
-    points: '0'
-    grid: '10'
-    laps: '58'
     status: Finished
-    driver: coulthard
-    constructor: red_bull
+    points: 1
+  - position: 9
+    driverId: coulthard
+    constructorId: red_bull
+    laps: 58
     time: '+1:15.270'
-  - position: '10'
-    points: '0'
-    grid: '8'
-    laps: '58'
     status: Finished
-    driver: trulli
-    constructor: toyota
+    points: 0
+  - position: 10
+    driverId: trulli
+    constructorId: toyota
+    laps: 58
     time: '+1:16.344'
-  - position: '11'
-    points: '0'
-    grid: '13'
-    laps: '57'
-    status: +1 Lap
-    driver: button
-    constructor: honda
-    time: null
-  - position: '12'
-    points: '0'
-    grid: '2'
-    laps: '57'
-    status: +1 Lap
-    driver: kovalainen
-    constructor: mclaren
-    time: null
-  - position: '13'
-    points: '0'
-    grid: '15'
-    laps: '57'
-    status: +1 Lap
-    driver: glock
-    constructor: toyota
-    time: null
-  - position: '14'
-    points: '0'
-    grid: '12'
-    laps: '57'
-    status: +1 Lap
-    driver: barrichello
-    constructor: honda
-    time: null
-  - position: '15'
-    points: '0'
-    grid: '17'
-    laps: '57'
-    status: +1 Lap
-    driver: piquet_jr
-    constructor: renault
-    time: null
-  - position: '16'
-    points: '0'
-    grid: '19'
-    laps: '57'
-    status: +1 Lap
-    driver: sutil
-    constructor: force_india
-    time: null
-  - position: '17'
-    points: '0'
-    grid: '14'
-    laps: '57'
-    status: +1 Lap
-    driver: vettel
-    constructor: toro_rosso
-    time: null
-  - position: '18'
-    points: '0'
-    grid: '18'
-    laps: '24'
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: button
+    constructorId: honda
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: kovalainen
+    constructorId: mclaren
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: glock
+    constructorId: toyota
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: barrichello
+    constructorId: honda
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: piquet_jr
+    constructorId: renault
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: sutil
+    constructorId: force_india
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: vettel
+    constructorId: toro_rosso
+    laps: 57
+    time: ''
+    status: Finished
+    points: 0
+  - position: 18
+    driverId: bourdais
+    constructorId: toro_rosso
+    laps: 24
+    time: ''
     status: Suspension
-    driver: bourdais
-    constructor: toro_rosso
-    time: null
-  - position: '19'
-    points: '0'
-    grid: '16'
-    laps: '1'
+    points: 0
+  - position: 19
+    driverId: nakajima
+    constructorId: williams
+    laps: 1
+    time: ''
     status: Collision
-    driver: nakajima
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '20'
-    laps: '0'
+    points: 0
+  - position: 20
+    driverId: fisichella
+    constructorId: force_india
+    laps: 0
+    time: ''
     status: Collision
-    driver: fisichella
-    constructor: force_india
-    time: null
-    fastestLap: null
+    points: 0

@@ -1,247 +1,193 @@
-season: '1962'
-round: '6'
-session: race
+season: 1962
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '15'
-    status: Finished
-    driver: hill
-    constructor: brm
+  - position: 1
+    driverId: hill
+    constructorId: brm
+    laps: 15
     time: '2:38:45.300'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '4'
-    laps: '15'
     status: Finished
-    driver: surtees
-    constructor: lola
+    points: 9
+  - position: 2
+    driverId: surtees
+    constructorId: lola
+    laps: 15
     time: '+2.500'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '1'
-    laps: '15'
     status: Finished
-    driver: gurney
-    constructor: porsche
+    points: 6
+  - position: 3
+    driverId: gurney
+    constructorId: porsche
+    laps: 15
     time: '+4.400'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '3'
-    laps: '15'
     status: Finished
-    driver: clark
-    constructor: lotus-climax
+    points: 4
+  - position: 4
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 15
     time: '+42.100'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '5'
-    laps: '15'
     status: Finished
-    driver: mclaren
-    constructor: cooper-climax
+    points: 3
+  - position: 5
+    driverId: mclaren
+    constructorId: cooper-climax
+    laps: 15
     time: '+1:19.600'
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '10'
-    laps: '15'
     status: Finished
-    driver: ricardo_rodriguez
-    constructor: ferrari
+    points: 2
+  - position: 6
+    driverId: ricardo_rodriguez
+    constructorId: ferrari
+    laps: 15
     time: '+1:23.800'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '6'
-    laps: '15'
     status: Finished
-    driver: bonnier
-    constructor: porsche
+    points: 1
+  - position: 7
+    driverId: bonnier
+    constructorId: porsche
+    laps: 15
     time: '+4:37.300'
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '7'
-    laps: '15'
     status: Finished
-    driver: ginther
-    constructor: brm
+    points: 0
+  - position: 8
+    driverId: ginther
+    constructorId: brm
+    laps: 15
     time: '+5:00.100'
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '23'
-    laps: '15'
     status: Finished
-    driver: maggs
-    constructor: cooper-climax
+    points: 0
+  - position: 9
+    driverId: maggs
+    constructorId: cooper-climax
+    laps: 15
     time: '+5:07.000'
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '13'
-    laps: '15'
     status: Finished
-    driver: baghetti
-    constructor: ferrari
+    points: 0
+  - position: 10
+    driverId: baghetti
+    constructorId: ferrari
+    laps: 15
     time: '+8:14.700'
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '16'
-    laps: '15'
     status: Finished
-    driver: burgess
-    constructor: cooper-climax
+    points: 0
+  - position: 11
+    driverId: burgess
+    constructorId: cooper-climax
+    laps: 15
     time: '+8:15.300'
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '17'
-    laps: '15'
     status: Finished
-    driver: siffert
-    constructor: lotus-climax
+    points: 0
+  - position: 12
+    driverId: siffert
+    constructorId: lotus-climax
+    laps: 15
     time: '+8:15.500'
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '8'
-    laps: '15'
     status: Finished
-    driver: beaufort
-    constructor: porsche
+    points: 0
+  - position: 13
+    driverId: beaufort
+    constructorId: porsche
+    laps: 15
     time: '+9:11.800'
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '14'
-    laps: '14'
-    status: +1 Lap
-    driver: walter
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '15'
-    laps: '14'
-    status: +1 Lap
-    driver: vaccarella
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '25'
-    laps: '14'
-    status: +1 Lap
-    driver: bianchi
-    constructor: enb
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '21'
-    laps: '10'
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: walter
+    constructorId: porsche
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: vaccarella
+    constructorId: porsche
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: bianchi
+    constructorId: enb
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: lewis
+    constructorId: cooper-climax
+    laps: 10
+    time: ''
     status: Suspension
-    driver: lewis
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '12'
-    laps: '9'
+    points: 0
+  - position: 18
+    driverId: phil_hill
+    constructorId: ferrari
+    laps: 9
+    time: ''
     status: Suspension
-    driver: phil_hill
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '24'
-    laps: '9'
+    points: 0
+  - position: 19
+    driverId: jack_brabham
+    constructorId: brabham
+    laps: 9
+    time: ''
     status: Throttle
-    driver: jack_brabham
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '19'
-    laps: '7'
+    points: 0
+  - position: 20
+    driverId: greene
+    constructorId: gilby
+    laps: 7
+    time: ''
     status: Suspension
-    driver: greene
-    constructor: gilby
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '9'
-    laps: '4'
+    points: 0
+  - position: 21
+    driverId: salvadori
+    constructorId: lola
+    laps: 4
+    time: ''
     status: Gearbox
-    driver: salvadori
-    constructor: lola
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '11'
-    laps: '4'
+    points: 0
+  - position: 22
+    driverId: trintignant
+    constructorId: lotus-climax
+    laps: 4
+    time: ''
     status: Gearbox
-    driver: trintignant
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '18'
-    laps: '4'
+    points: 0
+  - position: 23
+    driverId: bandini
+    constructorId: ferrari
+    laps: 4
+    time: ''
     status: Accident
-    driver: bandini
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '20'
-    laps: '4'
+    points: 0
+  - position: 24
+    driverId: schiller
+    constructorId: lotus-brm
+    laps: 4
+    time: ''
     status: Oil pressure
-    driver: schiller
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '22'
-    laps: '2'
+    points: 0
+  - position: 25
+    driverId: collomb
+    constructorId: cooper-climax
+    laps: 2
+    time: ''
     status: Gearbox
-    driver: collomb
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '26'
-    laps: '0'
+    points: 0
+  - position: 26
+    driverId: trevor_taylor
+    constructorId: lotus-climax
+    laps: 0
+    time: ''
     status: Accident
-    driver: trevor_taylor
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '31'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 31
+    driverId: marsh
+    constructorId: brm
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: marsh
-    constructor: brm
-    time: null
-    fastestLap: null
+    points: 0

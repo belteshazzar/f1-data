@@ -1,164 +1,144 @@
-season: '2015'
-round: '10'
-session: race
+season: 2015
+round: 10
+session: Race
 results:
-  - position: '1'
-    points: '25'
-    grid: '3'
-    laps: '69'
-    status: Finished
-    driver: vettel
-    constructor: ferrari
+  - position: 1
+    driverId: vettel
+    constructorId: ferrari
+    laps: 69
     time: '1:46:09.985'
-  - position: '2'
-    points: '18'
-    grid: '7'
-    laps: '69'
     status: Finished
-    driver: kvyat
-    constructor: red_bull
+    points: 25
+  - position: 2
+    driverId: kvyat
+    constructorId: red_bull
+    laps: 69
     time: '+15.748'
-  - position: '3'
-    points: '15'
-    grid: '4'
-    laps: '69'
     status: Finished
-    driver: ricciardo
-    constructor: red_bull
+    points: 18
+  - position: 3
+    driverId: ricciardo
+    constructorId: red_bull
+    laps: 69
     time: '+25.084'
-  - position: '4'
-    points: '12'
-    grid: '9'
-    laps: '69'
     status: Finished
-    driver: max_verstappen
-    constructor: toro_rosso
+    points: 15
+  - position: 4
+    driverId: max_verstappen
+    constructorId: toro_rosso
+    laps: 69
     time: '+44.251'
-  - position: '5'
-    points: '10'
-    grid: '15'
-    laps: '69'
     status: Finished
-    driver: alonso
-    constructor: mclaren
+    points: 12
+  - position: 5
+    driverId: alonso
+    constructorId: mclaren
+    laps: 69
     time: '+49.079'
-  - position: '6'
-    points: '8'
-    grid: '1'
-    laps: '69'
     status: Finished
-    driver: hamilton
-    constructor: mercedes
+    points: 10
+  - position: 6
+    driverId: hamilton
+    constructorId: mercedes
+    laps: 69
     time: '+52.025'
-  - position: '7'
-    points: '6'
-    grid: '10'
-    laps: '69'
     status: Finished
-    driver: grosjean
-    constructor: lotus_f1
+    points: 8
+  - position: 7
+    driverId: grosjean
+    constructorId: lotus_f1
+    laps: 69
     time: '+58.578'
-  - position: '8'
-    points: '4'
-    grid: '2'
-    laps: '69'
     status: Finished
-    driver: rosberg
-    constructor: mercedes
+    points: 6
+  - position: 8
+    driverId: rosberg
+    constructorId: mercedes
+    laps: 69
     time: '+58.876'
-  - position: '9'
-    points: '2'
-    grid: '16'
-    laps: '69'
     status: Finished
-    driver: button
-    constructor: mclaren
+    points: 4
+  - position: 9
+    driverId: button
+    constructorId: mclaren
+    laps: 69
     time: '+1:07.028'
-  - position: '10'
-    points: '1'
-    grid: '17'
-    laps: '69'
     status: Finished
-    driver: ericsson
-    constructor: sauber
+    points: 2
+  - position: 10
+    driverId: ericsson
+    constructorId: sauber
+    laps: 69
     time: '+1:09.130'
-  - position: '11'
-    points: '0'
-    grid: '18'
-    laps: '69'
     status: Finished
-    driver: nasr
-    constructor: sauber
+    points: 1
+  - position: 11
+    driverId: nasr
+    constructorId: sauber
+    laps: 69
     time: '+1:13.458'
-  - position: '12'
-    points: '0'
-    grid: '8'
-    laps: '69'
     status: Finished
-    driver: massa
-    constructor: williams
+    points: 0
+  - position: 12
+    driverId: massa
+    constructorId: williams
+    laps: 69
     time: '+1:14.278'
-  - position: '13'
-    points: '0'
-    grid: '6'
-    laps: '69'
     status: Finished
-    driver: bottas
-    constructor: williams
+    points: 0
+  - position: 13
+    driverId: bottas
+    constructorId: williams
+    laps: 69
     time: '+1:20.228'
-  - position: '14'
-    points: '0'
-    grid: '14'
-    laps: '69'
     status: Finished
-    driver: maldonado
-    constructor: lotus_f1
+    points: 0
+  - position: 14
+    driverId: maldonado
+    constructorId: lotus_f1
+    laps: 69
     time: '+1:25.142'
-  - position: '15'
-    points: '0'
-    grid: '19'
-    laps: '67'
-    status: +2 Laps
-    driver: merhi
-    constructor: manor
-    time: null
-  - position: '16'
-    points: '0'
-    grid: '20'
-    laps: '65'
-    status: +4 Laps
-    driver: stevens
-    constructor: manor
-    time: null
-  - position: '17'
-    points: '0'
-    grid: '12'
-    laps: '60'
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: merhi
+    constructorId: manor
+    laps: 67
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: stevens
+    constructorId: manor
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: sainz
+    constructorId: toro_rosso
+    laps: 60
+    time: ''
     status: Electrical
-    driver: sainz
-    constructor: toro_rosso
-    time: null
-  - position: '18'
-    points: '0'
-    grid: '5'
-    laps: '55'
+    points: 0
+  - position: 18
+    driverId: raikkonen
+    constructorId: ferrari
+    laps: 55
+    time: ''
     status: Power Unit
-    driver: raikkonen
-    constructor: ferrari
-    time: null
-  - position: '19'
-    points: '0'
-    grid: '13'
-    laps: '53'
+    points: 0
+  - position: 19
+    driverId: perez
+    constructorId: force_india
+    laps: 53
+    time: ''
     status: Suspension
-    driver: perez
-    constructor: force_india
-    time: null
-  - position: '20'
-    points: '0'
-    grid: '11'
-    laps: '41'
+    points: 0
+  - position: 20
+    driverId: hulkenberg
+    constructorId: force_india
+    laps: 41
+    time: ''
     status: Front wing
-    driver: hulkenberg
-    constructor: force_india
-    time: null
+    points: 0

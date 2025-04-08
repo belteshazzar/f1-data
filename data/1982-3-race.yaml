@@ -1,238 +1,186 @@
-season: '1982'
-round: '3'
-session: race
+season: 1982
+round: 3
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '75'
-    status: Finished
-    driver: lauda
-    constructor: mclaren
+  - position: 1
+    driverId: lauda
+    constructorId: mclaren
+    laps: 75
     time: '1:58:25.318'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '8'
-    laps: '75'
     status: Finished
-    driver: keke_rosberg
-    constructor: williams
+    points: 9
+  - position: 2
+    driverId: keke_rosberg
+    constructorId: williams
+    laps: 75
     time: '+14.660'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '18'
-    laps: '75'
     status: Finished
-    driver: patrese
-    constructor: brabham
+    points: 6
+  - position: 3
+    driverId: patrese
+    constructorId: brabham
+    laps: 75
     time: '+1:19.143'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '12'
-    laps: '75'
     status: Finished
-    driver: alboreto
-    constructor: tyrrell
+    points: 4
+  - position: 4
+    driverId: alboreto
+    constructorId: tyrrell
+    laps: 75
     time: '+1:20.947'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '16'
-    laps: '74'
-    status: +1 Lap
-    driver: angelis
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '11'
-    laps: '74'
-    status: +1 Lap
-    driver: watson
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '17'
-    laps: '73'
-    status: +2 Laps
-    driver: mansell
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '21'
-    laps: '73'
-    status: +2 Laps
-    driver: mass
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '23'
-    laps: '70'
-    status: +5 Laps
-    driver: boesel
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '24'
-    laps: '68'
-    status: +7 Laps
-    driver: borgudd
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '7'
-    laps: '75'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: angelis
+    constructorId: team_lotus
+    laps: 74
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: watson
+    constructorId: mclaren
+    laps: 74
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: mansell
+    constructorId: team_lotus
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: mass
+    constructorId: march
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: boesel
+    constructorId: march
+    laps: 70
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: borgudd
+    constructorId: tyrrell
+    laps: 68
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: gilles_villeneuve
+    constructorId: ferrari
+    laps: 75
+    time: ''
     status: Disqualified
-    driver: gilles_villeneuve
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '13'
-    laps: '59'
+    points: 0
+  - position: 12
+    driverId: cheever
+    constructorId: ligier
+    laps: 59
+    time: ''
     status: Gearbox
-    driver: cheever
-    constructor: ligier
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '1'
-    laps: '33'
+    points: 0
+  - position: 13
+    driverId: cesaris
+    constructorId: alfa
+    laps: 33
+    time: ''
     status: Spun off
-    driver: cesaris
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '20'
-    laps: '32'
+    points: 0
+  - position: 14
+    driverId: henton
+    constructorId: arrows
+    laps: 32
+    time: ''
     status: Spun off
-    driver: henton
-    constructor: arrows
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '19'
-    laps: '27'
+    points: 0
+  - position: 15
+    driverId: guerrero
+    constructorId: ensign
+    laps: 27
+    time: ''
     status: Spun off
-    driver: guerrero
-    constructor: ensign
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '15'
-    laps: '26'
+    points: 0
+  - position: 16
+    driverId: laffite
+    constructorId: ligier
+    laps: 26
+    time: ''
     status: Spun off
-    driver: laffite
-    constructor: ligier
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '10'
-    laps: '26'
+    points: 0
+  - position: 17
+    driverId: jarier
+    constructorId: osella
+    laps: 26
+    time: ''
     status: Transmission
-    driver: jarier
-    constructor: osella
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '6'
-    laps: '25'
+    points: 0
+  - position: 18
+    driverId: piquet
+    constructorId: brabham
+    laps: 25
+    time: ''
     status: Spun off
-    driver: piquet
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '22'
-    laps: '23'
+    points: 0
+  - position: 19
+    driverId: daly
+    constructorId: theodore
+    laps: 23
+    time: ''
     status: Spun off
-    driver: daly
-    constructor: theodore
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '14'
-    laps: '19'
+    points: 0
+  - position: 20
+    driverId: mario_andretti
+    constructorId: williams
+    laps: 19
+    time: ''
     status: Collision
-    driver: mario_andretti
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '4'
-    laps: '10'
+    points: 0
+  - position: 21
+    driverId: prost
+    constructorId: renault
+    laps: 10
+    time: ''
     status: Spun off
-    driver: prost
-    constructor: renault
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '9'
-    laps: '6'
+    points: 0
+  - position: 22
+    driverId: pironi
+    constructorId: ferrari
+    laps: 6
+    time: ''
     status: Spun off
-    driver: pironi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '3'
-    laps: '5'
+    points: 0
+  - position: 23
+    driverId: arnoux
+    constructorId: renault
+    laps: 5
+    time: ''
     status: Collision
-    driver: arnoux
-    constructor: renault
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '5'
-    laps: '5'
+    points: 0
+  - position: 24
+    driverId: giacomelli
+    constructorId: alfa
+    laps: 5
+    time: ''
     status: Collision
-    driver: giacomelli
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '26'
-    laps: '3'
+    points: 0
+  - position: 25
+    driverId: salazar
+    constructorId: ats
+    laps: 3
+    time: ''
     status: Collision
-    driver: salazar
-    constructor: ats
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '25'
-    laps: '1'
+    points: 0
+  - position: 26
+    driverId: manfred_winkelhock
+    constructorId: ats
+    laps: 1
+    time: ''
     status: Collision
-    driver: manfred_winkelhock
-    constructor: ats
-    time: null
-    fastestLap: null
+    points: 0

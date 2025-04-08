@@ -1,166 +1,130 @@
-season: '1965'
-round: '9'
-session: race
+season: 1965
+round: 9
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '110'
-    status: Finished
-    driver: hill
-    constructor: brm
+  - position: 1
+    driverId: hill
+    constructorId: brm
+    laps: 110
     time: '2:20:36.100'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '8'
-    laps: '110'
     status: Finished
-    driver: gurney
-    constructor: brabham-climax
+    points: 9
+  - position: 2
+    driverId: gurney
+    constructorId: brabham-climax
+    laps: 110
     time: '+12.500'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '7'
-    laps: '110'
     status: Finished
-    driver: jack_brabham
-    constructor: brabham-climax
+    points: 6
+  - position: 3
+    driverId: jack_brabham
+    constructorId: brabham-climax
+    laps: 110
     time: '+57.500'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '5'
-    laps: '109'
-    status: +1 Lap
-    driver: bandini
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '15'
-    laps: '109'
-    status: +1 Lap
-    driver: rodriguez
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '13'
-    laps: '108'
-    status: +2 Laps
-    driver: rindt
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '3'
-    laps: '108'
-    status: +2 Laps
-    driver: ginther
-    constructor: honda
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '10'
-    laps: '107'
-    status: +3 Laps
-    driver: bonnier
-    constructor: brabham-climax
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '14'
-    laps: '106'
-    status: +4 Laps
-    driver: bondurant
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '16'
-    laps: '101'
-    status: +9 Laps
-    driver: attwood
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '11'
-    laps: '99'
-    status: +11 Laps
-    driver: siffert
-    constructor: brabham-brm
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '17'
-    laps: '95'
-    status: +15 Laps
-    driver: solana
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '12'
-    laps: '92'
-    status: +18 Laps
-    driver: bucknum
-    constructor: honda
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '6'
-    laps: '12'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: bandini
+    constructorId: ferrari
+    laps: 109
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: rodriguez
+    constructorId: ferrari
+    laps: 109
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: rindt
+    constructorId: cooper-climax
+    laps: 108
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: ginther
+    constructorId: honda
+    laps: 108
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: bonnier
+    constructorId: brabham-climax
+    laps: 107
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: bondurant
+    constructorId: ferrari
+    laps: 106
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: attwood
+    constructorId: lotus-brm
+    laps: 101
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: siffert
+    constructorId: brabham-brm
+    laps: 99
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: solana
+    constructorId: lotus-climax
+    laps: 95
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: bucknum
+    constructorId: honda
+    laps: 92
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: stewart
+    constructorId: brm
+    laps: 12
+    time: ''
     status: Suspension
-    driver: stewart
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '9'
-    laps: '11'
+    points: 0
+  - position: 15
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 11
+    time: ''
     status: Engine
-    driver: clark
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '2'
-    laps: '11'
+    points: 0
+  - position: 16
+    driverId: mclaren
+    constructorId: cooper-climax
+    laps: 11
+    time: ''
     status: Oil pressure
-    driver: mclaren
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '4'
-    laps: '9'
+    points: 0
+  - position: 17
+    driverId: spence
+    constructorId: lotus-climax
+    laps: 9
+    time: ''
     status: Engine
-    driver: spence
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '18'
-    laps: '9'
+    points: 0
+  - position: 18
+    driverId: ireland
+    constructorId: lotus-brm
+    laps: 9
+    time: ''
     status: Driver unwell
-    driver: ireland
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
+    points: 0

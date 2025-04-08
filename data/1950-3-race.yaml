@@ -1,319 +1,249 @@
-season: '1950'
-round: '3'
-session: race
+season: 1950
+round: 3
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '5'
-    laps: '138'
-    status: Finished
-    driver: parsons
-    constructor: kurtis_kraft
+  - position: 1
+    driverId: parsons
+    constructorId: kurtis_kraft
+    laps: 138
     time: '2:46:55.970'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '10'
-    laps: '137'
-    status: +1 Lap
-    driver: holland
-    constructor: deidt
-    time: null
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '3'
-    laps: '137'
-    status: +1 Lap
-    driver: rose
-    constructor: deidt
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '12'
-    laps: '137'
-    status: +1 Lap
-    driver: green
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '1'
-    grid: '9'
-    laps: '136'
-    status: +2 Laps
-    driver: bettenhausen
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '1'
-    grid: '9'
-    laps: '136'
-    status: +2 Laps
-    driver: chitwood
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '23'
-    laps: '136'
-    status: +2 Laps
-    driver: wallard
-    constructor: moore
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '1'
-    laps: '135'
-    status: +3 Laps
-    driver: faulkner
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '4'
-    laps: '135'
-    status: +3 Laps
-    driver: george_connor
-    constructor: lesovsky
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '19'
-    laps: '135'
-    status: +3 Laps
-    driver: paul_russo
-    constructor: nichels
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '11'
-    laps: '135'
-    status: +3 Laps
-    driver: flaherty
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '16'
-    laps: '133'
-    status: +5 Laps
-    driver: fohr
-    constructor: marchese
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '13'
-    laps: '133'
-    status: +5 Laps
-    driver: darter
-    constructor: stevens
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '26'
-    laps: '132'
-    status: +6 Laps
-    driver: hellings
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '6'
-    laps: '131'
+    status: Finished
+    points: 9
+  - position: 2
+    driverId: holland
+    constructorId: deidt
+    laps: 137
+    time: ''
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: rose
+    constructorId: deidt
+    laps: 137
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: green
+    constructorId: kurtis_kraft
+    laps: 137
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: bettenhausen
+    constructorId: kurtis_kraft
+    laps: 136
+    time: ''
+    status: Finished
+    points: 1
+  - position: 5
+    driverId: chitwood
+    constructorId: kurtis_kraft
+    laps: 136
+    time: ''
+    status: Finished
+    points: 1
+  - position: 6
+    driverId: wallard
+    constructorId: moore
+    laps: 136
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: faulkner
+    constructorId: kurtis_kraft
+    laps: 135
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: george_connor
+    constructorId: lesovsky
+    laps: 135
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: paul_russo
+    constructorId: nichels
+    laps: 135
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: flaherty
+    constructorId: kurtis_kraft
+    laps: 135
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: fohr
+    constructorId: marchese
+    laps: 133
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: darter
+    constructorId: stevens
+    laps: 133
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: hellings
+    constructorId: kurtis_kraft
+    laps: 132
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: mcgrath
+    constructorId: kurtis_kraft
+    laps: 131
+    time: ''
     status: Spun off
-    driver: mcgrath
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '24'
-    laps: '130'
-    status: +8 Laps
-    driver: ruttman
-    constructor: lesovsky
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '31'
-    laps: '128'
-    status: +10 Laps
-    driver: hartley
-    constructor: langley
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '27'
-    laps: '128'
-    status: +10 Laps
-    driver: davies
-    constructor: ewing
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '33'
-    laps: '128'
-    status: +10 Laps
-    driver: mcdowell
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '20'
-    laps: '127'
-    status: +11 Laps
-    driver: walt_brown
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '14'
-    laps: '126'
-    status: +12 Laps
-    driver: webb
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '15'
-    laps: '125'
-    status: +13 Laps
-    driver: hoyt
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '29'
-    laps: '123'
-    status: +15 Laps
-    driver: ader
-    constructor: rae
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '30'
-    laps: '123'
+    points: 0
+  - position: 15
+    driverId: ruttman
+    constructorId: lesovsky
+    laps: 130
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: hartley
+    constructorId: langley
+    laps: 128
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: davies
+    constructorId: ewing
+    laps: 128
+    time: ''
+    status: Finished
+    points: 0
+  - position: 18
+    driverId: mcdowell
+    constructorId: kurtis_kraft
+    laps: 128
+    time: ''
+    status: Finished
+    points: 0
+  - position: 19
+    driverId: walt_brown
+    constructorId: kurtis_kraft
+    laps: 127
+    time: ''
+    status: Finished
+    points: 0
+  - position: 20
+    driverId: webb
+    constructorId: maserati
+    laps: 126
+    time: ''
+    status: Finished
+    points: 0
+  - position: 21
+    driverId: hoyt
+    constructorId: kurtis_kraft
+    laps: 125
+    time: ''
+    status: Finished
+    points: 0
+  - position: 22
+    driverId: ader
+    constructorId: rae
+    laps: 123
+    time: ''
+    status: Finished
+    points: 0
+  - position: 23
+    driverId: holmes
+    constructorId: olson
+    laps: 123
+    time: ''
     status: Spun off
-    driver: holmes
-    constructor: olson
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '28'
-    laps: '122'
-    status: +16 Laps
-    driver: rathmann
-    constructor: wetteroth
-    time: null
-    fastestLap: null
-  - position: '25'
-    points: '0'
-    grid: '21'
-    laps: '112'
+    points: 0
+  - position: 24
+    driverId: rathmann
+    constructorId: wetteroth
+    laps: 122
+    time: ''
+    status: Finished
+    points: 0
+  - position: 25
+    driverId: banks
+    constructorId: maserati
+    laps: 112
+    time: ''
     status: Oil line
-    driver: banks
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '26'
-    points: '0'
-    grid: '22'
-    laps: '111'
+    points: 0
+  - position: 26
+    driverId: schindler
+    constructorId: snowberger
+    laps: 111
+    time: ''
     status: Transmission
-    driver: schindler
-    constructor: snowberger
-    time: null
-    fastestLap: null
-  - position: '27'
-    points: '0'
-    grid: '17'
-    laps: '108'
+    points: 0
+  - position: 27
+    driverId: levrett
+    constructorId: adams
+    laps: 108
+    time: ''
     status: Oil pressure
-    driver: levrett
-    constructor: adams
-    time: null
-    fastestLap: null
-  - position: '27'
-    points: '0'
-    grid: '17'
-    laps: '108'
+    points: 0
+  - position: 27
+    driverId: cantrell
+    constructorId: adams
+    laps: 108
+    time: ''
     status: Oil pressure
-    driver: cantrell
-    constructor: adams
-    time: null
-    fastestLap: null
-  - position: '28'
-    points: '0'
-    grid: '2'
-    laps: '64'
+    points: 0
+  - position: 28
+    driverId: agabashian
+    constructorId: kurtis_kraft
+    laps: 64
+    time: ''
     status: Oil leak
-    driver: agabashian
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '29'
-    points: '0'
-    grid: '32'
-    laps: '52'
+    points: 0
+  - position: 29
+    driverId: jackson
+    constructorId: kurtis_kraft
+    laps: 52
+    time: ''
     status: Supercharger
-    driver: jackson
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '30'
-    points: '0'
-    grid: '25'
-    laps: '42'
+    points: 0
+  - position: 30
+    driverId: hanks
+    constructorId: kurtis_kraft
+    laps: 42
+    time: ''
     status: Oil pressure
-    driver: hanks
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
-  - position: '31'
-    points: '0'
-    grid: '8'
-    laps: '30'
+    points: 0
+  - position: 31
+    driverId: bettenhausen
+    constructorId: deidt
+    laps: 30
+    time: ''
     status: Wheel bearing
-    driver: bettenhausen
-    constructor: deidt
-    time: null
-    fastestLap: null
-  - position: '32'
-    points: '0'
-    grid: '18'
-    laps: '25'
+    points: 0
+  - position: 32
+    driverId: dick_rathmann
+    constructorId: watson
+    laps: 25
+    time: ''
     status: Stalled
-    driver: dick_rathmann
-    constructor: watson
-    time: null
-    fastestLap: null
-  - position: '33'
-    points: '0'
-    grid: '7'
-    laps: '10'
+    points: 0
+  - position: 33
+    driverId: dinsmore
+    constructorId: kurtis_kraft
+    laps: 10
+    time: ''
     status: Oil leak
-    driver: dinsmore
-    constructor: kurtis_kraft
-    time: null
-    fastestLap: null
+    points: 0

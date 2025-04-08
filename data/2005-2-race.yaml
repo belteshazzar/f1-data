@@ -1,164 +1,144 @@
-season: '2005'
-round: '2'
-session: race
+season: 2005
+round: 2
+session: Race
 results:
-  - position: '1'
-    points: '10'
-    grid: '1'
-    laps: '56'
-    status: Finished
-    driver: alonso
-    constructor: renault
+  - position: 1
+    driverId: alonso
+    constructorId: renault
+    laps: 56
     time: '1:31:33.736'
-  - position: '2'
-    points: '8'
-    grid: '2'
-    laps: '56'
     status: Finished
-    driver: trulli
-    constructor: toyota
+    points: 10
+  - position: 2
+    driverId: trulli
+    constructorId: toyota
+    laps: 56
     time: '+24.327'
-  - position: '3'
-    points: '6'
-    grid: '10'
-    laps: '56'
     status: Finished
-    driver: heidfeld
-    constructor: williams
+    points: 8
+  - position: 3
+    driverId: heidfeld
+    constructorId: williams
+    laps: 56
     time: '+32.188'
-  - position: '4'
-    points: '5'
-    grid: '11'
-    laps: '56'
     status: Finished
-    driver: montoya
-    constructor: mclaren
+    points: 6
+  - position: 4
+    driverId: montoya
+    constructorId: mclaren
+    laps: 56
     time: '+41.631'
-  - position: '5'
-    points: '4'
-    grid: '5'
-    laps: '56'
     status: Finished
-    driver: ralf_schumacher
-    constructor: toyota
+    points: 5
+  - position: 5
+    driverId: ralf_schumacher
+    constructorId: toyota
+    laps: 56
     time: '+51.854'
-  - position: '6'
-    points: '3'
-    grid: '8'
-    laps: '56'
     status: Finished
-    driver: coulthard
-    constructor: red_bull
+    points: 4
+  - position: 6
+    driverId: coulthard
+    constructorId: red_bull
+    laps: 56
     time: '+1:12.543'
-  - position: '7'
-    points: '2'
-    grid: '13'
-    laps: '56'
     status: Finished
-    driver: michael_schumacher
-    constructor: ferrari
+    points: 3
+  - position: 7
+    driverId: michael_schumacher
+    constructorId: ferrari
+    laps: 56
     time: '+1:19.988'
-  - position: '8'
-    points: '1'
-    grid: '7'
-    laps: '56'
     status: Finished
-    driver: klien
-    constructor: red_bull
+    points: 2
+  - position: 8
+    driverId: klien
+    constructorId: red_bull
+    laps: 56
     time: '+1:20.835'
-  - position: '9'
-    points: '0'
-    grid: '6'
-    laps: '56'
     status: Finished
-    driver: raikkonen
-    constructor: mclaren
+    points: 1
+  - position: 9
+    driverId: raikkonen
+    constructorId: mclaren
+    laps: 56
     time: '+1:21.580'
-  - position: '10'
-    points: '0'
-    grid: '14'
-    laps: '55'
-    status: +1 Lap
-    driver: massa
-    constructor: sauber
-    time: null
-  - position: '11'
-    points: '0'
-    grid: '17'
-    laps: '54'
-    status: +2 Laps
-    driver: karthikeyan
-    constructor: jordan
-    time: null
-  - position: '12'
-    points: '0'
-    grid: '18'
-    laps: '53'
-    status: +3 Laps
-    driver: monteiro
-    constructor: jordan
-    time: null
-  - position: '13'
-    points: '0'
-    grid: '19'
-    laps: '52'
-    status: +4 Laps
-    driver: albers
-    constructor: minardi
-    time: null
-  - position: '14'
-    points: '0'
-    grid: '12'
-    laps: '49'
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: massa
+    constructorId: sauber
+    laps: 55
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: karthikeyan
+    constructorId: jordan
+    laps: 54
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: monteiro
+    constructorId: jordan
+    laps: 53
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: albers
+    constructorId: minardi
+    laps: 52
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: barrichello
+    constructorId: ferrari
+    laps: 49
+    time: ''
     status: Tyre
-    driver: barrichello
-    constructor: ferrari
-    time: null
-  - position: '15'
-    points: '0'
-    grid: '3'
-    laps: '36'
+    points: 0
+  - position: 15
+    driverId: fisichella
+    constructorId: renault
+    laps: 36
+    time: ''
     status: Collision
-    driver: fisichella
-    constructor: renault
-    time: null
-  - position: '16'
-    points: '0'
-    grid: '4'
-    laps: '36'
+    points: 0
+  - position: 16
+    driverId: webber
+    constructorId: williams
+    laps: 36
+    time: ''
     status: Collision
-    driver: webber
-    constructor: williams
-    time: null
-  - position: '17'
-    points: '0'
-    grid: '16'
-    laps: '26'
+    points: 0
+  - position: 17
+    driverId: villeneuve
+    constructorId: sauber
+    laps: 26
+    time: ''
     status: Spun off
-    driver: villeneuve
-    constructor: sauber
-    time: null
-  - position: '18'
-    points: '0'
-    grid: '9'
-    laps: '2'
+    points: 0
+  - position: 18
+    driverId: button
+    constructorId: bar
+    laps: 2
+    time: ''
     status: Engine
-    driver: button
-    constructor: bar
-    time: null
-  - position: '19'
-    points: '0'
-    grid: '15'
-    laps: '2'
+    points: 0
+  - position: 19
+    driverId: davidson
+    constructorId: bar
+    laps: 2
+    time: ''
     status: Engine
-    driver: davidson
-    constructor: bar
-    time: null
-  - position: '20'
-    points: '0'
-    grid: '20'
-    laps: '2'
+    points: 0
+  - position: 20
+    driverId: friesacher
+    constructorId: minardi
+    laps: 2
+    time: ''
     status: Spun off
-    driver: friesacher
-    constructor: minardi
-    time: null
+    points: 0

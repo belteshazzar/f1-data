@@ -1,166 +1,130 @@
-season: '1967'
-round: '9'
-session: race
+season: 1967
+round: 9
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '9'
-    laps: '68'
-    status: Finished
-    driver: surtees
-    constructor: honda
+  - position: 1
+    driverId: surtees
+    constructorId: honda
+    laps: 68
     time: '1:43'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '68'
     status: Finished
-    driver: jack_brabham
-    constructor: brabham-repco
+    points: 9
+  - position: 2
+    driverId: jack_brabham
+    constructorId: brabham-repco
+    laps: 68
     time: '+0.200'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '1'
-    laps: '68'
     status: Finished
-    driver: clark
-    constructor: lotus-ford
+    points: 6
+  - position: 3
+    driverId: clark
+    constructorId: lotus-ford
+    laps: 68
     time: '+23.100'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '11'
-    laps: '68'
     status: Finished
-    driver: rindt
-    constructor: cooper-maserati
+    points: 4
+  - position: 4
+    driverId: rindt
+    constructorId: cooper-maserati
+    laps: 68
     time: '+56.600'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '12'
-    laps: '67'
-    status: +1 Lap
-    driver: spence
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '15'
-    laps: '66'
-    status: +2 Laps
-    driver: ickx
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '4'
-    laps: '64'
-    status: +4 Laps
-    driver: amon
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '8'
-    laps: '58'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: spence
+    constructorId: brm
+    laps: 67
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: ickx
+    constructorId: cooper-maserati
+    laps: 66
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: amon
+    constructorId: ferrari
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: hill
+    constructorId: lotus-ford
+    laps: 58
+    time: ''
     status: Engine
-    driver: hill
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '13'
-    laps: '50'
+    points: 0
+  - position: 9
+    driverId: siffert
+    constructorId: cooper-maserati
+    laps: 50
+    time: ''
     status: Accident
-    driver: siffert
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '17'
-    laps: '50'
+    points: 0
+  - position: 10
+    driverId: baghetti
+    constructorId: lotus-ford
+    laps: 50
+    time: ''
     status: Engine
-    driver: baghetti
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '3'
-    laps: '46'
+    points: 0
+  - position: 11
+    driverId: mclaren
+    constructorId: mclaren-brm
+    laps: 46
+    time: ''
     status: Engine
-    driver: mclaren
-    constructor: mclaren-brm
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '14'
-    laps: '46'
+    points: 0
+  - position: 12
+    driverId: bonnier
+    constructorId: cooper-maserati
+    laps: 46
+    time: ''
     status: Overheating
-    driver: bonnier
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '7'
-    laps: '45'
+    points: 0
+  - position: 13
+    driverId: stewart
+    constructorId: brm
+    laps: 45
+    time: ''
     status: Engine
-    driver: stewart
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '6'
-    laps: '30'
+    points: 0
+  - position: 14
+    driverId: hulme
+    constructorId: brabham-repco
+    laps: 30
+    time: ''
     status: Overheating
-    driver: hulme
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '18'
-    laps: '26'
+    points: 0
+  - position: 15
+    driverId: ligier
+    constructorId: brabham-repco
+    laps: 26
+    time: ''
     status: Engine
-    driver: ligier
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '16'
-    laps: '16'
+    points: 0
+  - position: 16
+    driverId: irwin
+    constructorId: brm
+    laps: 16
+    time: ''
     status: Injection
-    driver: irwin
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '10'
-    laps: '5'
+    points: 0
+  - position: 17
+    driverId: scarfiotti
+    constructorId: eagle-weslake
+    laps: 5
+    time: ''
     status: Engine
-    driver: scarfiotti
-    constructor: eagle-weslake
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '5'
-    laps: '4'
+    points: 0
+  - position: 18
+    driverId: gurney
+    constructorId: eagle-weslake
+    laps: 4
+    time: ''
     status: Engine
-    driver: gurney
-    constructor: eagle-weslake
-    time: null
-    fastestLap: null
+    points: 0

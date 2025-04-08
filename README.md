@@ -28,3 +28,10 @@ node index.js convert -y 1950 -t rounds   # data/1950-rounds.yaml
 node index.js check data/1950-rounds.yaml schema/rounds.schema.yaml
 node index.js check data/1950-drivers.yaml schema/drivers.schema.yaml
 node index.js check data/1950-constructors.yaml schema/constructors.schema.yaml
+
+
+TODO: grid positions
+
+for f in $( ls data/*-grid.yaml ); do ; e=$(cat  $f | grep "position: 0") ; if [ "$e" != "" ]; then echo $f; fi ; done
+
+node index.js get -y 1959 -r 4 -s g

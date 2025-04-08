@@ -1,164 +1,144 @@
-season: '2019'
-round: '20'
-session: race
+season: 2019
+round: 20
+session: Race
 results:
-  - position: '1'
-    points: '25'
-    grid: '1'
-    laps: '71'
-    status: Finished
-    driver: max_verstappen
-    constructor: red_bull
+  - position: 1
+    driverId: max_verstappen
+    constructorId: red_bull
+    laps: 71
     time: '1:33:14.678'
-  - position: '2'
-    points: '18'
-    grid: '6'
-    laps: '71'
     status: Finished
-    driver: gasly
-    constructor: toro_rosso
+    points: 25
+  - position: 2
+    driverId: gasly
+    constructorId: toro_rosso
+    laps: 71
     time: '+6.077'
-  - position: '3'
-    points: '15'
-    grid: '20'
-    laps: '71'
     status: Finished
-    driver: sainz
-    constructor: mclaren
+    points: 18
+  - position: 3
+    driverId: sainz
+    constructorId: mclaren
+    laps: 71
     time: '+8.896'
-  - position: '4'
-    points: '12'
-    grid: '8'
-    laps: '71'
     status: Finished
-    driver: raikkonen
-    constructor: alfa
+    points: 15
+  - position: 4
+    driverId: raikkonen
+    constructorId: alfa
+    laps: 71
     time: '+9.452'
-  - position: '5'
-    points: '10'
-    grid: '12'
-    laps: '71'
     status: Finished
-    driver: giovinazzi
-    constructor: alfa
+    points: 12
+  - position: 5
+    driverId: giovinazzi
+    constructorId: alfa
+    laps: 71
     time: '+10.201'
-  - position: '6'
-    points: '8'
-    grid: '11'
-    laps: '71'
     status: Finished
-    driver: ricciardo
-    constructor: renault
+    points: 10
+  - position: 6
+    driverId: ricciardo
+    constructorId: renault
+    laps: 71
     time: '+10.541'
-  - position: '7'
-    points: '6'
-    grid: '3'
-    laps: '71'
     status: Finished
-    driver: hamilton
-    constructor: mercedes
+    points: 8
+  - position: 7
+    driverId: hamilton
+    constructorId: mercedes
+    laps: 71
     time: '+11.139'
-  - position: '8'
-    points: '4'
-    grid: '10'
-    laps: '71'
     status: Finished
-    driver: norris
-    constructor: mclaren
+    points: 6
+  - position: 8
+    driverId: norris
+    constructorId: mclaren
+    laps: 71
     time: '+11.204'
-  - position: '9'
-    points: '2'
-    grid: '15'
-    laps: '71'
     status: Finished
-    driver: perez
-    constructor: racing_point
+    points: 4
+  - position: 9
+    driverId: perez
+    constructorId: racing_point
+    laps: 71
     time: '+11.529'
-  - position: '10'
-    points: '1'
-    grid: '16'
-    laps: '71'
     status: Finished
-    driver: kvyat
-    constructor: toro_rosso
+    points: 2
+  - position: 10
+    driverId: kvyat
+    constructorId: toro_rosso
+    laps: 71
     time: '+11.931'
-  - position: '11'
-    points: '0'
-    grid: '9'
-    laps: '71'
     status: Finished
-    driver: kevin_magnussen
-    constructor: haas
+    points: 1
+  - position: 11
+    driverId: kevin_magnussen
+    constructorId: haas
+    laps: 71
     time: '+12.732'
-  - position: '12'
-    points: '0'
-    grid: '18'
-    laps: '71'
     status: Finished
-    driver: russell
-    constructor: williams
+    points: 0
+  - position: 12
+    driverId: russell
+    constructorId: williams
+    laps: 71
     time: '+13.599'
-  - position: '13'
-    points: '0'
-    grid: '7'
-    laps: '71'
     status: Finished
-    driver: grosjean
-    constructor: haas
+    points: 0
+  - position: 13
+    driverId: grosjean
+    constructorId: haas
+    laps: 71
     time: '+14.247'
-  - position: '14'
-    points: '0'
-    grid: '5'
-    laps: '71'
     status: Finished
-    driver: albon
-    constructor: red_bull
+    points: 0
+  - position: 14
+    driverId: albon
+    constructorId: red_bull
+    laps: 71
     time: '+14.927'
-  - position: '15'
-    points: '0'
-    grid: '13'
-    laps: '71'
     status: Finished
-    driver: hulkenberg
-    constructor: renault
+    points: 0
+  - position: 15
+    driverId: hulkenberg
+    constructorId: renault
+    laps: 71
     time: '+18.059'
-  - position: '16'
-    points: '0'
-    grid: '19'
-    laps: '70'
-    status: +1 Lap
-    driver: kubica
-    constructor: williams
-    time: null
-  - position: '17'
-    points: '0'
-    grid: '2'
-    laps: '65'
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: kubica
+    constructorId: williams
+    laps: 70
+    time: ''
+    status: Finished
+    points: 0
+  - position: 17
+    driverId: vettel
+    constructorId: ferrari
+    laps: 65
+    time: ''
     status: Collision
-    driver: vettel
-    constructor: ferrari
-    time: null
-  - position: '18'
-    points: '0'
-    grid: '14'
-    laps: '65'
+    points: 0
+  - position: 18
+    driverId: leclerc
+    constructorId: ferrari
+    laps: 65
+    time: ''
     status: Collision
-    driver: leclerc
-    constructor: ferrari
-    time: null
-  - position: '19'
-    points: '0'
-    grid: '17'
-    laps: '65'
+    points: 0
+  - position: 19
+    driverId: stroll
+    constructorId: racing_point
+    laps: 65
+    time: ''
     status: Suspension
-    driver: stroll
-    constructor: racing_point
-    time: null
-  - position: '20'
-    points: '0'
-    grid: '4'
-    laps: '51'
+    points: 0
+  - position: 20
+    driverId: bottas
+    constructorId: mercedes
+    laps: 51
+    time: ''
     status: Power Unit
-    driver: bottas
-    constructor: mercedes
-    time: null
+    points: 0

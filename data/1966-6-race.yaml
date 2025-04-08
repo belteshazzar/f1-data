@@ -1,175 +1,137 @@
-season: '1966'
-round: '6'
-session: race
+season: 1966
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '5'
-    laps: '15'
-    status: Finished
-    driver: jack_brabham
-    constructor: brabham-repco
+  - position: 1
+    driverId: jack_brabham
+    constructorId: brabham-repco
+    laps: 15
     time: '2:27'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '15'
     status: Finished
-    driver: surtees
-    constructor: cooper-maserati
+    points: 9
+  - position: 2
+    driverId: surtees
+    constructorId: cooper-maserati
+    laps: 15
     time: '+44.400'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '9'
-    laps: '15'
     status: Finished
-    driver: rindt
-    constructor: cooper-maserati
+    points: 6
+  - position: 3
+    driverId: rindt
+    constructorId: cooper-maserati
+    laps: 15
     time: '+2:32.600'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '10'
-    laps: '15'
     status: Finished
-    driver: hill
-    constructor: brm
+    points: 4
+  - position: 4
+    driverId: hill
+    constructorId: brm
+    laps: 15
     time: '+6:41.400'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '3'
-    laps: '15'
     status: Finished
-    driver: stewart
-    constructor: brm
+    points: 3
+  - position: 5
+    driverId: stewart
+    constructorId: brm
+    laps: 15
     time: '+8:28.900'
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '6'
-    laps: '15'
     status: Finished
-    driver: bandini
-    constructor: ferrari
+    points: 2
+  - position: 6
+    driverId: bandini
+    constructorId: ferrari
+    laps: 15
     time: '+10:56.400'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '14'
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: gurney
+    constructorId: eagle-climax
+    laps: 14
+    time: ''
     status: Electrical
-    driver: gurney
-    constructor: eagle-climax
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '17'
-    laps: '14'
-    status: +1 Lap
-    driver: arundell
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '13'
-    laps: '12'
+    points: 0
+  - position: 8
+    driverId: arundell
+    constructorId: lotus-brm
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: spence
+    constructorId: lotus-brm
+    laps: 12
+    time: ''
     status: Alternator
-    driver: spence
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '1'
-    laps: '11'
+    points: 0
+  - position: 10
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 11
+    time: ''
     status: Accident
-    driver: clark
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '26'
-    laps: '10'
+    points: 0
+  - position: 11
+    driverId: lawrence
+    constructorId: cooper-ferrari
+    laps: 10
+    time: ''
     status: Suspension
-    driver: lawrence
-    constructor: cooper-ferrari
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '4'
-    laps: '9'
+    points: 0
+  - position: 12
+    driverId: scarfiotti
+    constructorId: ferrari
+    laps: 9
+    time: ''
     status: Electrical
-    driver: scarfiotti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '7'
-    laps: '9'
+    points: 0
+  - position: 13
+    driverId: parkes
+    constructorId: ferrari
+    laps: 9
+    time: ''
     status: Accident
-    driver: parkes
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '15'
-    laps: '8'
+    points: 0
+  - position: 14
+    driverId: hulme
+    constructorId: brabham-repco
+    laps: 8
+    time: ''
     status: Ignition
-    driver: hulme
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '12'
-    laps: '3'
+    points: 0
+  - position: 15
+    driverId: bonnier
+    constructorId: cooper-maserati
+    laps: 3
+    time: ''
     status: Clutch
-    driver: bonnier
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '11'
-    laps: '3'
+    points: 0
+  - position: 16
+    driverId: bondurant
+    constructorId: brm
+    laps: 3
+    time: ''
     status: Engine
-    driver: bondurant
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '14'
-    laps: '2'
+    points: 0
+  - position: 17
+    driverId: anderson
+    constructorId: brabham-climax
+    laps: 2
+    time: ''
     status: Transmission
-    driver: anderson
-    constructor: brabham-climax
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '25'
-    laps: '0'
+    points: 0
+  - position: 18
+    driverId: taylor
+    constructorId: brabham-brm
+    laps: 0
+    time: ''
     status: Accident
-    driver: taylor
-    constructor: brabham-brm
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 19
+    driverId: ligier
+    constructorId: cooper-maserati
+    laps: 0
+    time: ''
     status: Injury
-    driver: ligier
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
+    points: 0

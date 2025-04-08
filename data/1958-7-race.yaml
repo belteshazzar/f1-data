@@ -1,184 +1,144 @@
-season: '1958'
-round: '7'
-session: race
+season: 1958
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '8'
-    grid: '6'
-    laps: '75'
-    status: Finished
-    driver: collins
-    constructor: ferrari
+  - position: 1
+    driverId: collins
+    constructorId: ferrari
+    laps: 75
     time: '2:09:04.200'
-    fastestLap: null
-  - position: '2'
-    points: '7'
-    grid: '4'
-    laps: '75'
     status: Finished
-    driver: hawthorn
-    constructor: ferrari
+    points: 8
+  - position: 2
+    driverId: hawthorn
+    constructorId: ferrari
+    laps: 75
     time: '+24.200'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '3'
-    laps: '75'
     status: Finished
-    driver: salvadori
-    constructor: cooper
+    points: 7
+  - position: 3
+    driverId: salvadori
+    constructorId: cooper
+    laps: 75
     time: '+50.600'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '7'
-    laps: '75'
     status: Finished
-    driver: lewis-evans
-    constructor: vanwall
+    points: 4
+  - position: 4
+    driverId: lewis-evans
+    constructorId: vanwall
+    laps: 75
     time: '+50.800'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '2'
-    laps: '75'
     status: Finished
-    driver: schell
-    constructor: brm
+    points: 3
+  - position: 5
+    driverId: schell
+    constructorId: brm
+    laps: 75
     time: '+1:14.800'
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '10'
-    laps: '75'
     status: Finished
-    driver: jack_brabham
-    constructor: cooper
+    points: 2
+  - position: 6
+    driverId: jack_brabham
+    constructorId: cooper
+    laps: 75
     time: '+1:23.200'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '9'
-    laps: '74'
-    status: +1 Lap
-    driver: brooks
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '12'
-    laps: '73'
-    status: +2 Laps
-    driver: trintignant
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '15'
-    laps: '72'
-    status: +3 Laps
-    driver: shelby
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '11'
-    laps: '59'
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: brooks
+    constructorId: vanwall
+    laps: 74
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: trintignant
+    constructorId: cooper
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: shelby
+    constructorId: maserati
+    laps: 72
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: trips
+    constructorId: ferrari
+    laps: 59
+    time: ''
     status: Engine
-    driver: trips
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '13'
-    laps: '49'
+    points: 0
+  - position: 11
+    driverId: bonnier
+    constructorId: maserati
+    laps: 49
+    time: ''
     status: Gearbox
-    driver: bonnier
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '18'
-    laps: '44'
+    points: 0
+  - position: 12
+    driverId: gerini
+    constructorId: maserati
+    laps: 44
+    time: ''
     status: Gearbox
-    driver: gerini
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '16'
-    laps: '40'
+    points: 0
+  - position: 13
+    driverId: burgess
+    constructorId: cooper
+    laps: 40
+    time: ''
     status: Clutch
-    driver: burgess
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '1'
-    laps: '25'
+    points: 0
+  - position: 14
+    driverId: moss
+    constructorId: vanwall
+    laps: 25
+    time: ''
     status: Engine
-    driver: moss
-    constructor: vanwall
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '5'
-    laps: '21'
+    points: 0
+  - position: 15
+    driverId: allison
+    constructorId: team_lotus
+    laps: 21
+    time: ''
     status: Engine
-    driver: allison
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '8'
-    laps: '19'
+    points: 0
+  - position: 16
+    driverId: behra
+    constructorId: brm
+    laps: 19
+    time: ''
     status: Suspension
-    driver: behra
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '17'
-    laps: '19'
+    points: 0
+  - position: 17
+    driverId: bueb
+    constructorId: connaught
+    laps: 19
+    time: ''
     status: Gearbox
-    driver: bueb
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '20'
-    laps: '19'
+    points: 0
+  - position: 18
+    driverId: stacey
+    constructorId: team_lotus
+    laps: 19
+    time: ''
     status: Overheating
-    driver: stacey
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '14'
-    laps: '17'
+    points: 0
+  - position: 19
+    driverId: hill
+    constructorId: team_lotus
+    laps: 17
+    time: ''
     status: Overheating
-    driver: hill
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '19'
-    laps: '7'
+    points: 0
+  - position: 20
+    driverId: fairman
+    constructorId: connaught
+    laps: 7
+    time: ''
     status: Ignition
-    driver: fairman
-    constructor: connaught
-    time: null
-    fastestLap: null
+    points: 0

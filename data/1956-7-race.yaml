@@ -1,202 +1,158 @@
-season: '1956'
-round: '7'
-session: race
+season: 1956
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '22'
-    status: Finished
-    driver: fangio
-    constructor: ferrari
+  - position: 1
+    driverId: fangio
+    constructorId: ferrari
+    laps: 22
     time: '3:38:43.700'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '4'
-    laps: '22'
     status: Finished
-    driver: moss
-    constructor: maserati
+    points: 9
+  - position: 2
+    driverId: moss
+    constructorId: maserati
+    laps: 22
     time: '+46.400'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '8'
-    laps: '22'
     status: Finished
-    driver: behra
-    constructor: maserati
+    points: 6
+  - position: 3
+    driverId: behra
+    constructorId: maserati
+    laps: 22
     time: '+7:38.300'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '16'
-    laps: '20'
-    status: +2 Laps
-    driver: godia
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '14'
-    laps: '19'
-    status: +3 Laps
-    driver: rosier
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '11'
-    laps: '20'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: godia
+    constructorId: maserati
+    laps: 20
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: rosier
+    constructorId: maserati
+    laps: 19
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: halford
+    constructorId: maserati
+    laps: 20
+    time: ''
     status: Disqualified
-    driver: halford
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '19'
-    laps: '16'
-    status: +6 Laps
-    driver: volonterio
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '21'
-    laps: '15'
+    points: 0
+  - position: 7
+    driverId: volonterio
+    constructorId: maserati
+    laps: 16
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: milhoux
+    constructorId: gordini
+    laps: 15
+    time: ''
     status: Engine
-    driver: milhoux
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '10'
-    laps: '14'
+    points: 0
+  - position: 9
+    driverId: portago
+    constructorId: ferrari
+    laps: 14
+    time: ''
     status: Accident
-    driver: portago
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '12'
-    laps: '13'
+    points: 0
+  - position: 10
+    driverId: schell
+    constructorId: maserati
+    laps: 13
+    time: ''
     status: Overheating
-    driver: schell
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '20'
-    laps: '13'
+    points: 0
+  - position: 11
+    driverId: villoresi
+    constructorId: maserati
+    laps: 13
+    time: ''
     status: Engine
-    driver: villoresi
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '5'
-    laps: '11'
+    points: 0
+  - position: 12
+    driverId: musso
+    constructorId: ferrari
+    laps: 11
+    time: ''
     status: Accident
-    driver: musso
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '2'
-    laps: '8'
+    points: 0
+  - position: 13
+    driverId: collins
+    constructorId: ferrari
+    laps: 8
+    time: ''
     status: Fuel leak
-    driver: collins
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '3'
-    laps: '5'
+    points: 0
+  - position: 14
+    driverId: castellotti
+    constructorId: ferrari
+    laps: 5
+    time: ''
     status: Electrical
-    driver: castellotti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '7'
-    laps: '3'
+    points: 0
+  - position: 15
+    driverId: maglioli
+    constructorId: maserati
+    laps: 3
+    time: ''
     status: Steering
-    driver: maglioli
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '13'
-    laps: '3'
+    points: 0
+  - position: 16
+    driverId: gould
+    constructorId: maserati
+    laps: 3
+    time: ''
     status: Oil pressure
-    driver: gould
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '9'
-    laps: '2'
+    points: 0
+  - position: 17
+    driverId: salvadori
+    constructorId: maserati
+    laps: 2
+    time: ''
     status: Suspension
-    driver: salvadori
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '15'
-    laps: '0'
+    points: 0
+  - position: 18
+    driverId: manzon
+    constructorId: gordini
+    laps: 0
+    time: ''
     status: Suspension
-    driver: manzon
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '17'
-    laps: '0'
+    points: 0
+  - position: 19
+    driverId: scarlatti
+    constructorId: ferrari
+    laps: 0
+    time: ''
     status: Engine
-    driver: scarlatti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 20
+    driverId: perdisa
+    constructorId: maserati
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: perdisa
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 21
+    driverId: andre_pilette
+    constructorId: gordini
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: andre_pilette
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 22
+    driverId: piotti
+    constructorId: maserati
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: piotti
-    constructor: maserati
-    time: null
-    fastestLap: null
+    points: 0

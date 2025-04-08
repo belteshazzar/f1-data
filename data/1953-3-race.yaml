@@ -1,184 +1,144 @@
-season: '1953'
-round: '3'
-session: race
+season: 1953
+round: 3
+session: Race
 results:
-  - position: '1'
-    points: '8'
-    grid: '1'
-    laps: '90'
-    status: Finished
-    driver: ascari
-    constructor: ferrari
+  - position: 1
+    driverId: ascari
+    constructorId: ferrari
+    laps: 90
     time: '2:53:35.800'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '3'
-    laps: '90'
     status: Finished
-    driver: farina
-    constructor: ferrari
+    points: 8
+  - position: 2
+    driverId: farina
+    constructorId: ferrari
+    laps: 90
     time: '+10.400'
-    fastestLap: null
-  - position: '3'
-    points: '2'
-    grid: '13'
-    laps: '89'
-    status: +1 Lap
-    driver: gonzalez
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '3'
-    points: '2'
-    grid: '13'
-    laps: '89'
-    status: +1 Lap
-    driver: bonetto
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '6'
-    laps: '89'
-    status: +1 Lap
-    driver: hawthorn
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '7'
-    laps: '88'
-    status: +2 Laps
-    driver: graffenried
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '12'
-    laps: '87'
-    status: +3 Laps
-    driver: trintignant
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '86'
-    status: +4 Laps
-    driver: rosier
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '16'
-    laps: '84'
-    status: +6 Laps
-    driver: collins
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '9'
-    laps: '83'
-    status: +7 Laps
-    driver: moss
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '1'
-    grid: '4'
-    laps: '67'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: gonzalez
+    constructorId: maserati
+    laps: 89
+    time: ''
+    status: Finished
+    points: 2
+  - position: 3
+    driverId: bonetto
+    constructorId: maserati
+    laps: 89
+    time: ''
+    status: Finished
+    points: 2
+  - position: 4
+    driverId: hawthorn
+    constructorId: ferrari
+    laps: 89
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: graffenried
+    constructorId: maserati
+    laps: 88
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: trintignant
+    constructorId: gordini
+    laps: 87
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: rosier
+    constructorId: ferrari
+    laps: 86
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: collins
+    constructorId: hwm
+    laps: 84
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: moss
+    constructorId: connaught
+    laps: 83
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: villoresi
+    constructorId: ferrari
+    laps: 67
+    time: ''
     status: Throttle
-    driver: villoresi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '14'
-    laps: '63'
+    points: 1
+  - position: 11
+    driverId: mcalpine
+    constructorId: connaught
+    laps: 63
+    time: ''
     status: Engine
-    driver: mcalpine
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '10'
-    laps: '59'
+    points: 0
+  - position: 12
+    driverId: schell
+    constructorId: gordini
+    laps: 59
+    time: ''
     status: Transmission
-    driver: schell
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '17'
-    laps: '52'
+    points: 0
+  - position: 13
+    driverId: claes
+    constructorId: connaught
+    laps: 52
+    time: ''
     status: Not classified
-    driver: claes
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '2'
-    laps: '36'
+    points: 0
+  - position: 14
+    driverId: fangio
+    constructorId: maserati
+    laps: 36
+    time: ''
     status: Axle
-    driver: fangio
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '19'
-    laps: '28'
+    points: 0
+  - position: 15
+    driverId: mieres
+    constructorId: gordini
+    laps: 28
+    time: ''
     status: Transmission
-    driver: mieres
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '5'
-    laps: '22'
+    points: 0
+  - position: 16
+    driverId: gonzalez
+    constructorId: maserati
+    laps: 22
+    time: ''
     status: Axle
-    driver: gonzalez
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '18'
-    laps: '19'
+    points: 0
+  - position: 17
+    driverId: wharton
+    constructorId: cooper
+    laps: 19
+    time: ''
     status: Physical
-    driver: wharton
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '11'
-    laps: '14'
+    points: 0
+  - position: 18
+    driverId: salvadori
+    constructorId: connaught
+    laps: 14
+    time: ''
     status: Engine
-    driver: salvadori
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '15'
-    laps: '7'
+    points: 0
+  - position: 19
+    driverId: macklin
+    constructorId: hwm
+    laps: 7
+    time: ''
     status: Throttle
-    driver: macklin
-    constructor: hwm
-    time: null
-    fastestLap: null
+    points: 0

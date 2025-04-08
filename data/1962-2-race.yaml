@@ -1,175 +1,137 @@
-season: '1962'
-round: '2'
-session: race
+season: 1962
+round: 2
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '3'
-    laps: '100'
-    status: Finished
-    driver: mclaren
-    constructor: cooper-climax
+  - position: 1
+    driverId: mclaren
+    constructorId: cooper-climax
+    laps: 100
     time: '2:46:29.700'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '9'
-    laps: '100'
     status: Finished
-    driver: phil_hill
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: phil_hill
+    constructorId: ferrari
+    laps: 100
     time: '+1.300'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '10'
-    laps: '100'
     status: Finished
-    driver: bandini
-    constructor: ferrari
+    points: 6
+  - position: 3
+    driverId: bandini
+    constructorId: ferrari
+    laps: 100
     time: '+1:24.100'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '11'
-    laps: '99'
-    status: +1 Lap
-    driver: surtees
-    constructor: lola
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '18'
-    laps: '93'
-    status: +7 Laps
-    driver: bonnier
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '2'
-    laps: '92'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: surtees
+    constructorId: lola
+    laps: 99
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: bonnier
+    constructorId: porsche
+    laps: 93
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: hill
+    constructorId: brm
+    laps: 92
+    time: ''
     status: Engine
-    driver: hill
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '4'
-    laps: '90'
+    points: 1
+  - position: 7
+    driverId: mairesse
+    constructorId: ferrari
+    laps: 90
+    time: ''
     status: Oil pressure
-    driver: mairesse
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '6'
-    laps: '77'
+    points: 0
+  - position: 8
+    driverId: jack_brabham
+    constructorId: lotus-climax
+    laps: 77
+    time: ''
     status: Accident
-    driver: jack_brabham
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '8'
-    laps: '64'
+    points: 0
+  - position: 9
+    driverId: ireland
+    constructorId: lotus-climax
+    laps: 64
+    time: ''
     status: Fuel pump
-    driver: ireland
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '1'
-    laps: '55'
+    points: 0
+  - position: 10
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 55
+    time: ''
     status: Clutch
-    driver: clark
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '12'
-    laps: '44'
+    points: 0
+  - position: 11
+    driverId: salvadori
+    constructorId: lola
+    laps: 44
+    time: ''
     status: Suspension
-    driver: salvadori
-    constructor: lola
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '19'
-    laps: '43'
+    points: 0
+  - position: 12
+    driverId: maggs
+    constructorId: cooper-climax
+    laps: 43
+    time: ''
     status: Gearbox
-    driver: maggs
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '17'
-    laps: '24'
+    points: 0
+  - position: 13
+    driverId: trevor_taylor
+    constructorId: lotus-climax
+    laps: 24
+    time: ''
     status: Oil leak
-    driver: trevor_taylor
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '5'
-    laps: '0'
+    points: 0
+  - position: 14
+    driverId: gurney
+    constructorId: porsche
+    laps: 0
+    time: ''
     status: Accident
-    driver: gurney
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '7'
-    laps: '0'
+    points: 0
+  - position: 15
+    driverId: trintignant
+    constructorId: lotus-climax
+    laps: 0
+    time: ''
     status: Accident
-    driver: trintignant
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '14'
-    laps: '0'
+    points: 0
+  - position: 16
+    driverId: ginther
+    constructorId: brm
+    laps: 0
+    time: ''
     status: Accident
-    driver: ginther
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 22
+    driverId: ricardo_rodriguez
+    constructorId: ferrari
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: ricardo_rodriguez
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 23
+    driverId: bussinello
+    constructorId: de_tomaso-alfa_romeo
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: bussinello
-    constructor: de_tomaso-alfa_romeo
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 24
+    driverId: marsh
+    constructorId: brm
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: marsh
-    constructor: brm
-    time: null
-    fastestLap: null
+    points: 0

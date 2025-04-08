@@ -1,193 +1,151 @@
-season: '1951'
-round: '1'
-session: race
+season: 1951
+round: 1
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '42'
-    status: Finished
-    driver: fangio
-    constructor: alfa
+  - position: 1
+    driverId: fangio
+    constructorId: alfa
+    laps: 42
     time: '2:07:53.640'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '6'
-    laps: '42'
     status: Finished
-    driver: taruffi
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: taruffi
+    constructorId: ferrari
+    laps: 42
     time: '+55.240'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '2'
-    laps: '42'
     status: Finished
-    driver: farina
-    constructor: alfa
+    points: 6
+  - position: 3
+    driverId: farina
+    constructorId: alfa
+    laps: 42
     time: '+1:19.310'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '4'
-    laps: '41'
-    status: +1 Lap
-    driver: sanesi
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '5'
-    laps: '40'
-    status: +2 Laps
-    driver: graffenried
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '7'
-    laps: '40'
-    status: +2 Laps
-    driver: ascari
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '19'
-    laps: '40'
-    status: +2 Laps
-    driver: chiron
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '14'
-    laps: '40'
-    status: +2 Laps
-    driver: moss
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '8'
-    laps: '39'
-    status: +3 Laps
-    driver: rosier
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '12'
-    laps: '39'
-    status: +3 Laps
-    driver: etancelin
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '10'
-    laps: '39'
-    status: +3 Laps
-    driver: fischer
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '17'
-    laps: '38'
-    status: +4 Laps
-    driver: schell
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '18'
-    laps: '35'
-    status: +7 Laps
-    driver: claes
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '21'
-    laps: '31'
-    status: +11 Laps
-    driver: guy_mairesse
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '9'
-    laps: '36'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: sanesi
+    constructorId: alfa
+    laps: 41
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: graffenried
+    constructorId: alfa
+    laps: 40
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: ascari
+    constructorId: ferrari
+    laps: 40
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: chiron
+    constructorId: maserati
+    laps: 40
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: moss
+    constructorId: hwm
+    laps: 40
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: rosier
+    constructorId: lago
+    laps: 39
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: etancelin
+    constructorId: lago
+    laps: 39
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: fischer
+    constructorId: ferrari
+    laps: 39
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: schell
+    constructorId: maserati
+    laps: 38
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: claes
+    constructorId: lago
+    laps: 35
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: guy_mairesse
+    constructorId: lago
+    laps: 31
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: whitehead
+    constructorId: ferrari
+    laps: 36
+    time: ''
     status: Accident
-    driver: whitehead
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '11'
-    laps: '30'
+    points: 0
+  - position: 16
+    driverId: louveau
+    constructorId: lago
+    laps: 30
+    time: ''
     status: Accident
-    driver: louveau
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '20'
-    laps: '23'
+    points: 0
+  - position: 17
+    driverId: abecassis
+    constructorId: hwm
+    laps: 23
+    time: ''
     status: Magneto
-    driver: abecassis
-    constructor: hwm
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '15'
-    laps: '14'
+    points: 0
+  - position: 18
+    driverId: cabantous
+    constructorId: lago
+    laps: 14
+    time: ''
     status: Ignition
-    driver: cabantous
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '3'
-    laps: '12'
+    points: 0
+  - position: 19
+    driverId: villoresi
+    constructorId: ferrari
+    laps: 12
+    time: ''
     status: Accident
-    driver: villoresi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '13'
-    laps: '10'
+    points: 0
+  - position: 20
+    driverId: gonzalez
+    constructorId: lago
+    laps: 10
+    time: ''
     status: Oil pump
-    driver: gonzalez
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '16'
-    laps: '0'
+    points: 0
+  - position: 21
+    driverId: hirt
+    constructorId: veritas
+    laps: 0
+    time: ''
     status: Fuel system
-    driver: hirt
-    constructor: veritas
-    time: null
-    fastestLap: null
+    points: 0

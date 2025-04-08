@@ -1,220 +1,172 @@
-season: '1981'
-round: '15'
-session: race
+season: 1981
+round: 15
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '75'
-    status: Finished
-    driver: jones
-    constructor: williams
+  - position: 1
+    driverId: jones
+    constructorId: williams
+    laps: 75
     time: '1:44:09.077'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '5'
-    laps: '75'
     status: Finished
-    driver: prost
-    constructor: renault
+    points: 9
+  - position: 2
+    driverId: prost
+    constructorId: renault
+    laps: 75
     time: '+20.048'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '8'
-    laps: '75'
     status: Finished
-    driver: giacomelli
-    constructor: alfa
+    points: 6
+  - position: 3
+    driverId: giacomelli
+    constructorId: alfa
+    laps: 75
     time: '+20.428'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '9'
-    laps: '75'
     status: Finished
-    driver: mansell
-    constructor: team_lotus
+    points: 4
+  - position: 4
+    driverId: mansell
+    constructorId: team_lotus
+    laps: 75
     time: '+47.473'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '4'
-    laps: '75'
     status: Finished
-    driver: piquet
-    constructor: brabham
+    points: 3
+  - position: 5
+    driverId: piquet
+    constructorId: brabham
+    laps: 75
     time: '+1:16.438'
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '12'
-    laps: '75'
     status: Finished
-    driver: laffite
-    constructor: ligier
+    points: 2
+  - position: 6
+    driverId: laffite
+    constructorId: ligier
+    laps: 75
     time: '+1:18.175'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '6'
-    laps: '75'
     status: Finished
-    driver: watson
-    constructor: mclaren
+    points: 1
+  - position: 7
+    driverId: watson
+    constructorId: mclaren
+    laps: 75
     time: '+1:18.497'
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '1'
-    laps: '74'
-    status: +1 Lap
-    driver: reutemann
-    constructor: williams
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '18'
-    laps: '73'
-    status: +2 Laps
-    driver: pironi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '20'
-    laps: '73'
-    status: +2 Laps
-    driver: keke_rosberg
-    constructor: fittipaldi
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '11'
-    laps: '71'
-    status: +4 Laps
-    driver: patrese
-    constructor: arrows
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '14'
-    laps: '69'
-    status: +6 Laps
-    driver: cesaris
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '17'
-    laps: '67'
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: reutemann
+    constructorId: williams
+    laps: 74
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: pironi
+    constructorId: ferrari
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: keke_rosberg
+    constructorId: fittipaldi
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: patrese
+    constructorId: arrows
+    laps: 71
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: cesaris
+    constructorId: mclaren
+    laps: 69
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: alboreto
+    constructorId: tyrrell
+    laps: 67
+    time: ''
     status: Engine
-    driver: alboreto
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '24'
-    laps: '61'
+    points: 0
+  - position: 14
+    driverId: salazar
+    constructorId: ensign
+    laps: 61
+    time: ''
     status: Not classified
-    driver: salazar
-    constructor: ensign
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '22'
-    laps: '43'
+    points: 0
+  - position: 15
+    driverId: warwick
+    constructorId: toleman
+    laps: 43
+    time: ''
     status: Gearbox
-    driver: warwick
-    constructor: toleman
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '10'
-    laps: '29'
+    points: 0
+  - position: 16
+    driverId: mario_andretti
+    constructorId: alfa
+    laps: 29
+    time: ''
     status: Suspension
-    driver: mario_andretti
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '3'
-    laps: '22'
+    points: 0
+  - position: 17
+    driverId: gilles_villeneuve
+    constructorId: ferrari
+    laps: 22
+    time: ''
     status: Disqualified
-    driver: gilles_villeneuve
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '16'
-    laps: '20'
+    points: 0
+  - position: 18
+    driverId: rebaque
+    constructorId: brabham
+    laps: 20
+    time: ''
     status: Throttle
-    driver: rebaque
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '23'
-    laps: '19'
+    points: 0
+  - position: 19
+    driverId: surer
+    constructorId: theodore
+    laps: 19
+    time: ''
     status: Suspension
-    driver: surer
-    constructor: theodore
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '19'
-    laps: '10'
+    points: 0
+  - position: 20
+    driverId: cheever
+    constructorId: tyrrell
+    laps: 10
+    time: ''
     status: Engine
-    driver: cheever
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '13'
-    laps: '10'
+    points: 0
+  - position: 21
+    driverId: arnoux
+    constructorId: renault
+    laps: 10
+    time: ''
     status: Electrical
-    driver: arnoux
-    constructor: renault
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '7'
-    laps: '2'
+    points: 0
+  - position: 22
+    driverId: tambay
+    constructorId: ligier
+    laps: 2
+    time: ''
     status: Accident
-    driver: tambay
-    constructor: ligier
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '15'
-    laps: '2'
+    points: 0
+  - position: 23
+    driverId: angelis
+    constructorId: team_lotus
+    laps: 2
+    time: ''
     status: Water leak
-    driver: angelis
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '21'
-    laps: '0'
+    points: 0
+  - position: 24
+    driverId: jarier
+    constructorId: osella
+    laps: 0
+    time: ''
     status: Transmission
-    driver: jarier
-    constructor: osella
-    time: null
-    fastestLap: null
+    points: 0

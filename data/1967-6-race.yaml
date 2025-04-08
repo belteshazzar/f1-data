@@ -1,193 +1,151 @@
-season: '1967'
-round: '6'
-session: race
+season: 1967
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '80'
-    status: Finished
-    driver: clark
-    constructor: lotus-ford
+  - position: 1
+    driverId: clark
+    constructorId: lotus-ford
+    laps: 80
     time: '1:59:25.600'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '4'
-    laps: '80'
     status: Finished
-    driver: hulme
-    constructor: brabham-repco
+    points: 9
+  - position: 2
+    driverId: hulme
+    constructorId: brabham-repco
+    laps: 80
     time: '+12.800'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '6'
-    laps: '80'
     status: Finished
-    driver: amon
-    constructor: ferrari
+    points: 6
+  - position: 3
+    driverId: amon
+    constructorId: ferrari
+    laps: 80
     time: '+16.600'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '3'
-    laps: '80'
     status: Finished
-    driver: jack_brabham
-    constructor: brabham-repco
+    points: 4
+  - position: 4
+    driverId: jack_brabham
+    constructorId: brabham-repco
+    laps: 80
     time: '+21.800'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '9'
-    laps: '79'
-    status: +1 Lap
-    driver: rodriguez
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '7'
-    laps: '78'
-    status: +2 Laps
-    driver: surtees
-    constructor: honda
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '13'
-    laps: '77'
-    status: +3 Laps
-    driver: irwin
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '14'
-    laps: '77'
-    status: +3 Laps
-    driver: hobbs
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '15'
-    laps: '76'
-    status: +4 Laps
-    driver: rees
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '21'
-    laps: '76'
-    status: +4 Laps
-    driver: ligier
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '17'
-    laps: '67'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: rodriguez
+    constructorId: cooper-maserati
+    laps: 79
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: surtees
+    constructorId: honda
+    laps: 78
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: irwin
+    constructorId: brm
+    laps: 77
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: hobbs
+    constructorId: brm
+    laps: 77
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: rees
+    constructorId: cooper-maserati
+    laps: 76
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: ligier
+    constructorId: brabham-repco
+    laps: 76
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: anderson
+    constructorId: brabham-climax
+    laps: 67
+    time: ''
     status: Engine
-    driver: anderson
-    constructor: brabham-climax
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '2'
-    laps: '64'
+    points: 0
+  - position: 12
+    driverId: hill
+    constructorId: lotus-ford
+    laps: 64
+    time: ''
     status: Engine
-    driver: hill
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '11'
-    laps: '44'
+    points: 0
+  - position: 13
+    driverId: spence
+    constructorId: brm
+    laps: 44
+    time: ''
     status: Ignition
-    driver: spence
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '5'
-    laps: '34'
+    points: 0
+  - position: 14
+    driverId: gurney
+    constructorId: eagle-weslake
+    laps: 34
+    time: ''
     status: Clutch
-    driver: gurney
-    constructor: eagle-weslake
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '20'
-    laps: '29'
+    points: 0
+  - position: 15
+    driverId: moser
+    constructorId: cooper-ats
+    laps: 29
+    time: ''
     status: Oil pressure
-    driver: moser
-    constructor: cooper-ats
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '8'
-    laps: '26'
+    points: 0
+  - position: 16
+    driverId: rindt
+    constructorId: cooper-maserati
+    laps: 26
+    time: ''
     status: Engine
-    driver: rindt
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '12'
-    laps: '20'
+    points: 0
+  - position: 17
+    driverId: stewart
+    constructorId: brm
+    laps: 20
+    time: ''
     status: Transmission
-    driver: stewart
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '10'
-    laps: '14'
+    points: 0
+  - position: 18
+    driverId: mclaren
+    constructorId: eagle-weslake
+    laps: 14
+    time: ''
     status: Engine
-    driver: mclaren
-    constructor: eagle-weslake
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '10'
+    points: 0
+  - position: 19
+    driverId: siffert
+    constructorId: cooper-maserati
+    laps: 10
+    time: ''
     status: Engine
-    driver: siffert
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '9'
-    laps: '0'
+    points: 0
+  - position: 20
+    driverId: bonnier
+    constructorId: cooper-maserati
+    laps: 0
+    time: ''
     status: Engine
-    driver: bonnier
-    constructor: cooper-maserati
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 21
+    driverId: courage
+    constructorId: brm
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: courage
-    constructor: brm
-    time: null
-    fastestLap: null
+    points: 0

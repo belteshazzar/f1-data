@@ -1,211 +1,165 @@
-season: '1973'
-round: '12'
-session: race
+season: 1973
+round: 12
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '54'
-    status: Finished
-    driver: peterson
-    constructor: team_lotus
+  - position: 1
+    driverId: peterson
+    constructorId: team_lotus
+    laps: 54
     time: '1:28:48.780'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '7'
-    laps: '54'
     status: Finished
-    driver: stewart
-    constructor: tyrrell
+    points: 9
+  - position: 2
+    driverId: stewart
+    constructorId: tyrrell
+    laps: 54
     time: '+9.010'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '8'
-    laps: '54'
     status: Finished
-    driver: pace
-    constructor: surtees
+    points: 6
+  - position: 3
+    driverId: pace
+    constructorId: surtees
+    laps: 54
     time: '+46.640'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '5'
-    laps: '54'
     status: Finished
-    driver: reutemann
-    constructor: brabham
+    points: 4
+  - position: 4
+    driverId: reutemann
+    constructorId: brabham
+    laps: 54
     time: '+47.910'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '13'
-    laps: '54'
     status: Finished
-    driver: beltoise
-    constructor: brm
+    points: 3
+  - position: 5
+    driverId: beltoise
+    constructorId: brm
+    laps: 54
     time: '+1:21.300'
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '14'
-    laps: '54'
     status: Finished
-    driver: regazzoni
-    constructor: brm
+    points: 2
+  - position: 6
+    driverId: regazzoni
+    constructorId: brm
+    laps: 54
     time: '+1:38.400'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '6'
-    laps: '53'
-    status: +1 Lap
-    driver: merzario
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '3'
-    laps: '53'
-    status: +1 Lap
-    driver: hulme
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '23'
-    laps: '52'
-    status: +2 Laps
-    driver: lennep
-    constructor: iso_marlboro
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '15'
-    laps: '49'
-    status: +5 Laps
-    driver: hailwood
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '1'
-    laps: '48'
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: merzario
+    constructorId: ferrari
+    laps: 53
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: hulme
+    constructorId: mclaren
+    laps: 53
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: lennep
+    constructorId: iso_marlboro
+    laps: 52
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: hailwood
+    constructorId: surtees
+    laps: 49
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: emerson_fittipaldi
+    constructorId: team_lotus
+    laps: 48
+    time: ''
     status: Fuel system
-    driver: emerson_fittipaldi
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '21'
-    laps: '44'
+    points: 0
+  - position: 12
+    driverId: ganley
+    constructorId: iso_marlboro
+    laps: 44
+    time: ''
     status: Not classified
-    driver: ganley
-    constructor: iso_marlboro
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '12'
-    laps: '37'
+    points: 0
+  - position: 13
+    driverId: jarier
+    constructorId: march
+    laps: 37
+    time: ''
     status: Engine
-    driver: jarier
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '19'
-    laps: '34'
+    points: 0
+  - position: 14
+    driverId: opel
+    constructorId: ensign
+    laps: 34
+    time: ''
     status: Fuel system
-    driver: opel
-    constructor: ensign
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '16'
-    laps: '31'
+    points: 0
+  - position: 15
+    driverId: wilson_fittipaldi
+    constructorId: brabham
+    laps: 31
+    time: ''
     status: Fuel system
-    driver: wilson_fittipaldi
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '22'
-    laps: '28'
+    points: 0
+  - position: 16
+    driverId: hill
+    constructorId: shadow
+    laps: 28
+    time: ''
     status: Suspension
-    driver: hill
-    constructor: shadow
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '20'
-    laps: '23'
+    points: 0
+  - position: 17
+    driverId: follmer
+    constructorId: shadow
+    laps: 23
+    time: ''
     status: Differential
-    driver: follmer
-    constructor: shadow
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '17'
-    laps: '21'
+    points: 0
+  - position: 18
+    driverId: stommelen
+    constructorId: brabham
+    laps: 21
+    time: ''
     status: Wheel
-    driver: stommelen
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '9'
+    points: 0
+  - position: 19
+    driverId: oliver
+    constructorId: shadow
+    laps: 9
+    time: ''
     status: Fuel system
-    driver: oliver
-    constructor: shadow
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '10'
-    laps: '6'
+    points: 0
+  - position: 20
+    driverId: cevert
+    constructorId: tyrrell
+    laps: 6
+    time: ''
     status: Suspension
-    driver: cevert
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '9'
-    laps: '3'
+    points: 0
+  - position: 21
+    driverId: hunt
+    constructorId: march
+    laps: 3
+    time: ''
     status: Injection
-    driver: hunt
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '4'
-    laps: '0'
+    points: 0
+  - position: 22
+    driverId: revson
+    constructorId: mclaren
+    laps: 0
+    time: ''
     status: Clutch
-    driver: revson
-    constructor: mclaren
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '11'
-    laps: '0'
+    points: 0
+  - position: 23
+    driverId: beuttler
+    constructorId: march
+    laps: 0
+    time: ''
     status: Collision
-    driver: beuttler
-    constructor: march
-    time: null
-    fastestLap: null
+    points: 0

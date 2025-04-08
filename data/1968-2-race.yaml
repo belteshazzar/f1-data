@@ -1,130 +1,102 @@
-season: '1968'
-round: '2'
-session: race
+season: 1968
+round: 2
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '6'
-    laps: '90'
-    status: Finished
-    driver: hill
-    constructor: lotus-ford
+  - position: 1
+    driverId: hill
+    constructorId: lotus-ford
+    laps: 90
     time: '2:15:02.100'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '3'
-    laps: '90'
     status: Finished
-    driver: hulme
-    constructor: mclaren-ford
+    points: 9
+  - position: 2
+    driverId: hulme
+    constructorId: mclaren-ford
+    laps: 90
     time: '+15.900'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '13'
-    laps: '89'
-    status: +1 Lap
-    driver: redman
-    constructor: cooper-brm
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '12'
-    laps: '89'
-    status: +1 Lap
-    driver: scarfiotti
-    constructor: cooper-brm
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '5'
-    laps: '81'
-    status: +9 Laps
-    driver: beltoise
-    constructor: matra-ford
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '4'
-    laps: '77'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: redman
+    constructorId: cooper-brm
+    laps: 89
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: scarfiotti
+    constructorId: cooper-brm
+    laps: 89
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: beltoise
+    constructorId: matra-ford
+    laps: 81
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: mclaren
+    constructorId: mclaren-ford
+    laps: 77
+    time: ''
     status: Oil leak
-    driver: mclaren
-    constructor: mclaren-ford
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '7'
-    laps: '74'
+    points: 0
+  - position: 7
+    driverId: surtees
+    constructorId: honda
+    laps: 74
+    time: ''
     status: Gearbox
-    driver: surtees
-    constructor: honda
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '10'
-    laps: '62'
+    points: 0
+  - position: 8
+    driverId: siffert
+    constructorId: lotus-ford
+    laps: 62
+    time: ''
     status: Transmission
-    driver: siffert
-    constructor: lotus-ford
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '1'
-    laps: '57'
+    points: 0
+  - position: 9
+    driverId: amon
+    constructorId: ferrari
+    laps: 57
+    time: ''
     status: Fuel pump
-    driver: amon
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '11'
-    laps: '52'
+    points: 0
+  - position: 10
+    driverId: courage
+    constructorId: brm
+    laps: 52
+    time: ''
     status: Fuel pump
-    driver: courage
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '2'
-    laps: '27'
+    points: 0
+  - position: 11
+    driverId: rodriguez
+    constructorId: brm
+    laps: 27
+    time: ''
     status: Accident
-    driver: rodriguez
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '8'
-    laps: '13'
+    points: 0
+  - position: 12
+    driverId: ickx
+    constructorId: ferrari
+    laps: 13
+    time: ''
     status: Ignition
-    driver: ickx
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '9'
-    laps: '10'
+    points: 0
+  - position: 13
+    driverId: rindt
+    constructorId: brabham-repco
+    laps: 10
+    time: ''
     status: Oil pressure
-    driver: rindt
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 14
+    driverId: jack_brabham
+    constructorId: brabham-repco
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: jack_brabham
-    constructor: brabham-repco
-    time: null
-    fastestLap: null
+    points: 0

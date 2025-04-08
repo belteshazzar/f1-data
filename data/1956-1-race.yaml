@@ -1,148 +1,116 @@
-season: '1956'
-round: '1'
-session: race
+season: 1956
+round: 1
+session: Race
 results:
-  - position: '1'
-    points: '5'
-    grid: '3'
-    laps: '98'
-    status: Finished
-    driver: fangio
-    constructor: ferrari
+  - position: 1
+    driverId: fangio
+    constructorId: ferrari
+    laps: 98
     time: '3:00:03.700'
-    fastestLap: null
-  - position: '1'
-    points: '4'
-    grid: '3'
-    laps: '98'
     status: Finished
-    driver: musso
-    constructor: ferrari
+    points: 5
+  - position: 1
+    driverId: musso
+    constructorId: ferrari
+    laps: 98
     time: '3:00:03.700'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '4'
-    laps: '98'
     status: Finished
-    driver: behra
-    constructor: maserati
+    points: 4
+  - position: 2
+    driverId: behra
+    constructorId: maserati
+    laps: 98
     time: '+24.400'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '8'
-    laps: '96'
-    status: +2 Laps
-    driver: hawthorn
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '1.5'
-    grid: '11'
-    laps: '92'
-    status: +6 Laps
-    driver: landi
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '4'
-    points: '1.5'
-    grid: '11'
-    laps: '92'
-    status: +6 Laps
-    driver: gerini
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '10'
-    laps: '91'
-    status: +7 Laps
-    driver: gendebien
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '13'
-    laps: '88'
-    status: +10 Laps
-    driver: oscar_gonzalez
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '13'
-    laps: '88'
-    status: +10 Laps
-    driver: uria
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '7'
-    laps: '81'
+    status: Finished
+    points: 6
+  - position: 3
+    driverId: hawthorn
+    constructorId: maserati
+    laps: 96
+    time: ''
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: landi
+    constructorId: maserati
+    laps: 92
+    time: ''
+    status: Finished
+    points: 1.5
+  - position: 4
+    driverId: gerini
+    constructorId: maserati
+    laps: 92
+    time: ''
+    status: Finished
+    points: 1.5
+  - position: 5
+    driverId: gendebien
+    constructorId: ferrari
+    laps: 91
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: oscar_gonzalez
+    constructorId: maserati
+    laps: 88
+    time: ''
+    status: Finished
+    points: 0
+  - position: 6
+    driverId: uria
+    constructorId: maserati
+    laps: 88
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: moss
+    constructorId: maserati
+    laps: 81
+    time: ''
     status: Engine
-    driver: moss
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '9'
-    laps: '58'
+    points: 0
+  - position: 8
+    driverId: collins
+    constructorId: ferrari
+    laps: 58
+    time: ''
     status: Accident
-    driver: collins
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '12'
-    laps: '57'
+    points: 0
+  - position: 9
+    driverId: piotti
+    constructorId: maserati
+    laps: 57
+    time: ''
     status: Accident
-    driver: piotti
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '6'
-    laps: '42'
+    points: 0
+  - position: 10
+    driverId: menditeguy
+    constructorId: maserati
+    laps: 42
+    time: ''
     status: Halfshaft
-    driver: menditeguy
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '2'
-    laps: '40'
+    points: 0
+  - position: 11
+    driverId: castellotti
+    constructorId: ferrari
+    laps: 40
+    time: ''
     status: Gearbox
-    driver: castellotti
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '5'
-    laps: '24'
+    points: 0
+  - position: 12
+    driverId: gonzalez
+    constructorId: maserati
+    laps: 24
+    time: ''
     status: Engine
-    driver: gonzalez
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '1'
-    laps: '22'
+    points: 0
+  - position: 13
+    driverId: fangio
+    constructorId: ferrari
+    laps: 22
+    time: ''
     status: Fuel pump
-    driver: fangio
-    constructor: ferrari
-    time: null
-    fastestLap: null
+    points: 0

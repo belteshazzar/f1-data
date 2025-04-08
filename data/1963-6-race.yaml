@@ -1,229 +1,179 @@
-season: '1963'
-round: '6'
-session: race
+season: 1963
+round: 6
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '15'
-    status: Finished
-    driver: surtees
-    constructor: ferrari
+  - position: 1
+    driverId: surtees
+    constructorId: ferrari
+    laps: 15
     time: '2:13:06.800'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '1'
-    laps: '15'
     status: Finished
-    driver: clark
-    constructor: lotus-climax
+    points: 9
+  - position: 2
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 15
     time: '+1:17.500'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '6'
-    laps: '15'
     status: Finished
-    driver: ginther
-    constructor: brm
+    points: 6
+  - position: 3
+    driverId: ginther
+    constructorId: brm
+    laps: 15
     time: '+2:44.900'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '15'
-    laps: '15'
     status: Finished
-    driver: mitter
-    constructor: porsche
+    points: 4
+  - position: 4
+    driverId: mitter
+    constructorId: porsche
+    laps: 15
     time: '+8:11.500'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '16'
-    laps: '14'
-    status: +1 Lap
-    driver: hall
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '12'
-    laps: '14'
-    status: +1 Lap
-    driver: bonnier
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '14'
-    status: +1 Lap
-    driver: jack_brabham
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '18'
-    laps: '14'
-    status: +1 Lap
-    driver: trevor_taylor
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '9'
-    laps: '10'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: hall
+    constructorId: lotus-brm
+    laps: 14
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: bonnier
+    constructorId: cooper-climax
+    laps: 14
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: jack_brabham
+    constructorId: brabham
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: trevor_taylor
+    constructorId: lotus-climax
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: siffert
+    constructorId: lotus-brm
+    laps: 10
+    time: ''
     status: Differential
-    driver: siffert
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '21'
-    laps: '10'
-    status: +5 Laps
-    driver: collomb
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '17'
-    laps: '9'
+    points: 0
+  - position: 10
+    driverId: collomb
+    constructorId: lotus-climax
+    laps: 10
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: beaufort
+    constructorId: porsche
+    laps: 9
+    time: ''
     status: Wheel
-    driver: beaufort
-    constructor: porsche
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '10'
-    laps: '7'
+    points: 0
+  - position: 12
+    driverId: maggs
+    constructorId: cooper-climax
+    laps: 7
+    time: ''
     status: Engine
-    driver: maggs
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '13'
-    laps: '6'
+    points: 0
+  - position: 13
+    driverId: gurney
+    constructorId: brabham
+    laps: 6
+    time: ''
     status: Gearbox
-    driver: gurney
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '20'
-    laps: '6'
+    points: 0
+  - position: 14
+    driverId: cabral
+    constructorId: cooper-climax
+    laps: 6
+    time: ''
     status: Gearbox
-    driver: cabral
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '19'
-    laps: '5'
+    points: 0
+  - position: 15
+    driverId: burgess
+    constructorId: scirocco
+    laps: 5
+    time: ''
     status: Steering
-    driver: burgess
-    constructor: scirocco
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '22'
-    laps: '5'
+    points: 0
+  - position: 16
+    driverId: settember
+    constructorId: scirocco
+    laps: 5
+    time: ''
     status: Accident
-    driver: settember
-    constructor: scirocco
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '5'
-    laps: '3'
+    points: 0
+  - position: 17
+    driverId: mclaren
+    constructorId: cooper-climax
+    laps: 3
+    time: ''
     status: Accident
-    driver: mclaren
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '4'
-    laps: '2'
+    points: 0
+  - position: 18
+    driverId: hill
+    constructorId: brm
+    laps: 2
+    time: ''
     status: Gearbox
-    driver: hill
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '14'
-    laps: '1'
+    points: 0
+  - position: 19
+    driverId: amon
+    constructorId: lola
+    laps: 1
+    time: ''
     status: Accident
-    driver: amon
-    constructor: lola
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '7'
-    laps: '1'
+    points: 0
+  - position: 20
+    driverId: mairesse
+    constructorId: ferrari
+    laps: 1
+    time: ''
     status: Accident
-    driver: mairesse
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '11'
-    laps: '1'
+    points: 0
+  - position: 21
+    driverId: ireland
+    constructorId: lotus-brm
+    laps: 1
+    time: ''
     status: Accident
-    driver: ireland
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '3'
-    laps: '0'
+    points: 0
+  - position: 22
+    driverId: bandini
+    constructorId: brm
+    laps: 0
+    time: ''
     status: Accident
-    driver: bandini
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '27'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 27
+    driverId: phil_hill
+    constructorId: ats
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: phil_hill
-    constructor: ats
-    time: null
-    fastestLap: null
-  - position: '28'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 28
+    driverId: baghetti
+    constructorId: ats
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: baghetti
-    constructor: ats
-    time: null
-    fastestLap: null
-  - position: '29'
-    points: '0'
-    grid: '0'
-    laps: '0'
+    points: 0
+  - position: 29
+    driverId: gregory
+    constructorId: lotus-brm
+    laps: 0
+    time: ''
     status: Withdrew
-    driver: gregory
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
+    points: 0

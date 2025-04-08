@@ -1,211 +1,165 @@
-season: '1950'
-round: '1'
-session: race
+season: 1950
+round: 1
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '70'
-    status: Finished
-    driver: farina
-    constructor: alfa
+  - position: 1
+    driverId: farina
+    constructorId: alfa
+    laps: 70
     time: '2:13:23.600'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '2'
-    laps: '70'
     status: Finished
-    driver: fagioli
-    constructor: alfa
+    points: 9
+  - position: 2
+    driverId: fagioli
+    constructorId: alfa
+    laps: 70
     time: '+2.600'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '4'
-    laps: '70'
     status: Finished
-    driver: reg_parnell
-    constructor: alfa
+    points: 6
+  - position: 3
+    driverId: reg_parnell
+    constructorId: alfa
+    laps: 70
     time: '+52.000'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '6'
-    laps: '68'
-    status: +2 Laps
-    driver: cabantous
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '9'
-    laps: '68'
-    status: +2 Laps
-    driver: rosier
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '13'
-    laps: '67'
-    status: +3 Laps
-    driver: gerard
-    constructor: era
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '15'
-    laps: '67'
-    status: +3 Laps
-    driver: harrison
-    constructor: era
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '14'
-    laps: '65'
-    status: +5 Laps
-    driver: etancelin
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '16'
-    laps: '64'
-    status: +6 Laps
-    driver: hampshire
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '20'
-    laps: '64'
-    status: +6 Laps
-    driver: fry
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '20'
-    laps: '64'
-    status: +6 Laps
-    driver: shawe_taylor
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '21'
-    laps: '64'
-    status: +6 Laps
-    driver: claes
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '3'
-    laps: '62'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: cabantous
+    constructorId: lago
+    laps: 68
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: rosier
+    constructorId: lago
+    laps: 68
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: gerard
+    constructorId: era
+    laps: 67
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: harrison
+    constructorId: era
+    laps: 67
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: etancelin
+    constructorId: lago
+    laps: 65
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: hampshire
+    constructorId: maserati
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: fry
+    constructorId: maserati
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: shawe_taylor
+    constructorId: maserati
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: claes
+    constructorId: lago
+    laps: 64
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: fangio
+    constructorId: alfa
+    laps: 62
+    time: ''
     status: Oil leak
-    driver: fangio
-    constructor: alfa
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '19'
-    laps: '57'
+    points: 0
+  - position: 13
+    driverId: kelly
+    constructorId: alta
+    laps: 57
+    time: ''
     status: Not classified
-    driver: kelly
-    constructor: alta
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '5'
-    laps: '49'
+    points: 0
+  - position: 14
+    driverId: bira
+    constructorId: maserati
+    laps: 49
+    time: ''
     status: Out of fuel
-    driver: bira
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '18'
-    laps: '44'
+    points: 0
+  - position: 15
+    driverId: murray
+    constructorId: maserati
+    laps: 44
+    time: ''
     status: Engine
-    driver: murray
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '17'
-    laps: '43'
+    points: 0
+  - position: 16
+    driverId: crossley
+    constructorId: alta
+    laps: 43
+    time: ''
     status: Transmission
-    driver: crossley
-    constructor: alta
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '8'
-    laps: '36'
+    points: 0
+  - position: 17
+    driverId: graffenried
+    constructorId: maserati
+    laps: 36
+    time: ''
     status: Engine
-    driver: graffenried
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '11'
-    laps: '26'
+    points: 0
+  - position: 18
+    driverId: chiron
+    constructorId: maserati
+    laps: 26
+    time: ''
     status: Clutch
-    driver: chiron
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '7'
-    laps: '8'
+    points: 0
+  - position: 19
+    driverId: martin
+    constructorId: lago
+    laps: 8
+    time: ''
     status: Oil pressure
-    driver: martin
-    constructor: lago
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '10'
-    laps: '5'
+    points: 0
+  - position: 20
+    driverId: rolt
+    constructorId: era
+    laps: 5
+    time: ''
     status: Gearbox
-    driver: rolt
-    constructor: era
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '10'
-    laps: '5'
+    points: 0
+  - position: 20
+    driverId: peter_walker
+    constructorId: era
+    laps: 5
+    time: ''
     status: Gearbox
-    driver: peter_walker
-    constructor: era
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '12'
-    laps: '2'
+    points: 0
+  - position: 21
+    driverId: leslie_johnson
+    constructorId: era
+    laps: 2
+    time: ''
     status: Supercharger
-    driver: leslie_johnson
-    constructor: era
-    time: null
-    fastestLap: null
+    points: 0

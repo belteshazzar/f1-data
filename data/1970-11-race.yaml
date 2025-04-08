@@ -1,184 +1,144 @@
-season: '1970'
-round: '11'
-session: race
+season: 1970
+round: 11
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '2'
-    laps: '90'
-    status: Finished
-    driver: ickx
-    constructor: ferrari
+  - position: 1
+    driverId: ickx
+    constructorId: ferrari
+    laps: 90
     time: '1:21:18.400'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '3'
-    laps: '90'
     status: Finished
-    driver: regazzoni
-    constructor: ferrari
+    points: 9
+  - position: 2
+    driverId: regazzoni
+    constructorId: ferrari
+    laps: 90
     time: '+14.800'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '6'
-    laps: '90'
     status: Finished
-    driver: amon
-    constructor: march
+    points: 6
+  - position: 3
+    driverId: amon
+    constructorId: march
+    laps: 90
     time: '+57.900'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '7'
-    laps: '89'
-    status: +1 Lap
-    driver: rodriguez
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '5'
-    laps: '89'
-    status: +1 Lap
-    driver: surtees
-    constructor: surtees
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '11'
-    laps: '88'
-    status: +2 Laps
-    driver: gethin
-    constructor: mclaren-ford
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '8'
-    laps: '87'
-    status: +3 Laps
-    driver: pescarolo
-    constructor: matra
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '13'
-    laps: '85'
+    status: Finished
+    points: 4
+  - position: 4
+    driverId: rodriguez
+    constructorId: brm
+    laps: 89
+    time: ''
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: surtees
+    constructorId: surtees
+    laps: 89
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: gethin
+    constructorId: mclaren-ford
+    laps: 88
+    time: ''
+    status: Finished
+    points: 1
+  - position: 7
+    driverId: pescarolo
+    constructorId: matra
+    laps: 87
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: beltoise
+    constructorId: matra
+    laps: 85
+    time: ''
     status: Clutch
-    driver: beltoise
-    constructor: matra
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '4'
-    laps: '85'
-    status: +5 Laps
-    driver: cevert
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '9'
-    laps: '85'
-    status: +5 Laps
-    driver: eaton
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '17'
-    laps: '79'
+    points: 0
+  - position: 9
+    driverId: cevert
+    constructorId: march
+    laps: 85
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: eaton
+    constructorId: brm
+    laps: 85
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: schenken
+    constructorId: tomaso
+    laps: 79
+    time: ''
     status: Not classified
-    driver: schenken
-    constructor: tomaso
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '20'
-    laps: '77'
+    points: 0
+  - position: 12
+    driverId: hill
+    constructorId: team_lotus
+    laps: 77
+    time: ''
     status: Not classified
-    driver: hill
-    constructor: team_lotus
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '12'
-    laps: '69'
+    points: 0
+  - position: 13
+    driverId: adamich
+    constructorId: mclaren-alfa_romeo
+    laps: 69
+    time: ''
     status: Oil pressure
-    driver: adamich
-    constructor: mclaren-alfa_romeo
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '16'
-    laps: '65'
+    points: 0
+  - position: 14
+    driverId: peterson
+    constructorId: march
+    laps: 65
+    time: ''
     status: Not classified
-    driver: peterson
-    constructor: march
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '15'
-    laps: '58'
+    points: 0
+  - position: 15
+    driverId: hulme
+    constructorId: mclaren-ford
+    laps: 58
+    time: ''
     status: Engine
-    driver: hulme
-    constructor: mclaren-ford
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '19'
-    laps: '57'
+    points: 0
+  - position: 16
+    driverId: jack_brabham
+    constructorId: brabham
+    laps: 57
+    time: ''
     status: Oil leak
-    driver: jack_brabham
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '10'
-    laps: '52'
+    points: 0
+  - position: 17
+    driverId: oliver
+    constructorId: brm
+    laps: 52
+    time: ''
     status: Not classified
-    driver: oliver
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '1'
-    laps: '31'
+    points: 0
+  - position: 18
+    driverId: stewart
+    constructorId: tyrrell
+    laps: 31
+    time: ''
     status: Axle
-    driver: stewart
-    constructor: tyrrell
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '22'
+    points: 0
+  - position: 19
+    driverId: stommelen
+    constructorId: brabham
+    laps: 22
+    time: ''
     status: Handling
-    driver: stommelen
-    constructor: brabham
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '14'
-    laps: '21'
+    points: 0
+  - position: 20
+    driverId: siffert
+    constructorId: march
+    laps: 21
+    time: ''
     status: Engine
-    driver: siffert
-    constructor: march
-    time: null
-    fastestLap: null
+    points: 0

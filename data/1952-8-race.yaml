@@ -1,220 +1,172 @@
-season: '1952'
-round: '8'
-session: race
+season: 1952
+round: 8
+session: Race
 results:
-  - position: '1'
-    points: '8.5'
-    grid: '1'
-    laps: '80'
-    status: Finished
-    driver: ascari
-    constructor: ferrari
+  - position: 1
+    driverId: ascari
+    constructorId: ferrari
+    laps: 80
     time: '2:50:45.600'
-    fastestLap: null
-  - position: '2'
-    points: '6.5'
-    grid: '5'
-    laps: '80'
     status: Finished
-    driver: gonzalez
-    constructor: maserati
+    points: 8.5
+  - position: 2
+    driverId: gonzalez
+    constructorId: maserati
+    laps: 80
     time: '+1:01.800'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '2'
-    laps: '80'
     status: Finished
-    driver: villoresi
-    constructor: ferrari
+    points: 6.5
+  - position: 3
+    driverId: villoresi
+    constructorId: ferrari
+    laps: 80
     time: '+2:04.200'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '3'
-    laps: '80'
     status: Finished
-    driver: farina
-    constructor: ferrari
+    points: 4
+  - position: 4
+    driverId: farina
+    constructorId: ferrari
+    laps: 80
     time: '+2:11.400'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '13'
-    laps: '79'
-    status: +1 Lap
-    driver: bonetto
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '6'
-    points: '0'
-    grid: '8'
-    laps: '79'
-    status: +1 Lap
-    driver: simon
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '6'
-    laps: '77'
-    status: +3 Laps
-    driver: taruffi
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '18'
-    laps: '76'
-    status: +4 Laps
-    driver: landi
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '15'
-    laps: '76'
-    status: +4 Laps
-    driver: wharton
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '17'
-    laps: '75'
-    status: +5 Laps
-    driver: rosier
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '23'
-    laps: '75'
-    status: +5 Laps
-    driver: cantoni
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '19'
-    laps: '74'
-    status: +6 Laps
-    driver: poore
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '20'
-    laps: '73'
-    status: +7 Laps
-    driver: brandon
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '7'
-    laps: '71'
-    status: +9 Laps
-    driver: manzon
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '12'
-    laps: '68'
-    status: +12 Laps
-    driver: alan_brown
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '1'
-    laps: '60'
+    status: Finished
+    points: 3
+  - position: 5
+    driverId: bonetto
+    constructorId: maserati
+    laps: 79
+    time: ''
+    status: Finished
+    points: 2
+  - position: 6
+    driverId: simon
+    constructorId: ferrari
+    laps: 79
+    time: ''
+    status: Finished
+    points: 0
+  - position: 7
+    driverId: taruffi
+    constructorId: ferrari
+    laps: 77
+    time: ''
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: landi
+    constructorId: maserati
+    laps: 76
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: wharton
+    constructorId: cooper
+    laps: 76
+    time: ''
+    status: Finished
+    points: 0
+  - position: 10
+    driverId: rosier
+    constructorId: ferrari
+    laps: 75
+    time: ''
+    status: Finished
+    points: 0
+  - position: 11
+    driverId: cantoni
+    constructorId: maserati
+    laps: 75
+    time: ''
+    status: Finished
+    points: 0
+  - position: 12
+    driverId: poore
+    constructorId: connaught
+    laps: 74
+    time: ''
+    status: Finished
+    points: 0
+  - position: 13
+    driverId: brandon
+    constructorId: cooper
+    laps: 73
+    time: ''
+    status: Finished
+    points: 0
+  - position: 14
+    driverId: manzon
+    constructorId: gordini
+    laps: 71
+    time: ''
+    status: Finished
+    points: 0
+  - position: 15
+    driverId: alan_brown
+    constructorId: cooper
+    laps: 68
+    time: ''
+    status: Finished
+    points: 0
+  - position: 16
+    driverId: moss
+    constructorId: connaught
+    laps: 60
+    time: ''
     status: Suspension
-    driver: moss
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '25'
-    laps: '46'
+    points: 0
+  - position: 17
+    driverId: bianco
+    constructorId: maserati
+    laps: 46
+    time: ''
     status: Engine
-    driver: bianco
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '11'
-    laps: '42'
+    points: 0
+  - position: 18
+    driverId: behra
+    constructorId: gordini
+    laps: 42
+    time: ''
     status: Engine
-    driver: behra
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '12'
-    laps: '38'
+    points: 0
+  - position: 19
+    driverId: hawthorn
+    constructorId: cooper
+    laps: 38
+    time: ''
     status: Not classified
-    driver: hawthorn
-    constructor: cooper
-    time: null
-    fastestLap: null
-  - position: '20'
-    points: '0'
-    grid: '16'
-    laps: '24'
+    points: 0
+  - position: 20
+    driverId: rol
+    constructorId: maserati
+    laps: 24
+    time: ''
     status: Engine
-    driver: rol
-    constructor: maserati
-    time: null
-    fastestLap: null
-  - position: '21'
-    points: '0'
-    grid: '4'
-    laps: '5'
+    points: 0
+  - position: 21
+    driverId: trintignant
+    constructorId: gordini
+    laps: 5
+    time: ''
     status: Engine
-    driver: trintignant
-    constructor: gordini
-    time: null
-    fastestLap: null
-  - position: '22'
-    points: '0'
-    grid: '2'
-    laps: '4'
+    points: 0
+  - position: 22
+    driverId: mcalpine
+    constructorId: connaught
+    laps: 4
+    time: ''
     status: Suspension
-    driver: mcalpine
-    constructor: connaught
-    time: null
-    fastestLap: null
-  - position: '23'
-    points: '0'
-    grid: '16'
-    laps: '3'
+    points: 0
+  - position: 23
+    driverId: fischer
+    constructorId: ferrari
+    laps: 3
+    time: ''
     status: Engine
-    driver: fischer
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '24'
-    points: '0'
-    grid: '10'
-    laps: '0'
+    points: 0
+  - position: 24
+    driverId: bayol
+    constructorId: osca
+    laps: 0
+    time: ''
     status: Gearbox
-    driver: bayol
-    constructor: osca
-    time: null
-    fastestLap: null
+    points: 0

@@ -1,175 +1,137 @@
-season: '1965'
-round: '7'
-session: race
+season: 1965
+round: 7
+session: Race
 results:
-  - position: '1'
-    points: '9'
-    grid: '1'
-    laps: '15'
-    status: Finished
-    driver: clark
-    constructor: lotus-climax
+  - position: 1
+    driverId: clark
+    constructorId: lotus-climax
+    laps: 15
     time: '2:07:52.400'
-    fastestLap: null
-  - position: '2'
-    points: '6'
-    grid: '3'
-    laps: '15'
     status: Finished
-    driver: hill
-    constructor: brm
+    points: 9
+  - position: 2
+    driverId: hill
+    constructorId: brm
+    laps: 15
     time: '+15.900'
-    fastestLap: null
-  - position: '3'
-    points: '4'
-    grid: '5'
-    laps: '15'
     status: Finished
-    driver: gurney
-    constructor: brabham-climax
+    points: 6
+  - position: 3
+    driverId: gurney
+    constructorId: brabham-climax
+    laps: 15
     time: '+21.400'
-    fastestLap: null
-  - position: '4'
-    points: '3'
-    grid: '8'
-    laps: '15'
     status: Finished
-    driver: rindt
-    constructor: cooper-climax
+    points: 4
+  - position: 4
+    driverId: rindt
+    constructorId: cooper-climax
+    laps: 15
     time: '+3:29.600'
-    fastestLap: null
-  - position: '5'
-    points: '2'
-    grid: '14'
-    laps: '15'
     status: Finished
-    driver: jack_brabham
-    constructor: brabham-climax
+    points: 3
+  - position: 5
+    driverId: jack_brabham
+    constructorId: brabham-climax
+    laps: 15
     time: '+4:41.200'
-    fastestLap: null
-  - position: '6'
-    points: '1'
-    grid: '7'
-    laps: '15'
     status: Finished
-    driver: bandini
-    constructor: ferrari
+    points: 2
+  - position: 6
+    driverId: bandini
+    constructorId: ferrari
+    laps: 15
     time: '+5:08.600'
-    fastestLap: null
-  - position: '7'
-    points: '0'
-    grid: '9'
-    laps: '15'
     status: Finished
-    driver: bonnier
-    constructor: brabham-climax
+    points: 1
+  - position: 7
+    driverId: bonnier
+    constructorId: brabham-climax
+    laps: 15
     time: '+5:58.500'
-    fastestLap: null
-  - position: '8'
-    points: '0'
-    grid: '19'
-    laps: '14'
-    status: +1 Lap
-    driver: gregory
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '9'
-    points: '0'
-    grid: '4'
-    laps: '11'
+    status: Finished
+    points: 0
+  - position: 8
+    driverId: gregory
+    constructorId: brm
+    laps: 14
+    time: ''
+    status: Finished
+    points: 0
+  - position: 9
+    driverId: surtees
+    constructorId: ferrari
+    laps: 11
+    time: ''
     status: Gearbox
-    driver: surtees
-    constructor: ferrari
-    time: null
-    fastestLap: null
-  - position: '10'
-    points: '0'
-    grid: '11'
-    laps: '9'
+    points: 0
+  - position: 10
+    driverId: siffert
+    constructorId: brabham-brm
+    laps: 9
+    time: ''
     status: Engine
-    driver: siffert
-    constructor: brabham-brm
-    time: null
-    fastestLap: null
-  - position: '11'
-    points: '0'
-    grid: '6'
-    laps: '8'
+    points: 0
+  - position: 11
+    driverId: spence
+    constructorId: lotus-climax
+    laps: 8
+    time: ''
     status: Transmission
-    driver: spence
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '12'
-    points: '0'
-    grid: '12'
-    laps: '8'
+    points: 0
+  - position: 12
+    driverId: mitter
+    constructorId: lotus-climax
+    laps: 8
+    time: ''
     status: Water leak
-    driver: mitter
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '13'
-    points: '0'
-    grid: '17'
-    laps: '8'
+    points: 0
+  - position: 13
+    driverId: attwood
+    constructorId: lotus-brm
+    laps: 8
+    time: ''
     status: Water leak
-    driver: attwood
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '14'
-    points: '0'
-    grid: '10'
-    laps: '7'
+    points: 0
+  - position: 14
+    driverId: mclaren
+    constructorId: cooper-climax
+    laps: 7
+    time: ''
     status: Gearbox
-    driver: mclaren
-    constructor: cooper-climax
-    time: null
-    fastestLap: null
-  - position: '15'
-    points: '0'
-    grid: '13'
-    laps: '5'
+    points: 0
+  - position: 15
+    driverId: hulme
+    constructorId: brabham-climax
+    laps: 5
+    time: ''
     status: Fuel leak
-    driver: hulme
-    constructor: brabham-climax
-    time: null
-    fastestLap: null
-  - position: '16'
-    points: '0'
-    grid: '16'
-    laps: '3'
+    points: 0
+  - position: 16
+    driverId: amon
+    constructorId: lotus-brm
+    laps: 3
+    time: ''
     status: Electrical
-    driver: amon
-    constructor: lotus-brm
-    time: null
-    fastestLap: null
-  - position: '17'
-    points: '0'
-    grid: '20'
-    laps: '3'
+    points: 0
+  - position: 17
+    driverId: hawkins
+    constructorId: lotus-climax
+    laps: 3
+    time: ''
     status: Oil leak
-    driver: hawkins
-    constructor: lotus-climax
-    time: null
-    fastestLap: null
-  - position: '18'
-    points: '0'
-    grid: '2'
-    laps: '2'
+    points: 0
+  - position: 18
+    driverId: stewart
+    constructorId: brm
+    laps: 2
+    time: ''
     status: Suspension
-    driver: stewart
-    constructor: brm
-    time: null
-    fastestLap: null
-  - position: '19'
-    points: '0'
-    grid: '18'
-    laps: '0'
+    points: 0
+  - position: 19
+    driverId: gardner
+    constructorId: brabham-brm
+    laps: 0
+    time: ''
     status: Gearbox
-    driver: gardner
-    constructor: brabham-brm
-    time: null
-    fastestLap: null
+    points: 0
