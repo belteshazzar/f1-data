@@ -506,11 +506,11 @@ function getSessionFromF1Grid(values) {
 
       const country = race.circuit.location.country.toLowerCase()
       if (f1raceCountry != country) {
-        throw new Error(`country mismatch: ${country} != ${f1raceCountry}`)
+        console.warn(`country mismatch: ${country} != ${f1raceCountry}`)
       }
 
       const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/starting-grid`
-      const filename = `data/${values.year}-${values.round}-grid.yaml`
+      const filename = `data/${values.year}-${values.round}-race-grid.yaml`
 
       console.log(`\nGetting grid for round ${values.round} of ${values.year}`);
       console.log(`- url: ${url}`)
@@ -531,6 +531,8 @@ function getSessionFromF1Grid(values) {
             results: [],
           }
 
+          let errors = []
+
           $('table.f1-table > tbody > tr').each(function() {
             const result = {}
 
@@ -538,25 +540,32 @@ function getSessionFromF1Grid(values) {
             result.position = $(tds[0]).text()*1
 
             const driverCode = $(tds[2]).find('span:nth(2)').text()
-            const driver = drivers.drivers.find(d => d.code == driverCode)
+            const driver = drivers.drivers.find(d => d.driverCode3 == driverCode)
             if (!driver) {
-              throw new Error(`driver not found: ${driverCode}`)
+              errors.push(`driver not found: ${driverCode}`)
+            } else {
+             result.driverId = driver.driverId
             }
-            result.driverId = driver.driverId
 
             const constructorName = $(tds[3]).text()
             const constructor = constructors.constructors.find(d => {
               return d.knownAs.find(knownAs => knownAs == constructorName)
             })
             if (!constructor) {
-              throw new Error(`constructor not found: ${constructorName}`)
+              errors.push(`constructor not found: ${constructorName}`)
+            } else {
+              result.constructorId = constructor.constructorId
             }
-            result.constructorId = constructor.constructorId
-
             data.results.push(result);
           });
 
-          fs.writeFileSync(filename, yaml.dump(data));
+          if (errors.length > 0) {
+            return Array.from(new Set(errors)).sort().forEach(error => {
+              console.error(error)
+            })
+          } else {
+            fs.writeFileSync(filename, yaml.dump(data));
+          }
         });
     })
 }
