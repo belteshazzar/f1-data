@@ -1,84 +1,64 @@
 season: 2023
 round: 7
-session: Race
-positions:
+session: grid
+results:
   - position: 1
     driverId: max_verstappen
     constructorId: red_bull
-    note: ''
   - position: 2
-    driverId: sainz
-    constructorId: ferrari
-    note: ''
-  - position: 3
-    driverId: norris
-    constructorId: mclaren
-    note: ''
-  - position: 4
-    driverId: hamilton
-    constructorId: mercedes
-    note: ''
-  - position: 5
-    driverId: stroll
-    constructorId: aston_martin
-    note: ''
-  - position: 6
-    driverId: ocon
-    constructorId: alpine
-    note: ''
-  - position: 7
-    driverId: hulkenberg
-    constructorId: haas
-    note: ''
-  - position: 8
     driverId: alonso
     constructorId: aston_martin
-    note: ''
-  - position: 9
-    driverId: piastri
-    constructorId: mclaren
-    note: ''
-  - position: 10
+  - position: 3
+    driverId: ocon
+    constructorId: alpine
+  - position: 4
+    driverId: sainz
+    constructorId: ferrari
+  - position: 5
+    driverId: hamilton
+    constructorId: mercedes
+  - position: 6
+    driverId: leclerc
+    constructorId: ferrari
+  - position: 7
     driverId: gasly
     constructorId: alpine
-    note: ''
-  - position: 11
-    driverId: perez
-    constructorId: red_bull
-    note: ''
-  - position: 12
+  - position: 8
     driverId: russell
     constructorId: mercedes
-    note: ''
-  - position: 13
-    driverId: zhou
-    constructorId: alfa
-    note: ''
-  - position: 14
-    driverId: de_vries
-    constructorId: alphatauri
-    note: ''
-  - position: 15
+  - position: 9
     driverId: tsunoda
     constructorId: alphatauri
-    note: ''
-  - position: 16
+  - position: 10
+    driverId: norris
+    constructorId: mclaren
+  - position: 11
+    driverId: piastri
+    constructorId: mclaren
+  - position: 12
+    driverId: de_vries
+    constructorId: alphatauri
+  - position: 13
+    driverId: albon
+    constructorId: williams
+  - position: 14
+    driverId: stroll
+    constructorId: aston_martin
+  - position: 15
     driverId: bottas
     constructorId: alfa
-    note: ''
+  - position: 16
+    driverId: sargeant
+    constructorId: williams
   - position: 17
     driverId: kevin_magnussen
     constructorId: haas
-    note: ''
   - position: 18
-    driverId: albon
-    constructorId: williams
-    note: ''
+    driverId: hulkenberg
+    constructorId: haas
   - position: 19
-    driverId: leclerc
-    constructorId: ferrari
-    note: ''
+    driverId: zhou
+    constructorId: alfa
   - position: 20
-    driverId: sargeant
-    constructorId: williams
-    note: ''
+    driverId: perez
+    constructorId: red_bull
