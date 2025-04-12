@@ -1,88 +1,88 @@
-season: '1997'
+season: 1997
 races:
   - round: 1
     type: race
-    raceName: Australian Grand Prix
+    name: Australian Grand Prix
     raceCode3: AUS
     flag: 🇦🇺
   - round: 2
     type: race
-    raceName: Brazilian Grand Prix
+    name: Brazilian Grand Prix
     raceCode3: BRA
     flag: 🇧🇷
   - round: 3
     type: race
-    raceName: Argentine Grand Prix
+    name: Argentine Grand Prix
     raceCode3: ARG
     flag: 🇦🇷
   - round: 4
     type: race
-    raceName: San Marino Grand Prix
+    name: San Marino Grand Prix
     raceCode3: SMR
     flag: 🇮🇹
   - round: 5
     type: race
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
     flag: 🇲🇨
   - round: 6
     type: race
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
     flag: 🇪🇸
   - round: 7
     type: race
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
     flag: 🇨🇦
   - round: 8
     type: race
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
     flag: 🇫🇷
   - round: 9
     type: race
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
     flag: 🇬🇧
   - round: 10
     type: race
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
     flag: 🇩🇪
   - round: 11
     type: race
-    raceName: Hungarian Grand Prix
+    name: Hungarian Grand Prix
     raceCode3: HUN
     flag: 🇭🇺
   - round: 12
     type: race
-    raceName: Belgian Grand Prix
+    name: Belgian Grand Prix
     raceCode3: BEL
     flag: 🇧🇪
   - round: 13
     type: race
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
     flag: 🇮🇹
   - round: 14
     type: race
-    raceName: Austrian Grand Prix
+    name: Austrian Grand Prix
     raceCode3: AUT
     flag: 🇦🇹
   - round: 15
     type: race
-    raceName: Luxembourg Grand Prix
+    name: Luxembourg Grand Prix
     raceCode3: LUX
     flag: 🇩🇪
   - round: 16
     type: race
-    raceName: Japanese Grand Prix
+    name: Japanese Grand Prix
     raceCode3: JPN
     flag: 🇯🇵
   - round: 17
     type: race
-    raceName: European Grand Prix
+    name: European Grand Prix
     raceCode3: EUR
     flag: 🇪🇸
 drivers:
@@ -91,109 +91,109 @@ drivers:
     givenName: Jean
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: ALE
+    countryCode3: FRA
+    driverCode3: ALE
     results:
       - position: 14
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 0
         standing: 14
       - position: 6
         points: 1
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 1
         standing: 8
       - position: 7
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 1
         standing: 10
       - position: 5
         points: 2
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 3
         standing: 12
       - position: 14
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 3
         standing: 13
       - position: 3
         points: 4
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 7
         standing: 9
       - position: 2
         points: 6
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 13
         standing: 6
       - position: 5
         points: 2
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 15
         standing: 6
       - position: 2
         points: 6
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 21
         standing: 3
       - position: 6
         points: 1
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 22
         standing: 3
       - position: 11
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 22
         standing: 3
       - position: 8
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 22
         standing: 4
       - position: 2
         points: 6
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 28
         standing: 3
       - position: 20
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 28
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 34
         standing: 4
       - position: 5
         points: 2
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 36
         standing: 4
       - position: 13
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 36
         standing: 5
   - driverId: barrichello
@@ -201,109 +201,109 @@ drivers:
     givenName: Rubens
     flag: 🇧🇷
     number: -1
-    country3: BRA
-    code: BAR
+    countryCode3: BRA
+    driverCode3: BAR
     results:
       - position: 11
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 11
       - position: 20
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 15
       - position: 18
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 19
       - position: 15
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 2
         points: 6
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 6
         standing: 9
       - position: 18
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 10
       - position: 15
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 12
       - position: 17
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 12
       - position: 19
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 13
       - position: 12
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 13
       - position: 19
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 21
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 13
         points: 0
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 14
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 13
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 20
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
       - position: 21
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 6
         standing: 14
   - driverId: berger
@@ -311,109 +311,109 @@ drivers:
     givenName: Gerhard
     flag: 🇦🇹
     number: -1
-    country3: AUT
-    code: BER
+    countryCode3: AUT
+    driverCode3: BER
     results:
       - position: 4
         points: 3
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 3
         standing: 4
       - position: 2
         points: 6
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 9
         standing: 3
       - position: 6
         points: 1
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 10
         standing: 3
       - position: 20
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 10
         standing: 6
       - position: 9
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 10
         standing: 6
       - position: 10
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 10
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 10
         standing: 8
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 10
         standing: 8
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 10
         standing: 8
       - position: 1
         points: 10
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 20
         standing: 4
       - position: 8
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 20
         standing: 4
       - position: 6
         points: 1
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 21
         standing: 5
       - position: 7
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 21
         standing: 6
       - position: 10
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 21
         standing: 6
       - position: 4
         points: 3
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 24
         standing: 6
       - position: 8
         points: 0
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 24
         standing: 6
       - position: 4
         points: 3
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 27
         standing: 6
   - driverId: coulthard
@@ -421,109 +421,109 @@ drivers:
     givenName: David
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: COU
+    countryCode3: GBR
+    driverCode3: COU
     results:
       - position: 1
         points: 10
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 10
         standing: 1
       - position: 10
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 10
         standing: 1
       - position: 22
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 2
       - position: 14
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 4
       - position: 19
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 5
       - position: 6
         points: 1
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 11
         standing: 5
       - position: 7
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 11
         standing: 7
       - position: 7
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 11
         standing: 7
       - position: 4
         points: 3
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 14
         standing: 7
       - position: 19
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 8
       - position: 14
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 8
       - position: 19
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 8
       - position: 1
         points: 10
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 24
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 30
         standing: 4
       - position: 14
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 30
         standing: 5
       - position: 10
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 30
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 36
         standing: 4
   - driverId: diniz
@@ -531,109 +531,109 @@ drivers:
     givenName: Pedro
     flag: 🇧🇷
     number: -1
-    country3: BRA
-    code: DIN
+    countryCode3: BRA
+    driverCode3: DIN
     results:
       - position: 10
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 10
       - position: 21
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 14
       - position: 12
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 17
       - position: 12
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 17
       - position: 22
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 21
       - position: 16
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 21
       - position: 8
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 19
       - position: 15
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 19
       - position: 20
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 18
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 16
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 7
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 20
       - position: 22
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 20
       - position: 13
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 20
       - position: 5
         points: 2
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 2
         standing: 17
       - position: 12
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 2
         standing: 17
       - position: 22
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 2
         standing: 17
   - driverId: fisichella
@@ -641,109 +641,109 @@ drivers:
     givenName: Giancarlo
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: FIS
+    countryCode3: ITA
+    driverCode3: FIS
     results:
       - position: 16
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 0
         standing: 16
       - position: 8
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 0
         standing: 12
       - position: 17
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 0
         standing: 15
       - position: 4
         points: 3
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 3
         standing: 11
       - position: 6
         points: 1
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 4
         standing: 11
       - position: 9
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 4
         standing: 13
       - position: 3
         points: 4
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 8
         standing: 10
       - position: 9
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 8
         standing: 10
       - position: 7
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 8
         standing: 10
       - position: 11
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 8
         standing: 11
       - position: 17
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 8
         standing: 12
       - position: 2
         points: 6
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 14
         standing: 9
       - position: 4
         points: 3
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 17
         standing: 8
       - position: 4
         points: 3
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 20
         standing: 7
       - position: 21
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 20
         standing: 7
       - position: 7
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 20
         standing: 8
       - position: 11
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 20
         standing: 9
   - driverId: fontana
@@ -751,109 +751,109 @@ drivers:
     givenName: Norberto
     flag: 🇦🇷
     number: -1
-    country3: ARG
-    code: FON
+    countryCode3: ARG
+    driverCode3: FON
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 16
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 0
         standing: 25
       - position: 9
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 9
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 14
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 24
   - driverId: frentzen
@@ -861,109 +861,109 @@ drivers:
     givenName: Heinz-Harald
     flag: 🇩🇪
     number: -1
-    country3: DEU
-    code: FRE
+    countryCode3: DEU
+    driverCode3: FRE
     results:
       - position: 8
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 0
         standing: 8
       - position: 9
         points: 0
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 0
         standing: 11
       - position: 20
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 0
         standing: 13
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 10
         standing: 3
       - position: 11
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 10
         standing: 4
       - position: 8
         points: 0
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 10
         standing: 6
       - position: 4
         points: 3
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 13
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 19
         standing: 3
       - position: 21
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 19
         standing: 4
       - position: 20
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 19
         standing: 5
       - position: 18
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 19
         standing: 5
       - position: 3
         points: 4
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 23
         standing: 3
       - position: 3
         points: 4
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 27
         standing: 4
       - position: 3
         points: 4
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 31
         standing: 3
       - position: 3
         points: 4
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 35
         standing: 3
       - position: 2
         points: 6
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 41
         standing: 3
       - position: 6
         points: 1
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 42
         standing: 3
   - driverId: hakkinen
@@ -971,109 +971,109 @@ drivers:
     givenName: Mika
     flag: 🇫🇮
     number: -1
-    country3: FIN
-    code: HAK
+    countryCode3: FIN
+    driverCode3: HÄK
     results:
       - position: 3
         points: 4
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 4
         standing: 3
       - position: 4
         points: 3
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 7
         standing: 5
       - position: 5
         points: 2
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 9
         standing: 4
       - position: 6
         points: 1
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 10
         standing: 7
       - position: 20
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 7
       - position: 7
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 10
         standing: 8
       - position: 20
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 9
       - position: 19
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 9
       - position: 12
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 10
         standing: 9
       - position: 3
         points: 4
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 14
         standing: 9
       - position: 20
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 9
       - position: 16
         points: 0
         status: DSQ
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 10
       - position: 9
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 14
         standing: 10
       - position: 21
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 10
       - position: 12
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 14
         standing: 10
       - position: 4
         points: 3
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 17
         standing: 9
       - position: 1
         points: 10
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 27
         standing: 7
   - driverId: herbert
@@ -1081,109 +1081,109 @@ drivers:
     givenName: Johnny
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: HER
+    countryCode3: GBR
+    driverCode3: HER
     results:
       - position: 21
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 0
         standing: 21
       - position: 7
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 10
       - position: 4
         points: 3
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 3
         standing: 9
       - position: 16
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 3
         standing: 10
       - position: 17
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 3
         standing: 12
       - position: 5
         points: 2
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 5
         standing: 11
       - position: 5
         points: 2
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 7
         standing: 11
       - position: 8
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 7
         standing: 11
       - position: 17
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 7
         standing: 12
       - position: 17
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 7
         standing: 12
       - position: 3
         points: 4
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 11
         standing: 10
       - position: 4
         points: 3
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 14
         standing: 11
       - position: 17
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 14
         standing: 11
       - position: 8
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 14
         standing: 11
       - position: 7
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 14
         standing: 11
       - position: 6
         points: 1
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 15
         standing: 11
       - position: 8
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 15
         standing: 11
   - driverId: damon_hill
@@ -1191,109 +1191,109 @@ drivers:
     givenName: Damon
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: HIL
+    countryCode3: GBR
+    driverCode3: HIL
     results:
       - position: 22
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 17
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 21
       - position: 16
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 19
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 21
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 22
       - position: 21
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 0
         standing: 23
       - position: 9
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 21
       - position: 12
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 0
         standing: 21
       - position: 6
         points: 1
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 1
         standing: 18
       - position: 8
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 1
         standing: 19
       - position: 2
         points: 6
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 13
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 15
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 7
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 8
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 11
         points: 0
-        status: ''
-        constructor: arrows
+        status: Finished
+        constructorId: arrows
         cumulative: 7
         standing: 13
       - position: 19
         points: 0
         status: DNF
-        constructor: arrows
+        constructorId: arrows
         cumulative: 7
         standing: 13
   - driverId: irvine
@@ -1301,109 +1301,109 @@ drivers:
     givenName: Eddie
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: IRV
+    countryCode3: GBR
+    driverCode3: IRV
     results:
       - position: 20
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 0
         standing: 20
       - position: 16
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 0
         standing: 20
       - position: 2
         points: 6
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 6
         standing: 6
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 10
         standing: 5
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 14
         standing: 3
       - position: 12
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 14
         standing: 4
       - position: 21
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 14
         standing: 4
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 18
         standing: 4
       - position: 15
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 18
         standing: 5
       - position: 21
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 18
         standing: 6
       - position: 9
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 18
         standing: 6
       - position: 10
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 18
         standing: 6
       - position: 8
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 18
         standing: 7
       - position: 19
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 18
         standing: 8
       - position: 16
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 18
         standing: 8
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 22
         standing: 7
       - position: 5
         points: 2
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 24
         standing: 8
   - driverId: katayama
@@ -1411,109 +1411,109 @@ drivers:
     givenName: Ukyo
     flag: 🇯🇵
     number: -1
-    country3: JPN
-    code: KAT
+    countryCode3: JPN
+    driverCode3: KAT
     results:
       - position: 15
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 15
       - position: 18
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 19
       - position: 15
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 21
       - position: 11
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 20
       - position: 10
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 20
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 20
       - position: 18
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 22
       - position: 11
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 22
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 24
       - position: 16
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 24
       - position: 10
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 24
       - position: 14
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 21
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 11
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 20
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 19
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 17
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 25
   - driverId: larini
@@ -1521,109 +1521,109 @@ drivers:
     givenName: Nicola
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: LAR
+    countryCode3: ITA
+    driverCode3: LAR
     results:
       - position: 6
         points: 1
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 1
         standing: 6
       - position: 11
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 1
         standing: 7
       - position: 11
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 1
         standing: 11
       - position: 7
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 1
         standing: 13
       - position: 13
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 1
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 18
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 20
   - driverId: magnussen
@@ -1631,109 +1631,109 @@ drivers:
     givenName: Jan
     flag: 🇩🇰
     number: -1
-    country3: DNK
-    code: MAG
+    countryCode3: DNK
+    driverCode3: MAG
     results:
       - position: 13
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 13
       - position: 22
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 17
       - position: 10
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 18
       - position: 21
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 18
       - position: 7
         points: 0
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 0
         standing: 16
       - position: 13
         points: 0
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 0
         standing: 16
       - position: 22
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 17
       - position: 18
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 17
       - position: 13
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 19
       - position: 15
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 20
       - position: 22
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 20
       - position: 12
         points: 0
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 19
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 16
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 15
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 21
         points: 0
         status: DNF
-        constructor: stewart
+        constructorId: stewart
         cumulative: 0
         standing: 21
       - position: 9
         points: 0
-        status: ''
-        constructor: stewart
+        status: Finished
+        constructorId: stewart
         cumulative: 0
         standing: 21
   - driverId: marques
@@ -1741,109 +1741,109 @@ drivers:
     givenName: Tarso
     flag: 🇧🇷
     number: -1
-    country3: BRA
-    code: MAR
+    countryCode3: BRA
+    driverCode3: MAR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 10
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 12
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 25
       - position: 20
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 14
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 19
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 15
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 26
       - position: 15
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 26
   - driverId: morbidelli
@@ -1851,109 +1851,109 @@ drivers:
     givenName: Gianni
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: MOR
+    countryCode3: ITA
+    driverCode3: MOR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 14
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 22
       - position: 10
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 21
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 0
         standing: 26
       - position: 9
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 24
       - position: 12
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 24
       - position: 9
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 9
         points: 0
-        status: ''
-        constructor: sauber
+        status: Finished
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 22
         points: 0
         status: DNF
-        constructor: sauber
+        constructorId: sauber
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
   - driverId: nakano
@@ -1961,109 +1961,109 @@ drivers:
     givenName: Shinji
     flag: 🇯🇵
     number: -1
-    country3: JPN
-    code: NAK
+    countryCode3: JPN
+    driverCode3: NAK
     results:
       - position: 7
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 0
         standing: 7
       - position: 14
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 0
         standing: 9
       - position: 13
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 0
         standing: 12
       - position: 18
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 0
         standing: 14
       - position: 12
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 0
         standing: 17
       - position: 20
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 0
         standing: 17
       - position: 6
         points: 1
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 1
         standing: 16
       - position: 21
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 1
         standing: 16
       - position: 11
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 1
         standing: 17
       - position: 7
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 1
         standing: 17
       - position: 6
         points: 1
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 2
         standing: 18
       - position: 22
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 2
         standing: 18
       - position: 11
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 2
         standing: 18
       - position: 17
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 2
         standing: 18
       - position: 17
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 2
         standing: 19
       - position: 18
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 2
         standing: 19
       - position: 10
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 2
         standing: 19
   - driverId: panis
@@ -2071,109 +2071,109 @@ drivers:
     givenName: Olivier
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: PAN
+    countryCode3: FRA
+    driverCode3: PAN
     results:
       - position: 5
         points: 2
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 2
         standing: 5
       - position: 3
         points: 4
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 6
         standing: 6
       - position: 19
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 6
         standing: 7
       - position: 8
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 6
         standing: 8
       - position: 4
         points: 3
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 9
         standing: 8
       - position: 2
         points: 6
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 15
         standing: 3
       - position: 11
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 15
         standing: 3
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 5
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 6
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 9
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 15
         standing: 9
       - position: 6
         points: 1
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 16
         standing: 9
       - position: 17
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 16
         standing: 10
       - position: 7
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 16
         standing: 10
   - driverId: rosset
@@ -2181,109 +2181,109 @@ drivers:
     givenName: Ricardo
     flag: 🇧🇷
     number: -1
-    country3: BRA
-    code: ROS
+    countryCode3: BRA
+    driverCode3: ROS
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
   - driverId: salo
@@ -2291,109 +2291,109 @@ drivers:
     givenName: Mika
     flag: 🇫🇮
     number: -1
-    country3: FIN
-    code: SAL
+    countryCode3: FIN
+    driverCode3: SAL
     results:
       - position: 12
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 12
       - position: 13
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 16
       - position: 8
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 14
       - position: 9
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 15
       - position: 5
         points: 2
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 2
         standing: 14
       - position: 19
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 14
       - position: 12
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 14
       - position: 13
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 14
       - position: 16
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 15
       - position: 13
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 16
       - position: 13
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 2
         standing: 17
       - position: 11
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 2
         standing: 17
       - position: 18
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 17
       - position: 18
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 17
       - position: 10
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 2
         standing: 18
       - position: 16
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 2
         standing: 18
       - position: 12
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 2
         standing: 18
   - driverId: michael_schumacher
@@ -2401,109 +2401,109 @@ drivers:
     givenName: Michael
     flag: 🇩🇪
     number: -1
-    country3: DEU
-    code: MSC
+    countryCode3: DEU
+    driverCode3: SCH
     results:
       - position: 2
         points: 6
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 6
         standing: 2
       - position: 5
         points: 2
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 8
         standing: 4
       - position: 21
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 8
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 14
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 24
         standing: 1
       - position: 4
         points: 3
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 27
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 37
         standing: 1
       - position: 1
         points: 10
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 47
         standing: 1
       - position: 18
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 47
         standing: 1
       - position: 2
         points: 6
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 53
         standing: 1
       - position: 4
         points: 3
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 56
         standing: 1
       - position: 1
         points: 10
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 66
         standing: 1
       - position: 6
         points: 1
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 67
         standing: 1
       - position: 6
         points: 1
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 68
         standing: 1
       - position: 18
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 68
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 78
         standing: 1
       - position: 18
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 78
         standing: 2
   - driverId: ralf_schumacher
@@ -2511,109 +2511,109 @@ drivers:
     givenName: Ralf
     flag: 🇩🇪
     number: -1
-    country3: DEU
-    code: RSC
+    countryCode3: DEU
+    driverCode3: SCH
     results:
       - position: 18
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 0
         standing: 18
       - position: 19
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 0
         standing: 22
       - position: 3
         points: 4
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 4
         standing: 8
       - position: 17
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 4
         standing: 9
       - position: 16
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 4
         standing: 10
       - position: 17
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 4
         standing: 12
       - position: 17
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 4
         standing: 13
       - position: 6
         points: 1
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 5
         standing: 13
       - position: 5
         points: 2
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 7
         standing: 11
       - position: 5
         points: 2
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 9
         standing: 10
       - position: 5
         points: 2
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 11
         standing: 11
       - position: 18
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 11
         standing: 12
       - position: 16
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 11
         standing: 12
       - position: 5
         points: 2
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 13
         standing: 12
       - position: 22
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 13
         standing: 12
       - position: 9
         points: 0
-        status: ''
-        constructor: jordan
+        status: Finished
+        constructorId: jordan
         cumulative: 13
         standing: 12
       - position: 20
         points: 0
         status: DNF
-        constructor: jordan
+        constructorId: jordan
         cumulative: 13
         standing: 12
   - driverId: sospiri
@@ -2621,109 +2621,109 @@ drivers:
     givenName: Vincenzo
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: SOS
+    countryCode3: ITA
+    driverCode3: SOS
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
   - driverId: trulli
@@ -2731,109 +2731,109 @@ drivers:
     givenName: Jarno
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: TRU
+    countryCode3: ITA
+    driverCode3: TRU
     results:
       - position: 9
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 9
       - position: 12
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 13
       - position: 9
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 16
       - position: 22
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 16
       - position: 18
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 19
       - position: 15
         points: 0
-        status: ''
-        constructor: minardi
+        status: Finished
+        constructorId: minardi
         cumulative: 0
         standing: 19
       - position: 16
         points: 0
         status: DNF
-        constructor: minardi
+        constructorId: minardi
         cumulative: 0
         standing: 20
       - position: 10
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 0
         standing: 20
       - position: 8
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 0
         standing: 20
       - position: 4
         points: 3
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 3
         standing: 15
       - position: 7
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 3
         standing: 16
       - position: 15
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 3
         standing: 16
       - position: 10
         points: 0
-        status: ''
-        constructor: prost
+        status: Finished
+        constructorId: prost
         cumulative: 3
         standing: 16
       - position: 15
         points: 0
         status: DNF
-        constructor: prost
+        constructorId: prost
         cumulative: 3
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 3
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 3
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 3
         standing: 16
   - driverId: verstappen
@@ -2841,109 +2841,109 @@ drivers:
     givenName: Jos
     flag: 🇳🇱
     number: -1
-    country3: NLD
-    code: VER
+    countryCode3: NLD
+    driverCode3: VER
     results:
       - position: 17
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 17
       - position: 15
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 18
       - position: 14
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 20
       - position: 10
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 19
       - position: 8
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 18
       - position: 11
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 18
       - position: 13
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 18
       - position: 20
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 18
       - position: 14
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 21
       - position: 10
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 21
       - position: 15
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 21
       - position: 17
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
       - position: 20
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
       - position: 12
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
       - position: 11
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
       - position: 13
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
       - position: 16
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 22
   - driverId: villeneuve
@@ -2951,109 +2951,109 @@ drivers:
     givenName: Jacques
     flag: 🇨🇦
     number: -1
-    country3: CAN
-    code: VIL
+    countryCode3: CAN
+    driverCode3: VIL
     results:
       - position: 19
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 0
         standing: 19
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 10
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 20
         standing: 1
       - position: 13
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 20
         standing: 1
       - position: 15
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 20
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 30
         standing: 1
       - position: 19
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 30
         standing: 2
       - position: 4
         points: 3
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 33
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 43
         standing: 2
       - position: 14
         points: 0
         status: DNF
-        constructor: williams
+        constructorId: williams
         cumulative: 43
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 53
         standing: 2
       - position: 5
         points: 2
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 55
         standing: 2
       - position: 5
         points: 2
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 57
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 67
         standing: 2
       - position: 1
         points: 10
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 77
         standing: 1
       - position: 14
         points: 0
         status: DSQ
-        constructor: williams
+        constructorId: williams
         cumulative: 77
         standing: 2
       - position: 3
         points: 4
-        status: ''
-        constructor: williams
+        status: Finished
+        constructorId: williams
         cumulative: 81
         standing: 1
   - driverId: wurz
@@ -3061,108 +3061,108 @@ drivers:
     givenName: Alexander
     flag: 🇦🇹
     number: -1
-    country3: AUT
-    code: WUR
+    countryCode3: AUT
+    driverCode3: WUR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 14
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 0
         standing: 24
       - position: 14
         points: 0
         status: DNF
-        constructor: benetton
+        constructorId: benetton
         cumulative: 0
         standing: 24
       - position: 3
         points: 4
-        status: ''
-        constructor: benetton
+        status: Finished
+        constructorId: benetton
         cumulative: 4
         standing: 14
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 14
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 15

@@ -17,7 +17,7 @@ properties:
     items:
       type: object
       properties:
-        rounds:
+        round:
           type: integer
           required: true
           description: The season round as a number
@@ -27,7 +27,7 @@ properties:
           required: true
           description: The type of race this is
           example: race
-        raceName:
+        name:
           type: string
           required: true
           description: The name of this race

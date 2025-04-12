@@ -68,7 +68,7 @@ if (positionals.length == 3) {
   } else {
     throw new Error('only get, convert or generate is supported')
   }
-} else if (positionals.length == 5 && positionals[2] == 'check') {
+} else if (positionals.length == 5 && positionals[2] == 'validate') {
   doValidation(positionals[3], positionals[4]);
 } else {
   throw new Error('Invalid number of arguments')

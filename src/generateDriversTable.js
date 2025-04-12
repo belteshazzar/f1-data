@@ -50,14 +50,14 @@ export function generateDriversTable(values) {
 
   rounds.rounds.forEach((r, ri) => {
 
-    if (r.sprint) {
+    if (r.sessions.find(s => s.name == 'Sprint')) {
       try {
         const sprint = yaml.load(fs.readFileSync(`data/${values.year}-${r.round}-sprint.yaml`, 'utf8'));
         races.push(sprint);
         t.races.push({
           round: ri + 1,
           type: 'sprint',
-          raceName: rounds.rounds[ri].raceName,
+          name: rounds.rounds[ri].name,
           raceCode3: rounds.rounds[ri].raceCode3,
           flag: rounds.rounds[ri].circuit.location.flag
         });
@@ -67,7 +67,7 @@ export function generateDriversTable(values) {
         t.races.push({
           round: ri + 1,
           type: 'sprint',
-          raceName: rounds.rounds[ri].raceName,
+          name: rounds.rounds[ri].name,
           raceCode3: rounds.rounds[ri].raceCode3,
           flag: rounds.rounds[ri].circuit.location.flag
         });
@@ -80,7 +80,7 @@ export function generateDriversTable(values) {
       t.races.push({
         round: ri + 1,
         type: 'race',
-        raceName: rounds.rounds[ri].raceName,
+        name: rounds.rounds[ri].name,
         raceCode3: rounds.rounds[ri].raceCode3,
         flag: rounds.rounds[ri].circuit.location.flag
       });
@@ -90,7 +90,7 @@ export function generateDriversTable(values) {
       t.races.push({
         round: ri + 1,
         type: 'race',
-        raceName: rounds.rounds[ri].raceName,
+        name: rounds.rounds[ri].name,
         raceCode3: rounds.rounds[ri].raceCode3,
         flag: rounds.rounds[ri].circuit.location.flag
       });
@@ -106,8 +106,8 @@ export function generateDriversTable(values) {
       givenName: drivers.drivers[i].givenName,
       flag: drivers.drivers[i].flag,
       number: (drivers.drivers[i].permanentNumber ? drivers.drivers[i].permanentNumber * 1 : -1),
-      country3: drivers.drivers[i].countryCode3,
-      code: (drivers.drivers[i].code
+      countryCode3: drivers.drivers[i].countryCode3,
+      driverCode3: (drivers.drivers[i].code
         ? drivers.drivers[i].code
         : drivers.drivers[i].familyName.substring(0,3).toUpperCase()),
       results: [],
@@ -147,7 +147,7 @@ export function generateDriversTable(values) {
           position: 0,
           points: 0,
           status: '',
-          constructor: '',
+          constructorId: '',
           cumulative: points,
           standing: 0,
           _racePositions: Object.assign([], racePositions),

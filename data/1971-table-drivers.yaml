@@ -1,58 +1,58 @@
-season: '1971'
+season: 1971
 races:
   - round: 1
     type: race
-    raceName: South African Grand Prix
+    name: South African Grand Prix
     raceCode3: ZAF
     flag: 🇿🇦
   - round: 2
     type: race
-    raceName: Spanish Grand Prix
+    name: Spanish Grand Prix
     raceCode3: ESP
     flag: 🇪🇸
   - round: 3
     type: race
-    raceName: Monaco Grand Prix
+    name: Monaco Grand Prix
     raceCode3: MON
     flag: 🇲🇨
   - round: 4
     type: race
-    raceName: Dutch Grand Prix
+    name: Dutch Grand Prix
     raceCode3: NED
     flag: 🇳🇱
   - round: 5
     type: race
-    raceName: French Grand Prix
+    name: French Grand Prix
     raceCode3: FRA
     flag: 🇫🇷
   - round: 6
     type: race
-    raceName: British Grand Prix
+    name: British Grand Prix
     raceCode3: GBR
     flag: 🇬🇧
   - round: 7
     type: race
-    raceName: German Grand Prix
+    name: German Grand Prix
     raceCode3: DEU
     flag: 🇩🇪
   - round: 8
     type: race
-    raceName: Austrian Grand Prix
+    name: Austrian Grand Prix
     raceCode3: AUT
     flag: 🇦🇹
   - round: 9
     type: race
-    raceName: Italian Grand Prix
+    name: Italian Grand Prix
     raceCode3: ITA
     flag: 🇮🇹
   - round: 10
     type: race
-    raceName: Canadian Grand Prix
+    name: Canadian Grand Prix
     raceCode3: CAN
     flag: 🇨🇦
   - round: 11
     type: race
-    raceName: United States Grand Prix
+    name: United States Grand Prix
     raceCode3: USA
     flag: 🇺🇸
 drivers:
@@ -61,73 +61,73 @@ drivers:
     givenName: Chris
     flag: 🇳🇿
     number: -1
-    country3: NZL
-    code: AMO
+    countryCode3: NZL
+    driverCode3: AMO
     results:
       - position: 5
         points: 2
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 2
         standing: 5
       - position: 3
         points: 4
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 6
         standing: 4
       - position: 13
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 6
         standing: 5
       - position: 23
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 6
         standing: 7
       - position: 5
         points: 2
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 8
         standing: 7
       - position: 18
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 8
         standing: 8
       - position: 15
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 8
         standing: 9
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 8
         standing: 10
       - position: 6
         points: 1
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 9
         standing: 11
       - position: 10
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 9
         standing: 11
       - position: 12
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 9
         standing: 11
   - driverId: mario_andretti
@@ -135,73 +135,73 @@ drivers:
     givenName: Mario
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: AND
+    countryCode3: USA
+    driverCode3: AND
     results:
       - position: 1
         points: 9
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 9
         standing: 1
       - position: 15
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 9
         standing: 2
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 3
       - position: 21
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 9
         standing: 3
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 3
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 5
       - position: 4
         points: 3
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 12
         standing: 4
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 12
         standing: 6
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 12
         standing: 7
       - position: 13
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 12
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 12
         standing: 8
   - driverId: barber
@@ -209,73 +209,73 @@ drivers:
     givenName: Skip
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: BAR
+    countryCode3: USA
+    driverCode3: BAR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 14
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 21
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 34
       - position: 18
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 35
   - driverId: bell
@@ -283,73 +283,73 @@ drivers:
     givenName: Derek
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: BEL
+    countryCode3: GBR
+    driverCode3: BEL
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 20
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 43
   - driverId: beltoise
@@ -357,73 +357,73 @@ drivers:
     givenName: Jean-Pierre
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: BEL
+    countryCode3: FRA
+    driverCode3: BEL
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 6
         points: 1
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 1
         standing: 9
       - position: 12
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 1
         standing: 12
       - position: 9
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 1
         standing: 12
       - position: 7
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 1
         standing: 14
       - position: 7
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 1
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 18
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 1
         standing: 21
       - position: 20
         points: 0
         status: DNF
-        constructor: matra
+        constructorId: matra
         cumulative: 1
         standing: 22
       - position: 8
         points: 0
-        status: ''
-        constructor: matra
+        status: Finished
+        constructorId: matra
         cumulative: 1
         standing: 22
   - driverId: beuttler
@@ -431,73 +431,73 @@ drivers:
     givenName: Mike
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: BEU
+    countryCode3: GBR
+    driverCode3: BEU
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 21
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 31
       - position: 19
         points: 0
         status: DSQ
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 30
       - position: 13
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 28
       - position: 13
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 30
       - position: 17
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
   - driverId: bonnier
@@ -505,73 +505,73 @@ drivers:
     givenName: Jo
     flag: 🇸🇪
     number: -1
-    country3: SWE
-    code: BON
+    countryCode3: SWE
+    driverCode3: BON
     results:
       - position: 24
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 36
       - position: 22
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 37
       - position: 10
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 16
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 26
   - driverId: Cannoc
@@ -579,73 +579,73 @@ drivers:
     givenName: John
     flag: 🇨🇦
     number: -1
-    country3: CAN
-    code: CAN
+    countryCode3: CAN
+    driverCode3: CAN
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 46
       - position: 14
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 36
   - driverId: cevert
@@ -653,73 +653,73 @@ drivers:
     givenName: François
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: CEV
+    countryCode3: FRA
+    driverCode3: CEV
     results:
       - position: 16
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 16
       - position: 7
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 0
         standing: 10
       - position: 17
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 14
       - position: 18
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 16
       - position: 2
         points: 6
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 6
         standing: 8
       - position: 10
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 6
         standing: 9
       - position: 2
         points: 6
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 12
         standing: 5
       - position: 14
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 12
         standing: 7
       - position: 3
         points: 4
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 16
         standing: 4
       - position: 6
         points: 1
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 17
         standing: 4
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 26
         standing: 3
   - driverId: charlton
@@ -727,73 +727,73 @@ drivers:
     givenName: Dave
     flag: 🇿🇦
     number: -1
-    country3: ZAF
-    code: CHA
+    countryCode3: ZAF
+    driverCode3: CHA
     results:
       - position: 19
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 22
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 42
   - driverId: craft
@@ -801,73 +801,73 @@ drivers:
     givenName: Chris
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: CRA
+    countryCode3: GBR
+    driverCode3: CRA
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 47
       - position: 24
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 48
   - driverId: adamich
@@ -875,73 +875,73 @@ drivers:
     givenName: Andrea
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: 'DEC'
+    countryCode3: ITA
+    driverCode3: 'DE '
     results:
       - position: 13
         points: 0
-        status: ''
-        constructor: march-alfa_romeo
+        status: Finished
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 13
       - position: 17
         points: 0
         status: DNF
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 21
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 22
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 17
         points: 0
         status: DNF
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 23
       - position: 14
         points: 0
         status: NC
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 24
       - position: 21
         points: 0
         status: DNF
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 15
         points: 0
         status: DNF
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 11
         points: 0
-        status: ''
-        constructor: march-alfa_romeo
+        status: Finished
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 30
   - driverId: donohue
@@ -949,73 +949,73 @@ drivers:
     givenName: Mark
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: DON
+    countryCode3: USA
+    driverCode3: DON
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 32
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 33
+        standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 35
+        standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 37
+        standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 39
+        standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 42
+        standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 45
+        standing: 43
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 46
       - position: 3
         points: 4
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 16
   - driverId: eaton
@@ -1023,73 +1023,73 @@ drivers:
     givenName: George
     flag: 🇨🇦
     number: -1
-    country3: CAN
-    code: EAT
+    countryCode3: CAN
+    driverCode3: EAT
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 33
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 34
+        standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 36
+        standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 38
+        standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 40
+        standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 43
+        standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 46
-      - position: 15
+        standing: 44
+      - position: 0
         points: 0
         status: ''
-        constructor: brm
+        constructorId: ''
+        cumulative: 0
+        standing: 47
+      - position: 15
+        points: 0
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
   - driverId: elford
@@ -1097,73 +1097,73 @@ drivers:
     givenName: Vic
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: ELF
+    countryCode3: GBR
+    driverCode3: ELF
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 34
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 35
+        standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 37
+        standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 39
+        standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 41
+        standing: 40
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 42
       - position: 11
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
   - driverId: emerson_fittipaldi
@@ -1171,73 +1171,73 @@ drivers:
     givenName: Emerson
     flag: 🇧🇷
     number: -1
-    country3: BRA
-    code: FIT
+    countryCode3: BRA
+    driverCode3: FIT
     results:
       - position: 14
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 0
         standing: 14
       - position: 13
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 0
         standing: 20
       - position: 5
         points: 2
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 2
         standing: 10
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 2
         standing: 11
       - position: 3
         points: 4
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 6
         standing: 9
       - position: 3
         points: 4
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 10
         standing: 4
       - position: 13
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 10
         standing: 7
       - position: 2
         points: 6
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 16
         standing: 4
       - position: 8
         points: 0
-        status: ''
-        constructor: lotus-pw
+        status: Finished
+        constructorId: lotus-pw
         cumulative: 16
         standing: 5
       - position: 7
         points: 0
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 16
         standing: 5
       - position: 20
         points: 0
         status: NC
-        constructor: lotus
+        constructorId: lotus
         cumulative: 16
         standing: 6
   - driverId: galli
@@ -1245,73 +1245,73 @@ drivers:
     givenName: Nanni
     flag: 🇮🇹
     number: -1
-    country3: ITA
-    code: GAL
+    countryCode3: ITA
+    driverCode3: GAL
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 35
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 36
+        standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 38
+        standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 40
+        standing: 39
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 41
       - position: 11
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 23
       - position: 12
         points: 0
-        status: ''
-        constructor: march-alfa_romeo
+        status: Finished
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 23
       - position: 12
         points: 0
-        status: ''
-        constructor: march-alfa_romeo
+        status: Finished
+        constructorId: march-alfa_romeo
         cumulative: 0
         standing: 24
       - position: 19
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 26
       - position: 16
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 27
       - position: 27
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 28
   - driverId: ganley
@@ -1319,73 +1319,73 @@ drivers:
     givenName: Howden
     flag: 🇳🇿
     number: -1
-    country3: NZL
-    code: GAN
+    countryCode3: NZL
+    driverCode3: GAN
     results:
       - position: 17
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 17
       - position: 10
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 20
       - position: 7
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 15
       - position: 10
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 16
       - position: 8
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 17
       - position: 20
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 18
       - position: 20
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 19
       - position: 5
         points: 2
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 2
         standing: 19
       - position: 25
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 2
         standing: 20
       - position: 4
         points: 3
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 5
         standing: 15
   - driverId: gethin
@@ -1393,73 +1393,73 @@ drivers:
     givenName: Peter
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: GET
+    countryCode3: GBR
+    driverCode3: GET
     results:
       - position: 23
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 23
       - position: 8
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 12
       - position: 15
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 17
       - position: 15
         points: 0
         status: NC
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 19
       - position: 9
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 18
       - position: 15
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 19
       - position: 17
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 20
       - position: 10
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 21
       - position: 1
         points: 9
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 9
         standing: 9
       - position: 14
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 9
         standing: 9
       - position: 9
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 9
         standing: 9
   - driverId: hailwood
@@ -1467,73 +1467,73 @@ drivers:
     givenName: Mike
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: HAI
+    countryCode3: GBR
+    driverCode3: HAI
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 36
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 37
+        standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 39
+        standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 41
+        standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 42
+        standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 44
+        standing: 43
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 45
       - position: 4
         points: 3
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 16
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 3
         standing: 17
       - position: 15
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 3
         standing: 18
   - driverId: hill
@@ -1541,73 +1541,73 @@ drivers:
     givenName: Graham
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: HIL
+    countryCode3: GBR
+    driverCode3: HIL
     results:
       - position: 9
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 0
         standing: 9
       - position: 22
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 13
       - position: 18
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 19
       - position: 10
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 0
         standing: 22
       - position: 16
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 22
       - position: 23
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 22
       - position: 9
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 0
         standing: 22
       - position: 5
         points: 2
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 2
         standing: 17
       - position: 11
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 2
         standing: 20
       - position: 23
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 2
         standing: 21
       - position: 7
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 2
         standing: 21
   - driverId: hobbs
@@ -1615,73 +1615,73 @@ drivers:
     givenName: David
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: HOB
+    countryCode3: GBR
+    driverCode3: HOB
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 37
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 38
+        standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 40
+        standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 42
+        standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 43
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 45
+        standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 47
+        standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 46
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
         cumulative: 0
         standing: 48
-      - position: 10
+      - position: 0
         points: 0
         status: ''
-        constructor: mclaren
+        constructorId: ''
+        cumulative: 0
+        standing: 49
+      - position: 10
+        points: 0
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 27
   - driverId: hulme
@@ -1689,73 +1689,73 @@ drivers:
     givenName: Denny
     flag: 🇳🇿
     number: -1
-    country3: NZL
-    code: HUL
+    countryCode3: NZL
+    driverCode3: HUL
     results:
       - position: 6
         points: 1
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 1
         standing: 6
       - position: 5
         points: 2
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 3
         standing: 8
       - position: 4
         points: 3
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 6
         standing: 6
       - position: 12
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 6
         standing: 8
       - position: 21
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 6
         standing: 10
       - position: 19
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 6
         standing: 10
       - position: 18
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 6
         standing: 10
       - position: 21
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 6
         standing: 12
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 6
         standing: 13
       - position: 4
         points: 3
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 9
         standing: 13
       - position: 22
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 9
         standing: 13
   - driverId: ickx
@@ -1763,73 +1763,73 @@ drivers:
     givenName: Jacky
     flag: 🇧🇪
     number: -1
-    country3: BEL
-    code: ICK
+    countryCode3: BEL
+    driverCode3: ICK
     results:
       - position: 8
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 0
         standing: 8
       - position: 2
         points: 6
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 6
         standing: 3
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 10
         standing: 2
       - position: 1
         points: 9
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 19
         standing: 2
       - position: 22
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 2
       - position: 16
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 2
       - position: 22
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 2
       - position: 16
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 2
       - position: 17
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 3
       - position: 8
         points: 0
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 19
         standing: 3
       - position: 19
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 19
         standing: 4
   - driverId: jarier
@@ -1837,73 +1837,73 @@ drivers:
     givenName: Jean-Pierre
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: JAR
+    countryCode3: FRA
+    driverCode3: JAR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 38
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 39
+        standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 41
+        standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 43
+        standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 44
+        standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 46
+        standing: 45
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 47
       - position: 12
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
   - driverId: jean
@@ -1911,73 +1911,73 @@ drivers:
     givenName: Max
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: JEA
+    countryCode3: FRA
+    driverCode3: JEA
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 39
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 40
+        standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 42
+        standing: 41
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 43
       - position: 14
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
   - driverId: lauda
@@ -1985,73 +1985,73 @@ drivers:
     givenName: Niki
     flag: 🇦🇹
     number: -1
-    country3: AUT
-    code: LAU
+    countryCode3: AUT
+    driverCode3: LAU
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 40
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 41
+        standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 43
+        standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 45
+        standing: 46
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 46
       - position: 17
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 40
   - driverId: love
@@ -2059,73 +2059,73 @@ drivers:
     givenName: John
     flag: 🇷🇭
     number: -1
-    country3: RHO
-    code: LOV
+    countryCode3: RHO
+    driverCode3: LOV
     results:
       - position: 21
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 21
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
   - driverId: lovely
@@ -2133,73 +2133,73 @@ drivers:
     givenName: Pete
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: LOV
+    countryCode3: USA
+    driverCode3: LOV
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 41
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 42
+        standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 44
+        standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 46
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 46
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 47
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 47
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
         cumulative: 0
         standing: 48
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 49
       - position: 18
         points: 0
         status: NC
-        constructor: lotus
+        constructorId: lotus
         cumulative: 0
         standing: 39
       - position: 21
         points: 0
         status: NC
-        constructor: lotus
+        constructorId: lotus
         cumulative: 0
         standing: 41
   - driverId: marko
@@ -2207,73 +2207,73 @@ drivers:
     givenName: Helmut
     flag: 🇦🇹
     number: -1
-    country3: AUT
-    code: MAR
+    countryCode3: AUT
+    driverCode3: MAR
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 42
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 43
+        standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 45
+        standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 46
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 47
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 47
-      - position: 11
+        standing: 48
+      - position: 0
         points: 0
         status: ''
-        constructor: brm
+        constructorId: ''
+        cumulative: 0
+        standing: 48
+      - position: 11
+        points: 0
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 26
       - position: 22
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 27
       - position: 12
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 28
       - position: 13
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 0
         standing: 29
   - driverId: mazet
@@ -2281,73 +2281,73 @@ drivers:
     givenName: François
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: MAZ
+    countryCode3: FRA
+    driverCode3: MAZ
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 43
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 44
+        standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 46
+        standing: 45
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 47
       - position: 13
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
   - driverId: moser
@@ -2355,73 +2355,73 @@ drivers:
     givenName: Silvio
     flag: 🇨🇭
     number: -1
-    country3: CHE
-    code: MOS
+    countryCode3: CHE
+    driverCode3: MOS
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 44
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 45
+        standing: 46
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 47
+        standing: 46
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 47
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 48
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 48
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 48
+        standing: 49
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 49
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 49
       - position: 21
         points: 0
         status: DNF
-        constructor: bellasi
+        constructorId: bellasi
         cumulative: 0
         standing: 40
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 43
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 45
   - driverId: oliver
@@ -2429,73 +2429,73 @@ drivers:
     givenName: Jackie
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: OLI
+    countryCode3: GBR
+    driverCode3: OLI
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 45
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 46
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 46
+        standing: 47
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 48
+        standing: 47
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 48
+        standing: 49
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 49
       - position: 24
         points: 0
         status: DNF
-        constructor: mclaren
+        constructorId: mclaren
         cumulative: 0
         standing: 36
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
       - position: 9
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 23
       - position: 7
         points: 0
-        status: ''
-        constructor: mclaren
+        status: Finished
+        constructorId: mclaren
         cumulative: 0
         standing: 22
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
   - driverId: pescarolo
@@ -2503,73 +2503,73 @@ drivers:
     givenName: Henri
     flag: 🇫🇷
     number: -1
-    country3: FRA
-    code: PES
+    countryCode3: FRA
+    driverCode3: PES
     results:
       - position: 11
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 11
       - position: 14
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 17
       - position: 8
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 16
       - position: 13
         points: 0
         status: NC
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 18
       - position: 15
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 19
       - position: 4
         points: 3
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 3
         standing: 13
       - position: 16
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 3
         standing: 13
       - position: 6
         points: 1
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 4
         standing: 14
       - position: 14
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 4
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 4
         standing: 16
       - position: 26
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 4
         standing: 17
   - driverId: peterson
@@ -2577,73 +2577,73 @@ drivers:
     givenName: Ronnie
     flag: 🇸🇪
     number: -1
-    country3: SWE
-    code: PET
+    countryCode3: SWE
+    driverCode3: PET
     results:
       - position: 10
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 0
         standing: 10
       - position: 18
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 16
       - position: 2
         points: 6
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 6
         standing: 4
       - position: 4
         points: 3
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 9
         standing: 5
       - position: 20
         points: 0
         status: DNF
-        constructor: march-alfa_romeo
+        constructorId: march-alfa_romeo
         cumulative: 9
         standing: 5
       - position: 2
         points: 6
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 15
         standing: 3
       - position: 5
         points: 2
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 17
         standing: 3
       - position: 8
         points: 0
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 17
         standing: 3
       - position: 2
         points: 6
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 23
         standing: 2
       - position: 2
         points: 6
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 29
         standing: 2
       - position: 3
         points: 4
-        status: ''
-        constructor: march-ford
+        status: Finished
+        constructorId: march-ford
         cumulative: 33
         standing: 2
   - driverId: posey
@@ -2651,73 +2651,73 @@ drivers:
     givenName: Sam
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: POS
+    countryCode3: USA
+    driverCode3: POS
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 46
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 47
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 47
+        standing: 48
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 48
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 50
       - position: 25
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 0
         standing: 49
   - driverId: pretorius
@@ -2725,73 +2725,73 @@ drivers:
     givenName: Jackie
     flag: 🇿🇦
     number: -1
-    country3: ZAF
-    code: PRE
+    countryCode3: ZAF
+    driverCode3: PRE
     results:
       - position: 22
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 22
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 26
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 30
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 33
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 38
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 41
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 44
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 46
   - driverId: redman
@@ -2799,73 +2799,73 @@ drivers:
     givenName: Brian
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: RED
+    countryCode3: GBR
+    driverCode3: RED
     results:
       - position: 7
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 0
         standing: 7
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 11
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 15
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 17
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 17
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 18
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
   - driverId: regazzoni
@@ -2873,73 +2873,73 @@ drivers:
     givenName: Clay
     flag: 🇨🇭
     number: -1
-    country3: CHE
-    code: REG
+    countryCode3: CHE
+    driverCode3: REG
     results:
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 4
         standing: 3
       - position: 19
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 4
         standing: 5
       - position: 14
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 4
         standing: 7
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 8
         standing: 6
       - position: 19
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 8
         standing: 6
       - position: 17
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 8
         standing: 7
       - position: 3
         points: 4
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 12
         standing: 6
       - position: 19
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 12
         standing: 8
       - position: 16
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 12
         standing: 8
       - position: 22
         points: 0
         status: DNF
-        constructor: ferrari
+        constructorId: ferrari
         cumulative: 12
         standing: 8
       - position: 6
         points: 1
-        status: ''
-        constructor: ferrari
+        status: Finished
+        constructorId: ferrari
         cumulative: 13
         standing: 7
   - driverId: revson
@@ -2947,73 +2947,73 @@ drivers:
     givenName: Peter
     flag: 🇺🇸
     number: -1
-    country3: USA
-    code: REV
+    countryCode3: USA
+    driverCode3: REV
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
-        cumulative: 0
-        standing: 47
-      - position: 0
-        points: 0
-        status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 48
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 48
+        standing: 49
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 49
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 51
       - position: 29
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 0
         standing: 50
   - driverId: rodriguez
@@ -3021,73 +3021,73 @@ drivers:
     givenName: Pedro
     flag: 🇲🇽
     number: -1
-    country3: MEX
-    code: ROD
+    countryCode3: MEX
+    driverCode3: ROD
     results:
       - position: 18
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 18
       - position: 4
         points: 3
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 3
         standing: 7
       - position: 9
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 3
         standing: 8
       - position: 2
         points: 6
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 9
         standing: 4
       - position: 18
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 9
         standing: 4
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 6
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 8
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 9
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 10
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 10
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 9
         standing: 10
   - driverId: schenken
@@ -3095,73 +3095,73 @@ drivers:
     givenName: Tim
     flag: 🇦🇺
     number: -1
-    country3: AUS
-    code: SCH
+    countryCode3: AUS
+    driverCode3: SCH
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 48
+        standing: 49
       - position: 9
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 0
         standing: 14
       - position: 10
         points: 0
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 0
         standing: 18
       - position: 17
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 21
       - position: 12
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 21
       - position: 12
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 0
         standing: 21
       - position: 6
         points: 1
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 1
         standing: 17
       - position: 3
         points: 4
-        status: ''
-        constructor: brabham
+        status: Finished
+        constructorId: brabham
         cumulative: 5
         standing: 13
       - position: 20
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 5
         standing: 14
       - position: 24
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 5
         standing: 14
       - position: 23
         points: 0
         status: DNF
-        constructor: brabham
+        constructorId: brabham
         cumulative: 5
         standing: 14
   - driverId: siffert
@@ -3169,73 +3169,73 @@ drivers:
     givenName: Jo
     flag: 🇨🇭
     number: -1
-    country3: CHE
-    code: SIF
+    countryCode3: CHE
+    driverCode3: SIF
     results:
       - position: 20
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 20
       - position: 21
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 24
       - position: 11
         points: 0
         status: DNF
-        constructor: brm
+        constructorId: brm
         cumulative: 0
         standing: 21
       - position: 6
         points: 1
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 1
         standing: 13
       - position: 4
         points: 3
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 4
         standing: 11
       - position: 9
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 4
         standing: 11
       - position: 14
         points: 0
         status: DSQ
-        constructor: brm
+        constructorId: brm
         cumulative: 4
         standing: 12
       - position: 1
         points: 9
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 13
         standing: 5
       - position: 9
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 13
         standing: 6
       - position: 9
         points: 0
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 13
         standing: 6
       - position: 2
         points: 6
-        status: ''
-        constructor: brm
+        status: Finished
+        constructorId: brm
         cumulative: 19
         standing: 5
   - driverId: roig
@@ -3243,73 +3243,73 @@ drivers:
     givenName: Alex
     flag: 🇪🇸
     number: -1
-    country3: ESP
-    code: SOL
+    countryCode3: ESP
+    driverCode3: SOL
     results:
       - position: 25
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 25
       - position: 16
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 22
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 23
       - position: 16
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 25
       - position: 23
         points: 0
         status: DNF
-        constructor: march-ford
+        constructorId: march-ford
         cumulative: 0
         standing: 27
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 28
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 32
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 37
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 39
   - driverId: stewart
@@ -3317,73 +3317,73 @@ drivers:
     givenName: Jackie
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: STE
+    countryCode3: GBR
+    driverCode3: STE
     results:
       - position: 2
         points: 6
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 6
         standing: 2
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 15
         standing: 1
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 24
         standing: 1
       - position: 11
         points: 0
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 24
         standing: 1
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 33
         standing: 1
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 42
         standing: 1
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 51
         standing: 1
       - position: 15
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 51
         standing: 1
       - position: 18
         points: 0
         status: DNF
-        constructor: tyrrell
+        constructorId: tyrrell
         cumulative: 51
         standing: 1
       - position: 1
         points: 9
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 60
         standing: 1
       - position: 5
         points: 2
-        status: ''
-        constructor: tyrrell
+        status: Finished
+        constructorId: tyrrell
         cumulative: 62
         standing: 1
   - driverId: stommelen
@@ -3391,73 +3391,73 @@ drivers:
     givenName: Rolf
     flag: 🇩🇪
     number: -1
-    country3: DEU
-    code: STO
+    countryCode3: DEU
+    driverCode3: STO
     results:
       - position: 12
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 0
         standing: 12
       - position: 20
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 0
         standing: 19
       - position: 6
         points: 1
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 1
         standing: 11
       - position: 19
         points: 0
         status: DSQ
-        constructor: surtees
+        constructorId: surtees
         cumulative: 1
         standing: 14
       - position: 11
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 1
         standing: 15
       - position: 5
         points: 2
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 15
       - position: 10
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 15
       - position: 7
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 16
       - position: 24
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 3
         standing: 18
       - position: 19
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 3
         standing: 19
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 3
         standing: 20
   - driverId: surtees
@@ -3465,73 +3465,73 @@ drivers:
     givenName: John
     flag: 🇬🇧
     number: -1
-    country3: GBR
-    code: SUR
+    countryCode3: GBR
+    driverCode3: SUR
     results:
       - position: 15
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 0
         standing: 15
       - position: 11
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 0
         standing: 18
       - position: 7
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 0
         standing: 13
       - position: 5
         points: 2
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 2
         standing: 10
       - position: 8
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 2
         standing: 13
       - position: 6
         points: 1
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 14
       - position: 7
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 14
       - position: 18
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 3
         standing: 15
       - position: 23
         points: 0
         status: DNF
-        constructor: surtees
+        constructorId: surtees
         cumulative: 3
         standing: 17
       - position: 11
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 18
       - position: 17
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 3
         standing: 19
   - driverId: lennep
@@ -3539,73 +3539,73 @@ drivers:
     givenName: Gijs
     flag: 🇳🇱
     number: -1
-    country3: NLD
-    code: VAN
+    countryCode3: NLD
+    driverCode3: VAN
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 49
+        standing: 50
       - position: 8
         points: 0
-        status: ''
-        constructor: surtees
+        status: Finished
+        constructorId: surtees
         cumulative: 0
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 20
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 21
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 22
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 24
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 25
   - driverId: walker
@@ -3613,73 +3613,73 @@ drivers:
     givenName: David
     flag: 🇦🇺
     number: -1
-    country3: AUS
-    code: WAL
+    countryCode3: AUS
+    driverCode3: WAL
     results:
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
-        standing: 50
+        standing: 51
       - position: 22
         points: 0
         status: DNF
-        constructor: lotus-pw
+        constructorId: lotus-pw
         cumulative: 0
         standing: 29
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 31
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 34
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 35
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 39
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 42
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 45
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 0
         standing: 47
   - driverId: wisell
@@ -3687,72 +3687,146 @@ drivers:
     givenName: Reine
     flag: 🇸🇪
     number: -1
-    country3: SWE
-    code: WIS
+    countryCode3: SWE
+    driverCode3: WIS
     results:
       - position: 4
         points: 3
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 3
         standing: 4
       - position: 12
         points: 0
         status: NC
-        constructor: lotus
+        constructorId: lotus
         cumulative: 3
         standing: 6
       - position: 16
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 3
         standing: 9
       - position: 20
         points: 0
         status: DSQ
-        constructor: lotus
+        constructorId: lotus
         cumulative: 3
         standing: 9
       - position: 6
         points: 1
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 4
         standing: 12
       - position: 13
         points: 0
         status: NC
-        constructor: lotus-pw
+        constructorId: lotus-pw
         cumulative: 4
         standing: 12
       - position: 8
         points: 0
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 4
         standing: 11
       - position: 4
         points: 3
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 7
         standing: 11
       - position: 0
         points: 0
         status: ''
-        constructor: ''
+        constructorId: ''
         cumulative: 7
         standing: 12
       - position: 5
         points: 2
-        status: ''
-        constructor: lotus
+        status: Finished
+        constructorId: lotus
         cumulative: 9
         standing: 12
       - position: 28
         points: 0
         status: DNF
-        constructor: lotus
+        constructorId: lotus
         cumulative: 9
         standing: 12
+  - driverId: andrea_de_adamich
+    familyName: de Adamich
+    givenName: Andrea
+    flag: null
+    number: -1
+    countryCode3: null
+    driverCode3: 'DE '
+    results:
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 32
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 33
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 33
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 35
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 37
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 39
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 40
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 42
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 45
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 48
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 51

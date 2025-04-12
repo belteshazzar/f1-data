@@ -97,7 +97,7 @@ function getSessionFromF1Practice(values) {
             result.position = $(tds[0]).text()*1
 
             const driverCode = $(tds[2]).find('span:nth(2)').text()
-            const driver = drivers.drivers.find(d => d.code == driverCode)
+            const driver = drivers.drivers.find(d => d.driverCode3 == driverCode)
             if (!driver) {
               throw new Error(`driver not found: ${driverCode}`)
             }
@@ -531,41 +531,44 @@ function getSessionFromF1Grid(values) {
             results: [],
           }
 
-          let errors = []
-
           $('table.f1-table > tbody > tr').each(function() {
             const result = {}
 
             const tds = $(this).find('td')
             result.position = $(tds[0]).text()*1
 
+            // console.log($(tds[1]).text())
+            const givenName = $(tds[2]).find('span:nth(0)').text()
+            const familyName = $(tds[2]).find('span:nth(1)').text()
             const driverCode = $(tds[2]).find('span:nth(2)').text()
+
             const driver = drivers.drivers.find(d => d.driverCode3 == driverCode)
             if (!driver) {
-              errors.push(`driver not found: ${driverCode}`)
+              result.driverId = `${givenName}_${familyName}_${driverCode}_NOT_FOUND`
+              console.log(result.driverId)
             } else {
-             result.driverId = driver.driverId
+              result.driverId = driver.driverId
             }
 
-            const constructorName = $(tds[3]).text()
-            const constructor = constructors.constructors.find(d => {
-              return d.knownAs.find(knownAs => knownAs == constructorName)
-            })
-            if (!constructor) {
-              errors.push(`constructor not found: ${constructorName}`)
+            let constructorName = $(tds[3]).text()
+            if (constructorName == '') {
+              result.constructorId = 'EMPTY'
+              console.log(`${this}.text() - constructor = 'EMPTY'`)
             } else {
-              result.constructorId = constructor.constructorId
+              const constructor = constructors.constructors.find(d => {
+                return d.knownAs.find(knownAs => knownAs == constructorName)
+              })
+              if (!constructor) {
+                result.constructorId = `${constructorName}_NOT_FOUND`
+                console.log(result.constructorId)
+              } else {
+                result.constructorId = constructor.constructorId
+              }
             }
             data.results.push(result);
           });
 
-          if (errors.length > 0) {
-            return Array.from(new Set(errors)).sort().forEach(error => {
-              console.error(error)
-            })
-          } else {
-            fs.writeFileSync(filename, yaml.dump(data));
-          }
+          fs.writeFileSync(filename, yaml.dump(data));
         });
     })
 }
