@@ -1,29 +1,15 @@
 season: 1969
 constructors:
-  - constructorId: brabham-climax
+  - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham-Climax
+    name: Brabham Ford
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham-Climax
-  - constructorId: brabham-ford
-    url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham-Ford
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Brabham-Ford
-  - constructorId: brabham-repco
-    url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham-Repco
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Brabham-Repco
+      - Brabham Ford
+      - Brabham Repco
+      - Brabham Climax
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
     name: BRM
@@ -32,30 +18,23 @@ constructors:
     countryCode3: GBR
     knownAs:
       - BRM
-  - constructorId: brm-ford
-    url: http://en.wikipedia.org/wiki/BRM
-    name: BRM-Ford
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - BRM-Ford
-  - constructorId: cooper-maserati
+      - BRM Ford
+  - constructorId: cooper
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: Cooper-Maserati
+    name: Cooper
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Cooper-Maserati
-  - constructorId: eagle-climax
+      - Cooper Maserati
+  - constructorId: eagle_climax
     url: http://en.wikipedia.org/wiki/Anglo_American_Racers
-    name: Eagle-Climax
+    name: Eagle Climax
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
     knownAs:
-      - Eagle-Climax
+      - Eagle Climax
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
@@ -64,27 +43,36 @@ constructors:
     countryCode3: ITA
     knownAs:
       - Ferrari
-  - constructorId: lotus-ford
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-Ford
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Lotus-Ford
-  - constructorId: matra-ford
+  - constructorId: matra
     url: http://en.wikipedia.org/wiki/Matra
-    name: Matra-Ford
+    name: Matra
     nationality: French
     flag: 🇫🇷
     countryCode3: FRA
     knownAs:
-      - Matra-Ford
-  - constructorId: mclaren-ford
+      - Matra Ford
+  - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/Team_McLaren
-    name: McLaren-Ford
+    name: McLaren
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - McLaren-Ford
+      - McLaren Ford
+  - constructorId: lotus
+    url: http://en.wikipedia.org/wiki/Team_Lotus
+    name: Team Lotus
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Lotus Ford
+  - constructorId: tecno
+    url: http://en.wikipedia.org/wiki/Tecno
+    name: Tecno
+    nationality: Italian
+    flag: 🇮🇹
+    countryCode3: ITA
+    knownAs:
+      - Tecno
+      - Tecno Cosworth

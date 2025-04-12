@@ -8,6 +8,7 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Brabham
+      - Brabham Ford
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
     name: BRM
@@ -24,6 +25,16 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Connew
+      - Connew Ford
+  - constructorId: eifelland
+    url: http://en.wikipedia.org/wiki/Eifelland
+    name: Eifelland
+    nationality:
+    flag:
+    countryCode3:
+    knownAs:
+      - Eifelland
+      - Eifelland Ford
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
@@ -40,6 +51,7 @@ constructors:
     countryCode3: GBR
     knownAs:
       - March
+      - March Ford
   - constructorId: matra
     url: http://en.wikipedia.org/wiki/Matra
     name: Matra
@@ -56,6 +68,7 @@ constructors:
     countryCode3: GBR
     knownAs:
       - McLaren
+      - McLaren Ford
   - constructorId: politoys
     url: http://en.wikipedia.org/wiki/Frank_Williams_Racing_Cars
     name: Politoys
@@ -72,7 +85,8 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Surtees
-  - constructorId: team_lotus
+      - Surtees Ford
+  - constructorId: lotus
     url: http://en.wikipedia.org/wiki/Team_Lotus
     name: Team Lotus
     nationality: British
@@ -80,6 +94,7 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Team Lotus
+      - Lotus Ford
   - constructorId: tecno
     url: http://en.wikipedia.org/wiki/Tecno
     name: Tecno
@@ -96,3 +111,4 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Tyrrell
+      - Tyrrell Ford

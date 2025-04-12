@@ -8,6 +8,7 @@ constructors:
     countryCode3: CHE
     knownAs:
       - Bellasi
+      - Bellasi Ford
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
     name: Brabham
@@ -50,23 +51,15 @@ constructors:
     countryCode3: FRA
     knownAs:
       - Matra
-  - constructorId: mclaren-alfa_romeo
-    url: http://en.wikipedia.org/wiki/McLaren_(racing)
-    name: McLaren-Alfa Romeo
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - McLaren-Alfa Romeo
-      - McLaren Alfa Romeo
-  - constructorId: mclaren-ford
+  - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/Team_McLaren
-    name: McLaren-Ford
+    name: McLaren
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - McLaren-Ford
+      - McLaren
+      - McLaren Alfa Romeo
       - McLaren Ford
   - constructorId: surtees
     url: http://en.wikipedia.org/wiki/Surtees
@@ -76,7 +69,7 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Surtees
-  - constructorId: team_lotus
+  - constructorId: lotus
     url: http://en.wikipedia.org/wiki/Team_Lotus
     name: Team Lotus
     nationality: British

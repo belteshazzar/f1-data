@@ -4,21 +4,21 @@ session: Race
 results:
   - position: 1
     driverId: clark
-    constructorId: lotus-ford
+    constructorId: lotus
     laps: 90
     time: '2:14:45.100'
     status: Finished
     points: 9
   - position: 2
     driverId: jack_brabham
-    constructorId: brabham-repco
+    constructorId: brabham
     laps: 90
     time: '+23.600'
     status: Finished
     points: 6
   - position: 3
     driverId: hulme
-    constructorId: brabham-repco
+    constructorId: brabham
     laps: 90
     time: '+25.700'
     status: Finished
@@ -46,7 +46,7 @@ results:
     points: 1
   - position: 7
     driverId: irwin
-    constructorId: lotus-brm
+    constructorId: lotus
     laps: 88
     time: ''
     status: Finished
@@ -60,14 +60,14 @@ results:
     points: 0
   - position: 9
     driverId: anderson
-    constructorId: brabham-climax
+    constructorId: brabham
     laps: 86
     time: ''
     status: Finished
     points: 0
   - position: 10
     driverId: siffert
-    constructorId: cooper-maserati
+    constructorId: cooper
     laps: 83
     time: ''
     status: Finished
@@ -88,21 +88,21 @@ results:
     points: 0
   - position: 13
     driverId: rindt
-    constructorId: cooper-maserati
+    constructorId: cooper
     laps: 41
     time: ''
     status: Suspension
     points: 0
   - position: 14
     driverId: rodriguez
-    constructorId: cooper-maserati
+    constructorId: cooper
     laps: 39
     time: ''
     status: Gearbox
     points: 0
   - position: 15
     driverId: hill
-    constructorId: lotus-ford
+    constructorId: lotus
     laps: 11
     time: ''
     status: Engine
@@ -116,7 +116,7 @@ results:
     points: 0
   - position: 17
     driverId: mclaren
-    constructorId: mclaren-brm
+    constructorId: mclaren
     laps: 1
     time: ''
     status: Accident

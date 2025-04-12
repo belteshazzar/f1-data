@@ -1,31 +1,15 @@
 season: 1966
 constructors:
-  - constructorId: brabham-brm
-    url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham-BRM
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Brabham-BRM
-      - Brabham BRM
-  - constructorId: brabham-climax
-    url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham-Climax
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Brabham-Climax
-      - Brabham Climax
-  - constructorId: brabham-repco
+  - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
     name: Brabham-Repco
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham-Repco
+      - Brabham
+      - Brabham BRM
+      - Brabham Climax
       - Brabham Repco
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
@@ -35,41 +19,24 @@ constructors:
     countryCode3: GBR
     knownAs:
       - BRM
-  - constructorId: cooper-ferrari
+  - constructorId: cooper
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: Cooper-Ferrari
+    name: cooper
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Cooper-Ferrari
-      - Cooper Ferrari
-  - constructorId: cooper-maserati
-    url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: Cooper-Maserati
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Cooper-Maserati
+      - Cooper
       - Cooper Maserati
-  - constructorId: eagle-climax
+      - Cooper Ferrari
+  - constructorId: eagle
     url: http://en.wikipedia.org/wiki/Anglo_American_Racers
     name: Eagle-Climax
     nationality: American
     flag: 🇺🇸
     countryCode3: USA
     knownAs:
-      - Eagle-Climax
       - Eagle Climax
-  - constructorId: eagle-weslake
-    url: http://en.wikipedia.org/wiki/Anglo_American_Racers
-    name: Eagle-Weslake
-    nationality: American
-    flag: 🇺🇸
-    countryCode3: USA
-    knownAs:
-      - Eagle-Weslake
       - Eagle Weslake
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
@@ -87,41 +54,25 @@ constructors:
     countryCode3: JPN
     knownAs:
       - Honda
-  - constructorId: lotus-brm
+  - constructorId: lotus
     url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-BRM
+    name: Team Lotus
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Lotus-BRM
+      - Lotus
       - Lotus BRM
-  - constructorId: lotus-climax
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-Climax
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Lotus-Climax
       - Lotus Climax
-  - constructorId: mclaren-ford
+  - constructorId: mclaren
     url: http://en.wikipedia.org/wiki/Team_McLaren
-    name: McLaren-Ford
+    name: McLaren
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - McLaren-Ford
+      - McLaren
       - McLaren Ford
-  - constructorId: mclaren-seren
-    url: http://en.wikipedia.org/wiki/Team_McLaren
-    name: McLaren-Serenissima
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - McLaren-Serenissima
       - McLaren Serenissima
   - constructorId: shannon
     url: http://en.wikipedia.org/wiki/Shannon_(Formula_One)
