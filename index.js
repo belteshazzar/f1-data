@@ -6,7 +6,8 @@ import yaml from 'js-yaml';
 import { convertSeasonInfo } from './src/convertSeasonInfo.js';
 import { convertSession } from './src/convertSession.js';
 import { getSeasonInfo } from './src/getSeasonInfo.js';
-import { getSession } from './src/getSession.js';
+import getSessionF1 from './src/getSessionF1.js';
+import getSessionJolpica from './src/getSessionJolpica.js';
 import { generateDriversTable } from './src/generateDriversTable.js';
 
 const args = process.argv
@@ -28,6 +29,10 @@ const options = {
     type: 'string',
     short: 't',
   },
+  from: {
+    type: 'string',
+    short: 'f',
+  },
 };
 
 const {values,positionals} = parseArgs({ args, options, allowPositionals: true });
@@ -35,13 +40,15 @@ const {values,positionals} = parseArgs({ args, options, allowPositionals: true }
 if (positionals.length == 3) {
   if (positionals[2] == 'get') {
     if (values.year && values.round) {
-
-      getSession(values);
-
+      if (values.from == 'f1') {
+        getSessionF1(values);
+      } else if (values.from == 'jolpica') {
+        getSessionJolpica(values);
+      } else {
+        throw new Error(`unknown source to get session from: ${values.from}`)
+      }
     } else if (values.year) {
-
       getSeasonInfo(values);
-
     } else {
       throw new Error('year required with round optional')
     }

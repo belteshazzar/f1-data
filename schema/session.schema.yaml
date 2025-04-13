@@ -53,14 +53,17 @@ properties:
           description: Finishing time of the driver
           example: '1:22:06.983'
         times:
-          type: array
+          type: object
           required: false
           description: The array of times for each part of the session
-          items:
+          additionalProperties:
             type: string
             required: true
-            description: The time for this part of the session
-            example: '1:22.456'
+            description: |
+              key = session part name
+              value = time for this part of the session
+            example:
+              q1: '1:22.456'
         status:
           type: string
           required: false
@@ -71,3 +74,8 @@ properties:
           required: false
           description: The number of points awarded to the driver
           example: 25
+        note:
+          type: string
+          required: false
+          description: A note associated with the grid position
+          example: 3 place grid penalty for impeding
