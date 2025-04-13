@@ -42,121 +42,107 @@ function getSessionFromF1(values) {
   }
 }
 
-function getSessionFromF1Practice(values) {
+function loadRounds(year) {
+  const rounds = yaml.load(fs.readFileSync(`data/${year}-rounds.yaml`, 'utf8'));
+  return {
+    get: function(round) {
+      return rounds.rounds[round-1]
+    }
+  };
+} 
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
-  const practice = values.session.substr(1)
-
-  const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
-
-  fetch(f1racesUrl)
-    .then(res => res.text())
-    .then(text => {
-      const $ = cheerio.load(text);
-      const title = $('title').text().toLowerCase()
-      console.log(`\n- page title: ${title}`)
-
-      const els = $(`li[data-name|=races]:nth(${values.round-1})`)
-      const f1raceCountry = els[0].attribs['data-value']
-      const raceNum = els[0].attribs['data-id']
-
-      const country = race.circuit.location.country.toLowerCase()
-      if (f1raceCountry != country) {
-        throw new Error(`country mismatch: ${country} != ${f1raceCountry}`)
+function loadDrivers(year) {
+  const drivers = yaml.load(fs.readFileSync(`data/${year}-drivers.yaml`, 'utf8'));
+  return {
+    forCode3: function(code3) {
+      const driver = drivers.drivers.find(d => d.driverCode3 == code3)
+      if (!driver) {
+        console.error(`driver not found: ${code3}`)
+        return code3
+      } else {
+        return driver.driverId
       }
-
-      const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/practice/${practice}`
-      const filename = `data/${values.year}-${values.round}-practice-${practice}.yaml`
-
-      console.log(`\nGetting practice ${practice} for round ${values.round} of ${values.year}`);
-      console.log(`- url: ${url}`)
-      console.log(`- file: ${filename}`)
-
-      fetch(url)
-        .then(res => res.text())
-        .then(text => {
-          const $ = cheerio.load(text);
-
-          const title = $('title').text().toLowerCase()
-          console.log(`\n- page title: ${title}\n`)
-
-          const data = {
-            season: values.year*1,
-            round: values.round*1,
-            session: 'practice ' + practice,
-            results: [],
-          }
-
-          $('table.f1-table > tbody > tr').each(function() {
-            const result = {}
-
-            const tds = $(this).find('td')
-            result.position = $(tds[0]).text()*1
-
-            const driverCode = $(tds[2]).find('span:nth(2)').text()
-            const driver = drivers.drivers.find(d => d.driverCode3 == driverCode)
-            if (!driver) {
-              throw new Error(`driver not found: ${driverCode}`)
-            }
-            result.driverId = driver.driverId
-
-            const constructorName = $(tds[3]).text()
-            const constructor = constructors.constructors.find(d => {
-              return d.knownAs.find(knownAs => knownAs == constructorName)
-            })
-            if (!constructor) {
-              throw new Error(`constructor not found: ${constructorName}`)
-            }
-            result.constructorId = constructor.constructorId
-
-            result.time = $(tds[4]).text()
-            result.gap = $(tds[5]).text()
-            result.laps = $(tds[6]).text()*1
-
-            data.results.push(result);
-          });
-
-          fs.writeFileSync(filename, yaml.dump(data));
-        });
-    })
+    }
+  };
+} 
+function loadConstructors(year) {
+  const constructors = yaml.load(fs.readFileSync(`data/${year}-constructors.yaml`, 'utf8'));
+  return {
+    forKnownAs: function(knownAs) {
+      const c = constructors.constructors.find(d => d.knownAs.find(k => k == knownAs))
+      if (!c) {
+        console.error(`constructor not found: ${knownAs}`)
+        return knownAs
+      } else {
+        return c.constructorId
+      }
+    }
+  };
 }
 
-function getSessionFromF1Q(values) {
+function getSessionFromF1Practice(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
+  const country = race.circuit.location.country.toLowerCase()
+  const practice = values.session.substr(1)
+  const filename = `data/${values.year}-${values.round}-practice-${practice}.yaml`
 
-  const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
+  const data = {
+    season: values.year*1,
+    round: values.round*1,
+    session: 'practice ' + practice,
+    results: [],
+  }
 
-  fetch(f1racesUrl)
-    .then(res => res.text())
-    .then(text => {
-      const $ = cheerio.load(text);
-      const title = $('title').text().toLowerCase()
-      console.log(`\n- page title: ${title}`)
+  formula1dotcomPage(values.year,values.round,country,`practice/${practice}`)
+    .then($ => {
 
-      const els = $(`li[data-name|=races]:nth(${values.round-1})`)
-      const f1raceCountry = els[0].attribs['data-value']
-      const raceNum = els[0].attribs['data-id']
+      $('table.f1-table > tbody > tr').each(function() {
+        const result = {}
 
-      const country = race.circuit.location.country.toLowerCase()
-      if (f1raceCountry != country) {
-        throw new Error(`country mismatch: ${country} != ${f1raceCountry}`)
-      }
+        const tds = $(this).find('td')
+        result.position = $(tds[0]).text()*1
+        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.constructorId = constructors.forKnownAs($(tds[3]).text())
+        result.time = $(tds[4]).text()
+        result.gap = $(tds[5]).text()
+        result.laps = $(tds[6]).text()*1
 
-      const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/qualifying`
-      const filename = `data/${values.year}-${values.round}-qualifying.yaml`
+        data.results.push(result);
+      });
 
-      console.log(`\nGetting qualifying for round ${values.round} of ${values.year}`);
-      console.log(`- url: ${url}`)
-      console.log(`- file: ${filename}`)
+      fs.writeFileSync(filename, yaml.dump(data));
+    });
+}
 
-      fetch(url)
+function formula1dotcomPage(year,round,country,pageName) {
+  const f1racesUrl = `https://www.formula1.com/en/results/${year}/races`
+
+  return new Promise((resolve, reject) => {
+
+    fetch(f1racesUrl)
+      .then(res => res.text())
+      .then(text => {
+        const $ = cheerio.load(text);
+        const title = $('title').text().toLowerCase()
+        console.log(`\n- page title: ${title}`)
+
+        const els = $(`li[data-name|=races]:nth(${round-1})`)
+        const f1raceCountry = els[0].attribs['data-value']
+        const raceNum = els[0].attribs['data-id']
+
+        if (f1raceCountry != country) {
+          reject(`country mismatch: ${country} != ${f1raceCountry}`)
+        }
+
+        const url = `https://www.formula1.com/en/results/${year}/races/${raceNum}/${country}/${pageName}`
+
+        console.log(`loading url: ${url}`)
+
+        fetch(url)
         .then(res => res.text())
         .then(text => {
           const $ = cheerio.load(text);
@@ -164,54 +150,55 @@ function getSessionFromF1Q(values) {
           const title = $('title').text().toLowerCase()
           console.log(`\n- page title: ${title}\n`)
 
-          const data = {
-            season: values.year*1,
-            round: values.round*1,
-            session: 'qualifying',
-            results: [],
-          }
+          resolve($)
+        })
+      })
+  })
+}
+function getSessionFromF1Q(values) {
 
-          $('table.f1-table > tbody > tr').each(function() {
-            const result = {}
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
+  const country = race.circuit.location.country.toLowerCase()
+  const filename = `data/${values.year}-${values.round}-qualifying.yaml`
 
-            const tds = $(this).find('td')
-            result.position = $(tds[0]).text()*1
+  const data = {
+    season: values.year*1,
+    round: values.round*1,
+    session: 'qualifying',
+    results: [],
+  }
 
-            const driverCode = $(tds[2]).find('span:nth(2)').text()
-            const driver = drivers.drivers.find(d => d.code == driverCode)
-            if (!driver) {
-              throw new Error(`driver not found: ${driverCode}`)
-            }
-            result.driverId = driver.driverId
+  formula1dotcomPage(values.year,values.round,country,'qualifying')
+    .then($ => {
 
-            const constructorName = $(tds[3]).text()
-            const constructor = constructors.constructors.find(d => {
-              return d.knownAs.find(knownAs => knownAs == constructorName)
-            })
-            if (!constructor) {
-              throw new Error(`constructor not found: ${constructorName}`)
-            }
-            result.constructorId = constructor.constructorId
+      $('table.f1-table > tbody > tr').each(function() {
+        const result = {}
 
-            result.q1 = $(tds[4]).text()
-            result.q2 = $(tds[5]).text()
-            result.q3 = $(tds[6]).text()
-            result.laps = $(tds[7]).text()*1
+        const tds = $(this).find('td')
+        result.position = $(tds[0]).text()*1
+        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.constructorId = constructors.forKnownAs($(tds[3]).text())
+        result.q1 = $(tds[4]).text()
+        result.q2 = $(tds[5]).text()
+        result.q3 = $(tds[6]).text()
+        result.laps = $(tds[7]).text()*1
 
-            data.results.push(result);
-          });
+        data.results.push(result);
+      });
 
-          fs.writeFileSync(filename, yaml.dump(data));
-        });
-    })
+      fs.writeFileSync(filename, yaml.dump(data));
+    });
 }
 
 function getSessionFromF1SQ(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
 
   const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
 
@@ -302,10 +289,10 @@ function getSessionFromF1SQ(values) {
 
 function getSessionFromF1S(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
 
   const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
 
@@ -393,192 +380,93 @@ function getSessionFromF1S(values) {
 }
 
 function getSessionFromF1R(values) {
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
+  const country = race.circuit.location.country.toLowerCase()
+  const filename = `data/${values.year}-${values.round}-race.yaml`
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const data = {
+    season: values.year*1,
+    round: values.round*1,
+    session: 'race',
+    results: [],
+  }
 
-  const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
+  formula1dotcomPage(values.year,values.round,country,'race-result')
+    .then($ => {
 
-  fetch(f1racesUrl)
-    .then(res => res.text())
-    .then(text => {
-      const $ = cheerio.load(text);
-      const title = $('title').text().toLowerCase()
-      console.log(`\n- page title: ${title}`)
+      $('table.f1-table > tbody > tr').each(function() {
+        const result = {}
 
-      const els = $(`li[data-name|=races]:nth(${values.round-1})`)
-      const f1raceCountry = els[0].attribs['data-value']
-      const raceNum = els[0].attribs['data-id']
+        const tds = $(this).find('td')
+        result.position = $(tds[0]).text()
+        if (result.position == 'NC') {
+          result.position = 0
+        } else {
+          result.position = result.position*1
+        }
 
-      const country = race.circuit.location.country.toLowerCase()
-      if (f1raceCountry != country) {
-        throw new Error(`country mismatch: ${country} != ${f1raceCountry}`)
-      }
+        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.constructorId = constructors.forKnownAs($(tds[3]).text())
+        result.laps = $(tds[4]).text()*1
+        result.time = $(tds[5]).text()
 
-      const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/race-result`
-      const filename = `data/${values.year}-${values.round}-race.yaml`
+        if (result.position == 0) {
+          result.status = result.time
+          result.time = ''
+        } else {
+          result.status = "Finished"
+        }
+        result.points = $(tds[6]).text()*1
 
-      console.log(`\nGetting race results for round ${values.round} of ${values.year}`);
-      console.log(`- url: ${url}`)
-      console.log(`- file: ${filename}`)
+        data.results.push(result);
+      });
 
-      fetch(url)
-        .then(res => res.text())
-        .then(text => {
-          const $ = cheerio.load(text);
-
-          const title = $('title').text().toLowerCase()
-          console.log(`\n- page title: ${title}\n`)
-
-          const data = {
-            season: values.year*1,
-            round: values.round*1,
-            session: 'race',
-            results: [],
-          }
-
-          $('table.f1-table > tbody > tr').each(function() {
-            const result = {}
-
-            const tds = $(this).find('td')
-            result.position = $(tds[0]).text()
-            if (result.position == 'NC') {
-              result.position = 0
-            } else {
-              result.position = result.position*1
-            }
-
-            const driverCode = $(tds[2]).find('span:nth(2)').text()
-            const driver = drivers.drivers.find(d => d.code == driverCode)
-            if (!driver) {
-              throw new Error(`driver not found: ${driverCode}`)
-            }
-            result.driverId = driver.driverId
-
-            const constructorName = $(tds[3]).text()
-            const constructor = constructors.constructors.find(d => {
-              return d.knownAs.find(knownAs => knownAs == constructorName)
-            })
-            if (!constructor) {
-              throw new Error(`constructor not found: ${constructorName}`)
-            }
-            result.constructorId = constructor.constructorId
-
-            result.laps = $(tds[4]).text()*1
-            result.time = $(tds[5]).text()
-            if (result.position == 0) {
-              result.status = result.time
-              result.time = ''
-            } else {
-              result.status = "Finished"
-            }
-            result.points = $(tds[6]).text()*1
-
-            data.results.push(result);
-          });
-
-          fs.writeFileSync(filename, yaml.dump(data));
-        });
-    })
+      fs.writeFileSync(filename, yaml.dump(data));
+    });
 }
 
 function getSessionFromF1Grid(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
+  const country = race.circuit.location.country.toLowerCase()
+  const filename = `data/${values.year}-${values.round}-race-grid.yaml`
 
-  const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
+  const data = {
+    season: values.year*1,
+    round: values.round*1,
+    session: 'grid',
+    results: [],
+  }
 
-  fetch(f1racesUrl)
-    .then(res => res.text())
-    .then(text => {
-      const $ = cheerio.load(text);
-      const title = $('title').text().toLowerCase()
-      console.log(`\n- page title: ${title}`)
+  formula1dotcomPage(values.year,values.round,country,'starting-grid')
+    .then($ => {
 
-      const els = $(`li[data-name|=races]:nth(${values.round-1})`)
-      const f1raceCountry = els[0].attribs['data-value']
-      const raceNum = els[0].attribs['data-id']
+      $('table.f1-table > tbody > tr').each(function() {
+        const result = {}
 
-      const country = race.circuit.location.country.toLowerCase()
-      if (f1raceCountry != country) {
-        console.warn(`country mismatch: ${country} != ${f1raceCountry}`)
-      }
+        const tds = $(this).find('td')
+        result.position = $(tds[0]).text()*1
+        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.constructorId = constructors.forKnownAs($(tds[3]).text())
+        data.results.push(result);
+      });
 
-      const url = `https://www.formula1.com/en/results/${values.year}/races/${raceNum}/${country}/starting-grid`
-      const filename = `data/${values.year}-${values.round}-race-grid.yaml`
-
-      console.log(`\nGetting grid for round ${values.round} of ${values.year}`);
-      console.log(`- url: ${url}`)
-      console.log(`- file: ${filename}`)
-
-      fetch(url)
-        .then(res => res.text())
-        .then(text => {
-          const $ = cheerio.load(text);
-
-          const title = $('title').text().toLowerCase()
-          console.log(`\n- page title: ${title}\n`)
-
-          const data = {
-            season: values.year*1,
-            round: values.round*1,
-            session: 'grid',
-            results: [],
-          }
-
-          $('table.f1-table > tbody > tr').each(function() {
-            const result = {}
-
-            const tds = $(this).find('td')
-            result.position = $(tds[0]).text()*1
-
-            // console.log($(tds[1]).text())
-            const givenName = $(tds[2]).find('span:nth(0)').text()
-            const familyName = $(tds[2]).find('span:nth(1)').text()
-            const driverCode = $(tds[2]).find('span:nth(2)').text()
-
-            const driver = drivers.drivers.find(d => d.driverCode3 == driverCode)
-            if (!driver) {
-              result.driverId = `${givenName}_${familyName}_${driverCode}_NOT_FOUND`
-              console.log(result.driverId)
-            } else {
-              result.driverId = driver.driverId
-            }
-
-            let constructorName = $(tds[3]).text()
-            if (constructorName == '') {
-              result.constructorId = 'EMPTY'
-              console.log(`${this}.text() - constructor = 'EMPTY'`)
-            } else {
-              const constructor = constructors.constructors.find(d => {
-                return d.knownAs.find(knownAs => knownAs == constructorName)
-              })
-              if (!constructor) {
-                result.constructorId = `${constructorName}_NOT_FOUND`
-                console.log(result.constructorId)
-              } else {
-                result.constructorId = constructor.constructorId
-              }
-            }
-            data.results.push(result);
-          });
-
-          fs.writeFileSync(filename, yaml.dump(data));
-        });
-    })
+      fs.writeFileSync(filename, yaml.dump(data));
+    });
 }
 
 function getSessionFromF1SG(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-  const race = rounds.rounds[values.round-1]
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+  const race = rounds.get(values.round)
 
   const f1racesUrl = `https://www.formula1.com/en/results/${values.year}/races`
 

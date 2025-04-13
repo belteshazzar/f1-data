@@ -5,11 +5,12 @@ function statusFor(status) {
   if (status == 'Finished') return 'Finished'
   if (status == 'Lapped') return 'Finished'
   if (/^\+[0-9]+ Laps?$/.test(status)) return 'Finished'
-  if (status == 'Retired') return 'Ret'
   if (status == 'Not classified') return 'NC'
   if (status == 'Did not start') return 'DNS'
   if (status == 'Disqualified') return 'DSQ'
   if (status == 'Withdrew') return 'WD'
+
+  //if (status == 'Retired') return 'Ret'
 
   // console.log(`${status} => DNF`)
   return 'DNF'
@@ -156,7 +157,7 @@ export function generateDriversTable(values) {
         points += driver.results[r].points;
         driver.results[r].cumulative = points;
 
-        if (t.races[r].type == 'race') racePositions[driver.results[r].position - 1]++;
+        if (t.races[r].type == 'race' && driver.results[r].status == "Finished") racePositions[driver.results[r].position - 1]++;
         driver.results[r]._racePositions = Object.assign([], racePositions);
       }
     }
