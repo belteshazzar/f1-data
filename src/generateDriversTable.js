@@ -130,20 +130,38 @@ export function generateDriversTable(values) {
         throw new Error(`Failed to find driver ${res.driverId}`)
       }
 
-      driver.results[ri] = {
-        position: res.position * 1,
-        points: res.points * 1,
-        status: statusFor(res.status),
-        constructorId: res.constructorId,
-        cumulative: 0,
-        standing: 0,
-      };
+      // drivers can have multiple results in the same race
+      // when car sharing/swapping was allowed
+      // take the best result for position
+      // add all the points together
+      if (driver.results[ri]) {
+        // const res2 = {
+        //   position: res.position * 1,
+        //   points: res.points * 1,
+        //   status: statusFor(res.status),
+        //   constructorId: res.constructorId,
+        //   cumulative: 0,
+        //   standing: 0,
+        // };
+        // console.log(driver.results[ri],res2)
+        driver.results[ri].points += res.points*1
+      } else {
+        driver.results[ri] = {
+          position: res.position * 1,
+          points: res.points * 1,
+          status: statusFor(res.status),
+          constructorId: res.constructorId,
+          cumulative: 0,
+          standing: 0,
+        };
+      }
     });
   });
 
   t.drivers.forEach((driver) => {
-    let points = 0;
+//    let points = 0;
     let racePositions = Array(t.drivers.length).fill(0);
+    let racePoints = Array(races.length).fill(0);
 
     for (let r = 0; r < races.length; r++) {
       if (!driver.results[r]) {
@@ -152,17 +170,35 @@ export function generateDriversTable(values) {
           points: 0,
           status: '',
           constructorId: '',
-          cumulative: points,
+          cumulative: -1, // to be set
           standing: 0,
           _racePositions: Object.assign([], racePositions),
         };
       } else {
-        points += driver.results[r].points;
-        driver.results[r].cumulative = points;
+        racePoints[r] = driver.results[r].points
+
+//        points += driver.results[r].points;
 
         if (t.races[r].type == 'race' && driver.results[r].status == "Finished") racePositions[driver.results[r].position - 1]++;
         driver.results[r]._racePositions = Object.assign([], racePositions);
       }
+
+      // if (driver.driverCode3 == 'ASC') {
+      //   console.log(racePoints)
+      // }
+
+      let points = 0
+      if (values.year <= 1952) {
+        // in 1950 only top 4 results count
+        points = racePoints.toSorted((a,b) => b-a).slice(0,4).reduce((a,v) => a + v,0)
+      } else {
+        points = racePoints.reduce((a,v) => a + v,0)
+      }
+      driver.results[r].cumulative = points;
+
+      // if (driver.driverCode3 == 'ASC') {
+      //   console.log()
+      // }
     }
   });
 

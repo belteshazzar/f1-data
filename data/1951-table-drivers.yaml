@@ -179,36 +179,36 @@ drivers:
         constructorId: ferrari
         cumulative: 6
         standing: 4
-      - position: 18
-        points: 0
-        status: DNF
+      - position: 2
+        points: 3
+        status: Finished
         constructorId: ferrari
-        cumulative: 6
-        standing: 5
+        cumulative: 9
+        standing: 4
       - position: 16
         points: 0
         status: DNF
         constructorId: ferrari
-        cumulative: 6
+        cumulative: 9
         standing: 6
       - position: 1
         points: 8
         status: Finished
         constructorId: ferrari
-        cumulative: 14
-        standing: 5
+        cumulative: 17
+        standing: 2
       - position: 1
         points: 8
         status: Finished
         constructorId: ferrari
-        cumulative: 22
+        cumulative: 25
         standing: 2
       - position: 4
         points: 3
         status: Finished
         constructorId: ferrari
         cumulative: 25
-        standing: 3
+        standing: 2
   - driverId: ayulo
     familyName: Ayulo
     givenName: Manny
@@ -240,31 +240,31 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 13
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 2
         standing: 14
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 14
+        standing: 15
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 14
+        standing: 15
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 14
+        standing: 15
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 2
+        standing: 15
   - driverId: ball
     familyName: Ball
     givenName: Bobby
@@ -296,24 +296,6 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 16
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 2
-        standing: 17
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 2
-        standing: 17
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 2
         standing: 17
       - position: 0
         points: 0
@@ -321,6 +303,24 @@ drivers:
         constructorId: ''
         cumulative: 2
         standing: 18
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 2
+        standing: 18
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 2
+        standing: 18
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 2
+        standing: 19
   - driverId: banks
     familyName: Banks
     givenName: Henry
@@ -352,12 +352,6 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 19
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
         standing: 20
       - position: 0
         points: 0
@@ -370,13 +364,19 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 21
+        standing: 22
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 21
+        standing: 22
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 22
   - driverId: bettenhausen
     familyName: Bettenhausen
     givenName: Tony
@@ -526,13 +526,13 @@ drivers:
         status: Finished
         constructorId: alfa
         cumulative: 3
-        standing: 12
+        standing: 13
       - position: 14
         points: 0
         status: DNF
         constructorId: alfa
         cumulative: 3
-        standing: 12
+        standing: 13
       - position: 3
         points: 2
         status: Finished
@@ -688,31 +688,31 @@ drivers:
         status: Finished
         constructorId: lago
         cumulative: 2
-        standing: 15
+        standing: 16
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 16
+        standing: 17
       - position: 12
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 2
-        standing: 16
+        standing: 17
       - position: 8
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 2
-        standing: 16
+        standing: 17
       - position: 17
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 2
-        standing: 17
+        standing: 18
   - driverId: darter
     familyName: Carter
     givenName: Duane
@@ -744,19 +744,13 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 23
+        standing: 24
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 25
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 28
+        standing: 26
       - position: 0
         points: 0
         status: ''
@@ -769,6 +763,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 30
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 31
   - driverId: chaboud
     familyName: Chaboud
     givenName: Eugène
@@ -800,19 +800,13 @@ drivers:
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 24
+        standing: 25
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 26
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 29
+        standing: 27
       - position: 0
         points: 0
         status: ''
@@ -825,6 +819,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 31
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 32
   - driverId: chiron
     familyName: Chiron
     givenName: Louis
@@ -856,31 +856,31 @@ drivers:
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 18
+        standing: 19
       - position: 19
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 19
+        standing: 20
       - position: 20
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 19
+        standing: 20
       - position: 13
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 19
+        standing: 20
       - position: 18
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 19
+        standing: 20
   - driverId: claes
     familyName: Claes
     givenName: Johnny
@@ -912,31 +912,31 @@ drivers:
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 21
-      - position: 13
-        points: 0
-        status: Finished
-        constructorId: lago
-        cumulative: 0
         standing: 22
-      - position: 11
+      - position: 13
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 0
         standing: 23
+      - position: 11
+        points: 0
+        status: Finished
+        constructorId: lago
+        cumulative: 0
+        standing: 24
       - position: 17
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 24
+        standing: 25
       - position: 13
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 25
+        standing: 26
   - driverId: george_connor
     familyName: Connor
     givenName: George
@@ -1080,31 +1080,31 @@ drivers:
         status: DNF
         constructorId: maserati
         cumulative: 2
-        standing: 17
+        standing: 18
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 18
+        standing: 19
       - position: 22
         points: 0
         status: DNF
         constructorId: maserati
         cumulative: 2
-        standing: 18
+        standing: 19
       - position: 18
         points: 0
         status: DNF
         constructorId: alfa
         cumulative: 2
-        standing: 18
+        standing: 19
       - position: 6
         points: 0
         status: Finished
         constructorId: alfa
         cumulative: 2
-        standing: 16
+        standing: 17
   - driverId: dinsmore
     familyName: Dinsmore
     givenName: Duke
@@ -1192,31 +1192,31 @@ drivers:
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 28
+        standing: 29
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 32
+        standing: 33
       - position: 19
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 34
+        standing: 35
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 36
+        standing: 37
       - position: 8
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 29
+        standing: 30
   - driverId: fagioli
     familyName: Fagioli
     givenName: Luigi
@@ -1243,36 +1243,36 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 39
-      - position: 11
-        points: 0
+      - position: 1
+        points: 4
         status: Finished
         constructorId: alfa
-        cumulative: 0
-        standing: 29
+        cumulative: 4
+        standing: 8
       - position: 0
         points: 0
         status: ''
         constructorId: ''
-        cumulative: 0
-        standing: 33
+        cumulative: 4
+        standing: 10
       - position: 0
         points: 0
         status: ''
         constructorId: ''
-        cumulative: 0
-        standing: 36
+        cumulative: 4
+        standing: 10
       - position: 0
         points: 0
         status: ''
         constructorId: ''
-        cumulative: 0
-        standing: 38
+        cumulative: 4
+        standing: 11
       - position: 0
         points: 0
         status: ''
         constructorId: ''
-        cumulative: 0
-        standing: 39
+        cumulative: 4
+        standing: 11
   - driverId: fangio
     familyName: Fangio
     givenName: Juan
@@ -1299,35 +1299,35 @@ drivers:
         constructorId: alfa
         cumulative: 10
         standing: 2
-      - position: 11
-        points: 0
+      - position: 1
+        points: 5
         status: Finished
         constructorId: alfa
-        cumulative: 10
-        standing: 2
+        cumulative: 15
+        standing: 1
       - position: 2
         points: 6
         status: Finished
         constructorId: alfa
-        cumulative: 16
+        cumulative: 21
         standing: 1
       - position: 2
         points: 7
         status: Finished
         constructorId: alfa
-        cumulative: 23
+        cumulative: 27
         standing: 1
       - position: 10
         points: 0
         status: DNF
         constructorId: alfa
-        cumulative: 23
+        cumulative: 27
         standing: 1
       - position: 1
         points: 9
         status: Finished
         constructorId: alfa
-        cumulative: 32
+        cumulative: 31
         standing: 1
   - driverId: farina
     familyName: Farina
@@ -1360,7 +1360,7 @@ drivers:
         status: Finished
         constructorId: alfa
         cumulative: 14
-        standing: 1
+        standing: 2
       - position: 14
         points: 1
         status: DNF
@@ -1372,13 +1372,13 @@ drivers:
         status: DNF
         constructorId: alfa
         cumulative: 15
-        standing: 3
-      - position: 16
-        points: 0
-        status: DNF
+        standing: 4
+      - position: 3
+        points: 3
+        status: Finished
         constructorId: alfa
-        cumulative: 15
-        standing: 5
+        cumulative: 17
+        standing: 4
       - position: 3
         points: 4
         status: Finished
@@ -1484,19 +1484,19 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 0
-        standing: 20
+        standing: 21
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 20
+        standing: 21
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 20
+        standing: 21
   - driverId: forberg
     familyName: Forberg
     givenName: Carl
@@ -1528,12 +1528,6 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 22
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
         standing: 23
       - position: 0
         points: 0
@@ -1553,6 +1547,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 26
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 27
   - driverId: force
     familyName: Force
     givenName: Gene
@@ -1776,7 +1776,7 @@ drivers:
         status: Finished
         constructorId: maserati
         cumulative: 0
-        standing: 37
+        standing: 38
   - driverId: gonzalez
     familyName: González
     givenName: José Froilán
@@ -1808,7 +1808,7 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 3
-        standing: 8
+        standing: 9
       - position: 1
         points: 8
         status: Finished
@@ -1820,7 +1820,7 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 15
-        standing: 2
+        standing: 3
       - position: 2
         points: 6
         status: Finished
@@ -1831,8 +1831,8 @@ drivers:
         points: 6
         status: Finished
         constructorId: ferrari
-        cumulative: 27
-        standing: 2
+        cumulative: 24
+        standing: 3
   - driverId: gordini
     familyName: Gordini
     givenName: Aldo
@@ -2592,31 +2592,31 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 25
+        standing: 26
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 27
+        standing: 28
       - position: 9
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 27
+        standing: 28
       - position: 14
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 28
+        standing: 29
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 28
+        standing: 29
   - driverId: linden
     familyName: Linden
     givenName: Andy
@@ -2648,31 +2648,31 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 3
-        standing: 11
+        standing: 12
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 3
-        standing: 13
+        standing: 14
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 3
-        standing: 13
+        standing: 14
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 3
-        standing: 13
+        standing: 14
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 3
-        standing: 13
+        standing: 14
   - driverId: louveau
     familyName: Louveau
     givenName: Henri
@@ -2816,19 +2816,13 @@ drivers:
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 27
+        standing: 28
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 30
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 32
+        standing: 31
       - position: 0
         points: 0
         status: ''
@@ -2841,6 +2835,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 34
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 35
   - driverId: manzon
     familyName: Manzon
     givenName: Robert
@@ -2884,19 +2884,19 @@ drivers:
         status: Finished
         constructorId: simca
         cumulative: 0
-        standing: 25
+        standing: 26
       - position: 12
         points: 0
         status: DNF
         constructorId: simca
         cumulative: 0
-        standing: 26
+        standing: 27
       - position: 9
         points: 0
         status: Finished
         constructorId: simca
         cumulative: 0
-        standing: 24
+        standing: 25
   - driverId: marimon
     familyName: Marimón
     givenName: Onofre
@@ -3040,31 +3040,31 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 14
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 2
         standing: 15
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 15
+        standing: 16
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 15
+        standing: 16
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 2
-        standing: 15
+        standing: 16
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 2
+        standing: 16
   - driverId: miller
     familyName: Miller
     givenName: Chet
@@ -3152,19 +3152,13 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 26
+        standing: 27
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 28
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 30
+        standing: 29
       - position: 0
         points: 0
         status: ''
@@ -3177,6 +3171,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 32
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 33
   - driverId: murray
     familyName: Murray
     givenName: David
@@ -3376,7 +3376,7 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 3
-        standing: 12
+        standing: 13
       - position: 5
         points: 2
         status: Finished
@@ -3544,12 +3544,6 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 20
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
         standing: 21
       - position: 0
         points: 0
@@ -3562,13 +3556,19 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 22
+        standing: 23
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 22
+        standing: 23
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 23
   - driverId: richardson
     familyName: Richardson
     givenName: Ken
@@ -3674,13 +3674,13 @@ drivers:
         status: Finished
         constructorId: osca
         cumulative: 0
-        standing: 34
+        standing: 35
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 35
+        standing: 36
   - driverId: rose
     familyName: Rose
     givenName: Mauri
@@ -3768,31 +3768,31 @@ drivers:
         status: DNF
         constructorId: lago
         cumulative: 3
-        standing: 9
+        standing: 10
       - position: 10
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 3
-        standing: 11
+        standing: 12
       - position: 8
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 3
-        standing: 11
-      - position: 7
-        points: 0
-        status: Finished
-        constructorId: lago
-        cumulative: 3
         standing: 12
       - position: 7
         points: 0
         status: Finished
         constructorId: lago
         cumulative: 3
-        standing: 12
+        standing: 13
+      - position: 7
+        points: 0
+        status: Finished
+        constructorId: lago
+        cumulative: 3
+        standing: 13
   - driverId: ruttman
     familyName: Ruttman
     givenName: Troy
@@ -3880,24 +3880,12 @@ drivers:
         status: Finished
         constructorId: alfa
         cumulative: 3
-        standing: 10
+        standing: 11
       - position: 6
         points: 0
         status: Finished
         constructorId: alfa
         cumulative: 3
-        standing: 10
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 3
-        standing: 10
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 3
         standing: 11
       - position: 0
         points: 0
@@ -3905,6 +3893,18 @@ drivers:
         constructorId: ''
         cumulative: 3
         standing: 11
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 3
+        standing: 12
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 3
+        standing: 12
   - driverId: scarborough
     familyName: Scarborough
     givenName: Carl
@@ -4110,13 +4110,7 @@ drivers:
         status: Finished
         constructorId: era
         cumulative: 0
-        standing: 29
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 31
+        standing: 30
       - position: 0
         points: 0
         status: ''
@@ -4129,6 +4123,12 @@ drivers:
         constructorId: ''
         cumulative: 0
         standing: 33
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 34
   - driverId: simon
     familyName: Simon
     givenName: André
@@ -4178,13 +4178,13 @@ drivers:
         status: Finished
         constructorId: simca
         cumulative: 0
-        standing: 23
+        standing: 24
       - position: 12
         points: 0
         status: DNF
         constructorId: simca
         cumulative: 0
-        standing: 23
+        standing: 24
   - driverId: stevenson
     familyName: Stevenson
     givenName: Chuck
@@ -4284,19 +4284,19 @@ drivers:
         status: Finished
         constructorId: lago
         cumulative: 0
-        standing: 35
+        standing: 36
       - position: 15
         points: 0
         status: DNF
         constructorId: lago
         cumulative: 0
-        standing: 37
+        standing: 38
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 38
+        standing: 39
   - driverId: taruffi
     familyName: Taruffi
     givenName: Piero
@@ -4440,7 +4440,7 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 8
-        standing: 4
+        standing: 5
       - position: 3
         points: 4
         status: Finished
@@ -4452,18 +4452,18 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 15
-        standing: 4
+        standing: 5
       - position: 4
         points: 3
         status: Finished
         constructorId: ferrari
-        cumulative: 18
-        standing: 4
+        cumulative: 15
+        standing: 5
       - position: 11
         points: 0
         status: DNF
         constructorId: ferrari
-        cumulative: 18
+        cumulative: 15
         standing: 5
   - driverId: vukovich
     familyName: Vukovich
@@ -4558,13 +4558,7 @@ drivers:
         status: Finished
         constructorId: brm
         cumulative: 0
-        standing: 24
-      - position: 0
-        points: 0
-        status: ''
-        constructorId: ''
-        cumulative: 0
-        standing: 26
+        standing: 25
       - position: 0
         points: 0
         status: ''
@@ -4576,7 +4570,13 @@ drivers:
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 27
+        standing: 28
+      - position: 0
+        points: 0
+        status: ''
+        constructorId: ''
+        cumulative: 0
+        standing: 28
   - driverId: wallard
     familyName: Wallard
     givenName: Lee
@@ -4726,22 +4726,22 @@ drivers:
         status: Finished
         constructorId: ferrari
         cumulative: 0
-        standing: 31
+        standing: 32
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 33
+        standing: 34
       - position: 19
         points: 0
         status: DNF
         constructorId: ferrari
         cumulative: 0
-        standing: 35
+        standing: 36
       - position: 0
         points: 0
         status: ''
         constructorId: ''
         cumulative: 0
-        standing: 36
+        standing: 37
