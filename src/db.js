@@ -6,6 +6,9 @@ export function loadRounds(year) {
   return {
     get: function(round) {
       return rounds.rounds[round-1]
+    },
+    forEach: function(cb) {
+      rounds.rounds.forEach(cb)
     }
   };
 } 
@@ -13,6 +16,9 @@ export function loadRounds(year) {
 export function loadDrivers(year) {
   const drivers = yaml.load(fs.readFileSync(`data/${year}-drivers.yaml`, 'utf8'));
   return {
+    forEach: function(cb) {
+      drivers.drivers.forEach(cb)
+    },
     forCode3: function(code3) {
       const driver = drivers.drivers.find(d => d.driverCode3 == code3)
       if (!driver) {
@@ -54,6 +60,13 @@ export function loadConstructors(year) {
       } else {
         return c.constructorId
       }
+    },
+    asMap: function() {
+      const m = {};
+      constructors.constructors.forEach(c => {
+        m[c.constructorId] = c;
+      });
+      return m
     }
   };
 }

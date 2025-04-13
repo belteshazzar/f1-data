@@ -1,5 +1,6 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
+import {loadDrivers,loadConstructors,loadRounds} from './db.js'
 
 function statusFor(status) {
   if (status == 'Finished') return 'Finished'
@@ -32,9 +33,13 @@ function driverCompare(ri) {
 
 export function generateDriversTable(values) {
 
-  const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
+  const rounds = loadRounds(values.year)
+  const drivers = loadDrivers(values.year)
+  const constructors = loadConstructors(values.year)
+
+  // const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
+  // const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
+  // const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
 
   let t = {
     season: values.year*1,
@@ -42,14 +47,12 @@ export function generateDriversTable(values) {
     drivers: [],
   };
 
-  let constructorsMap = {};
-  constructors.constructors.forEach(c => {
-    constructorsMap[c.constructorId] = c;
-  });
+  let constructorsMap = constructors.asMap();
+
 
   let races = [];
 
-  rounds.rounds.forEach((r, ri) => {
+  rounds.forEach((r, ri) => {
 
     if (r.sessions.find(s => s.name == 'Sprint')) {
       try {
@@ -58,9 +61,9 @@ export function generateDriversTable(values) {
         t.races.push({
           round: ri + 1,
           type: 'sprint',
-          name: rounds.rounds[ri].name,
-          raceCode3: rounds.rounds[ri].raceCode3,
-          flag: rounds.rounds[ri].circuit.location.flag
+          name: r.name,
+          raceCode3: r.raceCode3,
+          flag: r.circuit.location.flag
         });
       } catch (e) {
         console.log(`No sprint data for ${values.year}-${r.round}`);
@@ -68,9 +71,9 @@ export function generateDriversTable(values) {
         t.races.push({
           round: ri + 1,
           type: 'sprint',
-          name: rounds.rounds[ri].name,
-          raceCode3: rounds.rounds[ri].raceCode3,
-          flag: rounds.rounds[ri].circuit.location.flag
+          name: r.name,
+          raceCode3: r.raceCode3,
+          flag: r.circuit.location.flag
         });
       }
     }
@@ -81,9 +84,9 @@ export function generateDriversTable(values) {
       t.races.push({
         round: ri + 1,
         type: 'race',
-        name: rounds.rounds[ri].name,
-        raceCode3: rounds.rounds[ri].raceCode3,
-        flag: rounds.rounds[ri].circuit.location.flag
+        name: r.name,
+        raceCode3: r.raceCode3,
+        flag: r.circuit.location.flag
       });
     } catch (e) {
       console.log(`No race data for ${values.year}-${r.round}`);
@@ -91,31 +94,31 @@ export function generateDriversTable(values) {
       t.races.push({
         round: ri + 1,
         type: 'race',
-        name: rounds.rounds[ri].name,
-        raceCode3: rounds.rounds[ri].raceCode3,
-        flag: rounds.rounds[ri].circuit.location.flag
+        name: r.name,
+        raceCode3: r.raceCode3,
+        flag: r.circuit.location.flag
       });
     }
   });
 
   let driversMap = {};
 
-  for (let i = 0; i < drivers.drivers.length; i++) {
+  drivers.forEach((d, di) => {
     let driver = {
-      driverId: drivers.drivers[i].driverId,
-      familyName: drivers.drivers[i].familyName,
-      givenName: drivers.drivers[i].givenName,
-      flag: drivers.drivers[i].flag,
-      number: (drivers.drivers[i].permanentNumber ? drivers.drivers[i].permanentNumber * 1 : -1),
-      countryCode3: drivers.drivers[i].countryCode3,
-      driverCode3: (drivers.drivers[i].code
-        ? drivers.drivers[i].code
-        : drivers.drivers[i].familyName.substring(0,3).toUpperCase()),
+      driverId: d.driverId,
+      familyName: d.familyName,
+      givenName: d.givenName,
+      flag: d.flag,
+      number: (d.permanentNumber ? d.permanentNumber * 1 : -1),
+      countryCode3: d.countryCode3,
+      driverCode3: (d.code
+        ? d.code
+        : d.familyName.substring(0,3).toUpperCase()),
       results: [],
     };
     driversMap[driver.driverId] = driver;
     t.drivers.push(driver);
-  }
+  })
 
   races.forEach((race, ri) => {
     race.results.forEach((res) => {
