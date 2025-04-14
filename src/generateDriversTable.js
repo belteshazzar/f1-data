@@ -11,10 +11,17 @@ function statusFor(status) {
   if (status == 'Disqualified') return 'DSQ'
   if (status == 'Withdrew') return 'WD'
 
-  //if (status == 'Retired') return 'Ret'
-
-  // console.log(`${status} => DNF`)
   return 'DNF'
+}
+
+function sumBest(racePoints,bestX) {
+  return racePoints.toSorted((a,b) => b-a).slice(0,bestX).reduce((a,v) => a + v,0)
+}
+
+function sumBestSplit(racePoints,bestX,ofFirstY,bestZOfRest,restCount) {
+  if (racePoints.length != ofFirstY+restCount) throw new Error(`race results length = ${racePoints.length} but need ${ofFirstY}+${restCount}`)
+  return racePoints.slice(0,ofFirstY).toSorted((a,b) => b-a).slice(0,bestX).reduce((a,v) => a + v,0)
+   + racePoints.slice(ofFirstY).toSorted((a,b) => b-a).slice(0,bestZOfRest).reduce((a,v) => a + v,0)
 }
 
 function driverCompare(ri) {
@@ -37,18 +44,11 @@ export function generateDriversTable(values) {
   const drivers = loadDrivers(values.year)
   const constructors = loadConstructors(values.year)
 
-  // const rounds = yaml.load(fs.readFileSync(`data/${values.year}-rounds.yaml`, 'utf8'));
-  // const drivers = yaml.load(fs.readFileSync(`data/${values.year}-drivers.yaml`, 'utf8'));
-  // const constructors = yaml.load(fs.readFileSync(`data/${values.year}-constructors.yaml`, 'utf8'));
-
   let t = {
     season: values.year*1,
     races: [],
     drivers: [],
   };
-
-  let constructorsMap = constructors.asMap();
-
 
   let races = [];
 
@@ -111,8 +111,8 @@ export function generateDriversTable(values) {
       flag: d.flag,
       number: (d.permanentNumber ? d.permanentNumber * 1 : -1),
       countryCode3: d.countryCode3,
-      driverCode3: (d.code
-        ? d.code
+      driverCode3: (d.driverCode3
+        ? d.driverCode3
         : d.familyName.substring(0,3).toUpperCase()),
       results: [],
     };
@@ -135,15 +135,6 @@ export function generateDriversTable(values) {
       // take the best result for position
       // add all the points together
       if (driver.results[ri]) {
-        // const res2 = {
-        //   position: res.position * 1,
-        //   points: res.points * 1,
-        //   status: statusFor(res.status),
-        //   constructorId: res.constructorId,
-        //   cumulative: 0,
-        //   standing: 0,
-        // };
-        // console.log(driver.results[ri],res2)
         driver.results[ri].points += res.points*1
       } else {
         driver.results[ri] = {
@@ -159,7 +150,7 @@ export function generateDriversTable(values) {
   });
 
   t.drivers.forEach((driver) => {
-//    let points = 0;
+
     let racePositions = Array(t.drivers.length).fill(0);
     let racePoints = Array(races.length).fill(0);
 
@@ -177,28 +168,66 @@ export function generateDriversTable(values) {
       } else {
         racePoints[r] = driver.results[r].points
 
-//        points += driver.results[r].points;
-
         if (t.races[r].type == 'race' && driver.results[r].status == "Finished") racePositions[driver.results[r].position - 1]++;
         driver.results[r]._racePositions = Object.assign([], racePositions);
       }
 
-      // if (driver.driverCode3 == 'ASC') {
-      //   console.log(racePoints)
-      // }
-
       let points = 0
-      if (values.year <= 1952) {
-        // in 1950 only top 4 results count
-        points = racePoints.toSorted((a,b) => b-a).slice(0,4).reduce((a,v) => a + v,0)
+      if (values.year <= 1953) {
+        // top 4 results count
+        points = sumBest(racePoints,4)
+      } else if (
+        (values.year >= 1954 && values.year <=1957)
+        ||
+        values.year == 1959
+        ||
+        (values.year >= 1961 && values.year <=1962)
+        ||
+        values.year == 1966) {
+        // top 5 results count
+        points = sumBest(racePoints,5)
+      } else if (
+        values.year == 1958
+        ||
+        values.year == 1960
+        ||
+        (values.year >= 1963 && values.year <= 1965)) {
+        // top 6 results count
+        points = sumBest(racePoints,6)
+      } else if (values.year == 1967) {
+        points = sumBestSplit(racePoints,5,6,4,5)
+      } else if (values.year == 1968) {
+        points = sumBestSplit(racePoints,5,6,5,6)
+      } else if (values.year == 1969) {
+        points = sumBestSplit(racePoints,5,6,4,5)
+      } else if (values.year == 1970) {
+        points = sumBestSplit(racePoints,6,7,5,6)
+      } else if (values.year == 1971) {
+        points = sumBestSplit(racePoints,5,6,4,5)
+      } else if (values.year == 1972) {
+        points = sumBestSplit(racePoints,5,6,5,6)
+      } else if (values.year == 1973 || values.year == 1974) {
+        points = sumBestSplit(racePoints,7,8,6,7)
+      } else if (values.year == 1975) {
+        points = sumBestSplit(racePoints,6,7,6,7)
+      } else if (values.year == 1976) {
+        points = sumBestSplit(racePoints,7,8,7,8)
+      } else if (values.year == 1977) {
+        points = sumBestSplit(racePoints,8,9,7,8)
+      } else if (values.year == 1978) {
+        points = sumBestSplit(racePoints,7,8,7,8)
+      } else if (values.year == 1979) {
+        points = sumBestSplit(racePoints,4,7,4,8)
+      } else if (values.year == 1980) {
+        points = sumBestSplit(racePoints,5,7,5,7)
+      } else if (values.year >= 1981 && values.year <=1990) {
+        // top 11 results count
+        points = sumBest(racePoints,11)
       } else {
+        // sum all results
         points = racePoints.reduce((a,v) => a + v,0)
       }
       driver.results[r].cumulative = points;
-
-      // if (driver.driverCode3 == 'ASC') {
-      //   console.log()
-      // }
     }
   });
 
@@ -213,8 +242,6 @@ export function generateDriversTable(values) {
       delete res._racePositions;
     });
   });
-
-//  console.log(t.drivers.map(d => d.results.map(r => r.constructor)))
 
   fs.writeFileSync(`data/${values.year}-table-drivers.yaml`, yaml.dump(t));
 }
