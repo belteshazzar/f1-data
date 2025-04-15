@@ -26,13 +26,15 @@ function sumBestSplit(racePoints,bestX,ofFirstY,bestZOfRest,restCount) {
 
 function driverCompare(ri) {
   return (a,b) => {
-    // console.log(ri,b.driverCode3,b.results[ri].cumulative,a.driverCode3,a.results[ri].cumulative)
     let c =  b.results[ri].cumulative - a.results[ri].cumulative
-    if (c != 0) return c
-    // if (a.driverCode3=='MOS'||b.driverCode3=='MOS') console.log(ri,a.driverCode3,a.results[ri]._racePositions,b.driverCode3,b.results[ri]._racePositions)
+    if (c != 0) {
+      return c
+    }
     for (let i = 0 ; i<b.results[ri]._racePositions.length; i++) {
       c = b.results[ri]._racePositions[i] - a.results[ri]._racePositions[i]
-      if (c != 0) return c
+      if (c != 0) {
+        return c
+      }
     }
     c = a.familyName.localeCompare(b.familyName)
     if (c != 0) return c
@@ -236,7 +238,6 @@ export function generateDriversTable(values) {
   races.forEach((race, ri) => {
     t.drivers.toSorted(driverCompare(ri)).forEach((driver, i) => {
       driver.results[ri].standing = i + 1;
-      // console.log(ri,driver.driverCode3,driver.results[ri].standing,driver.results[ri].cumulative,driver.results[ri]._racePositions)
     });
   });
 
