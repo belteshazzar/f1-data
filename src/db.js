@@ -2,7 +2,7 @@ import fs from 'fs';
 import yaml from 'js-yaml';
 
 export function loadRounds(year) {
-  const rounds = yaml.load(fs.readFileSync(`data/${year}-rounds.yaml`, 'utf8'));
+  const rounds = yaml.load(fs.readFileSync(`data/${year}/${year}-rounds.yaml`, 'utf8'));
   return {
     get: function(round) {
       return rounds.rounds[round-1]
@@ -14,7 +14,7 @@ export function loadRounds(year) {
 } 
 
 export function loadDrivers(year) {
-  const drivers = yaml.load(fs.readFileSync(`data/${year}-drivers.yaml`, 'utf8'));
+  const drivers = yaml.load(fs.readFileSync(`data/${year}/${year}-drivers.yaml`, 'utf8'));
   return {
     forEach: function(cb) {
       drivers.drivers.forEach(cb)
@@ -32,16 +32,16 @@ export function loadDrivers(year) {
       const driver = drivers.drivers.find(d => d.driverId == driverId)
       if (!driver) {
         console.error(`driver not found: ${driverId}`)
-        return `${driverId}_NOT_FOUND`
+        return { driverId: `${driverId}_NOT_FOUND` }
       } else {
-        return driver.driverId
+        return driver
       }
     }
   };
 }
 
 export function loadConstructors(year) {
-  const constructors = yaml.load(fs.readFileSync(`data/${year}-constructors.yaml`, 'utf8'));
+  const constructors = yaml.load(fs.readFileSync(`data/${year}/${year}-constructors.yaml`, 'utf8'));
   return {
     forKnownAs: function(knownAs) {
       const c = constructors.constructors.find(d => d.knownAs.find(k => k == knownAs))
@@ -56,9 +56,9 @@ export function loadConstructors(year) {
       const c = constructors.constructors.find(c => c.constructorId == constructorId)
       if (!c) {
         console.error(`constructor not found: ${constructorId}`)
-        return `${constructorId}_NOT_FOUND`
+        return { constructorId: `${constructorId}_NOT_FOUND` }
       } else {
-        return c.constructorId
+        return c
       }
     },
     asMap: function() {

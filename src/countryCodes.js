@@ -67,7 +67,7 @@ const countryCodes = {
   "Uruguayan":"UY",
   "East German":"DD",
   "Venezuelan":"VE",
-  "Rhodesian":"RH",
+  "Rhodesian":"ZW", // rhodesia renamed zimbabwe
   "Liechtensteiner":"LI",
   "Colombian":"CO",
   "Polish":"PL",
@@ -126,7 +126,7 @@ const countryCodes3 = {
   "UY":"URY",
   "DD":"DDR",
   "VE":"VEN",
-  "RH":"RHO",
+  "ZW":"ZWE",
   "CO":"COL",
   "LI":"LIE",
   "PL":"POL",

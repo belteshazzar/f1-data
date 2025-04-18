@@ -39,8 +39,8 @@ function getQualy(values) {
         if (r.Q3) times.q3 = r.Q3
         data.results.push({
           position: r.position*1,
-          driverId: drivers.getById(r.Driver.driverId),
-          constructorId: constructors.getById(r.Constructor.constructorId),
+          driverId: drivers.getById(r.Driver.driverId).driverId,
+          constructorId: constructors.getById(r.Constructor.constructorId).constructorId,
           times
         })
 
@@ -75,8 +75,8 @@ function getRace(values) {
       json.MRData.RaceTable.Races[0].Results.forEach((r) => {
         data.results.push({
           position: r.position*1,
-          driverId: drivers.getById(r.Driver.driverId),
-          constructorId: constructors.getById(r.Constructor.constructorId),
+          driverId: drivers.getById(r.Driver.driverId).driverId,
+          constructorId: constructors.getById(r.Constructor.constructorId).constructorId,
           laps: r.laps*1,
           time: r.Time.time,
           status: r.status,

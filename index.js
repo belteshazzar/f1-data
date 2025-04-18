@@ -8,6 +8,7 @@ import { convertSession } from './src/convertSession.js';
 import { getSeasonInfo } from './src/getSeasonInfo.js';
 import getSessionF1 from './src/getSessionF1.js';
 import getSessionJolpica from './src/getSessionJolpica.js';
+import getWiki from './src/getWiki.js'
 import { generateDriversTable } from './src/generateDriversTable.js';
 
 const args = process.argv
@@ -33,6 +34,10 @@ const options = {
     type: 'string',
     short: 'f',
   },
+  driver: {
+    type: 'string',
+    short: 'd',
+  },
 };
 
 const {values,positionals} = parseArgs({ args, options, allowPositionals: true });
@@ -47,6 +52,8 @@ if (positionals.length == 3) {
       } else {
         throw new Error(`unknown source to get session from: ${values.from}`)
       }
+    } else if (values.year && values.from == 'wiki') {
+      getWiki(values) 
     } else if (values.year) {
       getSeasonInfo(values);
     } else {
