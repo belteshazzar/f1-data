@@ -38,7 +38,7 @@ function formula1dotcomPage(year,round,country,pageName) {
         const f1raceCountry = els[0].attribs['data-value']
         const raceNum = els[0].attribs['data-id']
 
-        if (f1raceCountry != country) {
+        if (f1raceCountry.replace('-',' ') != country) {
           reject(`country mismatch: ${country} != ${f1raceCountry}`)
         }
 
@@ -68,7 +68,7 @@ function getPractice(values) {
   const race = rounds.get(values.round)
   const country = race.circuit.location.country.toLowerCase()
   const practice = values.session.substr(1)
-  const filename = `data/${values.year}-${values.round}-practice-${practice}.yaml`
+  const filename = `data/${values.year}/${values.year}-${values.round}-practice-${practice}.yaml`
 
   const data = {
     season: values.year*1,
@@ -105,7 +105,7 @@ function getQualy(values) {
   const constructors = loadConstructors(values.year)
   const race = rounds.get(values.round)
   const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}-${values.round}-${values.s=='sq'?'sprint-':''}qualifying.yaml`
+  const filename = `data/${values.year}/${values.year}-${values.round}-${values.s=='sq'?'sprint-':''}qualifying.yaml`
 
   const data = {
     season: values.year*1,
@@ -146,7 +146,7 @@ function getRace(values) {
   const constructors = loadConstructors(values.year)
   const race = rounds.get(values.round)
   const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}-${values.round}-${values.session=='r'?'race':'sprint'}.yaml`
+  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='r'?'race':'sprint'}.yaml`
 
   const data = {
     season: values.year*1,
@@ -201,7 +201,7 @@ function getGrid(values) {
   const constructors = loadConstructors(values.year)
   const race = rounds.get(values.round)
   const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}-${values.round}-${values.session=='g' ? 'race-grid' : 'sprint-grid'}.yaml`
+  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='g' ? 'race-grid' : 'sprint-grid'}.yaml`
 
   const data = {
     season: values.year*1,

@@ -60,7 +60,7 @@ export function generateDriversTable(values) {
 
     if (r.sessions.find(s => s.name == 'Sprint')) {
       try {
-        const sprint = yaml.load(fs.readFileSync(`data/${values.year}-${r.round}-sprint.yaml`, 'utf8'));
+        const sprint = yaml.load(fs.readFileSync(`data/${values.year}/${values.year}-${r.round}-sprint.yaml`, 'utf8'));
         races.push(sprint);
         t.races.push({
           round: ri + 1,
@@ -83,7 +83,7 @@ export function generateDriversTable(values) {
     }
 
     try {
-      const race = yaml.load(fs.readFileSync(`data/${values.year}-${r.round}-race.yaml`, 'utf8'));
+      const race = yaml.load(fs.readFileSync(`data/${values.year}/${values.year}-${r.round}-race.yaml`, 'utf8'));
       races.push(race);
       t.races.push({
         round: ri + 1,
@@ -247,5 +247,5 @@ export function generateDriversTable(values) {
     });
   });
 
-  fs.writeFileSync(`data/${values.year}-table-drivers.yaml`, yaml.dump(t));
+  fs.writeFileSync(`data/${values.year}/${values.year}-table-drivers.yaml`, yaml.dump(t));
 }
