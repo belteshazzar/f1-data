@@ -42,7 +42,7 @@ function formula1dotcomPage(year,round,country,pageName) {
           reject(`country mismatch: ${country} != ${f1raceCountry}`)
         }
 
-        const url = `https://www.formula1.com/en/results/${year}/races/${raceNum}/${country}/${pageName}`
+        const url = `https://www.formula1.com/en/results/${year}/races/${raceNum}/${country}/${pageName}`.replace(' ','%20')
 
         console.log(`loading url: ${url}`)
 
@@ -158,6 +158,7 @@ function getRace(values) {
   formula1dotcomPage(values.year,values.round,country,values.session == 'r' ? 'race-result' : 'sprint-results')
     .then($ => {
 
+      let pos = 1
       $('table.f1-table > tbody > tr').each(function() {
         const result = {}
 
@@ -180,6 +181,8 @@ function getRace(values) {
         } else {
           result.status = "Finished"
         }
+        result.position = pos++
+        
         // remove the s for seconds from times, checking lap
         if (result.time.length > 2 && result.time[result.time.length-1] == 's' && result.time.indexOf('lap') == -1) {
           result.time = result.time.substring(0,result.time.length-1)
