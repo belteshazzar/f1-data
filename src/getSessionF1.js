@@ -39,7 +39,7 @@ function formula1dotcomPage(year,round,country,pageName) {
         const raceNum = els[0].attribs['data-id']
 
         if (f1raceCountry.replace('-',' ') != country) {
-          reject(`country mismatch: ${country} != ${f1raceCountry}`)
+          console.warn(`country mismatch: ${country} != ${f1raceCountry}`)
         }
 
         const url = `https://www.formula1.com/en/results/${year}/races/${raceNum}/${country}/${pageName}`.replace(' ','%20')
@@ -105,16 +105,16 @@ function getQualy(values) {
   const constructors = loadConstructors(values.year)
   const race = rounds.get(values.round)
   const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}/${values.year}-${values.round}-${values.s=='sq'?'sprint-':''}qualifying.yaml`
+  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='sq'?'sprint-':''}qualifying.yaml`
 
   const data = {
     season: values.year*1,
     round: values.round*1,
-    session: `${values.s=='sq'?'sprint ':''}qualifying`,
+    session: `${values.session=='sq'?'sprint ':''}qualifying`,
     results: [],
   }
 
-  formula1dotcomPage(values.year,values.round,country,`${values.s=='sq'?'sprint-':''}qualifying`)
+  formula1dotcomPage(values.year,values.round,country,`${values.session=='sq'?'sprint-':''}qualifying`)
     .then($ => {
 
       $('table.f1-table > tbody > tr').each(function() {

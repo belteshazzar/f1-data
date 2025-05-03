@@ -14,10 +14,13 @@ node index.js get -y 2025 -t rounds       # ergast/2025-rounds.yaml
 node index.js get -y 2025 -t drivers      # ergast/2025-drivers.yaml
 node index.js get -y 2025 -t constructors # ergast/2025-constructors.yaml
 
+
 ## Get Session Results
 
 node index.js get -y 2025 -r 1            # data/2025-1-race.yaml
 node index.js get -y 2025 -r 1 -s r       # data/2025-1-race.yaml
+
+node index.js get -y 2025 -r 6 -s sq -f f1 # from f1
 
 ## Convert Jolpica F1 Information
 
@@ -32,6 +35,3 @@ node index.js check data/1950-constructors.yaml schema/constructors.schema.yaml
 
 TODO: grid positions
 
-for f in $( ls data/*-grid.yaml ); do ; e=$(cat  $f | grep "position: 0") ; if [ "$e" != "" ]; then echo $f; fi ; done
-
-node index.js get -y 1959 -r 4 -s g
