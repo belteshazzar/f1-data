@@ -10,7 +10,7 @@ export default function getSession(values) {
     getQualy(values)
   } else if (values.session == 'g' || values.session == 'sg') {
     getGrid(values)
-  } else if (values.session == 'r' || values.session == 'sg') {
+  } else if (values.session == 'r' || values.session == 's') {
     getRace(values)
   } else {
     throw new Error(`invalid session ${values.session}`)

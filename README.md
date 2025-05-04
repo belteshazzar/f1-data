@@ -20,7 +20,15 @@ node index.js get -y 2025 -t constructors # ergast/2025-constructors.yaml
 node index.js get -y 2025 -r 1            # data/2025-1-race.yaml
 node index.js get -y 2025 -r 1 -s r       # data/2025-1-race.yaml
 
-node index.js get -y 2025 -r 6 -s sq -f f1 # from f1
+node index.js get -y 2025 -r 6 -s p1 -f f1 # practice 1 from f1.com
+node index.js get -y 2025 -r 6 -s sq -f f1 # sprint qualifying from f1.com
+node index.js get -y 2025 -r 6 -s sg -f f1 # sprint grid from f1.com
+node index.js get -y 2025 -r 6 -s s  -f f1 # sprint results from f1.com
+node index.js get -y 2025 -r 6 -s q  -f f1 # race qualifying from f1.com
+node index.js get -y 2025 -r 6 -s g  -f f1 # race grid from f1.com
+node index.js generate -y 2025 -t drivers  # update drivers table
+node index.js get -y 2025 -r 6 -s r  -f f1 # race from f1.com
+node index.js generate -y 2025 -t drivers  # update drivers table
 
 ## Convert Jolpica F1 Information
 
