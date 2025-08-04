@@ -30,6 +30,16 @@ drivers:
     flag: 🇮🇹
     countryCode3: ITA
     driverCode3: ANT
+  - driverId: aron
+    permanentNumber:
+    url: https://en.wikipedia.org/wiki/Paul_Aron
+    givenName: Paul
+    familyName: Aron
+    dateOfBirth: '2004-02-04'
+    nationality: Estonian
+    flag: 🇪🇪
+    countryCode3: EST
+    driverCode3: ARO
   - driverId: bearman
     permanentNumber: 38
     url: http://en.wikipedia.org/wiki/Oliver_Bearman
@@ -70,6 +80,16 @@ drivers:
     flag: 🇦🇺
     countryCode3: AUS
     driverCode3: DOO
+  - driverId: dunne
+    permanentNumber: 89
+    url: https://en.wikipedia.org/wiki/Alex_Dunne
+    givenName: Alex
+    familyName: Dunne
+    dateOfBirth: '2005-11-11'
+    nationality: Irish
+    flag: 🇮🇪
+    countryCode3: IRL
+    driverCode3: DUN
   - driverId: gasly
     permanentNumber: 10
     url: http://en.wikipedia.org/wiki/Pierre_Gasly
@@ -130,6 +150,15 @@ drivers:
     flag: 🇲🇨
     countryCode3: MCO
     driverCode3: LEC
+  - driverId: lindblad
+    url: https://en.wikipedia.org/wiki/Arvid_Lindblad
+    givenName: Arvid
+    familyName: Lindblad
+    dateOfBirth: '2007-08-08'
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    driverCode3: LIN
   - driverId: norris
     permanentNumber: 4
     url: http://en.wikipedia.org/wiki/Lando_Norris

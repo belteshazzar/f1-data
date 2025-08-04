@@ -26,7 +26,6 @@ node index.js get -y 2025 -r 6 -s sg -f f1 # sprint grid from f1.com
 node index.js get -y 2025 -r 6 -s s  -f f1 # sprint results from f1.com
 node index.js get -y 2025 -r 6 -s q  -f f1 # race qualifying from f1.com
 node index.js get -y 2025 -r 6 -s g  -f f1 # race grid from f1.com
-node index.js generate -y 2025 -t drivers  # update drivers table
 node index.js get -y 2025 -r 6 -s r  -f f1 # race from f1.com
 node index.js generate -y 2025 -t drivers  # update drivers table
 

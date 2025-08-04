@@ -26,23 +26,18 @@ function formula1dotcomPage(year,round,country,pageName) {
       .then(res => res.text())
       .then(text => {
         const $ = cheerio.load(text);
-        const title = $('title').text().toLowerCase()
-        console.log(`\n- page title: ${title}`)
+        const title = $('head > title').text().toLowerCase()
+        console.log(`\n- page title: ${title}\n`)
 
         let nth = round*1-1
         // emelia-romagna gp 2023 was cancelled but is still in the list
         if (year*1 == 2023 && round > 6) {
           nth++
         }
-        const els = $(`li[data-name|=races]:nth(${nth})`)
-        const f1raceCountry = els[0].attribs['data-value']
-        const raceNum = els[0].attribs['data-id']
-
-        if (f1raceCountry.replace('-',' ') != country) {
-          console.warn(`country mismatch: ${country} != ${f1raceCountry}`)
-        }
-
-        const url = `https://www.formula1.com/en/results/${year}/races/${raceNum}/${country}/${pageName}`.replace(' ','%20')
+        const row = $(`table.f1-table tbody tr:nth(${nth})`)
+        const raceUrl = $(row[0]).find('a')[0].attribs['href']
+        const racePath = raceUrl.split('/').slice(7,-1).join('/')
+        const url = `${f1racesUrl}/${racePath}/${pageName}`
 
         console.log(`loading url: ${url}`)
 
@@ -51,7 +46,7 @@ function formula1dotcomPage(year,round,country,pageName) {
         .then(text => {
           const $ = cheerio.load(text);
 
-          const title = $('title').text().toLowerCase()
+          const title = $('head > title').text().toLowerCase()
           console.log(`\n- page title: ${title}\n`)
 
           resolve($)
@@ -80,16 +75,17 @@ function getPractice(values) {
   formula1dotcomPage(values.year,values.round,country,`practice/${practice}`)
     .then($ => {
 
-      $('table.f1-table > tbody > tr').each(function() {
+      $('table.f1-table > tbody > tr').each(function(i) {
         const result = {}
 
         const tds = $(this).find('td')
         result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
         result.constructorId = constructors.forKnownAs($(tds[3]).text())
-        result.time = $(tds[4]).text()
-        result.gap = $(tds[5]).text()
-        result.laps = $(tds[6]).text()*1
+        const timeGap = $(tds[4]).text()
+        result.time = i==0 ? timeGap : ''
+        result.gap = i==0 ? '' : timeGap
+        result.laps = $(tds[5]).text()*1
 
         data.results.push(result);
       });
@@ -122,7 +118,7 @@ function getQualy(values) {
 
         const tds = $(this).find('td')
         result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
         result.constructorId = constructors.forKnownAs($(tds[3]).text())
         const q1 = $(tds[4]).text()
         const q2 = $(tds[5]).text()
@@ -170,7 +166,7 @@ function getRace(values) {
           result.position = result.position*1
         }
 
-        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
         result.constructorId = constructors.forKnownAs($(tds[3]).text())
         result.laps = $(tds[4]).text()*1
         result.time = $(tds[5]).text()
@@ -221,7 +217,7 @@ function getGrid(values) {
 
         const tds = $(this).find('td')
         result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span:nth(2)').text())
+        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
         result.constructorId = constructors.forKnownAs($(tds[3]).text())
         data.results.push(result);
       });
