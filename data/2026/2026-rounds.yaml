@@ -1,0 +1,684 @@
+season: 2026
+rounds:
+  - round: 1
+    url: https://en.wikipedia.org/wiki/2026_Australian_Grand_Prix
+    name: Australian Grand Prix
+    raceCode3: AUS
+    sessions:
+      - name: Race
+        date: '2026-03-08'
+        time: 04:00:00Z
+      - name: Practice 1
+        date: '2026-03-06'
+        time: 01:30:00Z
+      - name: Practice 2
+        date: '2026-03-06'
+        time: 05:00:00Z
+      - name: Practice 3
+        date: '2026-03-07'
+        time: 01:30:00Z
+      - name: Qualifying
+        date: '2026-03-07'
+        time: 05:00:00Z
+    circuit:
+      circuitId: albert_park
+      url: https://en.wikipedia.org/wiki/Albert_Park_Circuit
+      name: Albert Park Grand Prix Circuit
+      location:
+        locality: Melbourne
+        country: Australia
+        latitude: -37.8497
+        longitude: 144.968
+        flag: 🇦🇺
+        countryCode3: AUS
+  - round: 2
+    url: https://en.wikipedia.org/wiki/2026_Chinese_Grand_Prix
+    name: Chinese Grand Prix
+    raceCode3: CHN
+    sessions:
+      - name: Race
+        date: '2026-03-15'
+        time: 07:00:00Z
+      - name: Practice 1
+        date: '2026-03-13'
+        time: 03:30:00Z
+      - name: Qualifying
+        date: '2026-03-14'
+        time: 07:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-03-13'
+        time: 07:30:00Z
+      - name: Sprint
+        date: '2026-03-14'
+        time: 03:00:00Z
+    circuit:
+      circuitId: shanghai
+      url: https://en.wikipedia.org/wiki/Shanghai_International_Circuit
+      name: Shanghai International Circuit
+      location:
+        locality: Shanghai
+        country: China
+        latitude: 31.3389
+        longitude: 121.22
+        flag: 🇨🇳
+        countryCode3: CHN
+  - round: 3
+    url: https://en.wikipedia.org/wiki/2026_Japanese_Grand_Prix
+    name: Japanese Grand Prix
+    raceCode3: JPN
+    sessions:
+      - name: Race
+        date: '2026-03-29'
+        time: 05:00:00Z
+      - name: Practice 1
+        date: '2026-03-27'
+        time: 02:30:00Z
+      - name: Practice 2
+        date: '2026-03-27'
+        time: 06:00:00Z
+      - name: Practice 3
+        date: '2026-03-28'
+        time: 02:30:00Z
+      - name: Qualifying
+        date: '2026-03-28'
+        time: 06:00:00Z
+    circuit:
+      circuitId: suzuka
+      url: https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course
+      name: Suzuka Circuit
+      location:
+        locality: Suzuka
+        country: Japan
+        latitude: 34.8431
+        longitude: 136.541
+        flag: 🇯🇵
+        countryCode3: JPN
+  - round: 4
+    url: https://en.wikipedia.org/wiki/2026_Miami_Grand_Prix
+    name: Miami Grand Prix
+    raceCode3: MIA
+    sessions:
+      - name: Race
+        date: '2026-05-03'
+        time: 20:00:00Z
+      - name: Practice 1
+        date: '2026-05-01'
+        time: 16:00:00Z
+      - name: Qualifying
+        date: '2026-05-02'
+        time: 20:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-05-01'
+        time: 20:30:00Z
+      - name: Sprint
+        date: '2026-05-02'
+        time: 16:00:00Z
+    circuit:
+      circuitId: miami
+      url: https://en.wikipedia.org/wiki/Miami_International_Autodrome
+      name: Miami International Autodrome
+      location:
+        locality: Miami
+        country: USA
+        latitude: 25.9581
+        longitude: -80.2389
+        flag: 🇺🇸
+        countryCode3: USA
+  - round: 5
+    url: https://en.wikipedia.org/wiki/2026_Canadian_Grand_Prix
+    name: Canadian Grand Prix
+    raceCode3: CAN
+    sessions:
+      - name: Race
+        date: '2026-05-24'
+        time: 20:00:00Z
+      - name: Practice 1
+        date: '2026-05-22'
+        time: 16:30:00Z
+      - name: Qualifying
+        date: '2026-05-23'
+        time: 20:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-05-22'
+        time: 20:30:00Z
+      - name: Sprint
+        date: '2026-05-23'
+        time: 16:00:00Z
+    circuit:
+      circuitId: villeneuve
+      url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
+      name: Circuit Gilles Villeneuve
+      location:
+        locality: Montreal
+        country: Canada
+        latitude: 45.5
+        longitude: -73.5228
+        flag: 🇨🇦
+        countryCode3: CAN
+  - round: 6
+    url: https://en.wikipedia.org/wiki/2026_Monaco_Grand_Prix
+    name: Monaco Grand Prix
+    raceCode3: MON
+    sessions:
+      - name: Race
+        date: '2026-06-07'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-06-05'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-06-05'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-06-06'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-06-06'
+        time: 14:00:00Z
+    circuit:
+      circuitId: monaco
+      url: https://en.wikipedia.org/wiki/Circuit_de_Monaco
+      name: Circuit de Monaco
+      location:
+        locality: Monte Carlo
+        country: Monaco
+        latitude: 43.7347
+        longitude: 7.42056
+        flag: 🇲🇨
+        countryCode3: MCO
+  - round: 7
+    url: https://en.wikipedia.org/wiki/2026_Barcelona-Catalunya
+    name: Barcelona Grand Prix
+    raceCode3: BCN
+    sessions:
+      - name: Race
+        date: '2026-06-14'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-06-12'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-06-12'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-06-13'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-06-13'
+        time: 14:00:00Z
+    circuit:
+      circuitId: catalunya
+      url: https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya
+      name: Circuit de Barcelona-Catalunya
+      location:
+        locality: Barcelona
+        country: Spain
+        latitude: 41.57
+        longitude: 2.26111
+        flag: 🇪🇸
+        countryCode3: ESP
+  - round: 8
+    url: https://en.wikipedia.org/wiki/2026_Austrian_Grand_Prix
+    name: Austrian Grand Prix
+    raceCode3: AUT
+    sessions:
+      - name: Race
+        date: '2026-06-28'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-06-26'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-06-26'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-06-27'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-06-27'
+        time: 14:00:00Z
+    circuit:
+      circuitId: red_bull_ring
+      url: https://en.wikipedia.org/wiki/Red_Bull_Ring
+      name: Red Bull Ring
+      location:
+        locality: Spielberg
+        country: Austria
+        latitude: 47.2197
+        longitude: 14.7647
+        flag: 🇦🇹
+        countryCode3: AUT
+  - round: 9
+    url: https://en.wikipedia.org/wiki/2026_British_Grand_Prix
+    name: British Grand Prix
+    raceCode3: GBR
+    sessions:
+      - name: Race
+        date: '2026-07-05'
+        time: 14:00:00Z
+      - name: Practice 1
+        date: '2026-07-03'
+        time: 11:30:00Z
+      - name: Qualifying
+        date: '2026-07-04'
+        time: 15:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-07-03'
+        time: 15:30:00Z
+      - name: Sprint
+        date: '2026-07-04'
+        time: 11:00:00Z
+    circuit:
+      circuitId: silverstone
+      url: https://en.wikipedia.org/wiki/Silverstone_Circuit
+      name: Silverstone Circuit
+      location:
+        locality: Silverstone
+        country: UK
+        latitude: 52.0786
+        longitude: -1.01694
+        flag: 🇬🇧
+        countryCode3: GBR
+  - round: 10
+    url: https://en.wikipedia.org/wiki/2026_Belgian_Grand_Prix
+    name: Belgian Grand Prix
+    raceCode3: BEL
+    sessions:
+      - name: Race
+        date: '2026-07-19'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-07-17'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-07-17'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-07-18'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-07-18'
+        time: 14:00:00Z
+    circuit:
+      circuitId: spa
+      url: https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps
+      name: Circuit de Spa-Francorchamps
+      location:
+        locality: Spa
+        country: Belgium
+        latitude: 50.4372
+        longitude: 5.97139
+        flag: 🇧🇪
+        countryCode3: BEL
+  - round: 11
+    url: https://en.wikipedia.org/wiki/2026_Hungarian_Grand_Prix
+    name: Hungarian Grand Prix
+    raceCode3: HUN
+    sessions:
+      - name: Race
+        date: '2026-07-26'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-07-24'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-07-24'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-07-25'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-07-25'
+        time: 14:00:00Z
+    circuit:
+      circuitId: hungaroring
+      url: https://en.wikipedia.org/wiki/Hungaroring
+      name: Hungaroring
+      location:
+        locality: Budapest
+        country: Hungary
+        latitude: 47.5789
+        longitude: 19.2486
+        flag: 🇭🇺
+        countryCode3: HUN
+  - round: 12
+    url: https://en.wikipedia.org/wiki/2026_Dutch_Grand_Prix
+    name: Dutch Grand Prix
+    raceCode3: NED
+    sessions:
+      - name: Race
+        date: '2026-08-23'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-08-21'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-08-22'
+        time: 14:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-08-21'
+        time: 14:30:00Z
+      - name: Sprint
+        date: '2026-08-22'
+        time: 10:00:00Z
+    circuit:
+      circuitId: zandvoort
+      url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
+      name: Circuit Park Zandvoort
+      location:
+        locality: Zandvoort
+        country: Netherlands
+        latitude: 52.3888
+        longitude: 4.54092
+        flag: 🇳🇱
+        countryCode3: NLD
+  - round: 13
+    url: https://en.wikipedia.org/wiki/2026_Italian_Grand_Prix
+    name: Italian Grand Prix
+    raceCode3: ITA
+    sessions:
+      - name: Race
+        date: '2026-09-06'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-09-04'
+        time: 10:30:00Z
+      - name: Practice 2
+        date: '2026-09-04'
+        time: 14:00:00Z
+      - name: Practice 3
+        date: '2026-09-05'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-09-05'
+        time: 14:00:00Z
+    circuit:
+      circuitId: monza
+      url: https://en.wikipedia.org/wiki/Monza_Circuit
+      name: Autodromo Nazionale di Monza
+      location:
+        locality: Monza
+        country: Italy
+        latitude: 45.6156
+        longitude: 9.28111
+        flag: 🇮🇹
+        countryCode3: ITA
+  - round: 14
+    url: https://en.wikipedia.org/wiki/2026_Spanish_Grand_Prix
+    name: Spanish Grand Prix
+    raceCode3: ESP
+    sessions:
+      - name: Race
+        date: '2026-09-13'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-09-11'
+        time: 11:30:00Z
+      - name: Practice 2
+        date: '2026-09-11'
+        time: 15:00:00Z
+      - name: Practice 3
+        date: '2026-09-12'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-09-12'
+        time: 14:00:00Z
+    circuit:
+      circuitId: madring
+      url: https://en.wikipedia.org/wiki/Madring
+      name: Madring
+      location:
+        locality: Madrid
+        country: Spain
+        latitude: 40.46528
+        longitude: -3.61528
+        flag: 🇪🇸
+        countryCode3: ESP
+  - round: 15
+    url: https://en.wikipedia.org/wiki/2026_Azerbaijan_Grand_Prix
+    name: Azerbaijan Grand Prix
+    raceCode3: AZE
+    sessions:
+      - name: Race
+        date: '2026-09-26'
+        time: 11:00:00Z
+      - name: Practice 1
+        date: '2026-09-24'
+        time: 08:30:00Z
+      - name: Practice 2
+        date: '2026-09-24'
+        time: 12:00:00Z
+      - name: Practice 3
+        date: '2026-09-25'
+        time: 08:30:00Z
+      - name: Qualifying
+        date: '2026-09-25'
+        time: 12:00:00Z
+    circuit:
+      circuitId: baku
+      url: https://en.wikipedia.org/wiki/Baku_City_Circuit
+      name: Baku City Circuit
+      location:
+        locality: Baku
+        country: Azerbaijan
+        latitude: 40.3725
+        longitude: 49.8533
+        flag: 🇦🇿
+        countryCode3: AZE
+  - round: 16
+    url: https://en.wikipedia.org/wiki/2026_Singapore_Grand_Prix
+    name: Singapore Grand Prix
+    raceCode3: SIN
+    sessions:
+      - name: Race
+        date: '2026-10-11'
+        time: 12:00:00Z
+      - name: Practice 1
+        date: '2026-10-09'
+        time: 08:30:00Z
+      - name: Qualifying
+        date: '2026-10-10'
+        time: 13:00:00Z
+      - name: Sprint Qualifying
+        date: '2026-10-09'
+        time: 12:30:00Z
+      - name: Sprint
+        date: '2026-10-10'
+        time: 09:00:00Z
+    circuit:
+      circuitId: marina_bay
+      url: https://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit
+      name: Marina Bay Street Circuit
+      location:
+        locality: Marina Bay
+        country: Singapore
+        latitude: 1.2914
+        longitude: 103.864
+        flag: 🇸🇬
+        countryCode3: SGP
+  - round: 17
+    url: https://en.wikipedia.org/wiki/2026_United_States_Grand_Prix
+    name: United States Grand Prix
+    raceCode3: USA
+    sessions:
+      - name: Race
+        date: '2026-10-25'
+        time: 20:00:00Z
+      - name: Practice 1
+        date: '2026-10-23'
+        time: 17:30:00Z
+      - name: Practice 2
+        date: '2026-10-23'
+        time: 21:00:00Z
+      - name: Practice 3
+        date: '2026-10-24'
+        time: 17:30:00Z
+      - name: Qualifying
+        date: '2026-10-24'
+        time: 21:00:00Z
+    circuit:
+      circuitId: americas
+      url: https://en.wikipedia.org/wiki/Circuit_of_the_Americas
+      name: Circuit of the Americas
+      location:
+        locality: Austin
+        country: USA
+        latitude: 30.1328
+        longitude: -97.6411
+        flag: 🇺🇸
+        countryCode3: USA
+  - round: 18
+    url: https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix
+    name: Mexico City Grand Prix
+    raceCode3: MXC
+    sessions:
+      - name: Race
+        date: '2026-11-01'
+        time: 20:00:00Z
+      - name: Practice 1
+        date: '2026-10-30'
+        time: 18:30:00Z
+      - name: Practice 2
+        date: '2026-10-30'
+        time: 22:00:00Z
+      - name: Practice 3
+        date: '2026-10-31'
+        time: 17:30:00Z
+      - name: Qualifying
+        date: '2026-10-31'
+        time: 21:00:00Z
+    circuit:
+      circuitId: rodriguez
+      url: https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez
+      name: Autódromo Hermanos Rodríguez
+      location:
+        locality: Mexico City
+        country: Mexico
+        latitude: 19.4042
+        longitude: -99.0907
+        flag: 🇲🇽
+        countryCode3: MEX
+  - round: 19
+    url: https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix
+    name: Brazilian Grand Prix
+    raceCode3: BRA
+    sessions:
+      - name: Race
+        date: '2026-11-08'
+        time: 17:00:00Z
+      - name: Practice 1
+        date: '2026-11-06'
+        time: 15:30:00Z
+      - name: Practice 2
+        date: '2026-11-06'
+        time: 19:00:00Z
+      - name: Practice 3
+        date: '2026-11-07'
+        time: 14:30:00Z
+      - name: Qualifying
+        date: '2026-11-07'
+        time: 18:00:00Z
+    circuit:
+      circuitId: interlagos
+      url: https://en.wikipedia.org/wiki/Interlagos_Circuit
+      name: Autódromo José Carlos Pace
+      location:
+        locality: São Paulo
+        country: Brazil
+        latitude: -23.7036
+        longitude: -46.6997
+        flag: 🇧🇷
+        countryCode3: BRA
+  - round: 20
+    url: https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix
+    name: Las Vegas Grand Prix
+    raceCode3: LVG
+    sessions:
+      - name: Race
+        date: '2026-11-22'
+        time: 04:00:00Z
+      - name: Practice 1
+        date: '2026-11-20'
+        time: 00:30:00Z
+      - name: Practice 2
+        date: '2026-11-20'
+        time: 04:00:00Z
+      - name: Practice 3
+        date: '2026-11-21'
+        time: 00:30:00Z
+      - name: Qualifying
+        date: '2026-11-21'
+        time: 04:00:00Z
+    circuit:
+      circuitId: vegas
+      url: https://en.wikipedia.org/wiki/Las_Vegas_Grand_Prix#Circuit
+      name: Las Vegas Strip Street Circuit
+      location:
+        locality: Las Vegas
+        country: USA
+        latitude: 36.1147
+        longitude: -115.173
+        flag: 🇺🇸
+        countryCode3: USA
+  - round: 21
+    url: https://en.wikipedia.org/wiki/2026_Qatar_Grand_Prix
+    name: Qatar Grand Prix
+    raceCode3: QAT
+    sessions:
+      - name: Race
+        date: '2026-11-29'
+        time: 16:00:00Z
+      - name: Practice 1
+        date: '2026-11-27'
+        time: 13:30:00Z
+      - name: Practice 2
+        date: '2026-11-27'
+        time: 17:00:00Z
+      - name: Practice 3
+        date: '2026-11-28'
+        time: 14:30:00Z
+      - name: Qualifying
+        date: '2026-11-28'
+        time: 18:00:00Z
+    circuit:
+      circuitId: losail
+      url: https://en.wikipedia.org/wiki/Lusail_International_Circuit
+      name: Losail International Circuit
+      location:
+        locality: Lusail
+        country: Qatar
+        latitude: 25.49
+        longitude: 51.4542
+        flag: 🇶🇦
+        countryCode3: QAT
+  - round: 22
+    url: https://en.wikipedia.org/wiki/2026_Abu_Dhabi_Grand_Prix
+    name: Abu Dhabi Grand Prix
+    raceCode3: UAE
+    sessions:
+      - name: Race
+        date: '2026-12-06'
+        time: 13:00:00Z
+      - name: Practice 1
+        date: '2026-12-04'
+        time: 09:30:00Z
+      - name: Practice 2
+        date: '2026-12-04'
+        time: 13:00:00Z
+      - name: Practice 3
+        date: '2026-12-05'
+        time: 10:30:00Z
+      - name: Qualifying
+        date: '2026-12-05'
+        time: 14:00:00Z
+    circuit:
+      circuitId: yas_marina
+      url: https://en.wikipedia.org/wiki/Yas_Marina_Circuit
+      name: Yas Marina Circuit
+      location:
+        locality: Abu Dhabi
+        country: UAE
+        latitude: 24.4672
+        longitude: 54.6031
+        flag: 🇦🇪
+        countryCode3: ARE

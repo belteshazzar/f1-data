@@ -141,13 +141,31 @@ const countryCodes3 = {
 };
 
 export function countryInfoFor(country) {
+  if (country === undefined) {
+    console.error(`countryInfoFor called with undefined country`);
+    return {
+      code: '??',
+      flag: '??',
+      code3: '???'
+    };
+  }
   let countryCode = countryCodes[country]
   if (countryCode === undefined) {
-    throw new Error(`Country code not found for ${country}`)
+    console.error(`countryInfoFor called with unknown country ${country}`);
+    return {
+      code: '??',
+      flag: '??',
+      code3: '???'
+    };
   }
   const code3 = countryCodes3[countryCode]
   if (code3 === undefined) {
-    throw new Error(`Country code3 not found for ${countryCode}`)
+    console.error(`countryInfoFor called with unknown country code3 ${countryCode}`);
+    return {
+      code: '??',
+      flag: '??',
+      code3: '???'
+    };
   }
   const codePoints = countryCode.toUpperCase().split("").map((char) => 127397 + char.charCodeAt(0));
   return {

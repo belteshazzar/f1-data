@@ -22,6 +22,8 @@ function formula1dotcomPage(year,round,country,pageName) {
 
   return new Promise((resolve, reject) => {
 
+    console.log(`loading url: ${f1racesUrl}`)
+
     fetch(f1racesUrl)
       .then(res => res.text())
       .then(text => {
@@ -34,9 +36,9 @@ function formula1dotcomPage(year,round,country,pageName) {
         if (year*1 == 2023 && round > 6) {
           nth++
         }
-        const row = $(`table.f1-table tbody tr:nth(${nth})`)
+        const row = $(`div#results-table table tbody tr:nth(${nth})`)
         const raceUrl = $(row[0]).find('a')[0].attribs['href']
-        const racePath = raceUrl.split('/').slice(7,-1).join('/')
+        const racePath = raceUrl.split('/').slice(5,-1).join('/')
         const url = `${f1racesUrl}/${racePath}/${pageName}`
 
         console.log(`loading url: ${url}`)
@@ -75,7 +77,12 @@ function getPractice(values) {
   formula1dotcomPage(values.year,values.round,country,`practice/${practice}`)
     .then($ => {
 
-      $('table.f1-table > tbody > tr').each(function(i) {
+      let rows = $('div#results-table table > tbody > tr')
+      if (rows.length == 0) {
+        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
+      }
+
+      rows.each(function(i) {
         const result = {}
 
         const tds = $(this).find('td')
@@ -112,8 +119,11 @@ function getQualy(values) {
 
   formula1dotcomPage(values.year,values.round,country,`${values.session=='sq'?'sprint-':''}qualifying`)
     .then($ => {
-
-      $('table.f1-table > tbody > tr').each(function() {
+      let rows = $('div#results-table table > tbody > tr')
+      if (rows.length == 0) {
+        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
+      }
+      rows.each(function() {
         const result = {}
 
         const tds = $(this).find('td')
@@ -155,7 +165,11 @@ function getRace(values) {
     .then($ => {
 
       let pos = 1
-      $('table.f1-table > tbody > tr').each(function() {
+      let rows = $('div#results-table table > tbody > tr')
+      if (rows.length == 0) {
+        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
+      }
+      rows.each(function() {
         const result = {}
 
         const tds = $(this).find('td')
@@ -211,8 +225,11 @@ function getGrid(values) {
 
   formula1dotcomPage(values.year,values.round,country,values.session == 'g' ? 'starting-grid' : 'sprint-grid')
     .then($ => {
-
-      $('table.f1-table > tbody > tr').each(function() {
+      let rows = $('div#results-table table > tbody > tr')
+      if (rows.length == 0) {
+        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
+      }
+      rows.each(function() {
         const result = {}
 
         const tds = $(this).find('td')

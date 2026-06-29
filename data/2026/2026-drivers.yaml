@@ -1,4 +1,4 @@
-season: 2025
+season: 2026
 drivers:
   - driverId: albon
     permanentNumber: 23
@@ -30,18 +30,14 @@ drivers:
     flag: 🇮🇹
     countryCode3: ITA
     driverCode3: ANT
-  - driverId: aron
-    permanentNumber:
-    url: https://en.wikipedia.org/wiki/Paul_Aron
+  - driverId: paul_aron
     givenName: Paul
     familyName: Aron
-    dateOfBirth: '2004-02-04'
-    nationality: Estonian
-    flag: 🇪🇪
-    countryCode3: EST
+    flag: '??'
+    countryCode3: '???'
     driverCode3: ARO
   - driverId: bearman
-    permanentNumber: 38
+    permanentNumber: 87
     url: http://en.wikipedia.org/wiki/Oliver_Bearman
     givenName: Oliver
     familyName: Bearman
@@ -50,6 +46,12 @@ drivers:
     flag: 🇬🇧
     countryCode3: GBR
     driverCode3: BEA
+  - driverId: dino_beganovic
+    givenName: Dino
+    familyName: Beganovic
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: BEG
   - driverId: bortoleto
     permanentNumber: 5
     url: https://en.wikipedia.org/wiki/Gabriel_Bortoleto
@@ -60,6 +62,22 @@ drivers:
     flag: 🇧🇷
     countryCode3: BRA
     driverCode3: BOR
+  - driverId: bottas
+    permanentNumber: 77
+    url: http://en.wikipedia.org/wiki/Valtteri_Bottas
+    givenName: Valtteri
+    familyName: Bottas
+    dateOfBirth: '1989-08-28'
+    nationality: Finnish
+    flag: 🇫🇮
+    countryCode3: FIN
+    driverCode3: BOT
+  - driverId: luke_browning
+    givenName: Luke
+    familyName: Browning
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: BRO
   - driverId: colapinto
     permanentNumber: 43
     url: http://en.wikipedia.org/wiki/Franco_Colapinto
@@ -70,26 +88,18 @@ drivers:
     flag: 🇦🇷
     countryCode3: ARG
     driverCode3: COL
-  - driverId: doohan
-    permanentNumber: 61
-    url: http://en.wikipedia.org/wiki/Jack_Doohan
-    givenName: Jack
-    familyName: Doohan
-    dateOfBirth: '2003-01-20'
-    nationality: Australian
-    flag: 🇦🇺
-    countryCode3: AUS
-    driverCode3: DOO
-  - driverId: dunne
-    permanentNumber: 89
-    url: https://en.wikipedia.org/wiki/Alex_Dunne
-    givenName: Alex
-    familyName: Dunne
-    dateOfBirth: '2005-11-11'
-    nationality: Irish
-    flag: 🇮🇪
-    countryCode3: IRL
-    driverCode3: DUN
+  - driverId: jak_crawford
+    givenName: Jak
+    familyName: Crawford
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: CRA
+  - driverId: leonardo_fornaroli
+    givenName: Leonardo
+    familyName: Fornaroli
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: FOR
   - driverId: gasly
     permanentNumber: 10
     url: http://en.wikipedia.org/wiki/Pierre_Gasly
@@ -120,6 +130,18 @@ drivers:
     flag: 🇬🇧
     countryCode3: GBR
     driverCode3: HAM
+  - driverId: colton_herta
+    givenName: Colton
+    familyName: Herta
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: HER
+  - driverId: ryo_hirakawa
+    givenName: Ryo
+    familyName: Hirakawa
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: HIR
   - driverId: hulkenberg
     permanentNumber: 27
     url: http://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg
@@ -130,6 +152,12 @@ drivers:
     flag: 🇩🇪
     countryCode3: DEU
     driverCode3: HUL
+  - driverId: ayumu_iwasa
+    givenName: Ayumu
+    familyName: Iwasa
+    flag: '??'
+    countryCode3: '???'
+    driverCode3: IWA
   - driverId: lawson
     permanentNumber: 30
     url: http://en.wikipedia.org/wiki/Liam_Lawson
@@ -150,8 +178,8 @@ drivers:
     flag: 🇲🇨
     countryCode3: MCO
     driverCode3: LEC
-  - driverId: lindblad
-    permanentNumber: 36
+  - driverId: arvid_lindblad
+    permanentNumber: 41
     url: https://en.wikipedia.org/wiki/Arvid_Lindblad
     givenName: Arvid
     familyName: Lindblad
@@ -161,7 +189,7 @@ drivers:
     countryCode3: GBR
     driverCode3: LIN
   - driverId: norris
-    permanentNumber: 4
+    permanentNumber: 1
     url: http://en.wikipedia.org/wiki/Lando_Norris
     givenName: Lando
     familyName: Norris
@@ -190,6 +218,16 @@ drivers:
     flag: 🇦🇺
     countryCode3: AUS
     driverCode3: PIA
+  - driverId: perez
+    permanentNumber: 11
+    url: http://en.wikipedia.org/wiki/Sergio_P%C3%A9rez
+    givenName: Sergio
+    familyName: Pérez
+    dateOfBirth: '1990-01-26'
+    nationality: Mexican
+    flag: 🇲🇽
+    countryCode3: MEX
+    driverCode3: PER
   - driverId: russell
     permanentNumber: 63
     url: http://en.wikipedia.org/wiki/George_Russell_(racing_driver)
@@ -220,18 +258,8 @@ drivers:
     flag: 🇨🇦
     countryCode3: CAN
     driverCode3: STR
-  - driverId: tsunoda
-    permanentNumber: 22
-    url: http://en.wikipedia.org/wiki/Yuki_Tsunoda
-    givenName: Yuki
-    familyName: Tsunoda
-    dateOfBirth: '2000-05-11'
-    nationality: Japanese
-    flag: 🇯🇵
-    countryCode3: JPN
-    driverCode3: TSU
   - driverId: max_verstappen
-    permanentNumber: 33
+    permanentNumber: 3
     url: http://en.wikipedia.org/wiki/Max_Verstappen
     givenName: Max
     familyName: Verstappen
@@ -240,113 +268,9 @@ drivers:
     flag: 🇳🇱
     countryCode3: NLD
     driverCode3: VER
-  - driverId: browning
-    permanentNumber: 46
-    url: http://en.wikipedia.org/wiki/Luke_Browning
-    givenName: Luke
-    familyName: Browning
-    dateOfBirth: '2002-01-31'
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    driverCode3: BRO
-  - driverId: beganovic
-    permanentNumber: 38
-    url: http://en.wikipedia.org/wiki/Dino_Beganovic
-    givenName: Dino
-    familyName: Beganovic
-    dateOfBirth: '2004-01-19'
-    nationality: Swedish
-    flag: 🇸🇪
-    countryCode3: SWE
-    driverCode3: BEG
-  - driverId: drugovich
-    permanentNumber: 34
-    url: http://en.wikipedia.org/wiki/Felipe_Drugovich
-    givenName: Felipe
-    familyName: Drugovich
-    dateOfBirth: '2000-05-23'
-    nationality: Brazilian
-    flag: 🇧🇷
-    countryCode3: BRA
-    driverCode3: DRU
-  - driverId: hirakawa
-    permanentNumber: 50
-    url: http://en.wikipedia.org/wiki/Ryo_Hirakawa
-    givenName: Ryo
-    familyName: Hirakawa
-    dateOfBirth: '1994-03-07'
-    nationality: Japanese
-    flag: 🇯🇵
-    countryCode3: JPN
-    driverCode3: HIR
-  - driverId: vesti
-    permanentNumber: 72
-    url: http://en.wikipedia.org/wiki/Frederik_Vesti
+  - driverId: frederik_vesti
     givenName: Frederik
     familyName: Vesti
-    dateOfBirth: '2002-01-13'
-    nationality: Danish
-    flag: 🇩🇰
-    countryCode3: DNK
+    flag: '??'
+    countryCode3: '???'
     driverCode3: VES
-  - driverId: iwasa
-    permanentNumber: 37
-    url: http://en.wikipedia.org/wiki/Ayumu_Iwasa
-    givenName: Ayumu
-    familyName: Iwasa
-    dateOfBirth: '2001-09-22'
-    nationality: Japanese
-    flag: 🇯🇵
-    countryCode3: JPN
-    driverCode3: IWA
-  - driverId: martins
-    permanentNumber:
-    url: https://en.wikipedia.org/wiki/Victor_Martins
-    givenName: Victor
-    familyName: Martins
-    dateOfBirth: '2001-06-16'
-    nationality: French
-    flag: 🇫🇷
-    countryCode3: FRA
-    driverCode3: MAR
-  - driverId: pato_oward
-    permanentNumber:
-    url: https://en.wikipedia.org/wiki/Pato_O%27Ward
-    givenName: Patricio
-    familyName: O'Ward
-    dateOfBirth: '1998-05-06'
-    nationality: Mexican
-    flag: 🇲🇽
-    countryCode3: MEX
-    driverCode3: OWA
-  - driverId: crawford
-    permanentNumber: 35
-    url: https://en.wikipedia.org/wiki/Jak_Crawford
-    givenName: Jak
-    familyName: Crawford
-    dateOfBirth: '2005-05-2'
-    nationality: American
-    flag: 🇺🇸
-    countryCode3: USA
-    driverCode3: CRA
-  - driverId: shields
-    permanentNumber: 34
-    url: https://en.wikipedia.org/wiki/Cian_Shields
-    givenName: Cian
-    familyName: Shields
-    dateOfBirth: '2005-03-07'
-    nationality: Irish
-    flag: 🇮🇪
-    countryCode3: IRL
-    driverCode3: SHI
-  - driverId: fuoco
-    permanentNumber: 38
-    url: https://en.wikipedia.org/wiki/Antonio_Fuoco
-    givenName: Antonio
-    familyName: Fuoco
-    dateOfBirth: '1996-05-20'
-    nationality: Italian
-    flag: 🇮🇹
-    countryCode3: ITA
-    driverCode3: FUO

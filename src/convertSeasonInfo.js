@@ -60,6 +60,7 @@ const RACE_CODES = {
   "Tuscan Grand Prix":"TUS",
   "Eifel Grand Prix":"EIF",
   "Sakhir Grand Prix":"SKH",
+  "Barcelona Grand Prix":"BCN",
 }
 
 function raceCode3For(raceName) {
@@ -147,8 +148,11 @@ export function convertSeasonInfo(values) {
     out.drivers = [];
 
     doc.MRData.DriverTable.Drivers.forEach(r => {
-
       let { code, flag, code3  } = countryInfoFor(r.nationality);
+      if (code === '??') {
+        console.error(`unable to get country info for driver:`);
+        console.error(r)
+      }
       //r.countryCode = code;
       r.flag = flag;
       r.countryCode3 = code3;
