@@ -1,7 +1,7 @@
 season: 2026
 rounds:
   - round: 1
-    url: https://en.wikipedia.org/wiki/2026_Australian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/australia
     name: Australian Grand Prix
     raceCode3: AUS
     sessions:
@@ -32,7 +32,7 @@ rounds:
         flag: 🇦🇺
         countryCode3: AUS
   - round: 2
-    url: https://en.wikipedia.org/wiki/2026_Chinese_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/china
     name: Chinese Grand Prix
     raceCode3: CHN
     sessions:
@@ -42,15 +42,15 @@ rounds:
       - name: Practice 1
         date: '2026-03-13'
         time: 03:30:00Z
-      - name: Qualifying
-        date: '2026-03-14'
-        time: 07:00:00Z
       - name: Sprint Qualifying
         date: '2026-03-13'
         time: 07:30:00Z
       - name: Sprint
         date: '2026-03-14'
         time: 03:00:00Z
+      - name: Qualifying
+        date: '2026-03-14'
+        time: 07:00:00Z
     circuit:
       circuitId: shanghai
       url: https://en.wikipedia.org/wiki/Shanghai_International_Circuit
@@ -63,7 +63,7 @@ rounds:
         flag: 🇨🇳
         countryCode3: CHN
   - round: 3
-    url: https://en.wikipedia.org/wiki/2026_Japanese_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/japan
     name: Japanese Grand Prix
     raceCode3: JPN
     sessions:
@@ -94,25 +94,25 @@ rounds:
         flag: 🇯🇵
         countryCode3: JPN
   - round: 4
-    url: https://en.wikipedia.org/wiki/2026_Miami_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/miami
     name: Miami Grand Prix
     raceCode3: MIA
     sessions:
       - name: Race
         date: '2026-05-03'
-        time: 20:00:00Z
+        time: 17:00:00Z
       - name: Practice 1
         date: '2026-05-01'
         time: 16:00:00Z
-      - name: Qualifying
-        date: '2026-05-02'
-        time: 20:00:00Z
       - name: Sprint Qualifying
         date: '2026-05-01'
         time: 20:30:00Z
       - name: Sprint
         date: '2026-05-02'
         time: 16:00:00Z
+      - name: Qualifying
+        date: '2026-05-02'
+        time: 20:00:00Z
     circuit:
       circuitId: miami
       url: https://en.wikipedia.org/wiki/Miami_International_Autodrome
@@ -125,7 +125,7 @@ rounds:
         flag: 🇺🇸
         countryCode3: USA
   - round: 5
-    url: https://en.wikipedia.org/wiki/2026_Canadian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/canada
     name: Canadian Grand Prix
     raceCode3: CAN
     sessions:
@@ -135,15 +135,15 @@ rounds:
       - name: Practice 1
         date: '2026-05-22'
         time: 16:30:00Z
-      - name: Qualifying
-        date: '2026-05-23'
-        time: 20:00:00Z
       - name: Sprint Qualifying
         date: '2026-05-22'
         time: 20:30:00Z
       - name: Sprint
         date: '2026-05-23'
         time: 16:00:00Z
+      - name: Qualifying
+        date: '2026-05-23'
+        time: 20:00:00Z
     circuit:
       circuitId: villeneuve
       url: https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve
@@ -156,7 +156,7 @@ rounds:
         flag: 🇨🇦
         countryCode3: CAN
   - round: 6
-    url: https://en.wikipedia.org/wiki/2026_Monaco_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/monaco
     name: Monaco Grand Prix
     raceCode3: MON
     sessions:
@@ -187,7 +187,7 @@ rounds:
         flag: 🇲🇨
         countryCode3: MCO
   - round: 7
-    url: https://en.wikipedia.org/wiki/2026_Barcelona-Catalunya
+    url: https://www.formula1.com/en/racing/2026/barcelona-catalunya
     name: Barcelona Grand Prix
     raceCode3: BCN
     sessions:
@@ -218,7 +218,7 @@ rounds:
         flag: 🇪🇸
         countryCode3: ESP
   - round: 8
-    url: https://en.wikipedia.org/wiki/2026_Austrian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/austria
     name: Austrian Grand Prix
     raceCode3: AUT
     sessions:
@@ -249,7 +249,7 @@ rounds:
         flag: 🇦🇹
         countryCode3: AUT
   - round: 9
-    url: https://en.wikipedia.org/wiki/2026_British_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/great-britain
     name: British Grand Prix
     raceCode3: GBR
     sessions:
@@ -259,15 +259,15 @@ rounds:
       - name: Practice 1
         date: '2026-07-03'
         time: 11:30:00Z
-      - name: Qualifying
-        date: '2026-07-04'
-        time: 15:00:00Z
       - name: Sprint Qualifying
         date: '2026-07-03'
         time: 15:30:00Z
       - name: Sprint
         date: '2026-07-04'
         time: 11:00:00Z
+      - name: Qualifying
+        date: '2026-07-04'
+        time: 15:00:00Z
     circuit:
       circuitId: silverstone
       url: https://en.wikipedia.org/wiki/Silverstone_Circuit
@@ -280,7 +280,7 @@ rounds:
         flag: 🇬🇧
         countryCode3: GBR
   - round: 10
-    url: https://en.wikipedia.org/wiki/2026_Belgian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/belgium
     name: Belgian Grand Prix
     raceCode3: BEL
     sessions:
@@ -311,7 +311,7 @@ rounds:
         flag: 🇧🇪
         countryCode3: BEL
   - round: 11
-    url: https://en.wikipedia.org/wiki/2026_Hungarian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/hungary
     name: Hungarian Grand Prix
     raceCode3: HUN
     sessions:
@@ -342,7 +342,7 @@ rounds:
         flag: 🇭🇺
         countryCode3: HUN
   - round: 12
-    url: https://en.wikipedia.org/wiki/2026_Dutch_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/netherlands
     name: Dutch Grand Prix
     raceCode3: NED
     sessions:
@@ -352,15 +352,15 @@ rounds:
       - name: Practice 1
         date: '2026-08-21'
         time: 10:30:00Z
-      - name: Qualifying
-        date: '2026-08-22'
-        time: 14:00:00Z
       - name: Sprint Qualifying
         date: '2026-08-21'
         time: 14:30:00Z
       - name: Sprint
         date: '2026-08-22'
         time: 10:00:00Z
+      - name: Qualifying
+        date: '2026-08-22'
+        time: 14:00:00Z
     circuit:
       circuitId: zandvoort
       url: https://en.wikipedia.org/wiki/Circuit_Zandvoort
@@ -373,7 +373,7 @@ rounds:
         flag: 🇳🇱
         countryCode3: NLD
   - round: 13
-    url: https://en.wikipedia.org/wiki/2026_Italian_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/italy
     name: Italian Grand Prix
     raceCode3: ITA
     sessions:
@@ -404,7 +404,7 @@ rounds:
         flag: 🇮🇹
         countryCode3: ITA
   - round: 14
-    url: https://en.wikipedia.org/wiki/2026_Spanish_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/spain
     name: Spanish Grand Prix
     raceCode3: ESP
     sessions:
@@ -435,7 +435,7 @@ rounds:
         flag: 🇪🇸
         countryCode3: ESP
   - round: 15
-    url: https://en.wikipedia.org/wiki/2026_Azerbaijan_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/azerbaijan
     name: Azerbaijan Grand Prix
     raceCode3: AZE
     sessions:
@@ -466,7 +466,7 @@ rounds:
         flag: 🇦🇿
         countryCode3: AZE
   - round: 16
-    url: https://en.wikipedia.org/wiki/2026_Singapore_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/singapore
     name: Singapore Grand Prix
     raceCode3: SIN
     sessions:
@@ -476,15 +476,15 @@ rounds:
       - name: Practice 1
         date: '2026-10-09'
         time: 08:30:00Z
-      - name: Qualifying
-        date: '2026-10-10'
-        time: 13:00:00Z
       - name: Sprint Qualifying
         date: '2026-10-09'
         time: 12:30:00Z
       - name: Sprint
         date: '2026-10-10'
         time: 09:00:00Z
+      - name: Qualifying
+        date: '2026-10-10'
+        time: 13:00:00Z
     circuit:
       circuitId: marina_bay
       url: https://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit
@@ -497,7 +497,7 @@ rounds:
         flag: 🇸🇬
         countryCode3: SGP
   - round: 17
-    url: https://en.wikipedia.org/wiki/2026_United_States_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/united-states
     name: United States Grand Prix
     raceCode3: USA
     sessions:
@@ -528,7 +528,7 @@ rounds:
         flag: 🇺🇸
         countryCode3: USA
   - round: 18
-    url: https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/mexico
     name: Mexico City Grand Prix
     raceCode3: MXC
     sessions:
@@ -559,9 +559,9 @@ rounds:
         flag: 🇲🇽
         countryCode3: MEX
   - round: 19
-    url: https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix
-    name: Brazilian Grand Prix
-    raceCode3: BRA
+    url: https://www.formula1.com/en/racing/2026/brazil
+    name: São Paulo Grand Prix
+    raceCode3: SAP
     sessions:
       - name: Race
         date: '2026-11-08'
@@ -590,7 +590,7 @@ rounds:
         flag: 🇧🇷
         countryCode3: BRA
   - round: 20
-    url: https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/las-vegas
     name: Las Vegas Grand Prix
     raceCode3: LVG
     sessions:
@@ -621,7 +621,7 @@ rounds:
         flag: 🇺🇸
         countryCode3: USA
   - round: 21
-    url: https://en.wikipedia.org/wiki/2026_Qatar_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/qatar
     name: Qatar Grand Prix
     raceCode3: QAT
     sessions:
@@ -652,7 +652,7 @@ rounds:
         flag: 🇶🇦
         countryCode3: QAT
   - round: 22
-    url: https://en.wikipedia.org/wiki/2026_Abu_Dhabi_Grand_Prix
+    url: https://www.formula1.com/en/racing/2026/united-arab-emirates
     name: Abu Dhabi Grand Prix
     raceCode3: UAE
     sessions:

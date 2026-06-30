@@ -1,44 +1,68 @@
+# Formula 1 Data
 
-Formula 1 data as yaml
+Formula 1 season, round, and session results stored as YAML files.
 
-Data sources:
-- https://api.jolpi.ca/ergast/f1/ ( https://github.com/jolpica/jolpica-f1 )
-- formula1.com ( https://www.formula1.com/en/results/2025/races )
+## Running the server
 
-## Get Season Information
+```
+npm run serve
+```
 
-Get season data and add it to the ergast folder. Defaults to rounds if type (-t --type) is not provided.
+Opens at `http://localhost:3000`.
 
-node index.js get -y 2025                 # ergast/2025-rounds.yaml
-node index.js get -y 2025 -t rounds       # ergast/2025-rounds.yaml
-node index.js get -y 2025 -t drivers      # ergast/2025-drivers.yaml
-node index.js get -y 2025 -t constructors # ergast/2025-constructors.yaml
+## Site structure
 
+| Page | Description |
+|---|---|
+| `/` | Home — links to Seasons, Drivers, Constructors |
+| `/seasons` | All seasons grid |
+| `/data/drivers` | All-time driver database, paginated A–Z |
+| `/data/constructors` | All-time constructor database, paginated A–Z |
+| `/:year` | Season overview — rounds table, setup and generate controls |
+| `/:year/:round` | Round overview — session cards |
+| `/:year/:round/:session` | Session results table |
 
-## Get Session Results
+## Typical workflow for a new season
 
-node index.js get -y 2025 -r 1            # data/2025-1-race.yaml
-node index.js get -y 2025 -r 1 -s r       # data/2025-1-race.yaml
+1. Go to `/seasons` and click the next-year card (e.g. **2027 +**)
+2. On the season page, use **Set up from database →** to generate `YYYY-drivers.yaml` and `YYYY-constructors.yaml` from the historical database, selecting the entered drivers and constructors
+3. Click **↓ Fetch rounds from formula1.com** to populate `YYYY-rounds.yaml` with the calendar and circuit data
+4. As each race weekend happens, open `/:year/:round/:session` and click **↓ Fetch from formula1.com** to pull results
+5. Click **⟳ Generate championship table** on the season page to rebuild `YYYY-table-drivers.yaml`
 
-node index.js get -y 2025 -r 6 -s p1 -f f1 # practice 1 from f1.com
-node index.js get -y 2025 -r 6 -s sq -f f1 # sprint qualifying from f1.com
-node index.js get -y 2025 -r 6 -s sg -f f1 # sprint grid from f1.com
-node index.js get -y 2025 -r 6 -s s  -f f1 # sprint results from f1.com
-node index.js get -y 2025 -r 6 -s q  -f f1 # race qualifying from f1.com
-node index.js get -y 2025 -r 6 -s g  -f f1 # race grid from f1.com
-node index.js get -y 2025 -r 6 -s r  -f f1 # race from f1.com
-node index.js generate -y 2025 -t drivers  # update drivers table
+## Typical workflow during a race weekend
 
-## Convert Jolpica F1 Information
+1. Navigate to the season → round → session page
+2. Click **↓ Fetch from formula1.com** on each session after it finishes (practice, qualifying, race, sprint sessions)
+3. After the race (and any manual YAML edits), click **⟳ Generate championship table** on the season page
 
-node index.js convert -y 1950 -t rounds   # data/1950-rounds.yaml
+## Data files
 
-## Check Data Against Schema
+Each season lives in `data/YYYY/`:
 
-node index.js check data/1950-rounds.yaml schema/rounds.schema.yaml
-node index.js check data/1950-drivers.yaml schema/drivers.schema.yaml
-node index.js check data/1950-constructors.yaml schema/constructors.schema.yaml
+| File | Description |
+|---|---|
+| `YYYY-rounds.yaml` | Calendar, circuits, session times |
+| `YYYY-drivers.yaml` | Drivers entered in the championship |
+| `YYYY-constructors.yaml` | Constructors entered in the championship |
+| `YYYY-table-drivers.yaml` | Drivers championship table (generated) |
+| `YYYY-R-race.yaml` | Race results for round R |
+| `YYYY-R-qualifying.yaml` | Qualifying results |
+| `YYYY-R-sprint.yaml` | Sprint results |
+| `YYYY-R-sprint-qualifying.yaml` | Sprint qualifying results |
+| `YYYY-R-practice-1.yaml` | Practice 1 results |
+| … | Practice 2, 3; race grid, sprint grid |
 
+Shared lookup databases in `data/`:
 
-TODO: grid positions
+| File | Description |
+|---|---|
+| `gp-lookup.yaml` | GP name → `raceCode3` and `circuitId` |
+| `circuits.yaml` | Circuit details (coordinates, Wikipedia URL, flag) |
+| `drivers.yaml` | All-time driver biographical database |
+| `constructors.yaml` | All-time constructor database with all known aliases |
 
+## Data sources
+
+- **formula1.com** — session results and season calendars
+- **Jolpica / Ergast API** — `https://api.jolpi.ca/ergast/f1/`

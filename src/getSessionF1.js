@@ -1,244 +1,192 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
 import * as cheerio from 'cheerio';
-import {loadDrivers,loadConstructors,loadRounds} from './db.js'
+import { loadDrivers, loadConstructors, loadRounds } from './db.js';
+
+// Maps our canonical session keys to f1.com sub-page names and scraper types.
+const SESSION_DEFS = {
+  'practice-1':        { page: 'practice/1',       type: 'practice', num: 1 },
+  'practice-2':        { page: 'practice/2',       type: 'practice', num: 2 },
+  'practice-3':        { page: 'practice/3',       type: 'practice', num: 3 },
+  'qualifying':        { page: 'qualifying',        type: 'qualifying' },
+  'sprint-qualifying': { page: 'sprint-qualifying', type: 'qualifying' },
+  'race':              { page: 'race-result',       type: 'race' },
+  'sprint':            { page: 'sprint-results',    type: 'race' },
+  'race-grid':         { page: 'starting-grid',     type: 'grid' },
+  'sprint-grid':       { page: 'sprint-grid',       type: 'grid' },
+};
+
+export const FETCHABLE_SESSIONS = Object.keys(SESSION_DEFS);
+
+// Fetches the f1.com races index for a year and resolves the base URL for a
+// specific round. One request only — used to build the session URL without
+// downloading the session page itself.
+async function resolveRaceBasePath(year, round) {
+  const racesUrl = `https://www.formula1.com/en/results/${year}/races`;
+  const res = await fetch(racesUrl);
+  if (!res.ok) throw new Error(`f1.com races index returned ${res.status}`);
+  const $index = cheerio.load(await res.text());
+
+  let nth = round * 1 - 1;
+  // 2023: Emilia-Romagna was cancelled but kept in the index table
+  if (year * 1 === 2023 && round > 6) nth++;
+
+  const anchor = $index(`div#results-table table tbody tr:nth(${nth})`).find('a')[0];
+  if (!anchor) throw new Error(`Could not find race link for round ${round} in ${year}`);
+
+  const racePath = anchor.attribs.href.split('/').slice(5, -1).join('/');
+  return `${racesUrl}/${racePath}`;
+}
+
+// Returns the full formula1.com URL for a given session without downloading it.
+export async function resolveF1Url(year, round, session) {
+  const def = SESSION_DEFS[session];
+  if (!def) throw new Error(`No f1.com mapping for session "${session}"`);
+  const basePath = await resolveRaceBasePath(year, round);
+  return `${basePath}/${def.page}`;
+}
+
+// Fetches the f1.com results page for a specific session and returns a loaded
+// cheerio instance. Makes two requests: index → session page.
+async function fetchF1Page(year, round, pageName) {
+  const basePath = await resolveRaceBasePath(year, round);
+  const sessionUrl = `${basePath}/${pageName}`;
+  const res = await fetch(sessionUrl);
+  if (!res.ok) throw new Error(`f1.com session page returned ${res.status}: ${sessionUrl}`);
+  return { $: cheerio.load(await res.text()), url: sessionUrl };
+}
+
+function scrapePractice($, rows, drivers, constructors) {
+  const results = [];
+  rows.each(function(i) {
+    const tds = $(this).find('td');
+    const timeGap = $(tds[4]).text().trim();
+    results.push({
+      position:      $(tds[0]).text().trim() * 1,
+      driverId:      drivers.forCode3($(tds[2]).find('span.md\\:hidden').text().trim()),
+      constructorId: constructors.forKnownAs($(tds[3]).text().trim()),
+      time:          i === 0 ? timeGap : '',
+      gap:           i === 0 ? '' : timeGap,
+      laps:          $(tds[5]).text().trim() * 1,
+    });
+  });
+  return results;
+}
+
+function scrapeQualifying($, rows, drivers, constructors) {
+  const results = [];
+  rows.each(function() {
+    const tds = $(this).find('td');
+    const q1 = $(tds[4]).text().trim();
+    const q2 = $(tds[5]).text().trim();
+    const q3 = $(tds[6]).text().trim();
+    const times = {};
+    if (q1) times.q1 = q1;
+    if (q2) times.q2 = q2;
+    if (q3) times.q3 = q3;
+    results.push({
+      position:      $(tds[0]).text().trim() * 1,
+      driverId:      drivers.forCode3($(tds[2]).find('span.md\\:hidden').text().trim()),
+      constructorId: constructors.forKnownAs($(tds[3]).text().trim()),
+      times,
+      laps:          $(tds[7]).text().trim() * 1,
+    });
+  });
+  return results;
+}
+
+function scrapeRace($, rows, drivers, constructors) {
+  const results = [];
+  let pos = 1;
+  rows.each(function() {
+    const tds = $(this).find('td');
+    const posText  = $(tds[0]).text().trim();
+    let time       = $(tds[5]).text().trim();
+    let status;
+
+    if (posText === 'NC') {
+      status = time;
+      time   = '';
+    } else {
+      status = 'Finished';
+    }
+
+    // Strip trailing 's' from gap times (e.g. "5.123s" → "5.123")
+    if (time.length > 2 && time.endsWith('s') && !time.includes('lap')) {
+      time = time.slice(0, -1);
+    }
+
+    results.push({
+      position:      pos++,
+      driverId:      drivers.forCode3($(tds[2]).find('span.md\\:hidden').text().trim()),
+      constructorId: constructors.forKnownAs($(tds[3]).text().trim()),
+      laps:          $(tds[4]).text().trim() * 1,
+      time,
+      status,
+      points:        $(tds[6]).text().trim() * 1,
+    });
+  });
+  return results;
+}
+
+function scrapeGrid($, rows, drivers, constructors) {
+  const results = [];
+  rows.each(function() {
+    const tds = $(this).find('td');
+    results.push({
+      position:      $(tds[0]).text().trim() * 1,
+      driverId:      drivers.forCode3($(tds[2]).find('span.md\\:hidden').text().trim()),
+      constructorId: constructors.forKnownAs($(tds[3]).text().trim()),
+    });
+  });
+  return results;
+}
+
+// Fetches a session from formula1.com, saves it to the data directory,
+// and returns { data, filePath }.
+export async function fetchAndSaveSession(year, round, session) {
+  const def = SESSION_DEFS[session];
+  if (!def) throw new Error(`No f1.com mapping for session "${session}"`);
+
+  const rounds       = loadRounds(year);
+  const drivers      = loadDrivers(year);
+  const constructors = loadConstructors(year);
+
+  const { $, url } = await fetchF1Page(year, round, def.page);
+
+  const rows = $('div#results-table table > tbody > tr');
+  if (rows.length === 0) throw new Error(`No results table found at ${url}`);
+
+  let results;
+  if      (def.type === 'practice')   results = scrapePractice($, rows, drivers, constructors);
+  else if (def.type === 'qualifying') results = scrapeQualifying($, rows, drivers, constructors);
+  else if (def.type === 'race')       results = scrapeRace($, rows, drivers, constructors);
+  else if (def.type === 'grid')       results = scrapeGrid($, rows, drivers, constructors);
+
+  const data = {
+    season:  year * 1,
+    round:   round * 1,
+    session: session.replace(/-/g, ' '),
+    results,
+  };
+
+  const filePath = `data/${year}/${year}-${round}-${session}.yaml`;
+  fs.writeFileSync(filePath, yaml.dump(data));
+  return { data, filePath };
+}
+
+// CLI entry point — maps legacy short codes to canonical session names.
+const CLI_SESSION_MAP = {
+  p1: 'practice-1', p2: 'practice-2', p3: 'practice-3',
+  q:  'qualifying',  sq: 'sprint-qualifying',
+  g:  'race-grid',   sg: 'sprint-grid',
+  r:  'race',        s:  'sprint',
+};
 
 export default function getSession(values) {
-  if (values.session == 'p1' || values.session == 'p2' || values.session == 'p3') {
-    getPractice(values)
-  } else if (values.session == 'q' || values.session == 'sq') {
-    getQualy(values)
-  } else if (values.session == 'g' || values.session == 'sg') {
-    getGrid(values)
-  } else if (values.session == 'r' || values.session == 's') {
-    getRace(values)
-  } else {
-    throw new Error(`invalid session ${values.session}`)
-  }
-}
-
-function formula1dotcomPage(year,round,country,pageName) {
-  const f1racesUrl = `https://www.formula1.com/en/results/${year}/races`
-
-  return new Promise((resolve, reject) => {
-
-    console.log(`loading url: ${f1racesUrl}`)
-
-    fetch(f1racesUrl)
-      .then(res => res.text())
-      .then(text => {
-        const $ = cheerio.load(text);
-        const title = $('head > title').text().toLowerCase()
-        console.log(`\n- page title: ${title}\n`)
-
-        let nth = round*1-1
-        // emelia-romagna gp 2023 was cancelled but is still in the list
-        if (year*1 == 2023 && round > 6) {
-          nth++
-        }
-        const row = $(`div#results-table table tbody tr:nth(${nth})`)
-        const raceUrl = $(row[0]).find('a')[0].attribs['href']
-        const racePath = raceUrl.split('/').slice(5,-1).join('/')
-        const url = `${f1racesUrl}/${racePath}/${pageName}`
-
-        console.log(`loading url: ${url}`)
-
-        fetch(url)
-        .then(res => res.text())
-        .then(text => {
-          const $ = cheerio.load(text);
-
-          const title = $('head > title').text().toLowerCase()
-          console.log(`\n- page title: ${title}\n`)
-
-          resolve($)
-        })
-      })
-  })
-}
-
-function getPractice(values) {
-
-  const rounds = loadRounds(values.year)
-  const drivers = loadDrivers(values.year)
-  const constructors = loadConstructors(values.year)
-  const race = rounds.get(values.round)
-  const country = race.circuit.location.country.toLowerCase()
-  const practice = values.session.substr(1)
-  const filename = `data/${values.year}/${values.year}-${values.round}-practice-${practice}.yaml`
-
-  const data = {
-    season: values.year*1,
-    round: values.round*1,
-    session: 'practice ' + practice,
-    results: [],
-  }
-
-  formula1dotcomPage(values.year,values.round,country,`practice/${practice}`)
-    .then($ => {
-
-      let rows = $('div#results-table table > tbody > tr')
-      if (rows.length == 0) {
-        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
-      }
-
-      rows.each(function(i) {
-        const result = {}
-
-        const tds = $(this).find('td')
-        result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
-        result.constructorId = constructors.forKnownAs($(tds[3]).text())
-        const timeGap = $(tds[4]).text()
-        result.time = i==0 ? timeGap : ''
-        result.gap = i==0 ? '' : timeGap
-        result.laps = $(tds[5]).text()*1
-
-        data.results.push(result);
-      });
-
-      fs.writeFileSync(filename, yaml.dump(data));
-    });
-}
-
-function getQualy(values) {
-
-  const rounds = loadRounds(values.year)
-  const drivers = loadDrivers(values.year)
-  const constructors = loadConstructors(values.year)
-  const race = rounds.get(values.round)
-  const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='sq'?'sprint-':''}qualifying.yaml`
-
-  const data = {
-    season: values.year*1,
-    round: values.round*1,
-    session: `${values.session=='sq'?'sprint ':''}qualifying`,
-    results: [],
-  }
-
-  formula1dotcomPage(values.year,values.round,country,`${values.session=='sq'?'sprint-':''}qualifying`)
-    .then($ => {
-      let rows = $('div#results-table table > tbody > tr')
-      if (rows.length == 0) {
-        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
-      }
-      rows.each(function() {
-        const result = {}
-
-        const tds = $(this).find('td')
-        result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
-        result.constructorId = constructors.forKnownAs($(tds[3]).text())
-        const q1 = $(tds[4]).text()
-        const q2 = $(tds[5]).text()
-        const q3 = $(tds[6]).text()
-        result.times = {}
-        if (q1 != '') result.times.q1 = q1
-        if (q2 != '') result.times.q2 = q2
-        if (q3 != '') result.times.q3 = q3
-        result.laps = $(tds[7]).text()*1
-
-        data.results.push(result);
-      });
-
-      fs.writeFileSync(filename, yaml.dump(data));
-    });
-}
-
-function getRace(values) {
-  const rounds = loadRounds(values.year)
-  const drivers = loadDrivers(values.year)
-  const constructors = loadConstructors(values.year)
-  const race = rounds.get(values.round)
-  const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='r'?'race':'sprint'}.yaml`
-
-  const data = {
-    season: values.year*1,
-    round: values.round*1,
-    session: values.session == 'r' ? 'race' : 'sprint',
-    results: [],
-  }
-
-  formula1dotcomPage(values.year,values.round,country,values.session == 'r' ? 'race-result' : 'sprint-results')
-    .then($ => {
-
-      let pos = 1
-      let rows = $('div#results-table table > tbody > tr')
-      if (rows.length == 0) {
-        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
-      }
-      rows.each(function() {
-        const result = {}
-
-        const tds = $(this).find('td')
-        result.position = $(tds[0]).text()
-        if (result.position == 'NC') {
-          result.position = 0
-        } else {
-          result.position = result.position*1
-        }
-
-        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
-        result.constructorId = constructors.forKnownAs($(tds[3]).text())
-        result.laps = $(tds[4]).text()*1
-        result.time = $(tds[5]).text()
-
-        if (result.position == 0) {
-          result.status = result.time
-          result.time = ''
-        } else {
-          result.status = "Finished"
-        }
-        result.position = pos++
-        
-        // remove the s for seconds from times, checking lap
-        if (result.time.length > 2 && result.time[result.time.length-1] == 's' && result.time.indexOf('lap') == -1) {
-          result.time = result.time.substring(0,result.time.length-1)
-        }
-
-        result.points = $(tds[6]).text()*1
-
-        data.results.push(result);
-      });
-
-      fs.writeFileSync(filename, yaml.dump(data));
-    });
-}
-
-function getGrid(values) {
-
-  const rounds = loadRounds(values.year)
-  const drivers = loadDrivers(values.year)
-  const constructors = loadConstructors(values.year)
-  const race = rounds.get(values.round)
-  const country = race.circuit.location.country.toLowerCase()
-  const filename = `data/${values.year}/${values.year}-${values.round}-${values.session=='g' ? 'race-grid' : 'sprint-grid'}.yaml`
-
-  const data = {
-    season: values.year*1,
-    round: values.round*1,
-    session: values.session == 'g' ? 'race grid' : 'sprint grid',
-    results: [],
-  }
-
-  formula1dotcomPage(values.year,values.round,country,values.session == 'g' ? 'starting-grid' : 'sprint-grid')
-    .then($ => {
-      let rows = $('div#results-table table > tbody > tr')
-      if (rows.length == 0) {
-        throw new Error(`no results found for ${values.year} round ${values.round} practice ${practice}`)
-      }
-      rows.each(function() {
-        const result = {}
-
-        const tds = $(this).find('td')
-        result.position = $(tds[0]).text()*1
-        result.driverId = drivers.forCode3($(tds[2]).find('span.md\\:hidden').text())
-        result.constructorId = constructors.forKnownAs($(tds[3]).text())
-        data.results.push(result);
-      });
-
-      fs.writeFileSync(filename, yaml.dump(data));
-    });
+  const session = CLI_SESSION_MAP[values.session];
+  if (!session) throw new Error(`Invalid session code "${values.session}". Valid: ${Object.keys(CLI_SESSION_MAP).join(', ')}`);
+  fetchAndSaveSession(values.year, values.round, session)
+    .then(({ filePath }) => console.log(`Saved: ${filePath}`))
+    .catch(err => console.error(`Error: ${err.message}`));
 }
