@@ -62,6 +62,42 @@ Shared lookup databases in `data/`:
 | `drivers.yaml` | All-time driver biographical database |
 | `constructors.yaml` | All-time constructor database with all known aliases |
 
+## API
+
+The championship table for any year is available as YAML over HTTP:
+
+```
+GET /:year/table.yaml
+```
+
+Supports standard HTTP conditional requests to avoid re-downloading unchanged data.
+
+**Fetch the table:**
+```bash
+curl -i http://localhost:3000/2026/table.yaml
+```
+
+The response includes `ETag` and `Last-Modified` headers. An ETag is a fingerprint of the current file — pass it back on subsequent requests and the server returns `304 Not Modified` (no body) if nothing has changed, saving bandwidth.
+
+**Only download if the file has changed since the last request (using ETag):**
+```bash
+curl -i -H 'If-None-Match: "19f18d960a9.502"' http://localhost:3000/2026/table.yaml
+```
+
+**Only download if the file has changed since a given date (using Last-Modified):**
+```bash
+curl -i -H 'If-Modified-Since: Tue, 30 Jun 2026 14:05:27 GMT' http://localhost:3000/2026/table.yaml
+```
+
+**Let curl manage ETags automatically across calls:**
+```bash
+# First call — fetch and save the ETag to a file
+curl --etag-save etags.txt http://localhost:3000/2026/table.yaml -o 2026-table.yaml
+
+# Subsequent calls — only writes to the output file if the content has changed
+curl --etag-compare etags.txt http://localhost:3000/2026/table.yaml -o 2026-table.yaml
+```
+
 ## Data sources
 
 - **formula1.com** — session results and season calendars

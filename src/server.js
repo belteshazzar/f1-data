@@ -1018,6 +1018,29 @@ app.get('/:year/constructors', (req, res) => {
 
 // ── Championship table ────────────────────────────────────────────────────────
 
+app.get('/:year/table.yaml', (req, res) => {
+  const { year } = req.params;
+  const file = `${DATA_DIR}/${year}/${year}-table-drivers.yaml`;
+  if (!exists(file)) return res.status(404).end();
+
+  const stat        = fs.statSync(file);
+  const etag        = `"${stat.mtimeMs.toString(16)}"`;
+  const lastModified = stat.mtime.toUTCString();
+
+  if (req.headers['if-none-match'] === etag) return res.status(304).end();
+  if (req.headers['if-modified-since']) {
+    const clientDate = new Date(req.headers['if-modified-since']);
+    if (!isNaN(clientDate) && stat.mtime <= clientDate) return res.status(304).end();
+  }
+
+  res
+    .set('Content-Type', 'application/yaml; charset=utf-8')
+    .set('ETag', etag)
+    .set('Last-Modified', lastModified)
+    .set('Cache-Control', 'no-cache')
+    .send(fs.readFileSync(file, 'utf8'));
+});
+
 app.get('/:year/table', (req, res) => {
   const { year } = req.params;
   const file = `${DATA_DIR}/${year}/${year}-table-drivers.yaml`;
