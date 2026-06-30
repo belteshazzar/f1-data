@@ -1,6 +1,7 @@
 import express from 'express';
 import fs from 'fs';
 import yaml from 'js-yaml';
+import * as cheerio from 'cheerio';
 import { fetchAndSaveSession, resolveF1Url, FETCHABLE_SESSIONS } from './getSessionF1.js';
 import { fetchAndSaveSeasonRoundsF1 } from './fetchSeasonRoundsF1.js';
 import { generateDriversTable } from './generateDriversTable.js';
@@ -12,6 +13,7 @@ import {
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
+app.use('/images', express.static('images'));
 
 const PORT = process.env.PORT || 3000;
 const DATA_DIR = 'data';
@@ -375,6 +377,72 @@ ${crumbHtml}
 </html>`;
 }
 
+// ── Driver image fetch ────────────────────────────────────────────────────────
+
+app.post('/driver-image/:driverId', async (req, res) => {
+  const { driverId } = req.params;
+  const back = req.body?.back ?? '/data/drivers';
+  const db = getDriversFromDb();
+  const driver = db[driverId];
+  if (!driver?.url) return res.redirect(`${back}?imgError=${encodeURIComponent('Driver not found or has no Wikipedia URL')}`);
+
+  try {
+    const pageRes = await fetch(driver.url);
+    if (!pageRes.ok) throw new Error(`Wikipedia returned ${pageRes.status}`);
+    const $ = cheerio.load(await pageRes.text());
+
+    const imgEl = $('.infobox.vcard img, .infobox img').first();
+    if (!imgEl.length) throw new Error('No infobox image found on Wikipedia page');
+
+    const thumbUrl = (imgEl.attr('src') ?? '').replace(/^\/\//, 'https://');
+    if (thumbUrl.includes('Flag_of_') || thumbUrl.includes('flag_of_'))
+      throw new Error('Infobox image is a flag');
+
+    const pageHref  = imgEl.closest('a').attr('href') ?? '';
+    const wikiPage  = pageHref ? `https://en.wikipedia.org${pageHref}` : '';
+
+    // Wikipedia imageinfo API for license metadata
+    const fileTitle = wikiPage ? decodeURIComponent(wikiPage.split('/wiki/').pop()) : '';
+    let license = '', licenseUrl = '';
+    if (fileTitle) {
+      const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&titles=${encodeURIComponent(fileTitle)}&iiprop=extmetadata&format=json&origin=*`;
+      const apiJson = await (await fetch(apiUrl)).json();
+      const info = Object.values(apiJson.query?.pages ?? {})[0]?.imageinfo?.[0];
+      license    = info?.extmetadata?.LicenseShortName?.value ?? '';
+      licenseUrl = info?.extmetadata?.LicenseUrl?.value ?? '';
+    }
+
+    const imgRes = await fetch(thumbUrl);
+    const imgBuf = Buffer.from(await imgRes.arrayBuffer());
+    if (imgBuf.length < 3000) throw new Error(`Image only ${imgBuf.length} bytes — likely a placeholder`);
+
+    const ext = (thumbUrl.split('.').pop() ?? 'jpg').replace(/[^a-z]/gi, '').toLowerCase();
+
+    fs.writeFileSync(`images/drivers/${driverId}.${ext}`, imgBuf);
+    fs.writeFileSync(`images/drivers/${driverId}.yaml`, yaml.dump({ url: thumbUrl, page: wikiPage, license, licenseUrl, ext }));
+
+    // Backfill dateOfBirth and nationality into drivers.yaml if missing
+    const dateOfBirth = $('.infobox.vcard .bday').first().text().trim();
+    const nationality = $('.infobox.vcard tr')
+      .filter((_, row) => $(row).find('th').text().trim() === 'Nationality')
+      .find('td').first().text().trim().split(/[\n,]/)[0].trim();
+
+    const driversFile = 'data/drivers.yaml';
+    const driversDoc  = yaml.load(fs.readFileSync(driversFile, 'utf8'));
+    const entry = driversDoc.drivers[driverId];
+    if (entry) {
+      let changed = false;
+      if (!entry.dateOfBirth && dateOfBirth) { entry.dateOfBirth = dateOfBirth; changed = true; }
+      if (!entry.nationality  && nationality)  { entry.nationality  = nationality;  changed = true; }
+      if (changed) fs.writeFileSync(driversFile, yaml.dump(driversDoc, { lineWidth: -1 }));
+    }
+
+    res.redirect(`${back}?imgFetched=${encodeURIComponent(driverId)}`);
+  } catch (err) {
+    res.redirect(`${back}?imgError=${encodeURIComponent(err.message)}`);
+  }
+});
+
 // ── Home ──────────────────────────────────────────────────────────────────────
 
 app.get('/', (req, res) => {
@@ -461,19 +529,40 @@ app.get('/data/drivers/:letter', (req, res) => {
     .sort(([, a], [, b]) => a.familyName.localeCompare(b.familyName));
 
   const total = Object.keys(db).length;
+  const back  = `/data/drivers/${letter.toLowerCase()}`;
+  const { imgFetched, imgError } = req.query;
+
+  const banner = imgFetched
+    ? `<div class="banner banner-success">Image fetched for <strong>${esc(imgFetched)}</strong></div>`
+    : imgError
+    ? `<div class="banner banner-error"><strong>Image fetch failed:</strong> ${esc(decodeURIComponent(imgError))}</div>`
+    : '';
 
   const rows = entries.map(([id, d]) => `<tr>
     <td style="font-family:var(--mono);font-size:12px;color:var(--muted)">${esc(id)}</td>
     <td><span class="driver-code">${esc(d.driverCode3 ?? '')}</span></td>
     <td class="num" style="color:var(--muted)">${d.permanentNumber != null ? '#' + d.permanentNumber : ''}</td>
-    <td>${esc(d.flag ?? '')} ${esc(d.givenName ?? '')} <strong>${esc(d.familyName ?? '')}</strong></td>
+    <td style="display:flex;align-items:center;gap:6px">
+      <img src="/images/drivers/${esc(id)}.png"
+           onerror="if(this.src.endsWith('.png')){this.src='/images/drivers/${esc(id)}.jpg'}else{this.style.display='none'}"
+           style="width:24px;height:24px;border-radius:50%;object-fit:cover;flex-shrink:0" loading="lazy">
+      ${esc(d.flag ?? '')} ${esc(d.givenName ?? '')} <strong>${esc(d.familyName ?? '')}</strong>
+    </td>
     <td>${esc(d.nationality ?? '')}</td>
     <td style="color:var(--muted);font-size:12px">${d.dateOfBirth ?? ''}</td>
     <td class="num" style="color:var(--muted)">${d.lastSeen ?? ''}</td>
     <td><a href="${esc(d.url ?? '')}" target="_blank" rel="noopener" style="font-size:12px">Wikipedia ↗</a></td>
+    <td>
+      <form method="POST" action="/driver-image/${esc(id)}" style="margin:0"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='…'">
+        <input type="hidden" name="back" value="${esc(back)}">
+        <button type="submit" style="font-size:11px;padding:2px 6px;background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--muted);cursor:pointer">↓ img</button>
+      </form>
+    </td>
   </tr>`).join('');
 
   res.send(layout(`Drivers — ${letter}`, `
+    ${banner}
     <h1>Drivers Database <span style="color:var(--muted);font-size:14px;font-weight:400">${total} total · ${entries.length} under ${letter}</span></h1>
     ${letterNav(letter, available, '/data/drivers')}
     <div class="card" style="padding:0">
@@ -486,6 +575,7 @@ app.get('/data/drivers/:letter', (req, res) => {
           <th>Nationality</th>
           <th>Born</th>
           <th class="num">Last seen</th>
+          <th></th>
           <th></th>
         </tr></thead>
         <tbody>${rows}</tbody>
