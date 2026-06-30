@@ -18,21 +18,25 @@ app.use('/images', express.static('images'));
 const PORT = process.env.PORT || 3000;
 const DATA_DIR = 'data';
 
-const CONSTRUCTOR_COLORS = {
-  mclaren:      '#FF8000',
-  red_bull:     '#3671C6',
-  ferrari:      '#E8002D',
-  mercedes:     '#27F4D2',
-  aston_martin: '#229971',
-  alpine:       '#0093CC',
-  williams:     '#64C4FF',
-  rb:           '#6692FF',
-  haas:         '#B6BABD',
-  sauber:       '#52E252',
-};
+let _constructorColors = null;
+let _constructorColorsMtime = 0;
 
 function constructorColor(id) {
-  return CONSTRUCTOR_COLORS[id] ?? '#888';
+  const file = `${DATA_DIR}/constructors.yaml`;
+  try {
+    const mtime = fs.statSync(file).mtimeMs;
+    if (mtime !== _constructorColorsMtime) {
+      const db = yaml.load(fs.readFileSync(file, 'utf8'));
+      _constructorColors = {};
+      for (const [cid, c] of Object.entries(db?.constructors ?? {})) {
+        if (c?.color) _constructorColors[cid] = c.color;
+      }
+      _constructorColorsMtime = mtime;
+    }
+  } catch {
+    _constructorColors ??= {};
+  }
+  return _constructorColors[id] ?? '#888';
 }
 
 function loadYaml(filePath) {
@@ -1041,6 +1045,139 @@ app.get('/:year/table.yaml', (req, res) => {
     .send(fs.readFileSync(file, 'utf8'));
 });
 
+app.get('/:year/graph', (req, res) => {
+  const { year } = req.params;
+  const file = `${DATA_DIR}/${year}/${year}-table-drivers.yaml`;
+  if (!exists(file)) return res.status(404).send(layout('Not found', '<p>Championship table not found.</p>'));
+
+  const data    = loadYaml(file);
+  const races   = data.races ?? [];
+  const drivers = data.drivers ?? [];
+
+  const sorted = [...drivers].sort((a, b) =>
+    (a.results?.at(-1)?.standing ?? 999) - (b.results?.at(-1)?.standing ?? 999)
+  );
+
+  const labels = races.map(r => r.raceCode3 + (r.type === 'sprint' ? ' S' : ''));
+
+  const constructorSeen = {};
+  const datasets = sorted.map(d => {
+    const constructorId = d.results?.find(r => r.constructorId)?.constructorId;
+    const color = constructorColor(constructorId);
+    const seen = constructorSeen[constructorId] = (constructorSeen[constructorId] ?? 0) + 1;
+    return {
+      label: d.driverCode3 ?? d.familyName,
+      data: races.map((_, i) => {
+        const r = d.results?.[i];
+        return (r && r.cumulative >= 0) ? r.cumulative : null;
+      }),
+      borderColor: color,
+      backgroundColor: color,
+      borderDash: seen > 1 ? [6, 3] : [],
+      tension: 0.3,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+    };
+  });
+
+  const chartJson = JSON.stringify({ labels, datasets });
+
+  res.send(layout(`${year} Championship Graph`, `
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:16px">
+      <h1 style="margin:0">${esc(year)} Drivers Championship</h1>
+      <a href="/${year}/table" style="font-size:13px;color:var(--accent)">↩ Table</a>
+      <button id="toggleBtn" onclick="toggleMode()"
+          style="font-size:12px;padding:4px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--muted);cursor:pointer">
+        Gap to leader
+      </button>
+      <button onclick="downloadChart()"
+          style="font-size:12px;padding:4px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--muted);cursor:pointer">
+        ↓ Download image
+      </button>
+    </div>
+    <div class="card" style="padding:20px">
+      <canvas id="chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <script>
+      const normalData = ${chartJson};
+
+      // Gap view: for each race the leader is 0, everyone else falls below
+      const gapData = {
+        labels: normalData.labels,
+        datasets: normalData.datasets.map(ds => ({
+          ...ds,
+          data: ds.data.map((pts, i) => {
+            if (pts === null) return null;
+            const leader = Math.max(...normalData.datasets.map(d => d.data[i] ?? 0));
+            return pts - leader;
+          }),
+        })),
+      };
+
+      // Legend: draw a line stroke per entry so borderDash is visible in the key
+      function generateLabels(chart) {
+        return chart.data.datasets.map((ds, i) => ({
+          text: ds.label,
+          fillStyle: 'transparent',
+          strokeStyle: ds.borderColor,
+          lineWidth: 2,
+          lineDash: ds.borderDash ?? [],
+          pointStyle: 'line',
+          hidden: chart.getDatasetMeta(i).hidden,
+          datasetIndex: i,
+        }));
+      }
+
+      Chart.defaults.color = '#888';
+
+      let mode = 'normal';
+      const chart = new Chart(document.getElementById('chart'), {
+        type: 'line',
+        data: normalData,
+        options: {
+          responsive: true,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: { font: { size: 11 }, usePointStyle: true, pointStyleWidth: 24, generateLabels },
+            }
+          },
+          scales: {
+            x: { grid: { color: 'rgba(255,255,255,0.05)' } },
+            y: { title: { display: true, text: 'Points' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+          }
+        }
+      });
+
+      function toggleMode() {
+        mode = mode === 'normal' ? 'gap' : 'normal';
+        const btn = document.getElementById('toggleBtn');
+        if (mode === 'gap') {
+          chart.data = gapData;
+          chart.options.scales.y.title.text = 'Gap to leader (pts)';
+          btn.textContent = 'Points totals';
+          btn.style.color = 'var(--text)';
+        } else {
+          chart.data = normalData;
+          chart.options.scales.y.title.text = 'Points';
+          btn.textContent = 'Gap to leader';
+          btn.style.color = 'var(--muted)';
+        }
+        chart.update();
+      }
+
+      function downloadChart() {
+        const link = document.createElement('a');
+        link.download = '${esc(year)}-championship-' + mode + '.png';
+        link.href = document.getElementById('chart').toDataURL('image/png');
+        link.click();
+      }
+    </script>
+  `, [[year, `/${year}`], ['Championship', `/${year}/table`], ['Graph', null]]));
+});
+
 app.get('/:year/table', (req, res) => {
   const { year } = req.params;
   const file = `${DATA_DIR}/${year}/${year}-table-drivers.yaml`;
@@ -1107,6 +1244,7 @@ app.get('/:year/table', (req, res) => {
       ${prevLink}
       <h1 style="margin:0">${esc(year)} Drivers Championship</h1>
       ${nextLink}
+      <a href="/${year}/graph" style="font-size:13px;color:var(--accent)">Graph ↗</a>
       <form method="POST" action="/${year}/generate-table" style="margin:0"
           onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Generating…'">
         <input type="hidden" name="from" value="table">
