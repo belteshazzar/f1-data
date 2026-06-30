@@ -26,11 +26,11 @@ function sumBestSplit(racePoints,bestX,ofFirstY,bestZOfRest,restCount) {
 
 function driverCompare(ri) {
   return (a,b) => {
-    let c =  b.results[ri].cumulative - a.results[ri].cumulative
+    let c = b.results[ri].cumulative - a.results[ri].cumulative
     if (c != 0) {
       return c
     }
-    for (let i = 0 ; i<b.results[ri]._racePositions.length; i++) {
+    for (let i = 0; i < b.results[ri]._racePositions.length; i++) {
       c = b.results[ri]._racePositions[i] - a.results[ri]._racePositions[i]
       if (c != 0) {
         return c
@@ -124,6 +124,8 @@ export function generateDriversTable(values) {
     t.drivers.push(driver);
   })
 
+  const driversWithRaceStart = new Set();
+
   races.forEach((race, ri) => {
     race.results.forEach((res) => {
       let driver = driversMap[res.driverId];
@@ -133,6 +135,8 @@ export function generateDriversTable(values) {
         console.error(res)
         throw new Error(`Failed to find driver ${res.driverId}`)
       }
+
+      driversWithRaceStart.add(res.driverId);
 
       // drivers can have multiple results in the same race
       // when car sharing/swapping was allowed
@@ -234,6 +238,8 @@ export function generateDriversTable(values) {
       driver.results[r].cumulative = points;
     }
   });
+
+  t.drivers = t.drivers.filter(d => driversWithRaceStart.has(d.driverId));
 
   races.forEach((race, ri) => {
     t.drivers.toSorted(driverCompare(ri)).forEach((driver, i) => {

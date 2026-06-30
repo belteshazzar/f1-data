@@ -691,11 +691,12 @@ app.post('/:year/fetch-rounds-f1', async (req, res) => {
 
 app.post('/:year/generate-table', (req, res) => {
   const { year } = req.params;
+  const from = req.body?.from;
   try {
     generateDriversTable({ year });
-    res.redirect(`/${year}?tableGenerated=1`);
+    res.redirect(from === 'table' ? `/${year}/table` : `/${year}?tableGenerated=1`);
   } catch (err) {
-    res.redirect(`/${year}?tableError=${encodeURIComponent(err.message)}`);
+    res.redirect(from === 'table' ? `/${year}/table?tableError=${encodeURIComponent(err.message)}` : `/${year}?tableError=${encodeURIComponent(err.message)}`);
   }
 });
 
@@ -936,11 +937,14 @@ app.get('/:year/table', (req, res) => {
   const races = data.races ?? [];
   const drivers = data.drivers ?? [];
 
-  // Sort by final cumulative points descending
+  const yr = year * 1;
+  const prevYear = exists(`${DATA_DIR}/${yr - 1}/${yr - 1}-table-drivers.yaml`) ? yr - 1 : null;
+  const nextYear = exists(`${DATA_DIR}/${yr + 1}/${yr + 1}-table-drivers.yaml`) ? yr + 1 : null;
+
   const sorted = [...drivers].sort((a, b) => {
-    const aPoints = a.results?.[a.results.length - 1]?.cumulative ?? 0;
-    const bPoints = b.results?.[b.results.length - 1]?.cumulative ?? 0;
-    return bPoints - aPoints;
+    const aStanding = a.results?.[a.results.length - 1]?.standing ?? 999;
+    const bStanding = b.results?.[b.results.length - 1]?.standing ?? 999;
+    return aStanding - bStanding;
   });
 
   // Race column headers
@@ -982,8 +986,23 @@ app.get('/:year/table', (req, res) => {
     </tr>`;
   }).join('');
 
+  const prevLink = prevYear ? `<a href="/${prevYear}/table" style="font-size:13px;color:var(--accent)">← ${prevYear}</a>` : '';
+  const nextLink = nextYear ? `<a href="/${nextYear}/table" style="font-size:13px;color:var(--accent)">${nextYear} →</a>` : '';
+
   res.send(layout(`${year} Championship`, `
-    <h1>${esc(year)} Drivers Championship</h1>
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:16px">
+      ${prevLink}
+      <h1 style="margin:0">${esc(year)} Drivers Championship</h1>
+      ${nextLink}
+      <form method="POST" action="/${year}/generate-table" style="margin:0"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Generating…'">
+        <input type="hidden" name="from" value="table">
+        <button type="submit" class="btn-fetch"
+            style="background:var(--surface2);border:1px solid var(--border);color:var(--text);font-size:12px;padding:4px 10px">
+          ⟳ Regenerate
+        </button>
+      </form>
+    </div>
     <div class="champ-table-wrap card">
       <table class="champ-table">
         <thead><tr>
