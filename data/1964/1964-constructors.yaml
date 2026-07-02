@@ -2,13 +2,22 @@ season: 1964
 constructors:
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
-    name: brabham
+    name: Brabham-Climax
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Brabham Climax
+      - Brabham-Climax
+  - constructorId: brabham-brm
+    url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-BRM
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
       - Brabham BRM
-      - Brabham Climax
+      - Brabham-BRM
       - Brabham Ford
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
@@ -88,3 +97,12 @@ constructors:
     knownAs:
       - Scirocco
       - Scirocco Climax
+  - constructorId: brabham-ford
+    url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-Ford
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Brabham Ford
+      - Brabham-Ford

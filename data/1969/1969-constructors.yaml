@@ -2,12 +2,12 @@ season: 1969
 constructors:
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham Ford
+    name: Brabham
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham Ford
+      - Brabham
       - Brabham Repco
       - Brabham Climax
   - constructorId: brm
@@ -76,3 +76,31 @@ constructors:
     knownAs:
       - Tecno
       - Tecno Cosworth
+  - constructorId: brabham-ford
+    url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-Ford
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Brabham Ford
+      - Brabham-Ford
+  - constructorId: brm-ford
+    url: http://en.wikipedia.org/wiki/BRM
+    name: BRM-Ford
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - BRM Ford
+      - BRM-Ford
+  - constructorId: eagle
+    url: http://en.wikipedia.org/wiki/Anglo_American_Racers
+    name: Eagle
+    nationality: American
+    flag: 🇺🇸
+    countryCode3: USA
+    knownAs:
+      - Eagle
+      - Eagle Climax
+      - Eagle Weslake

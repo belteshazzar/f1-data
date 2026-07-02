@@ -2,12 +2,13 @@ season: 1962
 constructors:
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham
+    name: Brabham-Climax
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham
+      - Brabham Climax
+      - Brabham-Climax
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
     name: BRM
@@ -17,15 +18,6 @@ constructors:
     knownAs:
       - BRM
       - Gilby BRM
-  - constructorId: cooper
-    url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: Cooper
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Cooper
-      - Cooper Alfa Romeo
   - constructorId: cooper-alfa_romeo
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
     name: Cooper-Alfa Romeo
@@ -117,24 +109,6 @@ constructors:
     countryCode3: GBR
     knownAs:
       - Lotus-Borgward
-  - constructorId: lotus
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-BRM
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Lotus-BRM
-      - Lotus BRM
-  - constructorId: lotus
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: lotus
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - lotus
-      - Lotus Climax
   - constructorId: porsche
     url: http://en.wikipedia.org/wiki/Porsche_in_Formula_One
     name: Porsche
@@ -145,11 +119,13 @@ constructors:
       - Porsche
   - constructorId: lotus
     url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Team Lotus
+    name: Lotus-Climax
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
+      - Lotus Climax
+      - Lotus-Climax
       - Team Lotus
   - constructorId: tomaso
     url: http://en.wikipedia.org/wiki/De_Tomaso

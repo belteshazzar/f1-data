@@ -5,6 +5,7 @@ import * as cheerio from 'cheerio';
 import { fetchAndSaveSession, resolveF1Url, FETCHABLE_SESSIONS } from './getSessionF1.js';
 import { fetchAndSaveSeasonRoundsF1 } from './fetchSeasonRoundsF1.js';
 import { generateDriversTable } from './generateDriversTable.js';
+import { generateConstructorsTable } from './generateConstructorsTable.js';
 import {
   getDriversFromDb, driversDbExists,
   getConstructorsFromDb, constructorsDbExists,
@@ -310,6 +311,11 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
 .pos-dnf { color: #e05; }
 .pos-none { color: var(--border); }
 
+/* constructors championship - one car per row, split vertically */
+.champ-table td.race-cell-cars { padding: 0; }
+.race-cell-cars .car-row { padding: 3px 6px; }
+.race-cell-cars .car-row + .car-row { border-top: 1px solid var(--border); }
+
 .sessions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -369,6 +375,66 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
   text-align: center;
   color: var(--muted);
   font-size: 14px;
+}
+
+/* starting grid — top-down view of the grid, staggered like the real thing */
+.starting-grid-wrap { display: flex; justify-content: center; padding: 8px 0 24px; overflow-x: auto; }
+.grid-track {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  align-items: start;
+  column-gap: 44px;
+  row-gap: 6px;
+  padding: 30px 32px 24px;
+  background: linear-gradient(180deg, var(--surface2) 0%, var(--surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+}
+.grid-track::before {
+  content: 'START';
+  position: absolute;
+  top: 0; left: 50%; transform: translate(-50%, -50%);
+  background: var(--text);
+  color: var(--surface);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.grid-slot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  min-height: 30px;
+}
+.grid-slot.col-right { margin-top: 22px; }
+.grid-slot.grid-pole { border-color: rgba(230,180,20,0.8); }
+.grid-pos { flex: 0 0 18px; text-align: center; font-weight: 800; font-size: 13px; color: var(--muted); }
+.grid-slot.grid-pole .grid-pos { color: #ad8a00; }
+.grid-slot .constructor-dot { flex-shrink: 0; }
+.grid-driver-info { min-width: 0; flex: 1; }
+.grid-driver-name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.grid-team {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
 </head>
@@ -656,13 +722,30 @@ app.get('/data/:file', (req, res) => {
 
 app.get('/:year', (req, res) => {
   const { year } = req.params;
-  const { fetched, error, driversGenerated, constructorsGenerated, tableGenerated, tableError } = req.query;
+  const { fetched, error, driversGenerated, constructorsGenerated, tableGenerated, tableError, constructorsTableGenerated, constructorsTableError } = req.query;
   const roundsFile      = `${DATA_DIR}/${year}/${year}-rounds.yaml`;
   const driversFile     = `${DATA_DIR}/${year}/${year}-drivers.yaml`;
   const constructorsFile = `${DATA_DIR}/${year}/${year}-constructors.yaml`;
   const hasRounds       = exists(roundsFile);
   const hasDrivers      = exists(driversFile);
   const hasConstructors = exists(constructorsFile);
+
+  // Bounded to existing seasons, plus one year past the latest so you can
+  // navigate forward to set up a new season (matches the /seasons hub's
+  // "add next year" card).
+  const allSeasons = getSeasons().map(Number);
+  const minSeason  = Math.min(...allSeasons);
+  const maxSeason  = Math.max(...allSeasons);
+  const yr         = year * 1;
+  const prevYear   = yr - 1 >= minSeason   ? yr - 1 : null;
+  const nextYear   = yr + 1 <= maxSeason + 1 ? yr + 1 : null;
+  const prevLink   = prevYear ? `<a href="/${prevYear}" style="font-size:13px;color:var(--accent)">← ${prevYear}</a>` : '';
+  const nextLink   = nextYear ? `<a href="/${nextYear}" style="font-size:13px;color:var(--accent)">${nextYear} →</a>` : '';
+  const yearNav    = `<div style="display:flex;align-items:baseline;gap:16px;margin-bottom:16px">
+    ${prevLink}
+    <h1 style="margin:0">${esc(year)} Formula 1 World Championship</h1>
+    ${nextLink}
+  </div>`;
 
   const bannerHtml = fetched
     ? `<div class="banner banner-success">Rounds fetched from formula1.com and saved to <code>${year}-rounds.yaml</code>.</div>`
@@ -672,14 +755,21 @@ app.get('/:year', (req, res) => {
     ? `<div class="banner banner-success">Generated <code>${year}-constructors.yaml</code> with ${esc(constructorsGenerated)} constructors.</div>`
     : tableGenerated
     ? `<div class="banner banner-success">Championship table generated — <a href="/${year}/table"><code>${year}-table-drivers.yaml</code></a></div>`
+    : constructorsTableGenerated
+    ? `<div class="banner banner-success">Constructors table generated — <a href="/${year}/table-constructors"><code>${year}-table-constructors.yaml</code></a></div>`
     : error
     ? `<div class="banner banner-error"><strong>Fetch failed:</strong> ${esc(decodeURIComponent(error))}</div>`
     : tableError
     ? `<div class="banner banner-error"><strong>Table generation failed:</strong> ${esc(decodeURIComponent(tableError))}</div>`
+    : constructorsTableError
+    ? `<div class="banner banner-error"><strong>Constructors table generation failed:</strong> ${esc(decodeURIComponent(constructorsTableError))}</div>`
     : '';
 
   const tableFile  = `${DATA_DIR}/${year}/${year}-table-drivers.yaml`;
   const hasTable   = exists(tableFile);
+  const constructorsTableFile = `${DATA_DIR}/${year}/${year}-table-constructors.yaml`;
+  const hasConstructorsTable  = exists(constructorsTableFile);
+  const hasConstructorsChampionship = yr >= 1958;
 
   const fetchForm = `
   <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;align-items:center">
@@ -696,6 +786,14 @@ app.get('/:year', (req, res) => {
         ⟳ ${hasTable ? 'Regenerate' : 'Generate'} championship table
       </button>
     </form>
+    ${hasConstructorsChampionship ? `
+    <form method="POST" action="/${year}/generate-constructors-table"
+        onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Generating…'">
+      <button class="btn-fetch" type="submit"
+          style="background:var(--surface2);border:1px solid var(--border);color:var(--text)">
+        ⟳ ${hasConstructorsTable ? 'Regenerate' : 'Generate'} constructors table
+      </button>
+    </form>` : ''}
   </div>`;
 
   // Setup cards for missing drivers / constructors files
@@ -721,7 +819,7 @@ app.get('/:year', (req, res) => {
 
   if (!hasRounds) {
     return res.send(layout(`${year} Season`, `
-      <h1>${esc(year)} Formula 1 World Championship</h1>
+      ${yearNav}
       ${bannerHtml}
       ${seasonSetup}
       ${fetchForm}
@@ -734,9 +832,13 @@ app.get('/:year', (req, res) => {
 
   const rows = rounds.map(r => {
     const raceSession = r.sessions?.find(s => s.name === 'Race');
-    const date = raceSession ? new Date(`${raceSession.date}T${raceSession.time}`) : null;
-    const dateStr = date ? date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
-    const past = date && date < now;
+    // Older seasons only have a date, no time (single Race session, no other
+    // sessions listed) - fall back to date-only so we don't build "...Tundefined".
+    const date = raceSession?.date
+      ? new Date(raceSession.time ? `${raceSession.date}T${raceSession.time}` : raceSession.date)
+      : null;
+    const dateStr = date && !isNaN(date) ? date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+    const past = date && !isNaN(date) && date < now;
 
     const sessionFiles = getSessionFiles(year, r.round);
     const hasResults = sessionFiles.some(s => s === 'race');
@@ -751,13 +853,14 @@ app.get('/:year', (req, res) => {
   }).join('');
 
   const nav = `<div class="season-nav">
-    <a href="/${year}/table">Championship</a>
+    <a href="/${year}/table">Drivers Championship</a>
+    <a href="/${year}/table-constructors">Constructors Championship</a>
     <a href="/${year}/drivers">Drivers</a>
     <a href="/${year}/constructors">Constructors</a>
   </div>`;
 
   res.send(layout(`${year} Season`, `
-    <h1>${esc(year)} Formula 1 World Championship</h1>
+    ${yearNav}
     ${nav}
     ${bannerHtml}
     ${(!hasDrivers || !hasConstructors) ? seasonSetup : ''}
@@ -797,6 +900,17 @@ app.post('/:year/generate-table', (req, res) => {
     res.redirect(from === 'table' ? `/${year}/table` : `/${year}?tableGenerated=1`);
   } catch (err) {
     res.redirect(from === 'table' ? `/${year}/table?tableError=${encodeURIComponent(err.message)}` : `/${year}?tableError=${encodeURIComponent(err.message)}`);
+  }
+});
+
+app.post('/:year/generate-constructors-table', (req, res) => {
+  const { year } = req.params;
+  const from = req.body?.from;
+  try {
+    generateConstructorsTable({ year });
+    res.redirect(from === 'table-constructors' ? `/${year}/table-constructors` : `/${year}?constructorsTableGenerated=1`);
+  } catch (err) {
+    res.redirect(from === 'table-constructors' ? `/${year}/table-constructors?constructorsTableError=${encodeURIComponent(err.message)}` : `/${year}?constructorsTableError=${encodeURIComponent(err.message)}`);
   }
 });
 
@@ -1272,7 +1386,97 @@ app.get('/:year/table', (req, res) => {
       </table>
     </div>
     <p style="margin-top:12px;color:var(--muted);font-size:12px">R = Retired &nbsp;·&nbsp; S = Sprint &nbsp;·&nbsp; · = Did not participate</p>
-  `, [[year, `/${year}`], ['Championship', null]]));
+  `, [[year, `/${year}`], ['Drivers Championship', null]]));
+});
+
+app.get('/:year/table-constructors', (req, res) => {
+  const { year } = req.params;
+  const file = `${DATA_DIR}/${year}/${year}-table-constructors.yaml`;
+  if (!exists(file)) return res.status(404).send(layout('Not found', '<p>Constructors championship table not found.</p>'));
+
+  const data = loadYaml(file);
+  const races = data.races ?? [];
+  const constructors = data.constructors ?? [];
+
+  const yr = year * 1;
+  const prevYear = exists(`${DATA_DIR}/${yr - 1}/${yr - 1}-table-constructors.yaml`) ? yr - 1 : null;
+  const nextYear = exists(`${DATA_DIR}/${yr + 1}/${yr + 1}-table-constructors.yaml`) ? yr + 1 : null;
+
+  const sorted = [...constructors].sort((a, b) => {
+    const aStanding = a.results?.[a.results.length - 1]?.standing ?? 999;
+    const bStanding = b.results?.[b.results.length - 1]?.standing ?? 999;
+    return aStanding - bStanding;
+  });
+
+  const raceHeaders = races.map(r => {
+    const href = `/${year}/${r.round}/${r.type === 'sprint' ? 'sprint' : 'race'}`;
+    return `<th class="race-th"><a href="${href}" title="${esc(r.name)}">${esc(r.raceCode3)}<br><small style="font-weight:400;color:var(--muted)">${r.type === 'sprint' ? 'S' : ''}</small></a></th>`;
+  }).join('');
+
+  const constructorRows = sorted.map((c, idx) => {
+    const finalResult = c.results?.[c.results.length - 1];
+    const totalPoints = finalResult?.cumulative ?? 0;
+    const color = constructorColor(c.constructorId);
+
+    const raceCells = races.map((_, i) => {
+      const cars = c.results?.[i]?.cars ?? [];
+      if (cars.length === 0) return `<td class="race-cell pos-none">·</td>`;
+
+      const carRows = cars.map(car => {
+        if (car.position === 0) return `<div class="car-row pos-none">·</div>`;
+        const pos = car.position;
+        let cls = 'car-row';
+        if (pos === 1) cls += ' pos-1';
+        else if (pos === 2) cls += ' pos-2';
+        else if (pos === 3) cls += ' pos-3';
+        return `<div class="${cls}">${pos}</div>`;
+      }).join('');
+
+      return `<td class="race-cell race-cell-cars">${carRows}</td>`;
+    }).join('');
+
+    return `<tr>
+      <td class="num pos">${idx + 1}</td>
+      <td>
+        <span class="constructor-dot" style="background:${color}"></span>
+        <span class="flag">${esc(c.flag ?? '')}</span>
+        <strong>${esc(c.name)}</strong>
+      </td>
+      <td class="num" style="font-weight:700;font-size:15px">${totalPoints}</td>
+      ${raceCells}
+    </tr>`;
+  }).join('');
+
+  const prevLink = prevYear ? `<a href="/${prevYear}/table-constructors" style="font-size:13px;color:var(--accent)">← ${prevYear}</a>` : '';
+  const nextLink = nextYear ? `<a href="/${nextYear}/table-constructors" style="font-size:13px;color:var(--accent)">${nextYear} →</a>` : '';
+
+  res.send(layout(`${year} Constructors Championship`, `
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:16px">
+      ${prevLink}
+      <h1 style="margin:0">${esc(year)} Constructors Championship</h1>
+      ${nextLink}
+      <form method="POST" action="/${year}/generate-constructors-table" style="margin:0"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Generating…'">
+        <input type="hidden" name="from" value="table-constructors">
+        <button type="submit" class="btn-fetch"
+            style="background:var(--surface2);border:1px solid var(--border);color:var(--text);font-size:12px;padding:4px 10px">
+          ⟳ Regenerate
+        </button>
+      </form>
+    </div>
+    <div class="champ-table-wrap card">
+      <table class="champ-table">
+        <thead><tr>
+          <th class="num">Pos</th>
+          <th>Constructor</th>
+          <th class="num">Pts</th>
+          ${raceHeaders}
+        </tr></thead>
+        <tbody>${constructorRows}</tbody>
+      </table>
+    </div>
+    <p style="margin-top:12px;color:var(--muted);font-size:12px">S = Sprint &nbsp;·&nbsp; · = Did not score &nbsp;·&nbsp; race cell shows the constructor's best-classified car that round</p>
+  `, [[year, `/${year}`], ['Constructors Championship', null]]));
 });
 
 // ── Round ─────────────────────────────────────────────────────────────────────
@@ -1391,17 +1595,23 @@ function buildSessionTable(session, results, driverMap, constructorMap) {
   }
 
   if (session === 'race-grid' || session === 'sprint-grid') {
-    const rows = results.map(r => {
+    // Two-column layout in source order (already sorted by grid position)
+    // gives P1/P2 on row 1, P3/P4 on row 2, etc. — the right column is
+    // nudged down via CSS to mimic the real staggered starting grid.
+    const slots = results.map((r, i) => {
       const color = constructorColor(r.constructorId);
-      return `<tr>
-        <td class="num pos">${r.position}</td>
-        <td><span class="flag">${esc(driverFlag(r.driverId))}</span>${esc(driverName(r.driverId))}</td>
-        <td><span class="constructor-dot" style="background:${color}"></span>${esc(cName(r.constructorId))}</td>
-      </tr>`;
+      const side = i % 2 === 0 ? 'col-left' : 'col-right';
+      const pole = i === 0 ? ' grid-pole' : '';
+      return `<div class="grid-slot ${side}${pole}">
+        <span class="grid-pos">${r.position}</span>
+        <span class="constructor-dot" style="background:${color}"></span>
+        <div class="grid-driver-info">
+          <div class="grid-driver-name">${esc(driverFlag(r.driverId))} ${esc(driverName(r.driverId))}</div>
+          <div class="grid-team">${esc(cName(r.constructorId))}</div>
+        </div>
+      </div>`;
     }).join('');
-    return `<table><thead><tr>
-      <th class="num">Grid</th><th>Driver</th><th>Constructor</th>
-    </tr></thead><tbody>${rows}</tbody></table>`;
+    return `<div class="starting-grid-wrap"><div class="grid-track">${slots}</div></div>`;
   }
 
   // Generic fallback

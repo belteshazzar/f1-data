@@ -21,13 +21,13 @@ constructors:
       - BRM
   - constructorId: cooper
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: cooper
+    name: Cooper-Maserati
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Cooper
       - Cooper Maserati
+      - Cooper-Maserati
       - Cooper Ferrari
   - constructorId: eagle
     url: http://en.wikipedia.org/wiki/Anglo_American_Racers
@@ -92,3 +92,12 @@ constructors:
     knownAs:
       - Matra Sports
       - Matra Cosworth
+  - constructorId: eagle-weslake
+    url: http://en.wikipedia.org/wiki/Anglo_American_Racers
+    name: Eagle-Weslake
+    nationality: American
+    flag: 🇺🇸
+    countryCode3: USA
+    knownAs:
+      - Eagle Weslake
+      - Eagle-Weslake

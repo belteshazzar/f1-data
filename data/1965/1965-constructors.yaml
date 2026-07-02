@@ -10,22 +10,22 @@ constructors:
       - Alfa Romeo
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-Climax
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Brabham Climax
+      - Brabham-Climax
+  - constructorId: brabham-brm
+    url: http://en.wikipedia.org/wiki/Brabham
     name: Brabham-BRM
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham-BRM
       - Brabham BRM
-  - constructorId: brabham
-    url: http://en.wikipedia.org/wiki/Brabham
-    name: brabham
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - brabham
-      - Brabham Climax
+      - Brabham-BRM
   - constructorId: brabham-ford
     url: http://en.wikipedia.org/wiki/Brabham
     name: Brabham-Ford
@@ -52,6 +52,7 @@ constructors:
     knownAs:
       - Cooper-Climax
       - Cooper Climax
+      - Cooper Maserati
   - constructorId: cooper-ford
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
     name: Cooper-Ford
@@ -61,15 +62,6 @@ constructors:
     knownAs:
       - Cooper-Ford
       - Cooper Ford
-  - constructorId: cooper
-    url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: cooper
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - cooper
-      - Cooper Maserati
   - constructorId: ferrari
     url: http://en.wikipedia.org/wiki/Scuderia_Ferrari
     name: Ferrari
@@ -106,31 +98,13 @@ constructors:
       - LDS Climax
   - constructorId: lotus
     url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-BRM
+    name: Lotus-Climax
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Lotus-BRM
-      - Lotus BRM
-  - constructorId: lotus
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: lotus
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - lotus
       - Lotus Climax
-  - constructorId: lotus
-    url: http://en.wikipedia.org/wiki/Team_Lotus
-    name: Lotus-Ford
-    nationality: British
-    flag: 🇬🇧
-    countryCode3: GBR
-    knownAs:
-      - Lotus-Ford
-      - Lotus Ford
+      - Lotus-Climax
   - constructorId: re
     url: http://en.wikipedia.org/wiki/RE_%28automobile%29
     name: RE

@@ -2,14 +2,22 @@ season: 1967
 constructors:
   - constructorId: brabham
     url: http://en.wikipedia.org/wiki/Brabham
-    name: Brabham
+    name: Brabham-Repco
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Brabham
+      - Brabham Repco
+      - Brabham-Repco
+  - constructorId: brabham-climax
+    url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-Climax
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
       - Brabham Climax
-      - Brabham Ford
+      - Brabham-Climax
       - Brabham Repco
   - constructorId: brm
     url: http://en.wikipedia.org/wiki/BRM
@@ -21,14 +29,23 @@ constructors:
       - BRM
   - constructorId: cooper
     url: http://en.wikipedia.org/wiki/Cooper_Car_Company
-    name: Cooper
+    name: Cooper-Maserati
     nationality: British
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Cooper
+      - Cooper Maserati
+      - Cooper-Maserati
       - Cooper ATS
+  - constructorId: cooper-climax
+    url: http://en.wikipedia.org/wiki/Cooper_Car_Company
+    name: Cooper-Climax
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
       - Cooper Climax
+      - Cooper-Climax
       - Cooper Maserati
   - constructorId: eagle
     url: http://en.wikipedia.org/wiki/Anglo_American_Racers
@@ -81,9 +98,17 @@ constructors:
     flag: 🇬🇧
     countryCode3: GBR
     knownAs:
-      - Lotus
-      - Lotus Climax
+      - Lotus Ford
+      - Lotus-Ford
+  - constructorId: lotus-brm
+    url: http://en.wikipedia.org/wiki/Team_Lotus
+    name: Lotus-BRM
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
       - Lotus BRM
+      - Lotus-BRM
       - Lotus Ford
   - constructorId: matra
     url: http://en.wikipedia.org/wiki/Matra
@@ -113,3 +138,21 @@ constructors:
     knownAs:
       - Protos
       - Protos Cosworth
+  - constructorId: eagle-weslake
+    url: http://en.wikipedia.org/wiki/Anglo_American_Racers
+    name: Eagle-Weslake
+    nationality: American
+    flag: 🇺🇸
+    countryCode3: USA
+    knownAs:
+      - Eagle Weslake
+      - Eagle-Weslake
+  - constructorId: brabham-ford
+    url: http://en.wikipedia.org/wiki/Brabham
+    name: Brabham-Ford
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    knownAs:
+      - Brabham Ford
+      - Brabham-Ford

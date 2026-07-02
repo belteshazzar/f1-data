@@ -1,0 +1,2304 @@
+season: 1977
+races:
+  - round: 1
+    type: race
+    name: Argentine Grand Prix
+    raceCode3: ARG
+    flag: 🇦🇷
+  - round: 2
+    type: race
+    name: Brazilian Grand Prix
+    raceCode3: BRA
+    flag: 🇧🇷
+  - round: 3
+    type: race
+    name: South African Grand Prix
+    raceCode3: ZAF
+    flag: 🇿🇦
+  - round: 4
+    type: race
+    name: United States Grand Prix West
+    raceCode3: USW
+    flag: 🇺🇸
+  - round: 5
+    type: race
+    name: Spanish Grand Prix
+    raceCode3: ESP
+    flag: 🇪🇸
+  - round: 6
+    type: race
+    name: Monaco Grand Prix
+    raceCode3: MON
+    flag: 🇲🇨
+  - round: 7
+    type: race
+    name: Belgian Grand Prix
+    raceCode3: BEL
+    flag: 🇧🇪
+  - round: 8
+    type: race
+    name: Swedish Grand Prix
+    raceCode3: SWE
+    flag: 🇸🇪
+  - round: 9
+    type: race
+    name: French Grand Prix
+    raceCode3: FRA
+    flag: 🇫🇷
+  - round: 10
+    type: race
+    name: British Grand Prix
+    raceCode3: GBR
+    flag: 🇬🇧
+  - round: 11
+    type: race
+    name: German Grand Prix
+    raceCode3: DEU
+    flag: 🇩🇪
+  - round: 12
+    type: race
+    name: Austrian Grand Prix
+    raceCode3: AUT
+    flag: 🇦🇹
+  - round: 13
+    type: race
+    name: Dutch Grand Prix
+    raceCode3: NED
+    flag: 🇳🇱
+  - round: 14
+    type: race
+    name: Italian Grand Prix
+    raceCode3: ITA
+    flag: 🇮🇹
+  - round: 15
+    type: race
+    name: United States Grand Prix
+    raceCode3: USA
+    flag: 🇺🇸
+  - round: 16
+    type: race
+    name: Canadian Grand Prix
+    raceCode3: CAN
+    flag: 🇨🇦
+  - round: 17
+    type: race
+    name: Japanese Grand Prix
+    raceCode3: JPN
+    flag: 🇯🇵
+constructors:
+  - constructorId: boro
+    name: Boro
+    nationality: Dutch
+    flag: 🇳🇱
+    countryCode3: NLD
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars:
+          - position: 14
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+  - constructorId: brabham
+    name: Brabham-Alfa Romeo
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 2
+            points: 6
+          - position: 10
+            points: 0
+        points: 6
+        cumulative: 6
+        standing: 2
+      - cars:
+          - position: 8
+            points: 0
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 6
+        standing: 3
+      - cars:
+          - position: 6
+            points: 1
+          - position: 13
+            points: 0
+        points: 1
+        cumulative: 7
+        standing: 4
+      - cars:
+          - position: 14
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 7
+        standing: 6
+      - cars:
+          - position: 6
+            points: 1
+          - position: 15
+            points: 0
+        points: 1
+        cumulative: 8
+        standing: 5
+      - cars:
+          - position: 14
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 5
+      - cars:
+          - position: 6
+            points: 1
+          - position: 26
+            points: 0
+        points: 1
+        cumulative: 9
+        standing: 6
+      - cars:
+          - position: 5
+            points: 2
+          - position: 10
+            points: 0
+        points: 2
+        cumulative: 11
+        standing: 6
+      - cars:
+          - position: 2
+            points: 6
+          - position: 16
+            points: 0
+        points: 6
+        cumulative: 17
+        standing: 5
+      - cars:
+          - position: 5
+            points: 2
+          - position: 16
+            points: 0
+        points: 2
+        cumulative: 19
+        standing: 5
+      - cars:
+          - position: 3
+            points: 4
+          - position: 21
+            points: 0
+        points: 4
+        cumulative: 23
+        standing: 5
+      - cars:
+          - position: 3
+            points: 4
+          - position: 8
+            points: 0
+        points: 4
+        cumulative: 27
+        standing: 5
+      - cars:
+          - position: 7
+            points: 0
+          - position: 25
+            points: 0
+        points: 0
+        cumulative: 27
+        standing: 5
+      - cars:
+          - position: 14
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 27
+        standing: 5
+      - cars:
+          - position: 12
+            points: 0
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 27
+        standing: 5
+      - cars:
+          - position: 21
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 27
+        standing: 5
+      - cars:
+          - position: 7
+            points: 0
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 27
+        standing: 5
+  - constructorId: brm
+    name: BRM
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+  - constructorId: ensign
+    name: Ensign
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 6
+            points: 1
+        points: 1
+        cumulative: 1
+        standing: 6
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 8
+      - cars:
+          - position: 9
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 8
+      - cars:
+          - position: 13
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 8
+      - cars:
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 8
+      - cars:
+          - position: 10
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 9
+      - cars:
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 10
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 11
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 11
+      - cars:
+          - position: 25
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 11
+      - cars:
+          - position: 6
+            points: 1
+        points: 1
+        cumulative: 2
+        standing: 11
+      - cars:
+          - position: 20
+            points: 0
+          - position: 26
+            points: 0
+        points: 0
+        cumulative: 2
+        standing: 11
+      - cars:
+          - position: 5
+            points: 2
+          - position: 20
+            points: 0
+        points: 2
+        cumulative: 4
+        standing: 11
+      - cars:
+          - position: 5
+            points: 2
+          - position: 20
+            points: 0
+        points: 2
+        cumulative: 6
+        standing: 10
+      - cars:
+          - position: 5
+            points: 2
+        points: 2
+        cumulative: 8
+        standing: 10
+      - cars:
+          - position: 5
+            points: 2
+          - position: 25
+            points: 0
+        points: 2
+        cumulative: 10
+        standing: 10
+      - cars:
+          - position: 14
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 10
+        standing: 10
+  - constructorId: ferrari
+    name: Ferrari
+    nationality: Italian
+    flag: 🇮🇹
+    countryCode3: ITA
+    results:
+      - cars:
+          - position: 3
+            points: 4
+          - position: 18
+            points: 0
+        points: 4
+        cumulative: 4
+        standing: 3
+      - cars:
+          - position: 1
+            points: 9
+          - position: 3
+            points: 4
+        points: 9
+        cumulative: 13
+        standing: 1
+      - cars:
+          - position: 1
+            points: 9
+          - position: 8
+            points: 0
+        points: 9
+        cumulative: 22
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 20
+            points: 0
+        points: 6
+        cumulative: 28
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 25
+            points: 0
+        points: 6
+        cumulative: 34
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 3
+            points: 4
+        points: 6
+        cumulative: 40
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 20
+            points: 0
+        points: 6
+        cumulative: 46
+        standing: 1
+      - cars:
+          - position: 3
+            points: 4
+          - position: 22
+            points: 0
+        points: 4
+        cumulative: 50
+        standing: 1
+      - cars:
+          - position: 5
+            points: 2
+          - position: 6
+            points: 1
+        points: 2
+        cumulative: 50
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 15
+            points: 0
+        points: 6
+        cumulative: 56
+        standing: 1
+      - cars:
+          - position: 1
+            points: 9
+          - position: 4
+            points: 3
+        points: 9
+        cumulative: 65
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 4
+            points: 3
+        points: 6
+        cumulative: 71
+        standing: 1
+      - cars:
+          - position: 1
+            points: 9
+          - position: 6
+            points: 1
+        points: 9
+        cumulative: 80
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 11
+            points: 0
+        points: 6
+        cumulative: 86
+        standing: 1
+      - cars:
+          - position: 4
+            points: 3
+          - position: 6
+            points: 1
+        points: 3
+        cumulative: 89
+        standing: 1
+      - cars:
+          - position: 12
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 89
+        standing: 1
+      - cars:
+          - position: 2
+            points: 6
+          - position: 19
+            points: 0
+        points: 6
+        cumulative: 95
+        standing: 1
+  - constructorId: fittipaldi
+    name: Fittipaldi
+    nationality: Brazilian
+    flag: 🇧🇷
+    countryCode3: BRA
+    results:
+      - cars:
+          - position: 4
+            points: 3
+          - position: 17
+            points: 0
+        points: 3
+        cumulative: 3
+        standing: 4
+      - cars:
+          - position: 4
+            points: 3
+          - position: 7
+            points: 0
+        points: 3
+        cumulative: 6
+        standing: 5
+      - cars:
+          - position: 10
+            points: 0
+        points: 0
+        cumulative: 6
+        standing: 5
+      - cars:
+          - position: 5
+            points: 2
+        points: 2
+        cumulative: 8
+        standing: 5
+      - cars:
+          - position: 14
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 6
+      - cars:
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 6
+      - cars:
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 7
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 8
+      - cars:
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 8
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 8
+      - cars: []
+        points: 0
+        cumulative: 8
+        standing: 8
+      - cars:
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 8
+        standing: 9
+      - cars:
+          - position: 4
+            points: 3
+        points: 3
+        cumulative: 11
+        standing: 9
+      - cars: []
+        points: 0
+        cumulative: 11
+        standing: 9
+      - cars:
+          - position: 13
+            points: 0
+        points: 0
+        cumulative: 11
+        standing: 9
+      - cars:
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 11
+        standing: 9
+      - cars: []
+        points: 0
+        cumulative: 11
+        standing: 9
+  - constructorId: hesketh
+    name: Hesketh
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars:
+          - position: 17
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars:
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 9
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 13
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 10
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 26
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 11
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 9
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 8
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 16
+            points: 0
+          - position: 26
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 14
+  - constructorId: kojima
+    name: Kojima
+    nationality: Japanese
+    flag: 🇯🇵
+    countryCode3: JPN
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars:
+          - position: 11
+            points: 0
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 15
+  - constructorId: lec
+    name: LEC
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars:
+          - position: 13
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars:
+          - position: 14
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars:
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 15
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 16
+  - constructorId: ligier
+    name: Ligier
+    nationality: French
+    flag: 🇫🇷
+    countryCode3: FRA
+    results:
+      - cars:
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 10
+      - cars:
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 9
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 1
+            points: 9
+        points: 9
+        cumulative: 9
+        standing: 7
+      - cars:
+          - position: 8
+            points: 0
+        points: 0
+        cumulative: 9
+        standing: 7
+      - cars:
+          - position: 6
+            points: 1
+        points: 1
+        cumulative: 10
+        standing: 7
+      - cars:
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 10
+        standing: 7
+      - cars:
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 10
+        standing: 8
+      - cars:
+          - position: 2
+            points: 6
+        points: 6
+        cumulative: 16
+        standing: 6
+      - cars:
+          - position: 8
+            points: 0
+        points: 0
+        cumulative: 16
+        standing: 8
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 16
+        standing: 8
+      - cars:
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 16
+        standing: 8
+      - cars:
+          - position: 5
+            points: 2
+          - position: 20
+            points: 0
+        points: 2
+        cumulative: 18
+        standing: 8
+  - constructorId: march
+    name: March
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 8
+            points: 0
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 8
+      - cars:
+          - position: 15
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 10
+      - cars:
+          - position: 14
+            points: 0
+          - position: 16
+            points: 0
+          - position: 17
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 10
+            points: 0
+          - position: 19
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 10
+            points: 0
+          - position: 11
+            points: 0
+          - position: 12
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 10
+            points: 0
+          - position: 14
+            points: 0
+          - position: 15
+            points: 0
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 15
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 14
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 10
+            points: 0
+          - position: 19
+            points: 0
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 8
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 9
+            points: 0
+          - position: 25
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 10
+            points: 0
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 14
+      - cars:
+          - position: 7
+            points: 0
+          - position: 10
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 15
+            points: 0
+          - position: 18
+            points: 0
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 8
+            points: 0
+          - position: 14
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+      - cars:
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 13
+  - constructorId: mclaren
+    name: McLaren
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 14
+            points: 0
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 2
+            points: 6
+          - position: 16
+            points: 0
+        points: 6
+        cumulative: 6
+        standing: 4
+      - cars:
+          - position: 4
+            points: 3
+          - position: 5
+            points: 2
+        points: 3
+        cumulative: 9
+        standing: 3
+      - cars:
+          - position: 7
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 9
+        standing: 4
+      - cars:
+          - position: 4
+            points: 3
+          - position: 13
+            points: 0
+          - position: 22
+            points: 0
+        points: 3
+        cumulative: 12
+        standing: 4
+      - cars:
+          - position: 4
+            points: 3
+          - position: 18
+            points: 0
+        points: 3
+        cumulative: 15
+        standing: 4
+      - cars:
+          - position: 7
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 15
+        standing: 4
+      - cars:
+          - position: 2
+            points: 6
+          - position: 11
+            points: 0
+          - position: 12
+            points: 0
+        points: 6
+        cumulative: 21
+        standing: 4
+      - cars:
+          - position: 3
+            points: 4
+          - position: 9
+            points: 0
+        points: 4
+        cumulative: 25
+        standing: 4
+      - cars:
+          - position: 1
+            points: 9
+          - position: 4
+            points: 3
+          - position: 11
+            points: 0
+          - position: 13
+            points: 0
+        points: 9
+        cumulative: 34
+        standing: 3
+      - cars:
+          - position: 13
+            points: 0
+          - position: 15
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 34
+        standing: 4
+      - cars:
+          - position: 6
+            points: 1
+          - position: 10
+            points: 0
+          - position: 17
+            points: 0
+          - position: 19
+            points: 0
+        points: 1
+        cumulative: 35
+        standing: 4
+      - cars:
+          - position: 9
+            points: 0
+          - position: 23
+            points: 0
+          - position: 26
+            points: 0
+        points: 0
+        cumulative: 35
+        standing: 4
+      - cars:
+          - position: 4
+            points: 3
+          - position: 13
+            points: 0
+          - position: 15
+            points: 0
+          - position: 23
+            points: 0
+        points: 3
+        cumulative: 38
+        standing: 4
+      - cars:
+          - position: 1
+            points: 9
+          - position: 10
+            points: 0
+          - position: 24
+            points: 0
+        points: 9
+        cumulative: 47
+        standing: 3
+      - cars:
+          - position: 3
+            points: 4
+          - position: 11
+            points: 0
+          - position: 13
+            points: 0
+        points: 4
+        cumulative: 51
+        standing: 4
+      - cars:
+          - position: 1
+            points: 9
+          - position: 16
+            points: 0
+        points: 9
+        cumulative: 60
+        standing: 3
+  - constructorId: penske
+    name: Penske
+    nationality: American
+    flag: 🇺🇸
+    countryCode3: USA
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars:
+          - position: 6
+            points: 1
+        points: 1
+        cumulative: 1
+        standing: 10
+      - cars: []
+        points: 0
+        cumulative: 1
+        standing: 10
+      - cars:
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 10
+      - cars:
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 11
+      - cars:
+          - position: 8
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 9
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 12
+            points: 0
+          - position: 14
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 8
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 25
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars:
+          - position: 7
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 12
+      - cars: []
+        points: 0
+        cumulative: 1
+        standing: 12
+  - constructorId: renault
+    name: Renault
+    nationality: French
+    flag: 🇫🇷
+    countryCode3: FRA
+    results:
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars:
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 19
+      - cars:
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 18
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars:
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 17
+      - cars: []
+        points: 0
+        cumulative: 0
+        standing: 18
+  - constructorId: shadow
+    name: Shadow
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 9
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 9
+      - cars:
+          - position: 6
+            points: 1
+          - position: 9
+            points: 0
+        points: 1
+        cumulative: 1
+        standing: 7
+      - cars:
+          - position: 21
+            points: 0
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 9
+      - cars:
+          - position: 15
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 9
+      - cars:
+          - position: 16
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 1
+        standing: 9
+      - cars:
+          - position: 6
+            points: 1
+          - position: 9
+            points: 0
+        points: 1
+        cumulative: 2
+        standing: 8
+      - cars:
+          - position: 5
+            points: 2
+          - position: 22
+            points: 0
+        points: 2
+        cumulative: 4
+        standing: 8
+      - cars:
+          - position: 9
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 4
+        standing: 9
+      - cars:
+          - position: 17
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 4
+        standing: 9
+      - cars:
+          - position: 7
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 4
+        standing: 9
+      - cars:
+          - position: 10
+            points: 0
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 4
+        standing: 10
+      - cars:
+          - position: 1
+            points: 9
+          - position: 22
+            points: 0
+        points: 9
+        cumulative: 13
+        standing: 7
+      - cars:
+          - position: 13
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 13
+        standing: 8
+      - cars:
+          - position: 3
+            points: 4
+          - position: 12
+            points: 0
+        points: 4
+        cumulative: 17
+        standing: 6
+      - cars:
+          - position: 9
+            points: 0
+          - position: 26
+            points: 0
+        points: 0
+        cumulative: 17
+        standing: 6
+      - cars:
+          - position: 4
+            points: 3
+          - position: 10
+            points: 0
+        points: 3
+        cumulative: 20
+        standing: 7
+      - cars:
+          - position: 4
+            points: 3
+          - position: 6
+            points: 1
+        points: 3
+        cumulative: 23
+        standing: 7
+  - constructorId: surtees
+    name: Surtees
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 7
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 7
+      - cars:
+          - position: 10
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 9
+      - cars:
+          - position: 7
+            points: 0
+          - position: 11
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 10
+      - cars:
+          - position: 11
+            points: 0
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 9
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 8
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 4
+            points: 3
+          - position: 12
+            points: 0
+        points: 3
+        cumulative: 3
+        standing: 9
+      - cars:
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 3
+        standing: 10
+      - cars:
+          - position: 13
+            points: 0
+        points: 0
+        cumulative: 3
+        standing: 10
+      - cars:
+          - position: 8
+            points: 0
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 3
+        standing: 10
+      - cars:
+          - position: 5
+            points: 2
+          - position: 7
+            points: 0
+        points: 2
+        cumulative: 5
+        standing: 9
+      - cars:
+          - position: 15
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 5
+        standing: 10
+      - cars:
+          - position: 12
+            points: 0
+        points: 0
+        cumulative: 5
+        standing: 10
+      - cars:
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 5
+        standing: 11
+      - cars:
+          - position: 11
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 5
+        standing: 11
+      - cars:
+          - position: 6
+            points: 1
+          - position: 17
+            points: 0
+        points: 1
+        cumulative: 6
+        standing: 11
+      - cars:
+          - position: 8
+            points: 0
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 6
+        standing: 11
+  - constructorId: lotus
+    name: Team Lotus
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 5
+            points: 2
+          - position: 21
+            points: 0
+        points: 2
+        cumulative: 2
+        standing: 5
+      - cars:
+          - position: 5
+            points: 2
+          - position: 14
+            points: 0
+        points: 2
+        cumulative: 4
+        standing: 6
+      - cars:
+          - position: 12
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 4
+        standing: 7
+      - cars:
+          - position: 1
+            points: 9
+          - position: 8
+            points: 0
+        points: 9
+        cumulative: 13
+        standing: 3
+      - cars:
+          - position: 1
+            points: 9
+          - position: 5
+            points: 2
+        points: 9
+        cumulative: 22
+        standing: 3
+      - cars:
+          - position: 5
+            points: 2
+          - position: 13
+            points: 0
+        points: 2
+        cumulative: 24
+        standing: 3
+      - cars:
+          - position: 1
+            points: 9
+          - position: 25
+            points: 0
+        points: 9
+        cumulative: 33
+        standing: 2
+      - cars:
+          - position: 6
+            points: 1
+          - position: 19
+            points: 0
+        points: 1
+        cumulative: 34
+        standing: 2
+      - cars:
+          - position: 1
+            points: 9
+          - position: 4
+            points: 3
+        points: 9
+        cumulative: 43
+        standing: 2
+      - cars:
+          - position: 3
+            points: 4
+          - position: 14
+            points: 0
+        points: 4
+        cumulative: 47
+        standing: 2
+      - cars:
+          - position: 12
+            points: 0
+          - position: 14
+            points: 0
+        points: 0
+        cumulative: 47
+        standing: 2
+      - cars:
+          - position: 21
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 47
+        standing: 2
+      - cars:
+          - position: 16
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 47
+        standing: 2
+      - cars:
+          - position: 1
+            points: 9
+          - position: 22
+            points: 0
+        points: 9
+        cumulative: 56
+        standing: 2
+      - cars:
+          - position: 2
+            points: 6
+          - position: 21
+            points: 0
+        points: 6
+        cumulative: 62
+        standing: 2
+      - cars:
+          - position: 9
+            points: 0
+          - position: 22
+            points: 0
+        points: 0
+        cumulative: 62
+        standing: 2
+      - cars:
+          - position: 13
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 62
+        standing: 2
+  - constructorId: tyrrell
+    name: Tyrrell
+    nationality: British
+    flag: 🇬🇧
+    countryCode3: GBR
+    results:
+      - cars:
+          - position: 13
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 11
+      - cars:
+          - position: 13
+            points: 0
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 0
+        standing: 12
+      - cars:
+          - position: 3
+            points: 4
+          - position: 23
+            points: 0
+        points: 4
+        cumulative: 4
+        standing: 6
+      - cars:
+          - position: 4
+            points: 3
+          - position: 12
+            points: 0
+        points: 3
+        cumulative: 7
+        standing: 7
+      - cars:
+          - position: 8
+            points: 0
+          - position: 21
+            points: 0
+        points: 0
+        cumulative: 7
+        standing: 7
+      - cars:
+          - position: 15
+            points: 0
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 7
+        standing: 7
+      - cars:
+          - position: 3
+            points: 4
+          - position: 8
+            points: 0
+        points: 4
+        cumulative: 11
+        standing: 5
+      - cars:
+          - position: 4
+            points: 3
+          - position: 24
+            points: 0
+        points: 3
+        cumulative: 14
+        standing: 5
+      - cars:
+          - position: 12
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 14
+        standing: 6
+      - cars:
+          - position: 21
+            points: 0
+          - position: 24
+            points: 0
+        points: 0
+        cumulative: 14
+        standing: 6
+      - cars:
+          - position: 9
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 14
+        standing: 6
+      - cars:
+          - position: 5
+            points: 2
+          - position: 13
+            points: 0
+        points: 2
+        cumulative: 16
+        standing: 6
+      - cars:
+          - position: 18
+            points: 0
+          - position: 19
+            points: 0
+        points: 0
+        cumulative: 16
+        standing: 7
+      - cars:
+          - position: 6
+            points: 1
+          - position: 16
+            points: 0
+        points: 1
+        cumulative: 17
+        standing: 7
+      - cars:
+          - position: 14
+            points: 0
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 17
+        standing: 7
+      - cars:
+          - position: 2
+            points: 6
+          - position: 15
+            points: 0
+        points: 6
+        cumulative: 23
+        standing: 6
+      - cars:
+          - position: 3
+            points: 4
+          - position: 9
+            points: 0
+          - position: 18
+            points: 0
+        points: 4
+        cumulative: 27
+        standing: 6
+  - constructorId: wolf
+    name: Wolf
+    nationality: Canadian
+    flag: 🇨🇦
+    countryCode3: CAN
+    results:
+      - cars:
+          - position: 1
+            points: 9
+        points: 9
+        cumulative: 9
+        standing: 1
+      - cars:
+          - position: 20
+            points: 0
+        points: 0
+        cumulative: 9
+        standing: 2
+      - cars:
+          - position: 2
+            points: 6
+        points: 6
+        cumulative: 15
+        standing: 2
+      - cars:
+          - position: 3
+            points: 4
+        points: 4
+        cumulative: 19
+        standing: 2
+      - cars:
+          - position: 3
+            points: 4
+        points: 4
+        cumulative: 23
+        standing: 2
+      - cars:
+          - position: 1
+            points: 9
+        points: 9
+        cumulative: 32
+        standing: 2
+      - cars:
+          - position: 16
+            points: 0
+        points: 0
+        cumulative: 32
+        standing: 3
+      - cars:
+          - position: 23
+            points: 0
+        points: 0
+        cumulative: 32
+        standing: 3
+      - cars:
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 32
+        standing: 3
+      - cars:
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 32
+        standing: 4
+      - cars:
+          - position: 2
+            points: 6
+        points: 6
+        cumulative: 38
+        standing: 3
+      - cars:
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 38
+        standing: 3
+      - cars:
+          - position: 3
+            points: 4
+        points: 4
+        cumulative: 42
+        standing: 3
+      - cars:
+          - position: 17
+            points: 0
+        points: 0
+        cumulative: 42
+        standing: 3
+      - cars:
+          - position: 3
+            points: 4
+        points: 4
+        cumulative: 46
+        standing: 4
+      - cars:
+          - position: 1
+            points: 9
+        points: 9
+        cumulative: 55
+        standing: 3
+      - cars:
+          - position: 10
+            points: 0
+        points: 0
+        cumulative: 55
+        standing: 4
