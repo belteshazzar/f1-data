@@ -39,6 +39,11 @@ function constructorColor(id) {
   return _constructorColors[id] ?? '#888';
 }
 
+// Converts a lap time string ("1:39.019" or "58.045") to seconds.
+function parseLapTimeSeconds(str) {
+  return str.split(':').reduce((acc, part) => acc * 60 + Number(part), 0);
+}
+
 function loadYaml(filePath) {
   return yaml.load(fs.readFileSync(filePath, 'utf8'));
 }
@@ -81,6 +86,7 @@ const SESSION_LABELS = {
   'sprint':            'Sprint',
   'race-grid':         'Race Grid',
   'race':              'Race',
+  'laps':              'Lap Chart',
 };
 
 const SESSION_ORDER = Object.keys(SESSION_LABELS);
@@ -113,15 +119,15 @@ function layout(title, body, breadcrumbs = []) {
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg: #0e0e0f;
-  --surface: #1a1a1c;
-  --surface2: #242427;
-  --border: #2e2e32;
-  --text: #e8e8ea;
-  --muted: #888;
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --surface2: #f0f1f3;
+  --border: #e2e3e7;
+  --text: #1a1a1e;
+  --muted: #6b6f76;
   --accent: #e10600;
-  --link: #c8a84b;
-  --link-hover: #f0cf72;
+  --link: #9a6b00;
+  --link-hover: #c98a00;
   --radius: 6px;
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --mono: 'Cascadia Code', 'Fira Code', 'Courier New', monospace;
@@ -279,8 +285,8 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
 
 .flag { font-size: 16px; margin-right: 4px; }
 .driver-code { font-family: var(--mono); font-size: 12px; color: var(--muted); }
-.status-dnf { color: #e05; font-weight: 600; }
-.status-dns { color: #a04; }
+.status-dnf { color: #c62828; font-weight: 600; }
+.status-dns { color: #8e1550; }
 .status-nc  { color: var(--muted); }
 
 /* championship table */
@@ -356,8 +362,8 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
   font-size: 13px;
   line-height: 1.4;
 }
-.banner-success { background: rgba(40,180,80,0.10); border: 1px solid rgba(40,180,80,0.3); color: #5c5; }
-.banner-error   { background: rgba(220,50,50,0.10);  border: 1px solid rgba(220,50,50,0.35); color: #e66; }
+.banner-success { background: rgba(40,180,80,0.10); border: 1px solid rgba(40,180,80,0.3); color: #2e7d32; }
+.banner-error   { background: rgba(220,50,50,0.10);  border: 1px solid rgba(220,50,50,0.35); color: #c62828; }
 .empty-state {
   padding: 40px;
   text-align: center;
@@ -696,13 +702,13 @@ app.get('/:year', (req, res) => {
   function setupCard(label, file, setupUrl, viewUrl) {
     if (exists(file)) {
       return `<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)">
-        <span style="color:#5c5;font-size:12px;font-weight:600">● ${esc(label)}</span>
+        <span style="color:#2e7d32;font-size:12px;font-weight:600">● ${esc(label)}</span>
         <a href="${esc(viewUrl)}" style="font-size:12px">View</a>
         <a href="${esc(setupUrl)}" style="font-size:12px;color:var(--muted)">Edit</a>
       </div>`;
     }
     return `<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)">
-      <span style="color:#e66;font-size:12px;font-weight:600">● ${esc(label)} missing</span>
+      <span style="color:#c62828;font-size:12px;font-weight:600">● ${esc(label)} missing</span>
       <a href="${esc(setupUrl)}" class="btn-fetch" style="font-size:12px;padding:4px 12px;text-decoration:none">Set up from database →</a>
     </div>`;
   }
@@ -822,7 +828,7 @@ app.get('/:year/setup-drivers', (req, res) => {
 
   const rows = sorted.map(([id, d]) => {
     const checked  = preselected.has(id) ? 'checked' : '';
-    const yearTag  = d.lastSeen === year * 1      ? `<span style="color:#5c5;font-size:11px">${d.lastSeen}</span>`
+    const yearTag  = d.lastSeen === year * 1      ? `<span style="color:#2e7d32;font-size:11px">${d.lastSeen}</span>`
                    : d.lastSeen === year * 1 - 1  ? `<span style="color:var(--muted);font-size:11px">${d.lastSeen}</span>`
                    : d.lastSeen                   ? `<span style="color:#664;font-size:11px">${d.lastSeen}</span>`
                    : '';
@@ -901,7 +907,7 @@ app.get('/:year/setup-constructors', (req, res) => {
   const rows = sorted.map(([id, c]) => {
     const checked  = preselected.has(id) ? 'checked' : '';
     const lastYear = c.years?.at(-1);
-    const yearTag  = lastYear === year * 1     ? `<span style="color:#5c5;font-size:11px">${lastYear}</span>`
+    const yearTag  = lastYear === year * 1     ? `<span style="color:#2e7d32;font-size:11px">${lastYear}</span>`
                    : lastYear === year * 1 - 1 ? `<span style="color:var(--muted);font-size:11px">${lastYear}</span>`
                    : lastYear                  ? `<span style="color:#664;font-size:11px">${lastYear}</span>`
                    : '';
@@ -1129,7 +1135,7 @@ app.get('/:year/graph', (req, res) => {
         }));
       }
 
-      Chart.defaults.color = '#888';
+      Chart.defaults.color = '#555';
 
       let mode = 'normal';
       const chart = new Chart(document.getElementById('chart'), {
@@ -1145,8 +1151,8 @@ app.get('/:year/graph', (req, res) => {
             }
           },
           scales: {
-            x: { grid: { color: 'rgba(255,255,255,0.05)' } },
-            y: { title: { display: true, text: 'Points' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+            x: { grid: { color: 'rgba(0,0,0,0.06)' } },
+            y: { title: { display: true, text: 'Points' }, grid: { color: 'rgba(0,0,0,0.06)' } }
           }
         }
       });
@@ -1408,6 +1414,203 @@ function buildSessionTable(session, results, driverMap, constructorMap) {
   const headers = results[0] ? Object.keys(results[0]).map(k => `<th>${esc(k)}</th>`).join('') : '';
   return `<table><thead><tr>${headers}</tr></thead><tbody>${rows.join('')}</tbody></table>`;
 }
+
+// ── Lap chart GET ─────────────────────────────────────────────────────────────
+// Registered ahead of the generic /:year/:round/:session route below so this
+// literal path wins the match (Express routes are matched in order added).
+
+function fallbackDriverColor(i) {
+  return `hsl(${(i * 47) % 360}, 70%, 55%)`;
+}
+
+app.get('/:year/:round/laps', (req, res) => {
+  const { year, round } = req.params;
+
+  const roundsFile = `${DATA_DIR}/${year}/${year}-rounds.yaml`;
+  const roundData = exists(roundsFile)
+    ? loadYaml(roundsFile).rounds.find(r => r.round === parseInt(round, 10))
+    : null;
+  const gpName = roundData?.name ?? `Round ${round}`;
+
+  const lapsFile = `${DATA_DIR}/${year}/${year}-${round}-laps.yaml`;
+
+  let contentHtml;
+  if (!exists(lapsFile)) {
+    contentHtml = `<div class="card empty-state">No lap data yet.</div>`;
+  } else {
+    const laps = loadYaml(lapsFile).laps ?? [];
+
+    const driversFile = `${DATA_DIR}/${year}/${year}-drivers.yaml`;
+    const driverMap = {};
+    if (exists(driversFile)) loadYaml(driversFile).drivers.forEach(d => { driverMap[d.driverId] = d; });
+
+    const raceFile = `${DATA_DIR}/${year}/${year}-${round}-race.yaml`;
+    const raceResults = exists(raceFile) ? (loadYaml(raceFile).results ?? []) : [];
+    const constructorByDriver = {};
+    raceResults.forEach(r => { constructorByDriver[r.driverId] = r.constructorId; });
+
+    // Legend/dataset order follows final classification; any driver missing
+    // from the race results (e.g. laps fetched before results) is appended
+    // in the order it first appears on lap 1.
+    const driverOrder = raceResults.map(r => r.driverId);
+    (laps[0]?.timings ?? []).forEach(t => {
+      if (!driverOrder.includes(t.driverId)) driverOrder.push(t.driverId);
+    });
+
+    const labels = laps.map(l => l.number);
+
+    // Running race time per driver, in seconds; null once a driver drops out
+    // of the timing data (retired/DNF) so their line stops instead of flatlining.
+    const cumulative = {};
+    const timeSeries = {};
+    const posSeries = {};
+    driverOrder.forEach(id => { cumulative[id] = 0; timeSeries[id] = []; posSeries[id] = []; });
+
+    laps.forEach(lap => {
+      const timingByDriver = new Map(lap.timings.map(t => [t.driverId, t]));
+
+      const activeCumulatives = [];
+      driverOrder.forEach(id => {
+        const timing = timingByDriver.get(id);
+        if (timing && cumulative[id] != null) {
+          cumulative[id] += parseLapTimeSeconds(timing.time);
+          activeCumulatives.push(cumulative[id]);
+        }
+      });
+      const leader = activeCumulatives.length ? Math.min(...activeCumulatives) : null;
+
+      driverOrder.forEach(id => {
+        const timing = timingByDriver.get(id);
+        if (timing && cumulative[id] != null) {
+          timeSeries[id].push(leader != null ? cumulative[id] - leader : null);
+          posSeries[id].push(timing.position);
+        } else {
+          timeSeries[id].push(null);
+          posSeries[id].push(null);
+          cumulative[id] = null;
+        }
+      });
+    });
+
+    const constructorSeen = {};
+    const datasets = driverOrder.map((id, i) => {
+      const constructorId = constructorByDriver[id];
+      const color = constructorId ? constructorColor(constructorId) : fallbackDriverColor(i);
+      const seenCount = constructorSeen[constructorId] = (constructorSeen[constructorId] ?? 0) + 1;
+      return {
+        id,
+        label: driverMap[id]?.driverCode3 ?? id,
+        color,
+        dash: constructorId ? seenCount > 1 : false,
+      };
+    });
+
+    const toChartData = series => JSON.stringify({
+      labels,
+      datasets: datasets.map(d => ({
+        label: d.label,
+        borderColor: d.color,
+        backgroundColor: d.color,
+        borderDash: d.dash ? [6, 3] : [],
+        data: series[d.id],
+        tension: 0.2,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        spanGaps: false,
+      })),
+    });
+
+    contentHtml = `
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:16px">
+      <button id="toggleBtn" onclick="toggleMode()"
+          style="font-size:12px;padding:4px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--muted);cursor:pointer">
+        Show positions
+      </button>
+      <button onclick="downloadChart()"
+          style="font-size:12px;padding:4px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--muted);cursor:pointer">
+        ↓ Download image
+      </button>
+    </div>
+    <div class="card" style="padding:20px">
+      <canvas id="chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <script>
+      const timeData = ${toChartData(timeSeries)};
+      const posData = ${toChartData(posSeries)};
+
+      function generateLabels(chart) {
+        return chart.data.datasets.map((ds, i) => ({
+          text: ds.label,
+          fillStyle: 'transparent',
+          strokeStyle: ds.borderColor,
+          lineWidth: 2,
+          lineDash: ds.borderDash ?? [],
+          pointStyle: 'line',
+          hidden: chart.getDatasetMeta(i).hidden,
+          datasetIndex: i,
+        }));
+      }
+
+      Chart.defaults.color = '#555';
+
+      let mode = 'time';
+      const chart = new Chart(document.getElementById('chart'), {
+        type: 'line',
+        data: timeData,
+        options: {
+          responsive: true,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: { font: { size: 11 }, usePointStyle: true, pointStyleWidth: 24, generateLabels },
+            }
+          },
+          scales: {
+            x: { title: { display: true, text: 'Lap' }, grid: { color: 'rgba(0,0,0,0.06)' } },
+            // reverse: true keeps the leader (gap 0 / position 1, the lowest
+            // data value in both modes) flat across the top of the chart,
+            // with everyone else dropping below as they fall back.
+            y: { reverse: true, title: { display: true, text: 'Gap to leader (s)' }, grid: { color: 'rgba(0,0,0,0.06)' } }
+          }
+        }
+      });
+
+      function toggleMode() {
+        mode = mode === 'time' ? 'position' : 'time';
+        const btn = document.getElementById('toggleBtn');
+        if (mode === 'position') {
+          chart.data = posData;
+          chart.options.scales.y.title.text = 'Position';
+          chart.options.scales.y.ticks = { stepSize: 1 };
+          btn.textContent = 'Show gap to leader';
+          btn.style.color = 'var(--text)';
+        } else {
+          chart.data = timeData;
+          chart.options.scales.y.title.text = 'Gap to leader (s)';
+          chart.options.scales.y.ticks = {};
+          btn.textContent = 'Show positions';
+          btn.style.color = 'var(--muted)';
+        }
+        chart.update();
+      }
+
+      function downloadChart() {
+        const link = document.createElement('a');
+        link.download = '${esc(year)}-${esc(round)}-laps-' + mode + '.png';
+        link.href = document.getElementById('chart').toDataURL('image/png');
+        link.click();
+      }
+    </script>`;
+  }
+
+  res.send(layout(`${year} ${gpName} – Lap Chart`, `
+    <h1>${esc(gpName)}</h1>
+    <p style="color:var(--muted);margin-bottom:20px">${esc(year)} · Round ${esc(round)} · Lap Chart</p>
+    ${contentHtml}
+  `, [[year, `/${year}`], [gpName, `/${year}/${round}`], ['Lap Chart', null]]));
+});
 
 // ── Session GET ───────────────────────────────────────────────────────────────
 
