@@ -92,6 +92,13 @@ const SESSION_LABELS = {
 
 const SESSION_ORDER = Object.keys(SESSION_LABELS);
 
+// Reverse of SESSION_LABELS: maps a scheduled session name (as it appears in
+// rounds.yaml, e.g. "Sprint Qualifying") back to our canonical key. Used to
+// derive session cards for future rounds that have no result files yet.
+const LABEL_TO_KEY = Object.fromEntries(
+  Object.entries(SESSION_LABELS).map(([key, label]) => [label, key])
+);
+
 function sessionLabel(key) {
   return SESSION_LABELS[key] ?? key;
 }
@@ -335,6 +342,8 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
   text-decoration: none;
   background: var(--surface2);
 }
+.session-card.no-data { border-style: dashed; }
+.session-card.no-data .label { color: var(--muted); font-weight: 500; }
 .session-card .label { font-weight: 600; font-size: 14px; }
 .session-card .date { color: var(--muted); font-size: 12px; margin-top: 4px; }
 
@@ -361,6 +370,14 @@ tbody td { padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
 }
 .btn-fetch:hover { background: #bf0400; }
 .btn-fetch:disabled { opacity: 0.55; cursor: not-allowed; }
+.f1-url {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--mono);
+  word-break: break-all;
+}
+.f1-url:hover { color: var(--accent); text-decoration: underline; }
+.f1-url-note { color: var(--muted); font-style: italic; }
 .banner {
   padding: 10px 16px;
   border-radius: var(--radius);
@@ -1492,16 +1509,31 @@ app.get('/:year/:round', (req, res) => {
   if (!roundData) return res.status(404).send(layout('Not found', '<p>Round not found.</p>'));
 
   const sessionFiles = getSessionFiles(year, round);
-  const ordered = [...SESSION_ORDER.filter(s => sessionFiles.includes(s)), ...sessionFiles.filter(s => !SESSION_ORDER.includes(s))];
+
+  // Derive cards from the scheduled sessions in rounds.yaml too, so future
+  // rounds (which have no result files yet) still list their sessions and can
+  // be opened to fetch data from formula1.com.
+  const scheduledKeys = (roundData.sessions ?? [])
+    .map(rs => LABEL_TO_KEY[rs.name])
+    .filter(Boolean);
+  // Starting-grid pages aren't listed in the calendar, but are fetchable
+  // whenever the corresponding race/sprint exists.
+  if (scheduledKeys.includes('race')) scheduledKeys.push('race-grid');
+  if (scheduledKeys.includes('sprint')) scheduledKeys.push('sprint-grid');
+
+  const allKeys = [...new Set([...sessionFiles, ...scheduledKeys])];
+  const ordered = [...SESSION_ORDER.filter(s => allKeys.includes(s)), ...allKeys.filter(s => !SESSION_ORDER.includes(s))];
 
   const cards = ordered.map(s => {
     const sessionData = roundData.sessions?.find(rs => rs.name === sessionLabel(s));
     const dateStr = sessionData?.date
       ? new Date(sessionData.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
       : '';
-    return `<a class="session-card" href="/${year}/${round}/${s}">
+    const hasData = sessionFiles.includes(s);
+    return `<a class="session-card${hasData ? '' : ' no-data'}" href="/${year}/${round}/${s}">
       <div class="label">${esc(sessionLabel(s))}</div>
       ${dateStr ? `<div class="date">${esc(dateStr)}</div>` : ''}
+      ${hasData ? '' : '<div class="date">No data yet</div>'}
     </a>`;
   }).join('');
 
@@ -1855,24 +1887,41 @@ app.get('/:year/:round/:session', (req, res) => {
     ? `<div class="banner banner-error"><strong>Fetch failed:</strong> ${esc(decodeURIComponent(error))}</div>`
     : '';
 
+  // The round's f1.com event page (from rounds.yaml) always exists, even before
+  // results are published — used as a fallback link when the exact session
+  // results URL can't be resolved yet (e.g. an upcoming session).
+  const fallbackUrl = roundData?.url ?? '';
   const fetchButton = isFetchable
     ? `<form class="fetch-bar" method="POST" action="/${year}/${round}/${session}"
          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Fetching…'">
          <button class="btn-fetch" type="submit">↓ Fetch from formula1.com</button>
-         <a id="f1-url-link" data-resolve="/${year}/${round}/${session}/f1-url"
-            href="#" target="_blank" rel="noopener"
-            style="font-size:12px;color:var(--muted);font-family:var(--mono);word-break:break-all">resolving url…</a>
+         <a id="f1-url-link" class="f1-url" data-resolve="/${year}/${round}/${session}/f1-url"
+            data-fallback="${esc(fallbackUrl)}"
+            href="${esc(fallbackUrl || '#')}" target="_blank" rel="noopener">resolving url…</a>
        </form>
        <script>
          (function() {
            const a = document.getElementById('f1-url-link');
+           const fallback = a.dataset.fallback;
            fetch(a.dataset.resolve)
-             .then(r => r.json())
+             .then(function(r) { return r.json(); })
              .then(function(d) {
-               if (d.url) { a.href = d.url; a.textContent = d.url; a.style.color = ''; }
-               else { a.textContent = 'could not resolve url: ' + d.error; }
+               if (d.url) {
+                 a.href = d.url;
+                 a.textContent = '↗ ' + d.url;
+               } else if (fallback) {
+                 a.href = fallback;
+                 a.innerHTML = '↗ ' + fallback +
+                   ' <span class="f1-url-note">(event page — session results not published yet)</span>';
+               } else {
+                 a.removeAttribute('href');
+                 a.textContent = 'could not resolve url: ' + d.error;
+               }
              })
-             .catch(function() { a.textContent = 'could not resolve url'; });
+             .catch(function() {
+               if (fallback) { a.href = fallback; a.textContent = '↗ ' + fallback; }
+               else { a.removeAttribute('href'); a.textContent = 'could not resolve url'; }
+             });
          })();
        </script>`
     : '';

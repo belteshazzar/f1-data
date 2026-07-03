@@ -18,10 +18,33 @@ const SESSION_DEFS = {
 
 export const FETCHABLE_SESSIONS = Object.keys(SESSION_DEFS);
 
-// Fetches the f1.com races index for a year and resolves the base URL for a
-// specific round. One request only — used to build the session URL without
-// downloading the session page itself.
+// Resolves the base URL for a round's results pages, e.g.
+// https://www.formula1.com/en/results/2026/races/1289/great-britain
+// — everything up to the session-specific suffix (race-result, practice/1, …).
 async function resolveRaceBasePath(year, round) {
+  // Preferred: derive the numeric race id from the round's own f1.com event
+  // page (stored in rounds.yaml). It links to its results as soon as any
+  // session is published, so this works during a live weekend — before the
+  // race shows up in the completed-results index. We match the round's own
+  // slug because the event page also carries a "latest results" widget that
+  // points at whichever race is current.
+  const eventUrl = loadRounds(year).get(round)?.url;
+  if (eventUrl) {
+    const slug = eventUrl.split('/').pop();
+    try {
+      const res = await fetch(eventUrl);
+      if (res.ok) {
+        const html = await res.text();
+        const m = html.match(
+          new RegExp(`/en/results/${year}/races/(\\d+)/${slug}(?![a-z0-9-])`, 'i')
+        );
+        if (m) return `https://www.formula1.com/en/results/${year}/races/${m[1]}/${slug}`;
+      }
+    } catch { /* fall through to the index lookup below */ }
+  }
+
+  // Fallback: position in the completed-results index (older seasons, or when
+  // the event page can't be fetched / doesn't yet link to results).
   const racesUrl = `https://www.formula1.com/en/results/${year}/races`;
   const res = await fetch(racesUrl);
   if (!res.ok) throw new Error(`f1.com races index returned ${res.status}`);
