@@ -8,9 +8,11 @@ import { loadDrivers, loadConstructors } from './db.js';
 // stays current) while the session is still running, and downloading the
 // official results afterwards just overwrites it in place.
 //
-// Practice sessions only for now: qualifying/race files have a different
-// shape (q1/q2/q3 splits, points/status) that live TimingData doesn't map
-// onto as directly.
+// Practice mirrors the flat f1.com practice table (time/gap/laps).
+// Qualifying maps each line's BestLapTimes — an array of per-part bests,
+// indexed 0..2 — onto the q1/q2/q3 splits of the scraped qualifying yaml.
+// Races are still not written live: points/status don't come from
+// TimingData as directly.
 
 export function parseLapSeconds(value) {
   if (!value) return Infinity;
@@ -18,9 +20,13 @@ export function parseLapSeconds(value) {
   return parts.length === 2 ? parts[0] * 60 + parts[1] : parts[0];
 }
 
-// Which yaml file a live session belongs to, e.g. "practice-1".
+// Which yaml file a live session belongs to, e.g. "practice-1" or
+// "qualifying". Sprint variants share Type with their GP counterparts and
+// are told apart by Name ("Sprint Qualifying" / "Sprint").
 function sessionKey(info) {
   if (info.Type === 'Practice') return `practice-${info.Number}`;
+  if (info.Type === 'Qualifying') return info.Name?.includes('Sprint') ? 'sprint-qualifying' : 'qualifying';
+  if (info.Type === 'Race') return info.Name === 'Sprint' ? 'sprint' : 'race';
   return null;
 }
 
@@ -76,6 +82,9 @@ export function writeSessionResults(state) {
     const info = state.sessionInfo;
     const lines = state.timingData.Lines;
     if (!info?.Meeting || !lines) return null;
+    // Practice and qualifying only (see header comment); the laps log via
+    // sessionFilePath/sessionMeta still covers races too.
+    if (info.Type !== 'Practice' && info.Type !== 'Qualifying') return null;
 
     const key = sessionKey(info);
     const year = Number(info.StartDate?.slice(0, 4));
@@ -95,11 +104,22 @@ export function writeSessionResults(state) {
 
     const results = rows.map(({ num, line }, i) => {
       const driver = state.driverList[num] ?? {};
-      const best = parseLapSeconds(line.BestLapTime?.Value);
-      return {
+      const row = {
         position: Number(line.Position),
         driverId: lk.code3.get(driver.Tla) ?? `${driver.Tla ?? num}_NOT_FOUND`,
         constructorId: lk.team.get(driver.TeamName) ?? `${driver.TeamName ?? num}_NOT_FOUND`,
+      };
+      if (info.Type === 'Qualifying') {
+        const times = {};
+        ['q1', 'q2', 'q3'].forEach((q, part) => {
+          const value = line.BestLapTimes?.[part]?.Value;
+          if (value) times[q] = value;
+        });
+        return { ...row, times, laps: line.NumberOfLaps ?? 0 };
+      }
+      const best = parseLapSeconds(line.BestLapTime?.Value);
+      return {
+        ...row,
         time: i === 0 && Number.isFinite(best) ? line.BestLapTime.Value : '',
         gap: i === 0 || !Number.isFinite(best) || !Number.isFinite(leaderBest)
           ? ''
