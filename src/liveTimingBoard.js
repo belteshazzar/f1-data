@@ -276,16 +276,22 @@ function render() {
     // NumberOfLaps is the driver's actual total for the session.
     const laps = line.NumberOfLaps ?? '';
 
-    // Gap to leader, derived from best-lap times rather than the feed's own
-    // TimeDiffToFastest — that field tracks race-style running gaps and is
-    // largely unpopulated during qualifying, where "gap" means best-vs-best.
+    // Races (and sprints) carry running gaps directly on each line:
+    // GapToLeader ("+1.802", "1 L", or the lap counter "LAP 9" on the
+    // leader) and IntervalToPositionAhead.Value. Practice/qualifying leave
+    // those unset — there "gap" means best-vs-best, derived from lap times,
+    // and the interval comes from Stats (which race sessions don't populate).
+    const isRace = state.sessionInfo.Type === 'Race';
     const bestSeconds = parseLapSeconds(line.BestLapTime?.Value);
     let gap = '';
     if (line.Retired) gap = 'OUT';
+    else if (isRace) gap = line.GapToLeader ?? '';
     else if (Number.isFinite(bestSeconds)) gap = bestSeconds === bestOverall ? 'LEADER' : `+${(bestSeconds - bestOverall).toFixed(3)}`;
 
     const stats = line.Stats ? Object.values(line.Stats).at(-1) : null;
-    const interval = line.Retired ? '' : (stats?.TimeDifftoPositionAhead || '');
+    const interval = line.Retired ? ''
+      : isRace ? (line.IntervalToPositionAhead?.Value || '')
+      : (stats?.TimeDifftoPositionAhead || '');
 
     const sectors = line.Sectors ?? {};
     const flash = [0, 1, 2].map((i) => now - (sectorTouch[`${num}:${i}`] ?? 0) < FLASH_MS);

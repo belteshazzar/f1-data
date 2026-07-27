@@ -251,66 +251,74 @@ constructors:
         points: 3
         cumulative: 60
         standing: 5
+      - cars:
+          - position: 10
+            points: 1
+          - position: 11
+            points: 0
+        points: 1
+        cumulative: 61
+        standing: 5
+      - cars:
+          - position: 12
+            points: 0
+          - position: 15
+            points: 0
+        points: 0
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
       - cars: []
         points: 0
-        cumulative: 60
-        standing: 5
-      - cars: []
-        points: 0
-        cumulative: 60
-        standing: 5
-      - cars: []
-        points: 0
-        cumulative: 60
-        standing: 5
+        cumulative: 61
+        standing: 6
   - constructorId: aston_martin
     name: Aston Martin
     nationality: British
@@ -421,11 +429,19 @@ constructors:
         points: 0
         cumulative: 1
         standing: 10
-      - cars: []
+      - cars:
+          - position: 19
+            points: 0
+          - position: 20
+            points: 0
         points: 0
         cumulative: 1
         standing: 10
-      - cars: []
+      - cars:
+          - position: 13
+            points: 0
+          - position: 14
+            points: 0
         points: 0
         cumulative: 1
         standing: 10
@@ -591,66 +607,74 @@ constructors:
         points: 4
         cumulative: 6
         standing: 9
+      - cars:
+          - position: 8
+            points: 4
+          - position: 13
+            points: 0
+        points: 4
+        cumulative: 10
+        standing: 9
+      - cars:
+          - position: 9
+            points: 2
+          - position: 11
+            points: 0
+        points: 2
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
       - cars: []
         points: 0
-        cumulative: 6
-        standing: 9
-      - cars: []
-        points: 0
-        cumulative: 6
-        standing: 9
-      - cars: []
-        points: 0
-        cumulative: 6
-        standing: 9
+        cumulative: 12
+        standing: 8
   - constructorId: cadillac
     name: Cadillac F1 Team
     nationality: American
@@ -761,11 +785,19 @@ constructors:
         points: 0
         cumulative: 0
         standing: 11
-      - cars: []
+      - cars:
+          - position: 18
+            points: 0
+          - position: 21
+            points: 0
         points: 0
         cumulative: 0
         standing: 11
-      - cars: []
+      - cars:
+          - position: 21
+            points: 0
+          - position: 22
+            points: 0
         points: 0
         cumulative: 0
         standing: 11
@@ -931,65 +963,73 @@ constructors:
         points: 40
         cumulative: 255
         standing: 2
-      - cars: []
-        points: 0
-        cumulative: 255
+      - cars:
+          - position: 2
+            points: 18
+          - position: 4
+            points: 12
+        points: 30
+        cumulative: 285
+        standing: 2
+      - cars:
+          - position: 4
+            points: 12
+          - position: 5
+            points: 10
+        points: 22
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
       - cars: []
         points: 0
-        cumulative: 255
-        standing: 2
-      - cars: []
-        points: 0
-        cumulative: 255
+        cumulative: 307
         standing: 2
   - constructorId: haas
     name: Haas F1 Team
@@ -1101,11 +1141,19 @@ constructors:
         points: 0
         cumulative: 21
         standing: 7
-      - cars: []
+      - cars:
+          - position: 14
+            points: 0
+          - position: 17
+            points: 0
         points: 0
         cumulative: 21
         standing: 7
-      - cars: []
+      - cars:
+          - position: 16
+            points: 0
+          - position: 19
+            points: 0
         points: 0
         cumulative: 21
         standing: 7
@@ -1271,65 +1319,73 @@ constructors:
         points: 12
         cumulative: 179
         standing: 3
-      - cars: []
-        points: 0
-        cumulative: 179
+      - cars:
+          - position: 5
+            points: 10
+          - position: 7
+            points: 6
+        points: 16
+        cumulative: 195
+        standing: 3
+      - cars:
+          - position: 1
+            points: 25
+          - position: 20
+            points: 0
+        points: 25
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
       - cars: []
         points: 0
-        cumulative: 179
-        standing: 3
-      - cars: []
-        points: 0
-        cumulative: 179
+        cumulative: 220
         standing: 3
   - constructorId: mercedes
     name: Mercedes
@@ -1441,65 +1497,73 @@ constructors:
         points: 18
         cumulative: 333
         standing: 1
-      - cars: []
-        points: 0
-        cumulative: 333
+      - cars:
+          - position: 1
+            points: 25
+          - position: 22
+            points: 0
+        points: 25
+        cumulative: 358
+        standing: 1
+      - cars:
+          - position: 3
+            points: 15
+          - position: 7
+            points: 6
+        points: 21
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
       - cars: []
         points: 0
-        cumulative: 333
-        standing: 1
-      - cars: []
-        points: 0
-        cumulative: 333
+        cumulative: 379
         standing: 1
   - constructorId: rb
     name: RB F1 Team
@@ -1611,66 +1675,74 @@ constructors:
         points: 14
         cumulative: 59
         standing: 6
+      - cars:
+          - position: 9
+            points: 2
+          - position: 12
+            points: 0
+        points: 2
+        cumulative: 61
+        standing: 6
+      - cars:
+          - position: 8
+            points: 4
+          - position: 10
+            points: 1
+        points: 5
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
       - cars: []
         points: 0
-        cumulative: 59
-        standing: 6
-      - cars: []
-        points: 0
-        cumulative: 59
-        standing: 6
-      - cars: []
-        points: 0
-        cumulative: 59
-        standing: 6
+        cumulative: 66
+        standing: 5
   - constructorId: red_bull
     name: Red Bull
     nationality: Austrian
@@ -1781,65 +1853,73 @@ constructors:
         points: 10
         cumulative: 128
         standing: 4
-      - cars: []
-        points: 0
-        cumulative: 128
+      - cars:
+          - position: 3
+            points: 15
+          - position: 6
+            points: 8
+        points: 23
+        cumulative: 151
+        standing: 4
+      - cars:
+          - position: 2
+            points: 18
+          - position: 6
+            points: 8
+        points: 26
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
       - cars: []
         points: 0
-        cumulative: 128
-        standing: 4
-      - cars: []
-        points: 0
-        cumulative: 128
+        cumulative: 177
         standing: 4
   - constructorId: williams
     name: Williams
@@ -1951,63 +2031,71 @@ constructors:
         points: 0
         cumulative: 11
         standing: 8
-      - cars: []
+      - cars:
+          - position: 15
+            points: 0
+          - position: 16
+            points: 0
         points: 0
         cumulative: 11
         standing: 8
+      - cars:
+          - position: 17
+            points: 0
+          - position: 18
+            points: 0
+        points: 0
+        cumulative: 11
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
+        standing: 9
       - cars: []
         points: 0
         cumulative: 11
-        standing: 8
-      - cars: []
-        points: 0
-        cumulative: 11
-        standing: 8
+        standing: 9
